@@ -56,16 +56,36 @@
   };
   // interface de aumento e diminuição de atributos
   const button = document.querySelectorAll(".alt");
+  const pontos = document.querySelector(".pontos");
+  let total = 27;
   for (let i = 0; i < button.length; i++) {
     button[i].addEventListener("click", (ev) => {
       const isPlus = ev.target.innerText == "+";
       const atualSkill = ev.target.closest(".label-area");
       const input = atualSkill.querySelector(".atributo");
+
       if (isPlus) {
-        input.value++;
+        if (Number(input.value) < 15 && total > 0) {
+          if (Number(input.value) === 13 || Number(input.value) === 14) {
+            input.value++;
+            total -= 2;
+          } else {
+            input.value++;
+            total--;
+          }
+        }
       } else {
-        input.value--;
+        if (Number(input.value) > 8 && total >= 0) {
+          if (Number(input.value) === 14 || Number(input.value) === 15) {
+            input.value--;
+            total += 2;
+          } else {
+            input.value--;
+            total++;
+          }
+        }
       }
+      pontos.innerText = total;
     });
   }
   // envia todas as opções selecionadas para o data
