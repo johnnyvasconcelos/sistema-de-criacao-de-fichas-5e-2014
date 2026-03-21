@@ -39,3 +39,28 @@ form .step.on {
   transform: translateX(0%);
   height: auto;
 }
+form .atributo {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+form .atributo-view {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #cacaca;
+  text-align: center;
+}
+form .alt {
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #0a0a0a;
+  text-align: center;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
