@@ -14,38 +14,157 @@
         <div class="sistema">
           <form>
             <div class="step on">
+              <input
+                type="checkbox"
+                name="ativa-racas"
+                id="ativa-racas"
+              /><label for="ativa-racas">Mostrar todas as Raças</label>
               <p>Escolha sua raça:</p>
               <div class="label-area">
-                <input
-                  type="radio"
-                  class="etapa radio"
-                  name="raca"
-                  id="human"
-                  value="Humano"
-                />
-                <label for="human">Humano Comum</label>
-              </div>
-              <div class="label-area">
-                <input
-                  type="radio"
-                  class="etapa radio"
-                  name="raca"
-                  id="human_2"
-                  value="Humano Variante"
-                />
-                <label for="human_2">Humano Variante</label>
-              </div>
-              <div class="label-area">
-                <input
-                  type="radio"
-                  class="etapa radio"
-                  name="raca"
-                  id="alto_elfo"
-                  value="Alto Elfo"
-                />
-                <label for="alto_elfo">Alto Elfo</label>
+                <label for="raca">Raça</label>
+                <select name="raca" id="raca" class="etapa">
+                  <option value="" selected disabled>Selecione uma raça</option>
+                  <option value="Humano" data-tipo="comum">Humano Comum</option>
+                  <option value="Humano Variante" data-tipo="comum">
+                    Humano Variante
+                  </option>
+                  <option value="Alto Elfo" data-tipo="comum">Alto Elfo</option>
+                  <option value="Elfo da Floresta" data-tipo="comum">
+                    Elfo da Floresta
+                  </option>
+                  <option value="Elfo Negro" data-tipo="comum">
+                    Elfo Negro
+                  </option>
+                  <option value="Elfo Astral" data-tipo="exotica">
+                    Elfo Astral
+                  </option>
+                  <option value="Elfo Marinho" data-tipo="exotica">
+                    Elfo Marinho
+                  </option>
+                  <option value="Eladrin" data-tipo="exotica">Eladrin</option>
+                  <option value="Shadar-Kai" data-tipo="exotica">
+                    Shadar-Kai
+                  </option>
+                  <option value="Meio-Elfo" data-tipo="comum">Meio-Elfo</option>
+                  <option value="Meio-Orc" data-tipo="comum">Meio-Orc</option>
+                  <option value="Orc" data-tipo="comum">Orc</option>
+                  <option value="Anão da Colina" data-tipo="comum">
+                    Anão da Colina
+                  </option>
+                  <option value="Anão da Montanha" data-tipo="comum">
+                    Anão da Montanha
+                  </option>
+                  <option value="Duergar" data-tipo="exotica">Duergar</option>
+                  <option value="Meio-Anão" data-tipo="exotica">
+                    Meio-Anão
+                  </option>
+                  <option value="Halfling Pé Leve" data-tipo="comum">
+                    Halfling Pé Leve
+                  </option>
+                  <option value="Halfling Robusto" data-tipo="comum">
+                    Halfling Robusto
+                  </option>
+                  <option value="Gnomo da Floresta" data-tipo="comum">
+                    Gnomo da Floresta
+                  </option>
+                  <option value="Gnomo das Rochas" data-tipo="comum">
+                    Gnomo das Rochas
+                  </option>
+                  <option value="Gnomo das Profundezas" data-tipo="exotica">
+                    Gnomo das Profundezas
+                  </option>
+                  <option value="Autognomo" data-tipo="exotica">
+                    Autognomo
+                  </option>
+                  <option value="Tiefling" data-tipo="comum">Tiefling</option>
+                  <option value="Draconato Vermelho" data-tipo="comum">
+                    Draconato Vermelho
+                  </option>
+                  <option value="Draconato Verde" data-tipo="comum">
+                    Draconato Verde
+                  </option>
+                  <option value="Draconato Azul" data-tipo="comum">
+                    Draconato Azul
+                  </option>
+                  <option value="Draconato Negro" data-tipo="comum">
+                    Draconato Negro
+                  </option>
+                  <option value="Draconato Branco" data-tipo="comum">
+                    Draconato Branco
+                  </option>
+                  <option value="Draconato Dourado" data-tipo="comum">
+                    Draconato Dourado
+                  </option>
+                  <option value="Draconato Prateado" data-tipo="comum">
+                    Draconato Prateado
+                  </option>
+                  <option value="Draconato Cobre" data-tipo="comum">
+                    Draconato Cobre
+                  </option>
+                  <option value="Draconato Latão" data-tipo="comum">
+                    Draconato Latão
+                  </option>
+                  <option value="Draconato Bronze" data-tipo="comum">
+                    Draconato Bronze
+                  </option>
+                  <option value="Kobold" data-tipo="exotica">Kobold</option>
+                  <option value="Aarakocra" data-tipo="exotica">
+                    Aarakocra
+                  </option>
+                  <option value="Aasimar" data-tipo="exotica">Aasimar</option>
+                  <option value="Centauro" data-tipo="exotica">Centauro</option>
+                  <option value="Duplicante" data-tipo="exotica">
+                    Duplicante
+                  </option>
+                  <option value="Fada" data-tipo="exotica">Fada</option>
+                  <option value="Firbolg" data-tipo="exotica">Firbolg</option>
+                  <option value="Genasi da Água" data-tipo="exotica">
+                    Genasi da Água
+                  </option>
+                  <option value="Genasi da Terra" data-tipo="exotica">
+                    Genasi da Terra
+                  </option>
+                  <option value="Genasi do Ar" data-tipo="exotica">
+                    Genasi do Ar
+                  </option>
+                  <option value="Genasi do Fogo" data-tipo="exotica">
+                    Genasi do Fogo
+                  </option>
+                  <option value="Giff" data-tipo="exotica">Giff</option>
+                  <option value="Githyanki" data-tipo="exotica">
+                    Githyanki
+                  </option>
+                  <option value="Githzerai" data-tipo="exotica">
+                    Githzerai
+                  </option>
+                  <option value="Goblin" data-tipo="exotica">Goblin</option>
+                  <option value="Golias" data-tipo="exotica">Golias</option>
+                  <option value="Hadooze" data-tipo="exotica">Hadooze</option>
+                  <option value="Hobgoblin" data-tipo="exotica">
+                    Hobgoblin
+                  </option>
+                  <option value="Kenku" data-tipo="exotica">Kenku</option>
+                  <option value="Laparlonj" data-tipo="exotica">
+                    Laparlonj
+                  </option>
+                  <option value="Minotauro" data-tipo="exotica">
+                    Minotauro
+                  </option>
+                  <option value="Morfo" data-tipo="exotica">Morfo</option>
+                  <option value="Plasmoid" data-tipo="exotica">Plasmoid</option>
+                  <option value="Reptante" data-tipo="exotica">Reptante</option>
+                  <option value="Sátiro" data-tipo="exotica">Sátiro</option>
+                  <option value="Tabaxi" data-tipo="exotica">Tabaxi</option>
+                  <option value="Thri-Kreen" data-tipo="exotica">
+                    Thri-Kreen
+                  </option>
+                  <option value="Tortuga" data-tipo="exotica">Tortuga</option>
+                  <option value="Tritão" data-tipo="exotica">Tritão</option>
+                  <option value="Yuan-Ti" data-tipo="exotica">Yuan-Ti</option>
+                </select>
               </div>
             </div>
+
             <div class="step">
               <p>Escolha sua classe:</p>
               <div class="label-area">
@@ -59,6 +178,7 @@
                 <label for="guerreiro">Guerreiro</label>
               </div>
             </div>
+
             <div class="label-area">
               <button type="button">Voltar</button>
               <button type="submit">Criar Ficha</button>
