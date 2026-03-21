@@ -54,7 +54,21 @@
       atributosReferencia.innerText = "+2 em um, +1 em outro.";
     }
   };
-  // envia as opções selecionadas para o data
+  // interface de aumento e diminuição de atributos
+  const button = document.querySelectorAll(".alt");
+  for (let i = 0; i < button.length; i++) {
+    button[i].addEventListener("click", (ev) => {
+      const isPlus = ev.target.innerText == "+";
+      const atualSkill = ev.target.closest(".label-area");
+      const input = atualSkill.querySelector(".atributo");
+      if (isPlus) {
+        input.value++;
+      } else {
+        input.value--;
+      }
+    });
+  }
+  // envia todas as opções selecionadas para o data
   for (let i = 0; i < inputs.length; i++) {
     inputs[i].addEventListener("change", (ev) => {
       const dado = ev.target.name;
