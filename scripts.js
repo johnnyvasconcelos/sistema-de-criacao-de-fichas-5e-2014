@@ -21,37 +21,38 @@
   });
   // aviso de quais atributos aumentar a depender da raça
   const bonusRacas = {
-    Humano: "+1 em todos os atributos.",
-    "Humano Variante": "+1 em dois atributos à sua escolha.",
-    "Alto Elfo": "+2 DES, +1 INT",
-    "Elfo da Floresta": "+2 DES, +1 SAB",
-    "Elfo Negro": "+2 DES, +1 CAR",
-    "Anão da Colina": "+2 CON, +1 SAB",
-    "Anão da Montanha": "+2 CON, +2 FOR",
-    "Meio-Elfo": "+2 CAR, +1 em outros dois atributos.",
-    "Meio-Orc": "+2 FOR, +1 CON",
-    "Halfling Pé Leve": "+2 DES, +1 CAR",
-    "Halfling Robusto": "+2 DES, +1 CON",
-    "Gnomo da Floresta": "+2 INT, +1 DES",
-    "Gnomo das Rochas": "+2 INT, +1 CON",
-    Tiefling: "+2 CAR, +1 INT",
-    "Draconato Vermelho": "+2 FOR, +1 CAR",
-    "Draconato Verde": "+2 FOR, +1 CAR",
-    "Draconato Azul": "+2 FOR, +1 CAR",
-    "Draconato Negro": "+2 FOR, +1 CAR",
-    "Draconato Branco": "+2 FOR, +1 CAR",
-    "Draconato Dourado": "+2 FOR, +1 CAR",
-    "Draconato Prateado": "+2 FOR, +1 CAR",
-    "Draconato Cobre": "+2 FOR, +1 CAR",
-    "Draconato Latão": "+2 FOR, +1 CAR",
-    "Draconato Bronze": "+2 FOR, +1 CAR",
+    Humano: { for: 1, des: 1, con: 1, int: 1, sab: 1, car: 1 },
+    "Humano Variante": { mais_1_em_2: 2 },
+    "Alto Elfo": { des: 2, int: 1 },
+    "Elfo da Floresta": { des: 2, sab: 1 },
+    "Elfo Negro": { des: 2, car: 1 },
+    "Anão da Colina": { con: 2, sab: 1 },
+    "Anão da Montanha": { for: 2, con: 2 },
+    "Meio-Elfo": { car: 2, mais_1_em_2: 2 },
+    "Meio-Orc": { for: 2, con: 1 },
+    "Halfling Pé Leve": { des: 2, car: 1 },
+    "Halfling Robusto": { des: 2, con: 1 },
+    "Gnomo da Floresta": { int: 2, des: 1 },
+    "Gnomo das Rochas": { int: 2, con: 1 },
+    Tiefling: { int: 1, car: 2 },
+    "Draconato Vermelho": { for: 2, car: 1 },
+    "Draconato Verde": { for: 2, car: 1 },
+    "Draconato Azul": { for: 2, car: 1 },
+    "Draconato Negro": { for: 2, car: 1 },
+    "Draconato Branco": { for: 2, car: 1 },
+    "Draconato Dourado": { for: 2, car: 1 },
+    "Draconato Prateado": { for: 2, car: 1 },
+    "Draconato Cobre": { for: 2, car: 1 },
+    "Draconato Latão": { for: 2, car: 1 },
+    "Draconato Bronze": { for: 2, car: 1 },
+    Alternativo: { mais_2_em_1: 2, mais_1_em_1: 1 },
   };
   mostraReferencia = (raca) => {
     const atributosReferencia = document.querySelector(".atributos-referencia");
     if (bonusRacas.hasOwnProperty(raca)) {
       atributosReferencia.innerText = bonusRacas[raca];
     } else {
-      atributosReferencia.innerText = "+2 em um, +1 em outro.";
+      atributosReferencia.innerText = bonusRacas.Alternativo;
     }
   };
   // interface de aumento e diminuição de atributos
