@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Sistema de Criação de Fichas PDF D&D 5e 2014</title>
+    <script src="./scripts.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main>
+        <h1>Sistema de Criação de Fichas PDF D&D 5e 2014</h1>
+        <div class="sistema">
+          <form>
+            <div class="step on">
+              <p>Escolha sua raça:</p>
+              <div class="label-area">
+                <input
+                  type="radio"
+                  class="etapa radio"
+                  name="raca"
+                  id="human"
+                  value="Humano"
+                />
+                <label for="human">Humano Comum</label>
+              </div>
+              <div class="label-area">
+                <input
+                  type="radio"
+                  class="etapa radio"
+                  name="raca"
+                  id="human_2"
+                  value="Humano Variante"
+                />
+                <label for="human_2">Humano Variante</label>
+              </div>
+              <div class="label-area">
+                <input
+                  type="radio"
+                  class="etapa radio"
+                  name="raca"
+                  id="alto_elfo"
+                  value="Alto Elfo"
+                />
+                <label for="alto_elfo">Alto Elfo</label>
+              </div>
+            </div>
+            <div class="step">
+              <p>Escolha sua classe:</p>
+              <div class="label-area">
+                <input
+                  type="radio"
+                  id="guerreiro"
+                  name="classe"
+                  class="etapa radio"
+                  value="Guerreiro"
+                />
+                <label for="guerreiro">Guerreiro</label>
+              </div>
+            </div>
+            <div class="label-area">
+              <button type="button">Voltar</button>
+              <button type="submit">Criar Ficha</button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
