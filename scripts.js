@@ -58,11 +58,14 @@
   const button = document.querySelectorAll(".alt");
   const pontos = document.querySelector(".pontos");
   let total = 27;
+  pontos.innerText = total;
   for (let i = 0; i < button.length; i++) {
     button[i].addEventListener("click", (ev) => {
       const isPlus = ev.target.innerText == "+";
       const atualSkill = ev.target.closest(".label-area");
       const input = atualSkill.querySelector(".atributo");
+      const atributoView = atualSkill.querySelector(".atributo-view");
+      atributoView.value = input.value;
 
       if (isPlus) {
         if (Number(input.value) < 15 && total > 0) {
@@ -86,6 +89,7 @@
         }
       }
       pontos.innerText = total;
+      atributoView.value = input.value;
     });
   }
   // envia todas as opções selecionadas para o data
