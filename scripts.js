@@ -70,8 +70,10 @@
       if (isPlus) {
         if (Number(input.value) < 15 && total > 0) {
           if (Number(input.value) === 13 || Number(input.value) === 14) {
-            input.value++;
-            total -= 2;
+            if (total > 1) {
+              input.value++;
+              total -= 2;
+            }
           } else {
             input.value++;
             total--;
