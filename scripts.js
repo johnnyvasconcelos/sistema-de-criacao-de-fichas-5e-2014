@@ -19,6 +19,41 @@
       }
     }
   });
+  // aviso de quais atributos aumentar a depender da raça
+  const bonusRacas = {
+    Humano: "+1 em todos os atributos.",
+    "Humano Variante": "+1 em dois atributos à sua escolha.",
+    "Alto Elfo": "+2 DES, +1 INT",
+    "Elfo da Floresta": "+2 DES, +1 SAB",
+    "Elfo Negro": "+2 DES, +1 CAR",
+    "Anão da Colina": "+2 CON, +1 SAB",
+    "Anão da Montanha": "+2 CON, +2 FOR",
+    "Meio-Elfo": "+2 CAR, +1 em outros dois atributos.",
+    "Meio-Orc": "+2 FOR, +1 CON",
+    "Halfling Pé Leve": "+2 DES, +1 CAR",
+    "Halfling Robusto": "+2 DES, +1 CON",
+    "Gnomo da Floresta": "+2 INT, +1 DES",
+    "Gnomo das Rochas": "+2 INT, +1 CON",
+    Tiefling: "+2 CAR, +1 INT",
+    "Draconato Vermelho": "+2 FOR, +1 CAR",
+    "Draconato Verde": "+2 FOR, +1 CAR",
+    "Draconato Azul": "+2 FOR, +1 CAR",
+    "Draconato Negro": "+2 FOR, +1 CAR",
+    "Draconato Branco": "+2 FOR, +1 CAR",
+    "Draconato Dourado": "+2 FOR, +1 CAR",
+    "Draconato Prateado": "+2 FOR, +1 CAR",
+    "Draconato Cobre": "+2 FOR, +1 CAR",
+    "Draconato Latão": "+2 FOR, +1 CAR",
+    "Draconato Bronze": "+2 FOR, +1 CAR",
+  };
+  mostraReferencia = (raca) => {
+    const atributosReferencia = document.querySelector(".atributos-referencia");
+    if (bonusRacas.hasOwnProperty(raca)) {
+      atributosReferencia.innerText = bonusRacas[raca];
+    } else {
+      atributosReferencia.innerText = "+2 em um, +1 em outro.";
+    }
+  };
   // envia as opções selecionadas para o data
   for (let i = 0; i < inputs.length; i++) {
     inputs[i].addEventListener("change", (ev) => {
@@ -31,6 +66,7 @@
         steps[index + 1].classList.add("on");
       }
       console.log(data);
+      mostraReferencia(data.raca);
     });
   }
 }
