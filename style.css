@@ -1,28 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: sans-serif;
-  color: #d2c731;
-  background-color: #101011;
+.sistema {
+  color: #1c202b;
+  background-color: white;
   padding: 10px;
+  font-family: "Montserrat", sans-serif;
 }
-h1 {
-  margin-top: 60px;
-  text-align: center;
+.sistema h2 {
+  font-size: 25px;
 }
 .label-area {
+  gap: 5px;
   display: flex;
-  gap: 8px;
+  margin-bottom: 7px;
+}
+.alt {
+  transform: translateY(10px);
+}
+.alt:hover {
+  color: #d6d6dc;
+  background-color: #1c202b;
+}
+.inputs {
+  background-color: #d6d6dc;
+  display: flex;
+  gap: 5px;
+  border-radius: 10px;
+}
+button {
+  background-color: white;
+  border: 1px solid #d6d6dc;
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 12px;
+  font-size: 15px;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #272c3a;
+  margin-right: 5px;
+}
+button:hover {
+  background-color: #1c202b;
+  color: #d6d6dc;
 }
 form {
   margin: 0 auto;
   max-width: 90%;
   width: 740px;
-  padding: 20px;
-  border: 1px solid #1f1f1f;
+  padding: 40px;
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
   margin-top: 40px;
 }
 form .step {
@@ -39,6 +71,17 @@ form .step.on {
   transform: translateX(0%);
   height: auto;
 }
+input {
+  border: 1px solid #b6b7be;
+  border-radius: 10px;
+}
+select {
+  padding: 5px 7px;
+  cursor: pointer;
+  border: 1px solid #c9cace;
+  border-radius: 0px;
+  margin-top: 10px;
+}
 form .atributo {
   width: 40px;
   height: 40px;
@@ -50,17 +93,45 @@ form .atributo-view {
   height: 40px;
   font-size: 20px;
   background-color: #cacaca;
+  color: #bb1234;
   text-align: center;
 }
 form .alt {
-  color: white;
+  color: #1c202b;
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  border: 2px solid #0a0a0a;
+  border: 2px solid #1c202b;
   text-align: center;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+.atributos-referencia {
+  width: 100%;
+  background-color: #f9efdc;
+  padding: 4px 10px;
+  margin: 15px 0;
+  display: block;
+}
+.pontos-area {
+  margin-top: 15px;
+}
+.label-atributo {
+  display: flex;
+  align: center;
+  justify-content: center;
+  width: 60px;
+  padding-top: 10px;
+}
+.label-select {
+  transform: translateY(15px);
+}
+.select-title {
+  font-weight: 600;
+}
+.first-title {
+  margin-bottom: 15px;
+  display: inline-block;
 }

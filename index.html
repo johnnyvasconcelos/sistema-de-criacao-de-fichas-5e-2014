@@ -10,7 +10,6 @@
   <body>
     <div class="wrapper">
       <main>
-        <h1>Sistema de Criação de Fichas PDF D&D 5e 2014</h1>
         <div class="sistema">
           <form>
             <!-- raça -->
@@ -19,10 +18,12 @@
                 type="checkbox"
                 name="ativa-racas"
                 id="ativa-racas"
-              /><label for="ativa-racas">Mostrar todas as Raças</label>
-              <p>Escolha sua raça:</p>
+              /><label for="ativa-racas" class="first-title"
+                >Mostrar todas as Raças</label
+              >
+              <p class="select-title">Escolha sua raça:</p>
               <div class="label-area">
-                <label for="raca">Raça</label>
+                <label for="raca" class="label-select">Raça</label>
                 <select name="raca" id="raca" class="etapa">
                   <option value="" selected disabled>Selecione uma raça</option>
                   <option value="Humano" data-tipo="comum">Humano Comum</option>
@@ -167,9 +168,9 @@
             </div>
             <!-- classe -->
             <div class="step">
-              <p>Escolha sua classe:</p>
+              <p class="select-title">Escolha sua classe:</p>
               <div class="label-area">
-                <label for="classe">Classe:</label>
+                <label for="classe" class="label-select">Classe:</label>
                 <select name="classe" id="classe" class="etapa">
                   <option name="" id="" disabled value="" selected>
                     Selecione uma classe
@@ -194,9 +195,9 @@
               </div>
             </div>
             <div class="step">
-              <p>Escolha sua classe:</p>
+              <p class="select-title">Escolha seu antecedente:</p>
               <div class="label-area">
-                <label for="classe">Classe:</label>
+                <label for="classe" class="label-select">Antecedente:</label>
                 <select
                   name="antecedente"
                   id="antecedente"
@@ -226,186 +227,198 @@
             </div>
             <!-- atributos -->
             <div class="step">
-              <p>Adicione os atributos:</p>
+              <h2>Adicione os atributos:</h2>
+              <p class="pontos-area"><span class="pontos">27</span> pontos</p>
               <p>
-                <strong><span class="pontos">27</span> pontos</strong>
-              </p>
-              <p>
-                <strong class="atributos-referencia"></strong>
+                <span class="atributos-referencia"
+                  >Clique para comprar os pontos</span
+                >
               </p>
               <div class="label-area" id="forca">
-                <label for="for">FOR</label>
-                <input
-                  type="text"
-                  maxlength="2"
-                  inputmode="numeric"
-                  name="atributo"
-                  id="for"
-                  value="8"
-                  min="8"
-                  max="20"
-                  class="atributo"
-                  readonly
-                />
-                <input
-                  type="text"
-                  maxlength="2"
-                  inputmode="numeric"
-                  name="atributo-view"
-                  id="for-view"
-                  value="8"
-                  min="8"
-                  max="20"
-                  class="atributo-view"
-                  readonly
-                />
-                <span class="min alt">-</span>
-                <span class="max alt">+</span>
+                <label class="label-atributo" for="for">FOR</label>
+                <div class="inputs">
+                  <input
+                    type="text"
+                    maxlength="2"
+                    inputmode="numeric"
+                    name="atributo"
+                    id="for"
+                    value="8"
+                    min="8"
+                    max="20"
+                    class="atributo"
+                    readonly
+                  />
+                  <input
+                    type="text"
+                    maxlength="2"
+                    inputmode="numeric"
+                    name="atributo-view"
+                    id="for-view"
+                    value="8"
+                    min="8"
+                    max="20"
+                    class="atributo-view"
+                    readonly
+                  />
+                </div>
+                <span class="min alt"><b>-</b></span>
+                <span class="max alt"><b>+</b></span>
               </div>
               <div class="label-area" id="destreza">
-                <label for="des">DES</label>
-                <input
-                  type="text"
-                  maxlength="2"
-                  inputmode="numeric"
-                  name="atributo"
-                  id="des"
-                  value="8"
-                  min="8"
-                  max="20"
-                  class="atributo"
-                  readonly
-                />
-                <input
-                  type="text"
-                  maxlength="2"
-                  inputmode="numeric"
-                  name="atributo-view"
-                  id="des-view"
-                  value="8"
-                  min="8"
-                  max="20"
-                  class="atributo-view"
-                  readonly
-                />
-                <span class="min alt">-</span>
-                <span class="max alt">+</span>
+                <label class="label-atributo" for="des">DES</label>
+                <div class="inputs">
+                  <input
+                    type="text"
+                    maxlength="2"
+                    inputmode="numeric"
+                    name="atributo"
+                    id="des"
+                    value="8"
+                    min="8"
+                    max="20"
+                    class="atributo"
+                    readonly
+                  />
+                  <input
+                    type="text"
+                    maxlength="2"
+                    inputmode="numeric"
+                    name="atributo-view"
+                    id="des-view"
+                    value="8"
+                    min="8"
+                    max="20"
+                    class="atributo-view"
+                    readonly
+                  />
+                </div>
+                <span class="min alt"><b>-</b></span>
+                <span class="max alt"><b>+</b></span>
               </div>
               <div class="label-area" id="constituicao">
-                <label for="con">CON</label>
-                <input
-                  type="text"
-                  maxlength="2"
-                  inputmode="numeric"
-                  name="atributo"
-                  id="con"
-                  value="8"
-                  min="8"
-                  max="20"
-                  class="atributo"
-                  readonly
-                />
-                <input
-                  type="text"
-                  maxlength="2"
-                  inputmode="numeric"
-                  name="atributo-view"
-                  id="con-view"
-                  value="8"
-                  min="8"
-                  max="20"
-                  class="atributo-view"
-                  readonly
-                />
-                <span class="min alt">-</span>
-                <span class="max alt">+</span>
+                <label class="label-atributo" for="con">CON</label>
+                <div class="inputs">
+                  <input
+                    type="text"
+                    maxlength="2"
+                    inputmode="numeric"
+                    name="atributo"
+                    id="con"
+                    value="8"
+                    min="8"
+                    max="20"
+                    class="atributo"
+                    readonly
+                  />
+                  <input
+                    type="text"
+                    maxlength="2"
+                    inputmode="numeric"
+                    name="atributo-view"
+                    id="con-view"
+                    value="8"
+                    min="8"
+                    max="20"
+                    class="atributo-view"
+                    readonly
+                  />
+                </div>
+                <span class="min alt"><b>-</b></span>
+                <span class="max alt"><b>+</b></span>
               </div>
               <div class="label-area" id="inteligencia">
-                <label for="int">INT</label>
-                <input
-                  type="text"
-                  maxlength="2"
-                  inputmode="numeric"
-                  name="atributo"
-                  id="int"
-                  value="8"
-                  min="8"
-                  max="20"
-                  class="atributo"
-                  readonly
-                />
-                <input
-                  type="text"
-                  maxlength="2"
-                  inputmode="numeric"
-                  name="atributo-view"
-                  id="int-view"
-                  value="8"
-                  min="8"
-                  max="20"
-                  class="atributo-view"
-                  readonly
-                />
-                <span class="min alt">-</span>
-                <span class="max alt">+</span>
+                <label class="label-atributo" for="int">INT</label>
+                <div class="inputs">
+                  <input
+                    type="text"
+                    maxlength="2"
+                    inputmode="numeric"
+                    name="atributo"
+                    id="int"
+                    value="8"
+                    min="8"
+                    max="20"
+                    class="atributo"
+                    readonly
+                  />
+                  <input
+                    type="text"
+                    maxlength="2"
+                    inputmode="numeric"
+                    name="atributo-view"
+                    id="int-view"
+                    value="8"
+                    min="8"
+                    max="20"
+                    class="atributo-view"
+                    readonly
+                  />
+                </div>
+                <span class="min alt"><b>-</b></span>
+                <span class="max alt"><b>+</b></span>
               </div>
               <div class="label-area" id="sabedoria">
-                <label for="sab">SAB</label>
-                <input
-                  type="text"
-                  maxlength="2"
-                  inputmode="numeric"
-                  name="atributo"
-                  id="sab"
-                  value="8"
-                  min="8"
-                  max="20"
-                  class="atributo"
-                  readonly
-                />
-                <input
-                  type="text"
-                  maxlength="2"
-                  inputmode="numeric"
-                  name="atributo-view"
-                  id="sab-view"
-                  value="8"
-                  min="8"
-                  max="20"
-                  class="atributo-view"
-                  readonly
-                />
-                <span class="min alt">-</span>
-                <span class="max alt">+</span>
+                <label class="label-atributo" for="sab">SAB</label>
+                <div class="inputs">
+                  <input
+                    type="text"
+                    maxlength="2"
+                    inputmode="numeric"
+                    name="atributo"
+                    id="sab"
+                    value="8"
+                    min="8"
+                    max="20"
+                    class="atributo"
+                    readonly
+                  />
+                  <input
+                    type="text"
+                    maxlength="2"
+                    inputmode="numeric"
+                    name="atributo-view"
+                    id="sab-view"
+                    value="8"
+                    min="8"
+                    max="20"
+                    class="atributo-view"
+                    readonly
+                  />
+                </div>
+                <span class="min alt"><b>-</b></span>
+                <span class="max alt"><b>+</b></span>
               </div>
               <div class="label-area" id="carisma">
-                <label for="car">CAR</label>
-                <input
-                  type="text"
-                  maxlength="2"
-                  inputmode="numeric"
-                  name="atributo"
-                  id="car"
-                  value="8"
-                  min="8"
-                  max="20"
-                  class="atributo"
-                  readonly
-                />
-                <input
-                  type="text"
-                  maxlength="2"
-                  inputmode="numeric"
-                  name="atributo-view"
-                  id="car-view"
-                  value="8"
-                  min="8"
-                  max="20"
-                  class="atributo-view"
-                  readonly
-                />
-                <span class="min alt">-</span>
-                <span class="max alt">+</span>
+                <label class="label-atributo" for="car">CAR</label>
+                <div class="inputs">
+                  <input
+                    type="text"
+                    maxlength="2"
+                    inputmode="numeric"
+                    name="atributo"
+                    id="car"
+                    value="8"
+                    min="8"
+                    max="20"
+                    class="atributo"
+                    readonly
+                  />
+                  <input
+                    type="text"
+                    maxlength="2"
+                    inputmode="numeric"
+                    name="atributo-view"
+                    id="car-view"
+                    value="8"
+                    min="8"
+                    max="20"
+                    class="atributo-view"
+                    readonly
+                  />
+                </div>
+                <span class="min alt"><b>-</b></span>
+                <span class="max alt"><b>+</b></span>
               </div>
               <button type="button" class="back-step">Voltar</button>
               <button type="button" class="avanca-step">Avançar</button>
@@ -421,7 +434,7 @@
                 >
               </p>
               <div class="area-label">
-                <label for="for-final">FOR</label>
+                <label class="label-atributo" for="for-final">FOR</label>
                 <input
                   type="number"
                   name=""
@@ -429,11 +442,10 @@
                   class="atributo-final"
                   readonly
                 />
-
                 <span class="max alt-final">+</span>
               </div>
               <div class="area-label">
-                <label for="des-final">DES</label>
+                <label class="label-atributo" for="des-final">DES</label>
                 <input
                   type="number"
                   name=""
@@ -445,7 +457,7 @@
                 <span class="max alt-final">+</span>
               </div>
               <div class="area-label">
-                <label for="con-final">CON</label>
+                <label class="label-atributo" for="con-final">CON</label>
                 <input
                   type="number"
                   name=""
@@ -457,7 +469,7 @@
                 <span class="max alt-final">+</span>
               </div>
               <div class="area-label">
-                <label for="int-final">INT</label>
+                <label class="label-atributo" for="int-final">INT</label>
                 <input
                   type="number"
                   name=""
@@ -468,7 +480,7 @@
                 <span class="max alt-final">+</span>
               </div>
               <div class="area-label">
-                <label for="sab-final">SAB</label>
+                <label class="label-atributo" for="sab-final">SAB</label>
                 <input
                   type="number"
                   name=""
@@ -480,7 +492,7 @@
                 <span class="max alt-final">+</span>
               </div>
               <div class="area-label">
-                <label for="car-final">CAR</label>
+                <label class="label-atributo" for="car-final">CAR</label>
                 <input
                   type="number"
                   name=""

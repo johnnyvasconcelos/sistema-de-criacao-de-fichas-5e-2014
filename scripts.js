@@ -6,9 +6,9 @@
   const activeRaces = document.querySelector("#ativa-racas");
   let base = 8;
   // mostra ou esconde as raças fora do ldj
-  for (let i = 0; i < exoticRaces.length; i++) {
-    exoticRaces[i].hidden = true;
-  }
+  exoticRaces.forEach((race) => {
+    race.hidden = true;
+  });
   activeRaces.addEventListener("change", (ev) => {
     if (ev.target.checked) {
       for (let i = 0; i < exoticRaces.length; i++) {
