@@ -4,6 +4,7 @@
   const inputs = document.querySelectorAll(".etapa");
   const exoticRaces = document.querySelectorAll('option[data-tipo="exotica"]');
   const activeRaces = document.querySelector("#ativa-racas");
+  let base = 8;
   // mostra ou esconde as raças fora do ldj
   for (let i = 0; i < exoticRaces.length; i++) {
     exoticRaces[i].hidden = true;
@@ -22,13 +23,13 @@
   // aviso de quais atributos aumentar a depender da raça
   const bonusRacas = {
     Humano: { for: 1, des: 1, con: 1, int: 1, sab: 1, car: 1 },
-    "Humano Variante": { mais_1_em_2: 2 },
+    "Humano Variante": { dois_atributos: 1 },
     "Alto Elfo": { des: 2, int: 1 },
     "Elfo da Floresta": { des: 2, sab: 1 },
     "Elfo Negro": { des: 2, car: 1 },
     "Anão da Colina": { con: 2, sab: 1 },
     "Anão da Montanha": { for: 2, con: 2 },
-    "Meio-Elfo": { car: 2, mais_1_em_2: 2 },
+    "Meio-Elfo": { car: 2, dois_atributos: 1 },
     "Meio-Orc": { for: 2, con: 1 },
     "Halfling Pé Leve": { des: 2, car: 1 },
     "Halfling Robusto": { des: 2, con: 1 },
@@ -45,17 +46,48 @@
     "Draconato Cobre": { for: 2, car: 1 },
     "Draconato Latão": { for: 2, car: 1 },
     "Draconato Bronze": { for: 2, car: 1 },
-    Alternativo: { mais_2_em_1: 2, mais_1_em_1: 1 },
+    Alternativo: { dois_atributos: 1, um_atributo: 2 },
   };
   mostraReferencia = (raca) => {
     const atributosReferencia = document.querySelector(".atributos-referencia");
     if (bonusRacas.hasOwnProperty(raca)) {
-      atributosReferencia.innerText = bonusRacas[raca];
+      atributosReferencia.innerText = JSON.stringify(bonusRacas[raca])
+        .replaceAll("{", "")
+        .replaceAll("}", "")
+        .replaceAll('"', "")
+        .replaceAll(":", " +")
+        .replaceAll(",", " | ")
+        .replaceAll("_", " ")
+        .toUpperCase();
     } else {
-      atributosReferencia.innerText = bonusRacas.Alternativo;
+      atributosReferencia.innerText = JSON.stringify(bonusRacas.Alternativo)
+        .replaceAll("{", "")
+        .replaceAll("}", "")
+        .replaceAll('"', "")
+        .replaceAll(":", " +")
+        .replaceAll(",", " | ")
+        .replaceAll("_", " ")
+        .toUpperCase();
     }
   };
+  // envia todas as opções selecionadas para o data
+  for (let i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener("change", (ev) => {
+      const dado = ev.target.name;
+      data[dado] = ev.target.value;
+      const atualStep = ev.target.closest(".step");
+      const index = Array.from(steps).indexOf(atualStep);
+      if (steps[index + 1]) {
+        steps[index].classList.remove("on");
+        steps[index + 1].classList.add("on");
+      }
+      console.log(data);
+      mostraReferencia(data.raca);
+      aumentaBonus(data.raca);
+    });
+  }
   // interface de aumento e diminuição de atributos
+  // *** aumentando pontos
   const button = document.querySelectorAll(".alt");
   const pontos = document.querySelector(".pontos");
   let total = 27;
@@ -66,7 +98,9 @@
       const atualSkill = ev.target.closest(".label-area");
       const input = atualSkill.querySelector(".atributo");
       const atributoView = atualSkill.querySelector(".atributo-view");
-      atributoView.value = input.value;
+      const bonus =
+        (bonusRacas[data.raca] && bonusRacas[data.raca][input.id]) || 0;
+      atributoView.value = Number(input.value) + bonus;
 
       if (isPlus) {
         if (Number(input.value) < 15 && total > 0) {
@@ -92,22 +126,15 @@
         }
       }
       pontos.innerText = total;
-      atributoView.value = input.value;
+      atributoView.value = Number(input.value) + bonus;
     });
   }
-  // envia todas as opções selecionadas para o data
-  for (let i = 0; i < inputs.length; i++) {
-    inputs[i].addEventListener("change", (ev) => {
-      const dado = ev.target.name;
-      data[dado] = ev.target.value;
-      const atualStep = ev.target.closest(".step");
-      const index = Array.from(steps).indexOf(atualStep);
-      if (steps[index + 1]) {
-        steps[index].classList.remove("on");
-        steps[index + 1].classList.add("on");
-      }
-      console.log(data);
-      mostraReferencia(data.raca);
-    });
-  }
+  //  *** aumentando os bonus raciais
+  const aumentaBonus = (raca) => {
+    for (let atributo in bonusRacas[raca]) {
+      const atributoParaEditar = document.querySelector(`#${atributo}-view`);
+      if (!atributoParaEditar) continue;
+      atributoParaEditar.value = 8 + bonusRacas[raca][atributo];
+    }
+  };
 }
