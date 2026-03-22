@@ -144,11 +144,21 @@
   };
   // *** botao avancar
   const avancar = document.querySelectorAll(".avanca-step");
+  const atributos = document.querySelectorAll(".atributo-view");
+  const atributoFinal = document.querySelectorAll(".atributo-final");
   for (let i = 0; i < avancar.length; i++) {
     avancar[i].addEventListener("click", (ev) => {
       if (total == 0) {
         const atualStep = ev.target.closest(".step");
         const index = Array.from(steps).indexOf(atualStep);
+        // adiciona os atributos para serem modificados e envia eles ao data
+        for (let a = 0; a < atributos.length; a++) {
+          atributoFinal[a].value = atributos[a].value;
+          data[atributos[a].id.replace("-view", "")] = Number(
+            atributoFinal[a].value,
+          );
+        }
+        console.log(data);
         if (
           !bonusRacas.hasOwnProperty(data.raca) ||
           data.raca == "Humano Variante" ||
