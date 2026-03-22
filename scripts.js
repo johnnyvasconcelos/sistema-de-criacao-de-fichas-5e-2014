@@ -134,6 +134,47 @@
       atributoView.value = Number(input.value) + bonus;
     });
   }
+  // *** aumentando os atributos finais, caso a raça ofereça
+  const buttonFinal = document.querySelectorAll(".alt-final");
+  let adicionaEmUm = 0;
+  let adicionaEmOutro = 0;
+  const bonusExibido1 = document.querySelector(".pontos-um-atributo");
+  const bonusExibido2 = document.querySelector(".pontos-dois-atributo");
+  const selecionaBonus = () => {
+    switch (data.raca) {
+      case "Humano Variante":
+        adicionaEmUm = 1;
+        adicionaEmOutro = 1;
+        break;
+      case "Meio-Elfo":
+        adicionaEmUm = 1;
+        adicionaEmOutro = 1;
+        break;
+      default:
+        adicionaEmUm = 2;
+        adicionaEmOutro = 1;
+    }
+  };
+  bonusExibido1.innerText = adicionaEmUm;
+  bonusExibido2.innerText = adicionaEmOutro;
+  let idAtivo = "";
+  for (let i = 0; i < buttonFinal.length; i++) {
+    buttonFinal[i].addEventListener("click", (ev) => {
+      const atualSkill = ev.target.closest(".area-label");
+      const input = atualSkill.querySelector(".atributo-final");
+      const id = input.id.replace("-final", "");
+      if (adicionaEmUm > 0) {
+        idAtivo = id;
+        input.value++;
+        adicionaEmUm--;
+      } else if (adicionaEmOutro > 0 && id !== idAtivo) {
+        input.value++;
+        adicionaEmOutro--;
+      }
+      bonusExibido1.innerText = adicionaEmUm;
+      bonusExibido2.innerText = adicionaEmOutro;
+    });
+  }
   // *** aumentando os bonus raciais
   const aumentaBonus = (raca) => {
     for (let atributo in bonusRacas[raca]) {
@@ -180,5 +221,9 @@
         alert("Distribua todos os pontos!");
       }
     });
+    // garante o bonus racial no aumento de atributos da segunda etapa
+    selecionaBonus();
+    bonusExibido1.innerText = adicionaEmUm;
+    bonusExibido2.innerText = adicionaEmOutro;
   }
 }
