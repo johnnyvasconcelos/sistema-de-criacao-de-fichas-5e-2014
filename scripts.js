@@ -140,6 +140,7 @@
   let adicionaEmOutro = 0;
   const bonusExibido1 = document.querySelector(".pontos-um-atributo");
   const bonusExibido2 = document.querySelector(".pontos-dois-atributo");
+  let bonusCar = 1;
   const selecionaBonus = () => {
     switch (data.raca) {
       case "Humano Variante":
@@ -164,12 +165,16 @@
       const input = atualSkill.querySelector(".atributo-final");
       const id = input.id.replace("-final", "");
       if (adicionaEmUm > 0) {
-        idAtivo = id;
-        input.value++;
-        adicionaEmUm--;
+        if (!(data.raca === "Meio-Elfo" && id === "car")) {
+          idAtivo = id;
+          input.value++;
+          adicionaEmUm--;
+        }
       } else if (adicionaEmOutro > 0 && id !== idAtivo) {
-        input.value++;
-        adicionaEmOutro--;
+        if (!(data.raca === "Meio-Elfo" && id === "car")) {
+          input.value++;
+          adicionaEmOutro--;
+        }
       }
       bonusExibido1.innerText = adicionaEmUm;
       bonusExibido2.innerText = adicionaEmOutro;
@@ -200,6 +205,15 @@
           data[atributos[a].id.replace("-view", "")] = Number(
             atributoFinal[a].value,
           );
+          if (
+            data.raca == "Meio-Elfo" &&
+            atributoFinal[a].id == "car-final" &&
+            bonusCar > 0
+          ) {
+            data[atributos[a].id.replace("-view", "")] =
+              Number(atributoFinal[a].value) + 2;
+            bonusCar = 0;
+          }
         }
         console.log(data);
         if (
@@ -220,10 +234,10 @@
       } else {
         alert("Distribua todos os pontos!");
       }
+      // garante o bonus racial no aumento de atributos da segunda etapa
+      selecionaBonus();
+      bonusExibido1.innerText = adicionaEmUm;
+      bonusExibido2.innerText = adicionaEmOutro;
     });
-    // garante o bonus racial no aumento de atributos da segunda etapa
-    selecionaBonus();
-    bonusExibido1.innerText = adicionaEmUm;
-    bonusExibido2.innerText = adicionaEmOutro;
   }
 }
