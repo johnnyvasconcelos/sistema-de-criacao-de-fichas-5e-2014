@@ -10,8 +10,15 @@
   background-color: white;
   padding: 10px;
   font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  max-width: 90%;
+  width: 740px;
+  padding: 40px;
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  margin-top: 40px;
 }
-.sistema h2 {
+.sistema h3 {
   font-size: 25px;
 }
 .label-area {
@@ -47,15 +54,6 @@ button {
 button:hover {
   background-color: #1c202b;
   color: #d6d6dc;
-}
-form {
-  margin: 0 auto;
-  max-width: 90%;
-  width: 740px;
-  padding: 40px;
-  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-  margin-top: 40px;
 }
 form .step {
   opacity: 0;
@@ -134,4 +132,8 @@ form .alt {
 .first-title {
   margin-bottom: 15px;
   display: inline-block;
+}
+.parag {
+  color: #363d4b;
+  margin: 15px 0;
 }
