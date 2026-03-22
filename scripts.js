@@ -52,18 +52,14 @@
     const atributosReferencia = document.querySelector(".atributos-referencia");
     if (bonusRacas.hasOwnProperty(raca)) {
       atributosReferencia.innerText = JSON.stringify(bonusRacas[raca])
-        .replaceAll("{", "")
-        .replaceAll("}", "")
-        .replaceAll('"', "")
+        .replace(/[{}"]/g, "")
         .replaceAll(":", " +")
         .replaceAll(",", " | ")
         .replaceAll("_", " ")
         .toUpperCase();
     } else {
       atributosReferencia.innerText = JSON.stringify(bonusRacas.Alternativo)
-        .replaceAll("{", "")
-        .replaceAll("}", "")
-        .replaceAll('"', "")
+        .replace(/[{}"]/g, "")
         .replaceAll(":", " +")
         .replaceAll(",", " | ")
         .replaceAll("_", " ")
@@ -101,7 +97,6 @@
       const bonus =
         (bonusRacas[data.raca] && bonusRacas[data.raca][input.id]) || 0;
       atributoView.value = Number(input.value) + bonus;
-
       if (isPlus) {
         if (Number(input.value) < 15 && total > 0) {
           if (Number(input.value) === 13 || Number(input.value) === 14) {
@@ -129,7 +124,7 @@
       atributoView.value = Number(input.value) + bonus;
     });
   }
-  //  *** aumentando os bonus raciais
+  // *** aumentando os bonus raciais
   const aumentaBonus = (raca) => {
     for (let atributo in bonusRacas[raca]) {
       const atributoParaEditar = document.querySelector(`#${atributo}-view`);

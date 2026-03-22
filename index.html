@@ -189,15 +189,46 @@
                   <option value="Patrulheiro">Patrulheiro</option>
                 </select>
               </div>
+              <div class="label-area">
+                <button type="button" class="back-step">Voltar</button>
+              </div>
+            </div>
+            <div class="step">
+              <p>Escolha sua classe:</p>
+              <div class="label-area">
+                <label for="classe">Classe:</label>
+                <select
+                  name="antecedente"
+                  id="antecedente"
+                  class="antecedente etapa"
+                >
+                  <option name="" id="" disabled value="" selected>
+                    Selecione um antecedente
+                  </option>
+                  <option value="Acólito">Acólito</option>
+                  <option value="Artesão de Guilda">Artesão de Guilda</option>
+                  <option value="Artista">Artista</option>
+                  <option value="Charlatão">Charlatão</option>
+                  <option value="Criminoso">Criminoso</option>
+                  <option value="Eremita">Eremita</option>
+                  <option value="Forasteiro">Forasteiro</option>
+                  <option value="Herói do Povo">Herói do Povo</option>
+                  <option value="Marinheiro">Marinheiro</option>
+                  <option value="Nobre">Nobre</option>
+                  <option value="Órfão">Órfão</option>
+                  <option value="Sábio">Sábio</option>
+                  <option value="Soldado">Soldado</option>
+                </select>
+              </div>
+              <div class="label-area">
+                <button type="button" class="back-step">Voltar</button>
+              </div>
             </div>
             <!-- atributos -->
             <div class="step">
               <p>Adicione os atributos:</p>
               <p>
                 <strong><span class="pontos">27</span> pontos</strong>
-              </p>
-              <p>
-                <strong class="atributos-referencia">bônus raciais</strong>
               </p>
               <div class="label-area" id="forca">
                 <label for="for">FOR</label>
@@ -373,11 +404,13 @@
                 <span class="min alt">-</span>
                 <span class="max alt">+</span>
               </div>
+              <button type="button" class="back-step">Voltar</button>
+              <button type="button" class="avanca-step">Avançar</button>
             </div>
-            <div class="label-area">
-              <button type="button">Voltar</button>
-              <button type="button">Avançar</button>
-              <button type="submit">Criar Ficha</button>
+            <div class="step">
+              <p>
+                <strong class="atributos-referencia">bônus raciais</strong>
+              </p>
             </div>
           </form>
         </div>
