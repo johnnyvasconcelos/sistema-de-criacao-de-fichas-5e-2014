@@ -57,19 +57,23 @@
       raca !== "Meio-Elfo" &&
       raca !== "Humano Variante"
     ) {
-      atributosReferencia[0].innerText = JSON.stringify(bonusRacas[raca])
-        .replace(/[{}"]/g, "")
-        .replaceAll(":", " +")
-        .replaceAll(",", " | ")
-        .replaceAll("_", " ")
-        .toUpperCase();
+      atributosReferencia[0].innerText =
+        `${raca}: ` +
+        JSON.stringify(bonusRacas[raca])
+          .replace(/[{}"]/g, "")
+          .replaceAll(":", " +")
+          .replaceAll(",", " | ")
+          .replaceAll("_", " ")
+          .toUpperCase();
     } else {
-      atributosReferencia[1].innerText = JSON.stringify(bonusRacas.Alternativo)
-        .replace(/[{}"]/g, "")
-        .replaceAll(":", " +")
-        .replaceAll(",", " | ")
-        .replaceAll("_", " ")
-        .toUpperCase();
+      atributosReferencia[1].innerText =
+        `${raca}: ` +
+        JSON.stringify(bonusRacas.Alternativo)
+          .replace(/[{}"]/g, "")
+          .replaceAll(":", " +")
+          .replaceAll(",", " | ")
+          .replaceAll("_", " ")
+          .toUpperCase();
     }
   };
   // envia todas as opções selecionadas para o data
@@ -145,9 +149,20 @@
       if (total == 0) {
         const atualStep = ev.target.closest(".step");
         const index = Array.from(steps).indexOf(atualStep);
-        if (steps[index + 1]) {
-          steps[index].classList.remove("on");
-          steps[index + 1].classList.add("on");
+        if (
+          !bonusRacas.hasOwnProperty(data.raca) ||
+          data.raca == "Humano Variante" ||
+          data.raca == "Meio-Elfo"
+        ) {
+          if (steps[index + 1]) {
+            steps[index].classList.remove("on");
+            steps[index + 1].classList.add("on");
+          }
+        } else {
+          if (steps[index + 1]) {
+            steps[index].classList.remove("on");
+            steps[index + 2].classList.add("on");
+          }
         }
       } else {
         alert("Distribua todos os pontos!");
