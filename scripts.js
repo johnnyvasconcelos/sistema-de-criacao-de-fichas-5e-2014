@@ -271,32 +271,40 @@
     mostrarPericias();
   });
   const mostrarPericias = () => {
-    fetch("./pericias.json")
-      .then((response) => response.json())
-      .then((pericias) => {
-        fetch("./antecedentes.json")
-          .then((response) => response.json())
-          .then((antecedentes) => {
-            const antecedenteEscolhido = antecedentes.find((ant) => {
-              return ant.nome === data.antecedente;
-            });
-            for (let i = 0; i < pericias.length; i++) {
-              const periciaElfica =
-                (data.raca === "Alto Elfo" ||
-                  data.raca === "Elfo Negro" ||
-                  data.raca === "Elfo da Floresta") &&
-                pericias[i].nome === "Percepção";
-              const check =
-                antecedenteEscolhido.pericias.includes(pericias[i].nome) ||
-                periciaElfica
-                  ? "checked disabled"
-                  : "";
-              periciasCampo.innerHTML += `<label class="label-area ${check}" for="${pericias[i].nome}"><input type="checkbox" id="${pericias[i].nome}" value="${pericias[i].nome}" ${check}/>${pericias[i].nome}</label>`;
-            }
-          });
+    const bonusAdd = bonusPericias(data.classe);
+    Promise.all([
+      fetch("./pericias.json").then((response) => response.json()),
+      fetch("./antecedentes.json").then((response) => response.json()),
+      fetch("./classes.json").then((response) => response.json()),
+    ])
+      .then(([pericias, antecedentes, classes]) => {
+        const antecedenteEscolhido = antecedentes.find((ant) => {
+          return ant.nome === data.antecedente;
+        });
+
+        for (let i = 0; i < pericias.length; i++) {
+          const periciaElfica =
+            (data.raca === "Alto Elfo" ||
+              data.raca === "Elfo Negro" ||
+              data.raca === "Elfo da Floresta") &&
+            pericias[i].nome === "Percepção";
+
+          const check =
+            antecedenteEscolhido.pericias.includes(pericias[i].nome) ||
+            periciaElfica
+              ? "checked disabled"
+              : "";
+
+          periciasCampo.innerHTML += `<label class="label-area" for="${pericias[i].nome}"><input type="checkbox" id="${pericias[i].nome}" value="${pericias[i].nome}" ${check}/>${pericias[i].nome}</label>`;
+        }
       })
       .catch((error) => {
         console.error("Erro: ", error);
       });
+  };
+  const bonusPericias = (classe) => {
+    if (classe === "Bardo" || classe === "Patrulheiro") return 3;
+    if (classe === "Ladino") return 4;
+    return 2;
   };
 }

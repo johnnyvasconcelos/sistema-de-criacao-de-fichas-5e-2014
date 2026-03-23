@@ -1,0 +1,169 @@
+[
+  {
+    "id": 1,
+    "nome": "Bárbaro",
+    "pericias": [
+      "Adestrar Animais",
+      "Atletismo",
+      "Intimidação",
+      "Natureza",
+      "Percepção",
+      "Sobrevivência"
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "Bardo",
+    "pericias": [
+      "Acrobacia",
+      "Arcanismo",
+      "Atletismo",
+      "Atuação",
+      "Enganação",
+      "Furtividade",
+      "História",
+      "Intimidação",
+      "Investigação",
+      "Medicina",
+      "Natureza",
+      "Percepção",
+      "Persuasão",
+      "Prestidigitação",
+      "Religião",
+      "Sobrevivência",
+      "Adestrar Animais"
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "Bruxo",
+    "pericias": [
+      "Arcanismo",
+      "Enganação",
+      "História",
+      "Intimidação",
+      "Investigação",
+      "Natureza",
+      "Religião"
+    ]
+  },
+  {
+    "id": 4,
+    "nome": "Clérigo",
+    "pericias": [
+      "Medicina",
+      "Intuição",
+      "História",
+      "Intimidação",
+      "Persuasão",
+      "Religião"
+    ]
+  },
+  {
+    "id": 5,
+    "nome": "Druida",
+    "pericias": [
+      "Arcanismo",
+      "Adestrar Animais",
+      "Intuição",
+      "Medicina",
+      "Natureza",
+      "Percepção",
+      "Religião",
+      "Sobrevivência"
+    ]
+  },
+  {
+    "id": 6,
+    "nome": "Feiticeiro",
+    "pericias": [
+      "Arcanismo",
+      "Enganação",
+      "Intuição",
+      "Intimidação",
+      "Persuasão",
+      "Religião"
+    ]
+  },
+  {
+    "id": 7,
+    "nome": "Guerreiro",
+    "pericias": [
+      "Acrobacia",
+      "Adestrar Animais",
+      "Atletismo",
+      "História",
+      "Intuição",
+      "Intimidação",
+      "Percepção",
+      "Sobrevivência"
+    ]
+  },
+  {
+    "id": 8,
+    "nome": "Ladino",
+    "pericias": [
+      "Acrobacia",
+      "Atletismo",
+      "Atuação",
+      "Enganação",
+      "Furtividade",
+      "Intimidação",
+      "Intuição",
+      "Investigação",
+      "Percepção",
+      "Persuasão",
+      "Prestidigitação"
+    ]
+  },
+  {
+    "id": 9,
+    "nome": "Mago",
+    "pericias": [
+      "Arcanismo",
+      "História",
+      "Intuição",
+      "Investigação",
+      "Medicina",
+      "Religião"
+    ]
+  },
+  {
+    "id": 10,
+    "nome": "Monge",
+    "pericias": [
+      "Acrobacia",
+      "Atletismo",
+      "Furtividade",
+      "História",
+      "Intuição",
+      "Religião"
+    ]
+  },
+  {
+    "id": 11,
+    "nome": "Paladino",
+    "pericias": [
+      "Atletismo",
+      "Intuição",
+      "Intimidação",
+      "Medicina",
+      "Persuasão",
+      "Religião"
+    ]
+  },
+  {
+    "id": 12,
+    "nome": "Paladino",
+    "pericias": [
+      "Adestrar Animais",
+      "Atletismo",
+      "Furtividade",
+      "Intuição",
+      "Investigação",
+      "Natureza",
+      "Percepção",
+      "Sobrevivência"
+    ]
+  }
+]
