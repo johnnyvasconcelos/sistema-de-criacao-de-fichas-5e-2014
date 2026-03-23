@@ -85,7 +85,31 @@
       const index = Array.from(steps).indexOf(atualStep);
       if (steps[index + 1]) {
         steps[index].classList.remove("on");
-        steps[index + 1].classList.add("on");
+        // separa as categorias específicas da classe
+        if (dado === "classe") {
+          const categoria = document.querySelector(".categoria");
+          const categoriaOption = categoria.querySelectorAll("option");
+          for (let c = 0; c < categoriaOption.length; c++) {
+            if (categoriaOption[c].dataset.classe === data.classe) {
+              categoriaOption[c].hidden = false;
+              categoriaOption[c].disabled = false;
+            } else {
+              categoriaOption[c].hidden = true;
+              categoriaOption[c].disabled = true;
+            }
+          }
+        }
+        if (
+          dado === "classe" &&
+          !["Feiticeiro", "Clérigo", "Bruxo", "Guerreiro"].includes(
+            data.classe,
+          ) &&
+          steps[index + 2]
+        ) {
+          steps[index + 2].classList.add("on");
+        } else {
+          steps[index + 1].classList.add("on");
+        }
       }
       console.log(data);
       mostraReferencia(data.raca);
