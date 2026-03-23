@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "nome": "Acólito",
+    "items": [
+      "símbolo sagrado",
+      "livro de preces",
+      "5 varetas de incenso",
+      "roupas comuns"
+    ],
+    "pos": 15,
+    "pericias": ["intuição", "religião"],
+    "proficiencias": [""],
+    "idiomas": 2
+  },
+  {
+    "id": 2,
+    "nome": "Artesão de Guilda",
+    "items": [
+      "ferramentas de cervejeiro",
+      "carta de apresentação da guilda",
+      "roupas de viajante"
+    ],
+    "pos": 15,
+    "pericias": ["intuição", "persuasão"],
+    "proficiencias": ["ferramentas de cervejeiro"],
+    "idiomas": 1
+  },
+  {
+    "id": 3,
+    "nome": "Mercador de Guilda",
+    "items": ["mula", "carta de apresentação da guilda", "roupas de viajante"],
+    "pos": 15,
+    "pericias": ["intuição", "persuasão"],
+    "proficiencias": ["ferramentas de navegação"],
+    "idiomas": 1
+  },
+  {
+    "id": 4,
+    "nome": "Artista",
+    "items": ["alaúde", "carta de amor", "traje"],
+    "pos": 15,
+    "pericias": ["acrobacia", "atuação"],
+    "proficiencias": ["kit de disfarce", "alaúde"],
+    "idiomas": 0
+  },
+  {
+    "id": 5,
+    "nome": "Gladiador",
+    "items": ["tridente", "carta de amor", "traje"],
+    "pos": 15,
+    "pericias": ["acrobacia", "atuação"],
+    "proficiencias": ["kit de disfarce", "alaúde"],
+    "idiomas": 0
+  },
+  {
+    "id": 6,
+    "nome": "Charlatão",
+    "items": ["roupas finas", "kit de disfarce", "dados viciados"],
+    "pos": 15,
+    "pericias": ["enganação", "prestidigitação"],
+    "proficiencias": ["kit de disfarce", "kit de falsificação"],
+    "idiomas": 0
+  },
+  {
+    "id": 7,
+    "nome": "Criminoso",
+    "items": ["roupas escuras comuns", "pé de cabra"],
+    "pos": 15,
+    "pericias": ["enganação", "furtividade"],
+    "proficiencias": ["baralhos", "ferramentas de ladrão"],
+    "idiomas": 0
+  },
+  {
+    "id": 8,
+    "nome": "Espião",
+    "items": ["roupas escuras comuns", "pé de cabra"],
+    "pos": 15,
+    "pericias": ["enganação", "furtividade"],
+    "proficiencias": ["baralhos", "ferramentas de ladrão"],
+    "idiomas": 0
+  },
+  {
+    "id": 9,
+    "nome": "Eremita",
+    "items": [
+      "estojo de pergaminhos de notas e orações",
+      "cobertor de inverno",
+      "roupas comuns",
+      "kit de herbalismo (alicates, almofariz e pilão, e bolsas e frascos utilizados pelos herbalistas para criar remédios e poções)"
+    ],
+    "pos": 5,
+    "pericias": ["medicina", "religião"],
+    "proficiencias": ["kit de herbalismo"],
+    "idiomas": 1
+  },
+  {
+    "id": 10,
+    "nome": "Herói do Povo",
+    "items": [
+      "ferramentas de ferreiro",
+      "pá",
+      "roupas comuns",
+      "pote de ferro"
+    ],
+    "pos": 10,
+    "pericias": ["adestrar animais", "sobrevivencia"],
+    "proficiencias": ["ferramentas de ferreiro", "veículos terrestres"],
+    "idiomas": 0
+  },
+  {
+    "id": 11,
+    "nome": "Marinheiro",
+    "items": ["clava", "15m corda (seda)", "roupas comuns", "pé de coelho"],
+    "pos": 10,
+    "pericias": ["atletismo", "percepção"],
+    "proficiencias": ["ferramentas de navegação", "veículos aquáticos"],
+    "idiomas": 0
+  },
+  {
+    "id": 12,
+    "nome": "Pirata",
+    "items": ["clava", "15m corda (seda)", "roupas comuns", "pé de coelho"],
+    "pos": 10,
+    "pericias": ["atletismo", "percepção"],
+    "proficiencias": ["ferramentas de navegação", "veículos aquáticos"],
+    "idiomas": 0
+  },
+  {
+    "id": 13,
+    "nome": "Nobre",
+    "items": ["trajos finos", "anel de sinete", "pergaminho de linhagem"],
+    "pos": 25,
+    "pericias": ["história", "persuasão"],
+    "proficiencias": ["baralho"],
+    "idiomas": 1
+  },
+  {
+    "id": 14,
+    "nome": "Cavaleiro",
+    "items": ["trajos finos", "anel de sinete", "pergaminho de linhagem"],
+    "pos": 25,
+    "pericias": ["história", "persuasão"],
+    "proficiencias": ["baralho"],
+    "idiomas": 1
+  },
+  {
+    "id": 15,
+    "nome": "Órfão",
+    "items": [
+      "faca pequena",
+      "mapa da cidade em que cresceu",
+      "rato de estimação",
+      "objeto que lembra os pais",
+      "roupas comuns"
+    ],
+    "pos": 10,
+    "pericias": ["furtividade", "prestidigitação"],
+    "proficiencias": ["kit de disfarce", "ferramentas de ladrão"],
+    "idiomas": 0
+  },
+  {
+    "id": 16,
+    "nome": "Sábio",
+    "items": [
+      "vidro de tinta escura",
+      "pena",
+      "faca pequena",
+      "carta de um falecido colega",
+      "roupas comuns"
+    ],
+    "pos": 10,
+    "pericias": ["arcanismo", "história"],
+    "proficiencias": [""],
+    "idiomas": 2
+  },
+  {
+    "id": 17,
+    "nome": "Soldado",
+    "items": [
+      "insígna de patente",
+      "adaga tirada de um inimigo",
+      "baralho",
+      "roupas comuns"
+    ],
+    "pos": 10,
+    "pericias": ["atletismo", "intimidação"],
+    "proficiencias": ["baralho", "veículos terrestres"],
+    "idiomas": 0
+  }
+]
