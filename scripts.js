@@ -265,15 +265,38 @@
     });
   }
   // perícias
+  const geraPericia = document.querySelector(".gera-pericia");
   const periciasCampo = document.querySelector(".pericias");
-  fetch("./pericias.json")
-    .then((response) => response.json())
-    .then((pericias) => {
-      for (let i = 0; i < pericias.length; i++) {
-        periciasCampo.innerHTML += `<label class="label-area" for="${pericias[i].nome}"><input type="checkbox" id="${pericias[i].nome}" value="${pericias[i].nome}"/>${pericias[i].nome}</label>`;
-      }
-    })
-    .catch((error) => {
-      console.error("Erro: ", error);
-    });
+  geraPericia.addEventListener("click", () => {
+    mostrarPericias();
+  });
+  const mostrarPericias = () => {
+    fetch("./pericias.json")
+      .then((response) => response.json())
+      .then((pericias) => {
+        fetch("./antecedentes.json")
+          .then((response) => response.json())
+          .then((antecedentes) => {
+            const antecedenteEscolhido = antecedentes.find((ant) => {
+              return ant.nome === data.antecedente;
+            });
+            for (let i = 0; i < pericias.length; i++) {
+              const periciaElfica =
+                (data.raca === "Alto Elfo" ||
+                  data.raca === "Elfo Negro" ||
+                  data.raca === "Elfo da Floresta") &&
+                pericias[i].nome === "Percepção";
+              const check =
+                antecedenteEscolhido.pericias.includes(pericias[i].nome) ||
+                periciaElfica
+                  ? "checked disabled"
+                  : "";
+              periciasCampo.innerHTML += `<label class="label-area ${check}" for="${pericias[i].nome}"><input type="checkbox" id="${pericias[i].nome}" value="${pericias[i].nome}" ${check}/>${pericias[i].nome}</label>`;
+            }
+          });
+      })
+      .catch((error) => {
+        console.error("Erro: ", error);
+      });
+  };
 }

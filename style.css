@@ -88,6 +88,10 @@ form .atributo {
   font-size: 20px;
   text-align: center;
 }
+form .disabled {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
 form .atributo-view,
 form .atributo-final {
   width: 40px;
