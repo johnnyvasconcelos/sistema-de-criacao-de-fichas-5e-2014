@@ -212,56 +212,79 @@
       atributoParaEditar.value = 8 + bonusRacas[raca][atributo];
     }
   };
-  // *** botao avancar
+  // botao avançar
   const avancar = document.querySelectorAll(".avanca-step");
   const atributos = document.querySelectorAll(".atributo-view");
   const atributoFinal = document.querySelectorAll(".atributo-final");
   for (let i = 0; i < avancar.length; i++) {
     avancar[i].addEventListener("click", (ev) => {
-      if (total == 0) {
-        const atualStep = ev.target.closest(".step");
-        const index = Array.from(steps).indexOf(atualStep);
-        // adiciona os atributos para serem modificados e envia eles ao data
-        for (let a = 0; a < atributos.length; a++) {
-          if (atributoFinal[a].value == "") {
-            atributoFinal[a].value = atributos[a].value;
+      const atualStep = ev.target.closest(".step");
+      const index = Array.from(steps).indexOf(atualStep);
+
+      // step dos atributos
+      if (index === 4 || index === 5) {
+        if (total == 0) {
+          for (let a = 0; a < atributos.length; a++) {
+            if (atributoFinal[a].value == "") {
+              atributoFinal[a].value = atributos[a].value;
+            }
+
+            data[atributos[a].id.replace("-view", "")] = Number(
+              atributoFinal[a].value,
+            );
+
+            if (
+              data.raca == "Meio-Elfo" &&
+              atributoFinal[a].id == "car-final" &&
+              bonusCar > 0
+            ) {
+              data[atributos[a].id.replace("-view", "")] =
+                Number(atributoFinal[a].value) + 2;
+              bonusCar = 0;
+            }
           }
-          data[atributos[a].id.replace("-view", "")] = Number(
-            atributoFinal[a].value,
-          );
+
+          console.log(data);
+
           if (
-            data.raca == "Meio-Elfo" &&
-            atributoFinal[a].id == "car-final" &&
-            bonusCar > 0
+            !bonusRacas.hasOwnProperty(data.raca) ||
+            data.raca == "Humano Variante" ||
+            data.raca == "Meio-Elfo"
           ) {
-            data[atributos[a].id.replace("-view", "")] =
-              Number(atributoFinal[a].value) + 2;
-            bonusCar = 0;
-          }
-        }
-        console.log(data);
-        if (
-          !bonusRacas.hasOwnProperty(data.raca) ||
-          data.raca == "Humano Variante" ||
-          data.raca == "Meio-Elfo"
-        ) {
-          if (steps[index + 1]) {
-            steps[index].classList.remove("on");
-            steps[index + 1].classList.add("on");
+            if (steps[index + 1]) {
+              steps[index].classList.remove("on");
+              steps[index + 1].classList.add("on");
+            }
+          } else {
+            if (steps[index + 2]) {
+              steps[index].classList.remove("on");
+              steps[index + 2].classList.add("on");
+            }
           }
         } else {
-          if (steps[index + 1]) {
-            steps[index].classList.remove("on");
-            steps[index + 2].classList.add("on");
-          }
+          alert("Distribua todos os pontos!");
         }
-      } else {
-        alert("Distribua todos os pontos!");
+
+        selecionaBonus();
+        bonusExibido1.innerText = adicionaEmUm;
+        bonusExibido2.innerText = adicionaEmOutro;
       }
-      // garante o bonus racial no aumento de atributos da segunda etapa
-      selecionaBonus();
-      bonusExibido1.innerText = adicionaEmUm;
-      bonusExibido2.innerText = adicionaEmOutro;
+
+      // step das perícias
+      else if (index === 6) {
+        const periciasMarcadas = document.querySelectorAll(
+          ".pericia-checkbox:checked",
+        );
+
+        data.pericias = Array.from(periciasMarcadas).map((item) => item.value);
+
+        console.log(data);
+
+        if (steps[index + 1]) {
+          steps[index].classList.remove("on");
+          steps[index + 1].classList.add("on");
+        }
+      }
     });
   }
   // perícias
