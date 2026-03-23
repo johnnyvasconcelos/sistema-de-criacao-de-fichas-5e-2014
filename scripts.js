@@ -271,7 +271,10 @@
     mostrarPericias();
   });
   const mostrarPericias = () => {
-    const bonusAdd = bonusPericias(data.classe);
+    const bonusAdd =
+      data.raca === "Humano Variante"
+        ? bonusPericias(data.classe) + 1
+        : bonusPericias(data.classe);
     Promise.all([
       fetch("./pericias.json").then((response) => response.json()),
       fetch("./antecedentes.json").then((response) => response.json()),
@@ -281,6 +284,11 @@
         const antecedenteEscolhido = antecedentes.find((ant) => {
           return ant.nome === data.antecedente;
         });
+
+        const classeEscolhida = classes.find((c) => {
+          return c.nome === data.classe;
+        });
+        const periciasClasse = classeEscolhida.pericias;
 
         for (let i = 0; i < pericias.length; i++) {
           const periciaElfica =
@@ -295,8 +303,25 @@
               ? "checked disabled"
               : "";
 
-          periciasCampo.innerHTML += `<label class="label-area" for="${pericias[i].nome}"><input type="checkbox" id="${pericias[i].nome}" value="${pericias[i].nome}" ${check}/>${pericias[i].nome}</label>`;
+          periciasCampo.innerHTML += `<label class="label-area" for="${pericias[i].nome}"><input type="checkbox" class="pericia-checkbox" id="${pericias[i].nome}" value="${pericias[i].nome}" ${check} ${periciasClasse.includes(pericias[i].nome) && !antecedenteEscolhido.pericias.includes(pericias[i].nome) && !periciaElfica ? "" : "disabled"}/>${pericias[i].nome}</label>`;
         }
+        // limita a quantidade de pericias, de acordo com a classe
+        const checkboxes = document.querySelectorAll(".pericia-checkbox");
+        for (let ch = 0; ch < checkboxes.length; ch++) {
+          checkboxes[ch].addEventListener("change", () => {
+            const marcadas = document.querySelectorAll(
+              ".pericia-checkbox:not(:disabled):checked",
+            ).length;
+            if (marcadas > bonusAdd) {
+              checkboxes[ch].checked = false;
+            }
+          });
+        }
+        // mostra as perícias que o usuário pode adicionar
+        const periciasReferencia = document.querySelector(
+          ".pericias-referencia",
+        );
+        periciasReferencia.innerHTML = `Escolha <b>${bonusAdd}</b> entre: ${periciasClasse.join(", ")}`;
       })
       .catch((error) => {
         console.error("Erro: ", error);
