@@ -25,7 +25,7 @@
             posteriormente como quiser.
           </div>
           <p class="parag">
-            ========= COMECE ESCOLHENDO UMA RAÇA ABAIXO =========
+            <b>COMECE ESCOLHENDO UMA RAÇA ABAIXO!</b>
           </p>
           <form>
             <!-- raça -->
@@ -260,6 +260,9 @@
                   <option value="Natureza" data-classe="Clérigo">
                     Domínio da Natureza
                   </option>
+                  <option value="Paz" data-classe="Clérigo">
+                    Domínio da Paz
+                  </option>
                   <option value="Tempestade" data-classe="Clérigo">
                     Domínio da Tempestade
                   </option>
@@ -292,7 +295,6 @@
               </div>
               <div class="label-area">
                 <button type="button" class="voltar">Voltar</button>
-                <button type="button" class="avanca-step">Avançar</button>
               </div>
             </div>
             <!-- antecedente -->
@@ -543,72 +545,80 @@
               </p>
               <div class="area-label">
                 <label class="label-atributo" for="for-final">FOR</label>
-                <input
-                  type="number"
-                  name=""
-                  id="for-final"
-                  class="atributo-final"
-                  readonly
-                />
+                <div class="inputs">
+                  <input
+                    type="number"
+                    name=""
+                    id="for-final"
+                    class="atributo-final"
+                    readonly
+                  />
+                </div>
                 <span class="max alt-final">+</span>
               </div>
               <div class="area-label">
                 <label class="label-atributo" for="des-final">DES</label>
-                <input
-                  type="number"
-                  name=""
-                  id="des-final"
-                  class="atributo-final"
-                  readonly
-                />
-
+                <div class="inputs">
+                  <input
+                    type="number"
+                    name=""
+                    id="des-final"
+                    class="atributo-final"
+                    readonly
+                  />
+                </div>
                 <span class="max alt-final">+</span>
               </div>
               <div class="area-label">
                 <label class="label-atributo" for="con-final">CON</label>
-                <input
-                  type="number"
-                  name=""
-                  id="con-final"
-                  class="atributo-final"
-                  readonly
-                />
-
+                <div class="inputs">
+                  <input
+                    type="number"
+                    name=""
+                    id="con-final"
+                    class="atributo-final"
+                    readonly
+                  />
+                </div>
                 <span class="max alt-final">+</span>
               </div>
               <div class="area-label">
                 <label class="label-atributo" for="int-final">INT</label>
-                <input
-                  type="number"
-                  name=""
-                  id="int-final"
-                  class="atributo-final"
-                  readonly
-                />
+                <div class="inputs">
+                  <input
+                    type="number"
+                    name=""
+                    id="int-final"
+                    class="atributo-final"
+                    readonly
+                  />
+                </div>
                 <span class="max alt-final">+</span>
               </div>
               <div class="area-label">
                 <label class="label-atributo" for="sab-final">SAB</label>
-                <input
-                  type="number"
-                  name=""
-                  id="sab-final"
-                  class="atributo-final"
-                  readonly
-                />
-
+                <div class="inputs">
+                  <input
+                    type="number"
+                    name=""
+                    id="sab-final"
+                    class="atributo-final"
+                    readonly
+                  />
+                </div>
                 <span class="max alt-final">+</span>
               </div>
               <div class="area-label">
                 <label class="label-atributo" for="car-final">CAR</label>
-                <input
-                  type="number"
-                  name=""
-                  id="car-final"
-                  class="atributo-final"
-                  readonly
-                />
-
+                <div class="inputs">
+                  <input
+                    type="number"
+                    name=""
+                    id="car-final"
+                    class="atributo-final"
+                    readonly
+                  />
+                </div>
                 <span class="max alt-final">+</span>
               </div>
               <div class="area-label">
@@ -618,16 +628,13 @@
             </div>
             <!-- perícias -->
             <div class="step">
-              <div class="parag">último</div>
+              <div class="pericias"></div>
             </div>
             <!-- equipamentos -->
             <!-- idiomas, história e nome -->
             <!-- magias -->
             <!-- finalização -->
           </form>
-          <p class="parag">
-            ============ ============ ============ ============
-          </p>
           <h2>Como funciona?</h2>
           <p class="parag">
             Este gerador utiliza as regras oficiais do D&D 5e (2014) para gerar

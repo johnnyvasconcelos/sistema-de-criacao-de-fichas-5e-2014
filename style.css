@@ -22,7 +22,8 @@
 .sistema h3 {
   font-size: 25px;
 }
-.label-area {
+.label-area,
+.area-label {
   gap: 5px;
   display: flex;
   margin-bottom: 7px;
@@ -87,7 +88,8 @@ form .atributo {
   font-size: 20px;
   text-align: center;
 }
-form .atributo-view {
+form .atributo-view,
+form .atributo-final {
   width: 40px;
   height: 40px;
   font-size: 20px;
@@ -95,7 +97,8 @@ form .atributo-view {
   color: #bb1234;
   text-align: center;
 }
-form .alt {
+form .alt,
+form .alt-final {
   color: #1c202b;
   border-radius: 50%;
   width: 20px;

@@ -264,4 +264,16 @@
       bonusExibido2.innerText = adicionaEmOutro;
     });
   }
+  // perícias
+  const periciasCampo = document.querySelector(".pericias");
+  fetch("./pericias.json")
+    .then((response) => response.json())
+    .then((pericias) => {
+      for (let i = 0; i < pericias.length; i++) {
+        periciasCampo.innerHTML += `<label class="label-area" for="${pericias[i].nome}"><input type="checkbox" id="${pericias[i].nome}" value="${pericias[i].nome}"/>${pericias[i].nome}</label>`;
+      }
+    })
+    .catch((error) => {
+      console.error("Erro: ", error);
+    });
 }

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "nome": "Acrobacia",
+    "atributo": "des"
+  },
+  {
+    "id": 2,
+    "nome": "Adestrar Animais",
+    "atributo": "sab"
+  },
+  {
+    "id": 3,
+    "nome": "Arcanismo",
+    "atributo": "int"
+  },
+  {
+    "id": 4,
+    "nome": "Atletismo",
+    "atributo": "for"
+  },
+  {
+    "id": 5,
+    "nome": "Atuação",
+    "atributo": "car"
+  },
+  {
+    "id": 6,
+    "nome": "Enganação",
+    "atributo": "car"
+  },
+  {
+    "id": 7,
+    "nome": "Furtividade",
+    "atributo": "des"
+  },
+  {
+    "id": 8,
+    "nome": "História",
+    "atributo": "int"
+  },
+  {
+    "id": 9,
+    "nome": "Intimidação",
+    "atributo": "car"
+  },
+  {
+    "id": 10,
+    "nome": "Intuição",
+    "atributo": "sab"
+  },
+  {
+    "id": 11,
+    "nome": "Investigação",
+    "atributo": "int"
+  },
+  {
+    "id": 12,
+    "nome": "Medicina",
+    "atributo": "sab"
+  },
+  {
+    "id": 13,
+    "nome": "Natureza",
+    "atributo": "int"
+  },
+  {
+    "id": 14,
+    "nome": "Percepção",
+    "atributo": "sab"
+  },
+  {
+    "id": 15,
+    "nome": "Persuasão",
+    "atributo": "car"
+  },
+  {
+    "id": 16,
+    "nome": "Prestidigitação",
+    "atributo": "des"
+  },
+  {
+    "id": 17,
+    "nome": "Religião",
+    "atributo": "int"
+  },
+  {
+    "id": 18,
+    "nome": "Sobrevivência",
+    "atributo": "sab"
+  }
+]
