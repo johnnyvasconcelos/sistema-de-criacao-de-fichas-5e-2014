@@ -288,6 +288,25 @@
       for (let i = 0; i < classeEscolhida.magias.length; i++) {
         magiasCampo.innerHTML += `<label class="label-area" for="${classeEscolhida.magias[i]}"><input type="checkbox" class="magia" id="${classeEscolhida.magias[i]}" value="${classeEscolhida.magias[i]}" /><span>${classeEscolhida.magias[i]}</span></label>`;
       }
+      // limita a quantidade de magias e truques, de acordo com a classe
+      const magia = document.querySelectorAll(".magia");
+      const truque = document.querySelectorAll(".truque");
+      for (let m = 0; m < magia.length; m++) {
+        magia[m].addEventListener("change", () => {
+          const marcadas = document.querySelectorAll(".magia:checked");
+          if (marcadas.length > classeEscolhida.magiasQuantidade) {
+            magia[m].checked = false;
+          }
+        });
+      }
+      for (let t = 0; t < truque.length; t++) {
+        truque[t].addEventListener("change", () => {
+          const marcadas = document.querySelectorAll(".truque:checked");
+          if (marcadas.length > classeEscolhida.truquesQuantidade) {
+            truque[t].checked = false;
+          }
+        });
+      }
       // limita a quantidade de pericias, de acordo com a classe
       const checkboxes = document.querySelectorAll(".pericia-checkbox");
       for (let ch = 0; ch < checkboxes.length; ch++) {
@@ -398,15 +417,40 @@
       }
       // step dos equipamentos
       else if (atualStep === "equipamentos") {
+        // classes não-mágicas
+        const classesNaoMagicas = [
+          "Guerreiro",
+          "Ladino",
+          "Patrulheiro",
+          "Paladino",
+          "Bárbaro",
+          "Monge",
+        ];
         data.equipamentos = totalEquips.value
           .replaceAll(",", " ")
           .split("  ")
           .slice(0, -1);
-        if (steps[index + 1]) {
+        if (steps[index + 1] && !classesNaoMagicas.includes(data.classe)) {
           steps[index].classList.remove("on");
           steps[index + 1].classList.add("on");
+        } else if (steps[index + 1]) {
+          steps[index].classList.remove("on");
+          steps[index + 2].classList.add("on");
         }
         dinheiroFooter.classList.remove("active");
+      }
+      // step das magias
+      else if (atualStep === "magias") {
+        const truquesMarcados = document.querySelectorAll(".magia:checked");
+        const magiasMarcadas = document.querySelectorAll(".truque:checked");
+        data.magias = Array.from(magiasMarcadas).map((item) => item.value);
+        data.truques = Array.from(truquesMarcados).map((item) => item.value);
+
+        console.log(data);
+        if (steps[index + 1]) {
+          steps[index].classList.remove("on");
+          steps[index + 2].classList.add("on");
+        }
       }
     });
   }

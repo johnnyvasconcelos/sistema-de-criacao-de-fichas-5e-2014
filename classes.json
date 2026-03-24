@@ -91,9 +91,7 @@
       "Natureza",
       "Religião"
     ],
-    "truques": [""],
-    "truquesQuantidade": 2,
-    "magias": [
+    "truques": [
       "Amizade",
       "Ataque Certeiro",
       "Ilusão Menor",
@@ -103,6 +101,20 @@
       "Rajada de Veneno",
       "Rajada Mística",
       "Toque Arrepiante"
+    ],
+    "truquesQuantidade": 2,
+    "magias": [
+      "Armadura de Agathys",
+      "Braços de Hadar",
+      "Bruxaria",
+      "Compreender Idiomas",
+      "Enfeitiçar Pessoa",
+      "Escrita ilusória",
+      "Proteção contra o Bem e Mal",
+      "Raio de Bruxa",
+      "Recuo Acelerado",
+      "Repreensão Infernal",
+      "Servo Invisível"
     ],
     "magiasQuantidade": 2,
     "pos": 100
