@@ -312,11 +312,11 @@
   const atributoFinal = document.querySelectorAll(".atributo-final");
   for (let i = 0; i < avancar.length; i++) {
     avancar[i].addEventListener("click", (ev) => {
-      const atualStep = ev.target.closest(".step");
-      const index = Array.from(steps).indexOf(atualStep);
+      const atualStep = ev.target.closest(".step").dataset.step;
+      const index = Array.from(steps).indexOf(ev.target.closest(".step"));
 
       // step dos atributos
-      if (index === 4 || index === 5) {
+      if (atualStep === "atributos" || atualStep === "atributos-bonus") {
         if (total == 0) {
           for (let a = 0; a < atributos.length; a++) {
             if (atributoFinal[a].value == "") {
@@ -364,7 +364,7 @@
       }
 
       // step das perícias
-      else if (index === 6) {
+      else if (atualStep === "pericias") {
         const periciasMarcadas = document.querySelectorAll(
           ".pericia-checkbox:checked",
         );
@@ -382,7 +382,7 @@
         moedas.innerText = data.pos;
       }
       // step dos equipamentos
-      else if (index === 7 || index === 8) {
+      else if (atualStep === "equipamentos") {
         data.equipamentos = totalEquips.value
           .replaceAll(",", " ")
           .split("  ")

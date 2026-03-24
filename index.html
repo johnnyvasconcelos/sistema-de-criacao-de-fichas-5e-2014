@@ -29,7 +29,7 @@
           </p>
           <form>
             <!-- raça -->
-            <div class="step on">
+            <div class="step on" data-step="raca">
               <input
                 type="checkbox"
                 name="ativa-racas"
@@ -183,7 +183,7 @@
               </div>
             </div>
             <!-- talento do humano variante -->
-            <div class="step" id="talento-area">
+            <div class="step" id="talento-area" data-step="talento">
               <p class="select-title">Escolha seu talento:</p>
               <div class="label-area">
                 <label for="talento" class="label-select">Talento:</label>
@@ -260,7 +260,7 @@
               </div>
             </div>
             <!-- classe -->
-            <div class="step">
+            <div class="step" data-step="classe">
               <p class="select-title">Escolha sua classe:</p>
               <div class="label-area">
                 <label for="classe" class="label-select">Classe:</label>
@@ -288,7 +288,7 @@
               </div>
             </div>
             <!-- categoria -->
-            <div class="step">
+            <div class="step" data-step="categoria">
               <p class="select-title">Escolha sua categoria:</p>
               <div class="label-area">
                 <label for="classe" class="label-select">Categoria:</label>
@@ -371,7 +371,7 @@
               </div>
             </div>
             <!-- antecedente -->
-            <div class="step">
+            <div class="step" data-step="antecedente">
               <p class="select-title">Escolha seu antecedente:</p>
               <div class="label-area">
                 <label for="classe" class="label-select">Antecedente:</label>
@@ -408,7 +408,7 @@
               </div>
             </div>
             <!-- atributos -->
-            <div class="step">
+            <div class="step" data-step="atributos">
               <h3>Adicione os atributos:</h3>
               <p class="pontos-area"><span class="pontos">27</span> pontos</p>
               <p>
@@ -609,7 +609,7 @@
               </button>
             </div>
             <!-- atributos bônus -->
-            <div class="step">
+            <div class="step" data-step="atributos-bonus">
               <p>
                 <strong class="atributos-referencia"></strong>
               </p>
@@ -703,7 +703,7 @@
               </div>
             </div>
             <!-- perícias -->
-            <div class="step">
+            <div class="step" data-step="pericias">
               <p class="pericias-referencia"></p>
               <br />
               <div class="pericias"></div>
@@ -714,8 +714,7 @@
               </div>
             </div>
             <!-- equipamentos -->
-            <p class="dinheiro-footer">0</p>
-            <div class="step">
+            <div class="step" id="equipamento-area" data-step="equipamentos">
               <p>
                 Suas POs (Peças de Ouro):
                 <span class="moedas" title="seu dinheiro">0</span>
@@ -1770,8 +1769,11 @@
                 vestes, 2 dias de rações e um cantil.
               </div>
             </div>
+            <p class="dinheiro-footer">0</p>
+            <!-- magias -->
+            <div class="step" data-step="magias">magias</div>
             <!-- idiomas, história e nome -->
-            <div class="step">
+            <div class="step" data-step="idiomas">
               <div class="label-area">
                 <p>Escolha mais 0 idiomas:</p>
                 <div class="idiomas"></div>
@@ -1789,7 +1791,7 @@
                 ></textarea>
               </div>
             </div>
-            <!-- magias -->
+            <div class="step" data-step="download"></div>
             <!-- download & finalização -->
           </form>
           <br />

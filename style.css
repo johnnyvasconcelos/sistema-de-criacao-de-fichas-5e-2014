@@ -148,10 +148,12 @@ form .alt-final {
 .sistema img {
   width: 100%;
 }
+tbody {
+  position: relative;
+}
 .dinheiro-footer {
   z-index: -1;
   position: fixed;
-  opacity: 0;
   bottom: 15px;
   right: 15px;
   width: auto;
@@ -167,10 +169,11 @@ form .alt-final {
   font-size: 40px;
   font-weight: 700;
   border-radius: 20px;
+  opacity: 0;
 }
 .dinheiro-footer.active {
-  opacity: 1;
   z-index: 200;
+  opacity: 1;
 }
 .dinheiro-footer.no-money {
   border: 1px solid #d92a2a;
