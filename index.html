@@ -260,9 +260,6 @@
                   <option value="Natureza" data-classe="Clérigo">
                     Domínio da Natureza
                   </option>
-                  <option value="Paz" data-classe="Clérigo">
-                    Domínio da Paz
-                  </option>
                   <option value="Tempestade" data-classe="Clérigo">
                     Domínio da Tempestade
                   </option>
@@ -641,7 +638,1510 @@
               </div>
             </div>
             <!-- equipamentos -->
-            <div class="step">Equipamentos</div>
+            <div class="step">
+              <p>Suas POs (Peças de Ouro): <span class="moedas">0</span></p>
+              <br /><br />
+              <h3>Armas</h3>
+              <!-- tabela de equipamentos -->
+              <table>
+                <thead>
+                  <tr>
+                    <th>Compra</th>
+                    <th>Item</th>
+                    <th>Detalhe</th>
+                    <th>Valor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="espada-curta"
+                        value="Espada Curta"
+                      />
+                    </td>
+                    <td><label for="espada-curta">Espada Curta</label></td>
+                    <td>1d6</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="adaga"
+                        value="Adaga"
+                      />
+                    </td>
+                    <td><label for="adaga">Adaga</label>1d4</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="adaga"
+                        value="Azagaia"
+                      />
+                    </td>
+                    <td><label for="azagaia">Azagaia</label>1d6</td>
+                    <td>0.5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="bordao"
+                        value="Bordão"
+                      />
+                    </td>
+                    <td><label for="bordao">Bordão</label></td>
+                    <td>1d6</td>
+                    <td>0.20</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="arco-curto"
+                        value="Arco Curto"
+                      />
+                    </td>
+                    <td><label for="arco-curto">Arco Curto</label></td>
+                    <td>1d6</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="arco-longo"
+                        value="Arco Longo"
+                      />
+                    </td>
+                    <td><label for="arco-longo">Arco Longo</label></td>
+                    <td>1d8</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="besta-leve"
+                        value="Besta Leve"
+                      />
+                    </td>
+                    <td><label for="besta-leve">Besta Leve</label></td>
+                    <td>1d8</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="machado-de-batalha"
+                        value="Machado de Batalha"
+                      />
+                    </td>
+                    <td>
+                      <label for="machado-de-batalha">Machado de Batalha</label>
+                    </td>
+                    <td>1d8</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="martelo-leve"
+                        value="Martelo Leve"
+                      />
+                    </td>
+                    <td><label for="martelo-leve">Martelo Leve</label></td>
+                    <td>1d4</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="lanca"
+                        value="Lança"
+                      />
+                    </td>
+                    <td><label for="lanca">Lança</label></td>
+                    <td>1d6</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="rapieira"
+                        value="Rapieira"
+                      />
+                    </td>
+                    <td><label for="rapieira">Rapieira</label></td>
+                    <td>1d8</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="tridente"
+                        value="Tridente"
+                      />
+                    </td>
+                    <td><label for="tridente">Tridente</label></td>
+                    <td>1d6</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="mangual"
+                        value="Mangual"
+                      />
+                    </td>
+                    <td><label for="mangual">Mangual</label></td>
+                    <td>1d8</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="malho"
+                        value="Malho"
+                      />
+                    </td>
+                    <td><label for="malho">Malho</label></td>
+                    <td>2d6</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="picareta-de-guerra"
+                        value="Picareta de Guerra"
+                      />
+                    </td>
+                    <td>
+                      <label for="picareta-de-guerra">Picareta de Guerra</label>
+                    </td>
+                    <td>1d8</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="chicote"
+                        value="Chicote"
+                      />
+                    </td>
+                    <td><label for="chicote">Chicote</label></td>
+                    <td>1d4</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="cimitarra"
+                        value="Cimitarra"
+                      />
+                    </td>
+                    <td><label for="cimitarra">Cimitarra</label></td>
+                    <td>1d6</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="espada-grande"
+                        value="Espada Grande"
+                      />
+                    </td>
+                    <td><label for="espada-grande">Espada Grande</label></td>
+                    <td>2d6</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="espada-longa"
+                        value="Espada Longa"
+                      />
+                    </td>
+                    <td><label for="espada-longa">Espada Longa</label></td>
+                    <td>1d8</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="glaive"
+                        value="Glaive"
+                      />
+                    </td>
+                    <td><label for="glaive">Glaive</label></td>
+                    <td>1d10</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="lanca-longa"
+                        value="Lança Longa"
+                      />
+                    </td>
+                    <td><label for="lanca-longa">Lança Longa</label></td>
+                    <td>1d12</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="alabarda"
+                        value="Alabarda"
+                      />
+                    </td>
+                    <td><label for="alabarda">Alabarda</label></td>
+                    <td>1d10</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="maca-estrela"
+                        value="Maça Estrela"
+                      />
+                    </td>
+                    <td><label for="maca-estrela">Maça Estrela</label></td>
+                    <td>1d8</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="rede"
+                        value="Rede"
+                      />
+                    </td>
+                    <td><label for="rede">Rede</label></td>
+                    <td>—</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="zarabatana"
+                        value="Zarabatana"
+                      />
+                    </td>
+                    <td><label for="zarabatana">Zarabatana</label></td>
+                    <td>1</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="porrete"
+                        value="Porrete"
+                      />
+                    </td>
+                    <td><label for="porrete">Porrete</label></td>
+                    <td>1d4</td>
+                    <td>0.1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="foice-curta"
+                        value="Foice Curta"
+                      />
+                    </td>
+                    <td><label for="foice-curta">Foice Curta</label></td>
+                    <td>1d4</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="clava-grande"
+                        value="Clava Grande"
+                      />
+                    </td>
+                    <td><label for="clava-grande">Clava Grande</label></td>
+                    <td>1d8</td>
+                    <td>0.2</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br /><br />
+              <h3>Armaduras</h3>
+              <!-- tabela de equipamentos -->
+              <table>
+                <thead>
+                  <tr>
+                    <th>Compra</th>
+                    <th>Item</th>
+                    <th>Detalhe</th>
+                    <th>Valor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="armadura-alcochoada"
+                        value="Armadura Alcochoada"
+                      />
+                    </td>
+                    <td>Armadura Alcochoada</td>
+                    <td>11+Des</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="armadura-de-couro"
+                        value="Armadura de Couro"
+                      />
+                    </td>
+                    <td>
+                      <label for="armadura-de-couro">Armadura de Couro</label>
+                    </td>
+                    <td>11+Des</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="armadura-de-couro-batido"
+                        value="Armadura de Couro Batido"
+                      />
+                    </td>
+                    <td>
+                      <label for="armadura-de-couro-batido"
+                        >Armadura de Couro Batido</label
+                      >
+                    </td>
+                    <td>12+Des</td>
+                    <td>45</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="gibao-de-peles"
+                        value="Gibão de Peles"
+                      />
+                    </td>
+                    <td><label for="gibao-de-peles">Gibão de Peles</label></td>
+                    <td>12+Des</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="camisao-de-malha"
+                        value="Camisão de Malha"
+                      />
+                    </td>
+                    <td>
+                      <label for="camisao-de-malha">Camisão de Malha</label>
+                    </td>
+                    <td>13+Des</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="brunea"
+                        value="Brunea"
+                      />
+                    </td>
+                    <td><label for="brunea">Brunea</label></td>
+                    <td>14+Des</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="cota-de-aneis"
+                        value="Cota de Anéis"
+                      />
+                    </td>
+                    <td><label for="cota-de-aneis">Cota de Anéis</label></td>
+                    <td>14</td>
+                    <td>30</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="cota-de-malha"
+                        value="Cota de Malha"
+                      />
+                    </td>
+                    <td><label for="cota-de-malha">Cota de Malha</label></td>
+                    <td>16</td>
+                    <td>75</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        id="escudo"
+                        value="Escudo"
+                      />
+                    </td>
+                    <td><label for="escudo">Escudo</label></td>
+                    <td>+2</td>
+                    <td>10</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br /><br />
+              <h3>Diversos</h3>
+              <!-- tabela de equipamentos -->
+              <table>
+                <thead>
+                  <tr>
+                    <th>Compra</th>
+                    <th>Item</th>
+                    <th>Valor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>Ábaco</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Ácido (vidro)"
+                      />
+                    </td>
+                    <td>Ácido (vidro)</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Água benta (frasco)"
+                      />
+                    </td>
+                    <td>Água benta (frasco)</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Algemas"
+                      />
+                    </td>
+                    <td>Algemas</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Algibeira"
+                      />
+                    </td>
+                    <td>Algibeira</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Aljava"
+                      />
+                    </td>
+                    <td>Aljava</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Ampulheta"
+                      />
+                    </td>
+                    <td>Ampulheta</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Antídoto (vidro)"
+                      />
+                    </td>
+                    <td>Antídoto (vidro)</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Apito de advertência"
+                      />
+                    </td>
+                    <td>Apito de advertência</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Aríete portátil"
+                      />
+                    </td>
+                    <td>Aríete portátil</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Armadilha de caça"
+                      />
+                    </td>
+                    <td>Armadilha de caça</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Arpéu"
+                      />
+                    </td>
+                    <td>Arpéu</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Balança de Mercador"
+                      />
+                    </td>
+                    <td>Balança de Mercador</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Barril"
+                      />
+                    </td>
+                    <td>Barril</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="equipamentos" value="Baú" />
+                    </td>
+                    <td>Baú</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Bolsa de Componentes"
+                      />
+                    </td>
+                    <td>Bolsa de Componentes</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Caixa de Fogo"
+                      />
+                    </td>
+                    <td>Caixa de Fogo</td>
+                    <td>0.5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Cantil"
+                      />
+                    </td>
+                    <td>Cantil</td>
+                    <td>0.2</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Cesto"
+                      />
+                    </td>
+                    <td>Cesto</td>
+                    <td>0.4</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Cobertor de Inverno"
+                      />
+                    </td>
+                    <td>Cobertor de Inverno</td>
+                    <td>0.5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Corda de Seda (15m)"
+                      />
+                    </td>
+                    <td>Corda de Seda (15m)</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Corda de Cânhamo (15m)"
+                      />
+                    </td>
+                    <td>Corda de Cânhamo (15m)</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Equipamento de Pescaria"
+                      />
+                    </td>
+                    <td>Equipamento de Pescaria</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Escada (3m)"
+                      />
+                    </td>
+                    <td>Escada (3m)</td>
+                    <td>0.1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Esferas (sacola com 1000)"
+                      />
+                    </td>
+                    <td>Esferas (sacola com 1000)</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Espelho de Aço"
+                      />
+                    </td>
+                    <td>Espelho de Aço</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Estrepes (bolsa com 20)"
+                      />
+                    </td>
+                    <td>Estrepes (bolsa com 20)</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Fechadura"
+                      />
+                    </td>
+                    <td>Fechadura</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Bastão"
+                      />
+                    </td>
+                    <td>Bastão</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Cajado"
+                      />
+                    </td>
+                    <td>Cajado</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Cristal"
+                      />
+                    </td>
+                    <td>Cristal</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="equipamentos" value="Orbe" />
+                    </td>
+                    <td>Orbe</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Varinha"
+                      />
+                    </td>
+                    <td>Varinha</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Ramo de Visco"
+                      />
+                    </td>
+                    <td>Ramo de Visco</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Totem"
+                      />
+                    </td>
+                    <td>Totem</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Fogo Alquímico (frasco)"
+                      />
+                    </td>
+                    <td>Fogo Alquímico (frasco)</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Garrafa de Vidro"
+                      />
+                    </td>
+                    <td>Garrafa de Vidro</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Grimório"
+                      />
+                    </td>
+                    <td>Grimório</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Lâmpada"
+                      />
+                    </td>
+                    <td>Lâmpada</td>
+                    <td>0.5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Lâmpada Coberta"
+                      />
+                    </td>
+                    <td>Lâmpada Coberta</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Lanterna Furta-Fogo"
+                      />
+                    </td>
+                    <td>Lanterna Furta-Fogo</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Lente de Aumento"
+                      />
+                    </td>
+                    <td>Lente de Aumento</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Livro"
+                      />
+                    </td>
+                    <td>Livro</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Manto"
+                      />
+                    </td>
+                    <td>Manto</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Marreta"
+                      />
+                    </td>
+                    <td>Marreta</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Martelo"
+                      />
+                    </td>
+                    <td>Martelo</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Mochila"
+                      />
+                    </td>
+                    <td>Mochila</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Flechas (20)"
+                      />
+                    </td>
+                    <td>Flechas (20)</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Virotes (20)"
+                      />
+                    </td>
+                    <td>Virotes (20)</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Zarabatanas (50)"
+                      />
+                    </td>
+                    <td>Zarabatanas (50)</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="equipamentos" value="Pá" />
+                    </td>
+                    <td>Pá</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Panela de Ferro"
+                      />
+                    </td>
+                    <td>Panela de Ferro</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Pé de Cabra"
+                      />
+                    </td>
+                    <td>Pé de Cabra</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Perfume (Frasco)"
+                      />
+                    </td>
+                    <td>Perfume (Frasco)</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Picareta de Minerador"
+                      />
+                    </td>
+                    <td>Picareta de Minerador</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Poção de Cura"
+                      />
+                    </td>
+                    <td>Poção de Cura</td>
+                    <td>59</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Porta Mapas e Pergaminhos"
+                      />
+                    </td>
+                    <td>Porta Mapas e Pergaminhos</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Porta Virotes"
+                      />
+                    </td>
+                    <td>Porta Virotes</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Pregos de Ferro (10)"
+                      />
+                    </td>
+                    <td>Pregos de Ferro (10)</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Rações de Viagem (1 dia)"
+                      />
+                    </td>
+                    <td>Rações de Viagem (1 dia)</td>
+                    <td>0.5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Robes"
+                      />
+                    </td>
+                    <td>Robes</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Roupas Comuns"
+                      />
+                    </td>
+                    <td>Roupas Comuns</td>
+                    <td>0.5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Roupas de Viajante"
+                      />
+                    </td>
+                    <td>Roupas de Viajante</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Roupas de Entretenimento"
+                      />
+                    </td>
+                    <td>Roupas de Entretenimento</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Roupas Finas"
+                      />
+                    </td>
+                    <td>Roupas Finas</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Saco de Dormir"
+                      />
+                    </td>
+                    <td>Saco de Dormir</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Amuleto"
+                      />
+                    </td>
+                    <td>Amuleto</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Emblema"
+                      />
+                    </td>
+                    <td>Emblema</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Relicário"
+                      />
+                    </td>
+                    <td>Relicário</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Sinete"
+                      />
+                    </td>
+                    <td>Sinete</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="equipamentos" value="Sino" />
+                    </td>
+                    <td>Sino</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Tenda (2 pessoas)"
+                      />
+                    </td>
+                    <td>Tenda (2 pessoas)</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Tinta (Frasco 30ml)"
+                      />
+                    </td>
+                    <td>Tinta (Frasco 30ml)</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Veneno Básico"
+                      />
+                    </td>
+                    <td>Veneno Básico</td>
+                    <td>100</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br /><br />
+              <h3>Kits e Pacotes</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Compra</th>
+                    <th>Item</th>
+                    <th>Detalhe</th>
+                    <th>Valor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Kit de Escalada"
+                      />
+                    </td>
+                    <td>Kit de Escalada</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Kit S.O.S"
+                      />
+                    </td>
+                    <td>Kit S.O.S</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Pacote de Artista"
+                      />
+                    </td>
+                    <td>Pacote de Artista</td>
+                    <td>40</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Pacote de Assaltante"
+                      />
+                    </td>
+                    <td>Pacote de Assaltante</td>
+                    <td>16</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Pacote de Aventureiro"
+                      />
+                    </td>
+                    <td>Pacote de Aventureiro</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Pacote de Diplomata"
+                      />
+                    </td>
+                    <td>Pacote de Diplomata</td>
+                    <td>39</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Pacote de Estudioso"
+                      />
+                    </td>
+                    <td>Pacote de Estudioso</td>
+                    <td>40</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Pacote de Explorador"
+                      />
+                    </td>
+                    <td>Pacote de Explorador</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="equipamentos"
+                        value="Pacote de Sacerdote"
+                      />
+                    </td>
+                    <td>Pacote de Sacerdote</td>
+                    <td>19</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br /><br />
+              <textarea name="" id="" value="equips" readonly></textarea>
+              <br /><br />
+              <h2>Detalhes</h2>
+              <h3>Kit de Escalada</h3>
+              <div class="parag">
+                Um kit de escalada inclui pítons especiais, botas com solas
+                pontiagudas, luvas e um cinto. Você pode usar o kit de escalada
+                como uma ação para "ancorar-se". Quando faz isso, você não pode
+                cair mais de 7,5 metros a partir do ponto onde se ancorou, e não
+                pode subir mais de 7,5 metros de distância desse ponto, sem
+                desfazer a âncora.
+              </div>
+              <br />
+              <h3>Kit de Primeiros Socorros</h3>
+              <p class="parag">
+                Esse kit é uma bolsa de couro contendo ataduras, pomadas e
+                talas. O kit possui material suficiente para dez usos. Usando
+                uma ação, você pode gastar um uso do kit para estabilizar uma
+                criatura que tenha 0 pontos de vida, sem a necessidade de
+                realizar um teste de Sabedoria (Medicina).
+              </p>
+              <br />
+              <h3>Pacote de Artista</h3>
+              <div class="parag">
+                Inclui uma mochila, um saco de dormir, duas fantasias, 5 velas,
+                5 dias de rações, um cantil e um kit de disfarce.
+              </div>
+              <br />
+              <h3>Pacote de Diplomata</h3>
+              <div class="parag">
+                Inclui um baú, 2 caixas para mapas ou pergaminhos, um conjunto
+                de roupas finas, um vidro de tinta, uma caneta tinteiro, uma
+                lâmpada, 2 frascos de óleo, 5 folhas de papel, um vidro de
+                perfume, parafina e sabão.
+              </div>
+              <br />
+              <h3>Pacote de Estudioso</h3>
+              <div class="parag">
+                Inclui uma mochila, um livro de estudo, um vidro de tinta, uma
+                caneta tinteiro, 10 folhas de pergaminho, um saquinho de areia e
+                uma pequena faca
+              </div>
+              <br />
+              <h3>Pacote de Explorador</h3>
+              <div class="parag">
+                nclui uma mochila, um saco de dormir, um kit de refeição, uma
+                caixa de fogo, 10 tochas, 10 dias de rações e um cantil. O kit
+                também tem 15 metros de corda de cânhamo amarrada ao lado dele.
+              </div>
+              <br />
+              <h3>Pacote de Sacerdote</h3>
+              <div class="parag">
+                Inclui uma mochila, um cobertor, 10 velas, uma caixa de fogo,
+                uma caixa de esmolas, 2 blocos de incenso, um incensário,
+                vestes, 2 dias de rações e um cantil.
+              </div>
+              <div class="area-label">
+                <button type="button" class="voltar">Voltar</button>
+                <button type="button" class="avanca-step">Avançar</button>
+              </div>
+            </div>
             <!-- idiomas, história e nome -->
             <!-- magias -->
             <!-- finalização -->

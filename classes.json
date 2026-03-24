@@ -9,7 +9,8 @@
       "Natureza",
       "Percepção",
       "Sobrevivência"
-    ]
+    ],
+    "pos": 50
   },
   {
     "id": 2,
@@ -33,7 +34,8 @@
       "Religião",
       "Sobrevivência",
       "Adestrar Animais"
-    ]
+    ],
+    "pos": 125
   },
   {
     "id": 3,
@@ -46,7 +48,8 @@
       "Investigação",
       "Natureza",
       "Religião"
-    ]
+    ],
+    "pos": 100
   },
   {
     "id": 4,
@@ -58,7 +61,8 @@
       "Intimidação",
       "Persuasão",
       "Religião"
-    ]
+    ],
+    "pos": 125
   },
   {
     "id": 5,
@@ -72,7 +76,8 @@
       "Percepção",
       "Religião",
       "Sobrevivência"
-    ]
+    ],
+    "pos": 50
   },
   {
     "id": 6,
@@ -84,7 +89,8 @@
       "Intimidação",
       "Persuasão",
       "Religião"
-    ]
+    ],
+    "pos": 75
   },
   {
     "id": 7,
@@ -98,7 +104,8 @@
       "Intimidação",
       "Percepção",
       "Sobrevivência"
-    ]
+    ],
+    "pos": 125
   },
   {
     "id": 8,
@@ -115,7 +122,8 @@
       "Percepção",
       "Persuasão",
       "Prestidigitação"
-    ]
+    ],
+    "pos": 100
   },
   {
     "id": 9,
@@ -127,7 +135,8 @@
       "Investigação",
       "Medicina",
       "Religião"
-    ]
+    ],
+    "pos": 100
   },
   {
     "id": 10,
@@ -139,7 +148,8 @@
       "História",
       "Intuição",
       "Religião"
-    ]
+    ],
+    "pos": 15
   },
   {
     "id": 11,
@@ -151,11 +161,12 @@
       "Medicina",
       "Persuasão",
       "Religião"
-    ]
+    ],
+    "pos": 125
   },
   {
     "id": 12,
-    "nome": "Paladino",
+    "nome": "Patrulheiro",
     "pericias": [
       "Adestrar Animais",
       "Atletismo",
@@ -165,6 +176,21 @@
       "Natureza",
       "Percepção",
       "Sobrevivência"
-    ]
+    ],
+    "pos": 125
+  },
+  {
+    "id": 13,
+    "nome": "Artífice",
+    "pericias": [
+      "Arcanismo",
+      "História",
+      "Investigação",
+      "Medicina",
+      "Percepção",
+      "Prestidigitação",
+      "Natureza"
+    ],
+    "pos": 125
   }
 ]
