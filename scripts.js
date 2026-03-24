@@ -5,6 +5,7 @@
   const exoticRaces = document.querySelectorAll('option[data-tipo="exotica"]');
   const activeRaces = document.querySelector("#ativa-racas");
   let base = 8;
+  const totalEquips = document.querySelector(".equips-escolhidos");
   // mostra ou esconde as raças fora do ldj
   exoticRaces.forEach((race) => {
     race.hidden = true;
@@ -265,6 +266,10 @@
       // mostra as perícias que o usuário pode adicionar
       const periciasReferencia = document.querySelector(".pericias-referencia");
       periciasReferencia.innerHTML = `Escolha <b>${bonusAdd}</b> entre: ${periciasClasse.join(", ")}`;
+      // envia dinheiro total ao data
+      const dinheiroFooter = document.querySelector(".dinheiro-footer");
+      data.pos = antecedenteEscolhido.pos + classeEscolhida.pos;
+      dinheiroFooter.innerText = data.pos;
     } catch (error) {
       console.error("Erro em mostrarPericias:", error);
     }
@@ -358,6 +363,23 @@
         const dinheiroFooter = document.querySelector(".dinheiro-footer");
         dinheiroFooter.classList.add("active");
       }
+      // step dos equipamentos
+      else if (index === 7) {
+        data.equipamentos = totalEquips.value
+          .replaceAll(" ", "")
+          .split(",")
+          .slice(0, -1);
+      }
+    });
+  }
+  // equipamentos
+  const addItem = document.querySelectorAll(".add-item");
+  for (let i = 0; i < addItem.length; i++) {
+    addItem[i].addEventListener("click", (ev) => {
+      const pai = ev.target.closest("tr");
+      const nomeEquip = pai.querySelector(".equip").innerText;
+      const valorEquip = pai.querySelector(".preco").innerText;
+      totalEquips.value += nomeEquip + ", ";
     });
   }
 }

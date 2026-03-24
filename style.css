@@ -183,7 +183,6 @@ form table {
   margin-top: 15px;
 }
 form .add-item {
-  border: 1px solid #363d4b;
   background-color: #363d4b;
   color: white;
   border-radius: 50%;
@@ -194,7 +193,6 @@ form .add-item {
   cursor: pointer;
   height: 20px;
   font-size: 17px;
-  font-weight: 700px;
   margin: 0 auto;
   transition: 0.4s all ease-in-out;
 }
@@ -204,10 +202,13 @@ form .add-item:hover {
 form table tr:nth-child(even) {
   background-color: #d6d6dc;
 }
+form table tr:hover {
+  background-color: #cecedf;
+}
 form table td {
   border: 1px solid #b6b7be;
   text-align: center;
-  padding: 3px;
+  padding: 8px 3px;
 }
 form table th {
   padding-bottom: 10px;
@@ -220,7 +221,17 @@ form textarea {
   border: none;
   height: 140px;
   background: #d6d6dc;
+  padding: 15px;
 }
 form textarea:focus {
   outline: none;
+}
+
+/* responsive settings */
+@media (max-width: 767px) {
+  .dinheiro-footer {
+    height: 40px;
+    font-size: 30px;
+    border-radius: 10px;
+  }
 }
