@@ -63,7 +63,7 @@ form .step {
   transition:
     opacity 0.3s,
     transform 0.3s;
-  height: 10px;
+  height: 0px;
   overflow: hidden;
 }
 form .step.on {

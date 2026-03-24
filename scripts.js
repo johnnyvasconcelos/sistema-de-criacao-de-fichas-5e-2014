@@ -255,7 +255,16 @@
       });
       const periciasClasse = classeEscolhida.pericias;
       const periciasCampo = document.querySelector(".pericias");
+      const magiasCampo = document.querySelector(".magias");
+      const truquesCampo = document.querySelector(".truques");
+      const magiasQuantity = document.querySelector(".magia-quantidade");
+      const truquesQuantity = document.querySelector(".truque-quantidade");
+      magiasQuantity.innerText = classeEscolhida.magiasQuantidade;
+      truquesQuantity.innerText = classeEscolhida.truquesQuantidade;
       periciasCampo.innerHTML = "";
+      magiasCampo.innerHTML = "";
+      truquesCampo.innerHTML = "";
+      // invoca as perícias
       for (let i = 0; i < pericias.length; i++) {
         const periciaElfica =
           (data.raca === "Alto Elfo" ||
@@ -270,6 +279,14 @@
             : "";
 
         periciasCampo.innerHTML += `<label class="label-area" for="${pericias[i].nome}"><input type="checkbox" class="pericia-checkbox" id="${pericias[i].nome}" value="${pericias[i].nome}" ${check} ${periciasClasse.includes(pericias[i].nome) && !antecedenteEscolhido.pericias.includes(pericias[i].nome) && !periciaElfica ? "" : "disabled"}/>${pericias[i].nome}</label>`;
+      }
+      // invoca os truques
+      for (let i = 0; i < classeEscolhida.truques.length; i++) {
+        truquesCampo.innerHTML += `<label class="label-area" for="${classeEscolhida.truques[i]}"><input type="checkbox" class="truque" id="${classeEscolhida.truques[i]}" value="${classeEscolhida.truques[i]}" /><span>${classeEscolhida.truques[i]}</span></label>`;
+      }
+      // invoca as magias
+      for (let i = 0; i < classeEscolhida.magias.length; i++) {
+        magiasCampo.innerHTML += `<label class="label-area" for="${classeEscolhida.magias[i]}"><input type="checkbox" class="magia" id="${classeEscolhida.magias[i]}" value="${classeEscolhida.magias[i]}" /><span>${classeEscolhida.magias[i]}</span></label>`;
       }
       // limita a quantidade de pericias, de acordo com a classe
       const checkboxes = document.querySelectorAll(".pericia-checkbox");
