@@ -235,7 +235,7 @@
   };
   // perícias
   let bonusAdd = 0;
-  const mostrarPericias = async () => {
+  const mostrarPericiasEMagias = async () => {
     try {
       bonusAdd =
         data.raca === "Humano Variante"
@@ -291,7 +291,7 @@
       data.pos = antecedenteEscolhido.pos + classeEscolhida.pos;
       dinheiroFooter.innerText = data.pos;
     } catch (error) {
-      console.error("Erro em mostrarPericias:", error);
+      console.error("Erro em mostrarPericiasEMagias:", error);
     }
   };
   const bonusPericias = (classe) => {
@@ -314,7 +314,6 @@
     avancar[i].addEventListener("click", (ev) => {
       const atualStep = ev.target.closest(".step").dataset.step;
       const index = Array.from(steps).indexOf(ev.target.closest(".step"));
-
       // step dos atributos
       if (atualStep === "atributos" || atualStep === "atributos-bonus") {
         if (total == 0) {
@@ -360,9 +359,8 @@
         selecionaBonus();
         bonusExibido1.innerText = adicionaEmUm;
         bonusExibido2.innerText = adicionaEmOutro;
-        mostrarPericias();
+        mostrarPericiasEMagias();
       }
-
       // step das perícias
       else if (atualStep === "pericias") {
         const periciasMarcadas = document.querySelectorAll(

@@ -10,6 +10,10 @@
       "Percepção",
       "Sobrevivência"
     ],
+    "truques": [""],
+    "truquesQuantidade": 0,
+    "magias": [""],
+    "magiasQuantidade": 0,
     "pos": 50
   },
   {
@@ -35,6 +39,44 @@
       "Sobrevivência",
       "Adestrar Animais"
     ],
+    "truques": [
+      "Amizade",
+      "Ataque Certeiro",
+      "Consertar",
+      "Globos de Luz",
+      "Ilusão Menor",
+      "Luz",
+      "Mãos Mágicas",
+      "Mensagem",
+      "Prestidigitação",
+      "Proteção contra Lâminas",
+      "Zombaria Viciosa"
+    ],
+    "truquesQuantidade": 2,
+    "magias": [
+      "Amizade animal",
+      "Compreender Idiomas",
+      "Curar Ferimentos",
+      "Detectar Magia",
+      "Disfarçar-se",
+      "Enfeitiçar Pessoa",
+      "Escrita Ilusória",
+      "Falar com Animais",
+      "Fogo das Fadas",
+      "Heroísmo",
+      "Identificação",
+      "Imagem Silenciosa",
+      "Onda Trovejante",
+      "Queda Suave",
+      "Palavra Curativa",
+      "Passos Longos",
+      "Perdição",
+      "Riso Histérico de Tasha",
+      "Servo Invisível",
+      "Sono",
+      "Sussurros Dissonantes"
+    ],
+    "magiasQuantidade": 4,
     "pos": 125
   },
   {
@@ -49,6 +91,20 @@
       "Natureza",
       "Religião"
     ],
+    "truques": [""],
+    "truquesQuantidade": 2,
+    "magias": [
+      "Amizade",
+      "Ataque Certeiro",
+      "Ilusão Menor",
+      "Mãos Mágicas",
+      "Prestidigitação",
+      "Proteção contra Lâminas",
+      "Rajada de Veneno",
+      "Rajada Mística",
+      "Toque Arrepiante"
+    ],
+    "magiasQuantidade": 2,
     "pos": 100
   },
   {
@@ -62,6 +118,34 @@
       "Persuasão",
       "Religião"
     ],
+    "truques": [
+      "Chama Sagrada",
+      "Consertar",
+      "Estabilizar",
+      "Luz",
+      "Orientação",
+      "Resistência",
+      "Taumaturgia"
+    ],
+    "truquesQuantidade": 3,
+    "magias": [
+      "Bênção",
+      "Comando",
+      "Criar ou Destruir Água",
+      "Curar Ferimentos",
+      "Detectar Magia",
+      "Detectar o Bem e Mal",
+      "Detectar Veneno e Doença",
+      "Palavra Curativa",
+      "Perdição",
+      "Proteção contra o Bem e Mal",
+      "Purificar Alimentos",
+      "Raio Guiador",
+      "Santuário",
+      "Escudo da Fé",
+      "Infringir Ferimentos"
+    ],
+    "magiasQuantidade": 15,
     "pos": 125
   },
   {
@@ -77,6 +161,36 @@
       "Religião",
       "Sobrevivência"
     ],
+    "truques": [
+      "Bordão Místico",
+      "Chicote de Espinhos",
+      "Consertar",
+      "Criar Chamas",
+      "Druidismo",
+      "Orientação",
+      "Resistência",
+      "Rajada de Veneno"
+    ],
+    "truquesQuantidade": 2,
+    "magias": [
+      "Amizade Animal",
+      "Bom Fruto",
+      "Constrição",
+      "Criar ou Destruir Água",
+      "Curar Ferimentos",
+      "Detectar Magia",
+      "Detectar Veneno e Doença",
+      "Enfeitiçar Pessoa",
+      "Falar com Animais",
+      "Fogo das Fadas",
+      "Névoa Obscurecente",
+      "Onda Trovejante",
+      "Palavra Curativa",
+      "Passos Longos",
+      "Purificar Alimentos",
+      "Salto"
+    ],
+    "magiasQuantidade": 16,
     "pos": 50
   },
   {
@@ -90,6 +204,48 @@
       "Persuasão",
       "Religião"
     ],
+    "truques": [
+      "Amizade",
+      "Ataque Certeiro",
+      "Consertar",
+      "Espirro Ácido",
+      "Globos de Luz",
+      "Ilusão Menor",
+      "Luz",
+      "Mãos Mágicas",
+      "Mensagem",
+      "Prestidigitação",
+      "Proteção contra Lâminas",
+      "Raio de Fogo",
+      "Raio de Gelo",
+      "Rajada de Veneno",
+      "Toque Arrepiante",
+      "Toque Chocante"
+    ],
+    "truquesQuantidade": 4,
+    "magias": [
+      "Armadura Arcana",
+      "Compreender Idiomas",
+      "Detectar Magia",
+      "Disfarçar-se",
+      "Enfeitiçar Pessoa",
+      "Escudo Arcano",
+      "Imagem Silenciosa",
+      "Leque Cromático",
+      "Mãos Flamejantes",
+      "Mísseis Mágicos",
+      "Névoa Obscurecente",
+      "Onda Trovejante",
+      "Orbe Cromática",
+      "Queda Suave",
+      "Raio Adoecente",
+      "Raio de Bruxa",
+      "Recuo Acelerado",
+      "Sono",
+      "Salto",
+      "Vitalidade Falsa"
+    ],
+    "magiasQuantidade": 2,
     "pos": 75
   },
   {
@@ -105,6 +261,10 @@
       "Percepção",
       "Sobrevivência"
     ],
+    "truques": [""],
+    "truquesQuantidade": 0,
+    "magias": [""],
+    "magiasQuantidade": 0,
     "pos": 125
   },
   {
@@ -123,6 +283,10 @@
       "Persuasão",
       "Prestidigitação"
     ],
+    "truques": [""],
+    "truquesQuantidade": 0,
+    "magias": [""],
+    "magiasQuantidade": 0,
     "pos": 100
   },
   {
@@ -136,6 +300,58 @@
       "Medicina",
       "Religião"
     ],
+    "truques": [
+      "Amizade",
+      "Ataque Certeiro",
+      "Consertar",
+      "Espirro Ácido",
+      "Globos de Luz",
+      "Ilusão Menor",
+      "Raio de Gelo",
+      "Rajada de Veneno",
+      "Toque Arrepiante",
+      "Toque Chocante",
+      "Luz",
+      "Mãos Mágicas",
+      "Mensagem",
+      "Prestidigitação",
+      "Proteção contra Lâminas",
+      "Raio de Fogo"
+    ],
+    "truquesQuantidade": 3,
+    "magias": [
+      "Alarme",
+      "Área Escorregadia",
+      "Armadura Arcana",
+      "Compreender Idiomas",
+      "Convocar Familiar",
+      "Detectar Magia",
+      "Disco Flutuante de Tenser",
+      "Disfarçar-se",
+      "Enfeitiçar Pessoa",
+      "Escrita Ilusória",
+      "Escudo Arcano",
+      "Identificação",
+      "Imagem Silenciosa",
+      "Leque Cromático",
+      "Mãos Flamejantes",
+      "Mísseis Mágicos",
+      "Névoa Obscurecente",
+      "Onda Trovejante",
+      "Orbe Cromática",
+      "Passos Longos",
+      "Proteção contra o Bem e Mal",
+      "Queda Suave",
+      "Raio Adoecente",
+      "Raio de Bruxa",
+      "Recuo Acelerado",
+      "Riso Histérico de Tasha",
+      "Salto",
+      "Servo Invisível",
+      "Sono",
+      "Vitalidade Falsa"
+    ],
+    "magiasQuantidade": 6,
     "pos": 100
   },
   {
@@ -149,6 +365,10 @@
       "Intuição",
       "Religião"
     ],
+    "truques": [""],
+    "truquesQuantidade": 0,
+    "magias": [""],
+    "magiasQuantidade": 0,
     "pos": 15
   },
   {
@@ -162,6 +382,10 @@
       "Persuasão",
       "Religião"
     ],
+    "truques": [""],
+    "truquesQuantidade": 0,
+    "magias": [""],
+    "magiasQuantidade": 0,
     "pos": 125
   },
   {
@@ -177,6 +401,10 @@
       "Percepção",
       "Sobrevivência"
     ],
+    "truques": [""],
+    "truquesQuantidade": 0,
+    "magias": [""],
+    "magiasQuantidade": 0,
     "pos": 125
   },
   {
@@ -191,6 +419,47 @@
       "Prestidigitação",
       "Natureza"
     ],
+    "truques": [
+      "Espirro Ácido",
+      "Criar Chamas",
+      "Raio de Fogo",
+      "Picada Congelante",
+      "Orientação",
+      "Luz",
+      "Mãos Mágicas",
+      "Pedra Encantada",
+      "Consertar",
+      "Mensagem",
+      "Rajada de Veneno",
+      "Prestidigitação",
+      "Raio de Gelo",
+      "Resistência",
+      "Toque Chocante",
+      "Acudir os Moribundos",
+      "Chicote de Espinhos"
+    ],
+    "truquesQuantidade": 2,
+    "magias": [
+      "Absorver Elementos",
+      "Alarme",
+      "Catapulta",
+      "Curar Ferimentos",
+      "Detectar Magia",
+      "Disfarçar-se",
+      "Recuo Acelerado",
+      "Fogo das Fadas",
+      "Vitalidade Falsa",
+      "Queda Suave",
+      "Área Escorregadia",
+      "Identificação",
+      "Salto",
+      "Passos Longos",
+      "Purificar Alimentos",
+      "Santuário",
+      "Laço",
+      "Beberagem Cáustica de Tasha"
+    ],
+    "magiasQuantidade": 18,
     "pos": 125
   }
 ]
