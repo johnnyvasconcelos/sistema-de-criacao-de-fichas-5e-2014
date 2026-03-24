@@ -153,6 +153,7 @@ tbody {
 }
 .dinheiro-footer {
   z-index: -1;
+  transform: translateX(-200px);
   position: fixed;
   bottom: 15px;
   right: 15px;
@@ -169,11 +170,13 @@ tbody {
   font-size: 40px;
   font-weight: 700;
   border-radius: 20px;
+  transition: 0.5s all ease-out;
   opacity: 0;
 }
 .dinheiro-footer.active {
   z-index: 200;
   opacity: 1;
+  transform: translateX(0);
 }
 .dinheiro-footer.no-money {
   border: 1px solid #d92a2a;

@@ -391,6 +391,7 @@
           steps[index].classList.remove("on");
           steps[index + 1].classList.add("on");
         }
+        dinheiroFooter.classList.remove("active");
       }
     });
   }
