@@ -260,7 +260,10 @@
       const magiasQuantity = document.querySelector(".magia-quantidade");
       const truquesQuantity = document.querySelector(".truque-quantidade");
       magiasQuantity.innerText = classeEscolhida.magiasQuantidade;
-      truquesQuantity.innerText = classeEscolhida.truquesQuantidade;
+      truquesQuantity.innerText =
+        data.raca === "Alto Elfo"
+          ? classeEscolhida.truquesQuantidade + 1
+          : classeEscolhida.truquesQuantidade;
       periciasCampo.innerHTML = "";
       magiasCampo.innerHTML = "";
       truquesCampo.innerHTML = "";
@@ -282,27 +285,6 @@
       }
       // invoca os truques
       let truquesAtivos = [];
-      for (let i = 0; i < classeEscolhida.truques.length; i++) {
-        if (truquesAtivos.includes(classeEscolhida.truques[i])) continue;
-        truquesCampo.innerHTML += `<label class="label-area" for="${classeEscolhida.truques[i]}"><input type="checkbox" class="truque" id="${classeEscolhida.truques[i]}" value="${classeEscolhida.truques[i]}" /><span>${classeEscolhida.truques[i]}</span></label>`;
-      }
-      // invoca as magias
-      let magiasAtivas = [];
-      if (classeEscolhida.nome === "Bruxo") {
-        if (data.categoria === "Arquifada") {
-          magiasAtivas = ["Fogo das Fadas", "Sono"];
-          magiasCampo.innerHTML =
-            "<label for='Fogo das Fadas' class='label-area'><input type='checkbox' class='magia' id='Fogo das Fadas' value='Fogo das Fadas' checked disabled /><span>Fogo das Fadas</span></label><label for='Sono' class='label-area'><input type='checkbox' class='magia' id='Sono' value='Sono' checked disabled /><span>Sono</span></label>";
-        } else if (data.categoria === "Corruptor") {
-          magiasAtivas = ["Mãos Flamejantes", "Comando"];
-          magiasCampo.innerHTML =
-            "<label for='Mãos Flamejantes' class='label-area'><input type='checkbox' class='magia' id='Mãos Flamejantes' value='Mãos Flamejantes' checked disabled /><span>Mãos Flamejantes</span></label><label for='Comando' class='label-area'><input type='checkbox' class='magia' id='Comando' value='Comando' checked disabled /><span>Comando</span></label>";
-        } else if (data.categoria === "Grande Antigo") {
-          magiasAtivas = ["Sussurros Dissonantes", "Riso Histérico de Tasha"];
-          magiasCampo.innerHTML =
-            "<label for='Sussurros Dissonantes' class='label-area'><input type='checkbox' class='magia' id='Sussurros Dissonantes' value='Sussurros Dissonantes' checked disabled /><span>Sussurros Dissonantes</span></label><label for='Riso Histérico de Tasha' class='label-area'><input type='checkbox' class='magia' id='Riso Histérico de Tasha' value='Riso Histérico de Tasha' checked disabled /><span>Riso Histérico de Tasha</span></label>";
-        }
-      }
       if (data.raca === "Elfo Negro") {
         truquesAtivos.push("Globos de Luz");
       } else if (data.raca === "Alto Elfo") {
@@ -327,6 +309,27 @@
         truquesCampo.innerHTML =
           "<label class='label-area' for='Amizade'><input type='checkbox' class='truque' id='Amizade' value='Amizade'/><span>Amizade</span></label><label class='label-area' for='Ataque Certeiro'><input type='checkbox' class='truque' id='Ataque Certeiro' value='Ataque Certeiro'/><span>Ataque Certeiro</span></label><label class='label-area' for='Consertar'><input type='checkbox' class='truque' id='Consertar' value='Consertar'/><span>Consertar</span></label><label class='label-area' for='Espirro Ácido'><input type='checkbox' class='truque' id='Espirro Ácido' value='Espirro Ácido'/><span>Espirro Ácido</span></label><label class='label-area' for='Globos de Luz'><input type='checkbox' class='truque' id='Globos de Luz' value='Globos de Luz'/><span>Globos de Luz</span></label><label class='label-area' for='Ilusão Menor'><input type='checkbox' class='truque' id='Ilusão Menor' value='Ilusão Menor'/><span>Ilusão Menor</span></label><label class='label-area' for='Raio de Gelo'><input type='checkbox' class='truque' id='Raio de Gelo' value='Raio de Gelo'/><span>Raio de Gelo</span></label><label class='label-area' for='Rajada de Veneno'><input type='checkbox' class='truque' id='Rajada de Veneno' value='Rajada de Veneno'/><span>Rajada de Veneno</span></label><label class='label-area' for='Toque Arrepiante'><input type='checkbox' class='truque' id='Toque Arrepiante' value='Toque Arrepiante'/><span>Toque Arrepiante</span></label><label class='label-area' for='Toque Chocante'><input type='checkbox' class='truque' id='Toque Chocante' value='Toque Chocante'/><span>Toque Chocante</span></label><label class='label-area' for='Luz'><input type='checkbox' class='truque' id='Luz' value='Luz'/><span>Luz</span></label><label class='label-area' for='Mãos Mágicas'><input type='checkbox' class='truque' id='Mãos Mágicas' value='Mãos Mágicas'/><span>Mãos Mágicas</span></label><label class='label-area' for='Mensagem'><input type='checkbox' class='truque' id='Mensagem' value='Mensagem'/><span>Mensagem</span></label><label class='label-area' for='Prestidigitação'><input type='checkbox' class='truque' id='Prestidigitação' value='Prestidigitação'/><span>Prestidigitação</span></label><label class='label-area' for='Proteção contra Lâminas'><input type='checkbox' class='truque' id='Proteção contra Lâminas' value='Proteção contra Lâminas'/><span>Proteção contra Lâminas</span></label><label class='label-area' for='Raio de Fogo'><input type='checkbox' class='truque' id='Raio de Fogo' value='Raio de Fogo'/><span>Raio de Fogo</span></label>";
       }
+      for (let i = 0; i < classeEscolhida.truques.length; i++) {
+        if (truquesAtivos.includes(classeEscolhida.truques[i])) continue;
+        truquesCampo.innerHTML += `<label class="label-area" for="${classeEscolhida.truques[i]}"><input type="checkbox" class="truque" id="${classeEscolhida.truques[i]}" value="${classeEscolhida.truques[i]}" /><span>${classeEscolhida.truques[i]}</span></label>`;
+      }
+      // invoca as magias
+      let magiasAtivas = [];
+      if (classeEscolhida.nome === "Bruxo") {
+        if (data.categoria === "Arquifada") {
+          magiasAtivas = ["Fogo das Fadas", "Sono"];
+          magiasCampo.innerHTML =
+            "<label for='Fogo das Fadas' class='label-area'><input type='checkbox' class='magia' id='Fogo das Fadas' value='Fogo das Fadas' checked disabled /><span>Fogo das Fadas</span></label><label for='Sono' class='label-area'><input type='checkbox' class='magia' id='Sono' value='Sono' checked disabled /><span>Sono</span></label>";
+        } else if (data.categoria === "Corruptor") {
+          magiasAtivas = ["Mãos Flamejantes", "Comando"];
+          magiasCampo.innerHTML =
+            "<label for='Mãos Flamejantes' class='label-area'><input type='checkbox' class='magia' id='Mãos Flamejantes' value='Mãos Flamejantes' checked disabled /><span>Mãos Flamejantes</span></label><label for='Comando' class='label-area'><input type='checkbox' class='magia' id='Comando' value='Comando' checked disabled /><span>Comando</span></label>";
+        } else if (data.categoria === "Grande Antigo") {
+          magiasAtivas = ["Sussurros Dissonantes", "Riso Histérico de Tasha"];
+          magiasCampo.innerHTML =
+            "<label for='Sussurros Dissonantes' class='label-area'><input type='checkbox' class='magia' id='Sussurros Dissonantes' value='Sussurros Dissonantes' checked disabled /><span>Sussurros Dissonantes</span></label><label for='Riso Histérico de Tasha' class='label-area'><input type='checkbox' class='magia' id='Riso Histérico de Tasha' value='Riso Histérico de Tasha' checked disabled /><span>Riso Histérico de Tasha</span></label>";
+        }
+      }
       for (let i = 0; i < classeEscolhida.magias.length; i++) {
         if (magiasAtivas.includes(classeEscolhida.magias[i])) continue;
         magiasCampo.innerHTML += `<label class="label-area" for="${classeEscolhida.magias[i]}"><input type="checkbox" class="magia" id="${classeEscolhida.magias[i]}" value="${classeEscolhida.magias[i]}" ${classeEscolhida.magiasQuantidade > 10 ? "disabled checked" : ""} /><span>${classeEscolhida.magias[i]}</span></label>`;
@@ -347,8 +350,14 @@
       for (let t = 0; t < truque.length; t++) {
         truque[t].addEventListener("change", () => {
           const marcadas = document.querySelectorAll(".truque:checked");
-          if (marcadas.length > classeEscolhida.truquesQuantidade) {
-            truque[t].checked = false;
+          if (data.raca === "Alto Elfo") {
+            if (marcadas.length > classeEscolhida.truquesQuantidade + 1) {
+              truque[t].checked = false;
+            }
+          } else {
+            if (marcadas.length > classeEscolhida.truquesQuantidade) {
+              truque[t].checked = false;
+            }
           }
         });
       }
