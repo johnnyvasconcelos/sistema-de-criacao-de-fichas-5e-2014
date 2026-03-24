@@ -287,6 +287,8 @@
       let truquesAtivos = [];
       if (data.raca === "Elfo Negro") {
         truquesAtivos.push("Globos de Luz");
+        truquesCampo.innerHTML =
+          "<label class='label-area' for='Globos de Luz'><input type='checkbox' class='truque' id='Globos de Luz' value='Globos de Luz' disabled checked/><span>Globos de Luz</span></label>";
       } else if (data.raca === "Alto Elfo") {
         truquesAtivos.push(
           "Amizade",
@@ -480,7 +482,7 @@
           "Bárbaro",
           "Monge",
         ];
-        const racasMagicas = ["Alto Elfo"];
+        const racasMagicas = ["Alto Elfo", "Elfo Negro"];
         data.equipamentos = totalEquips.value
           .replaceAll(",", " ")
           .split("  ")
