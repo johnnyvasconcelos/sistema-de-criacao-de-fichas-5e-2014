@@ -6,6 +6,8 @@
   const activeRaces = document.querySelector("#ativa-racas");
   let base = 8;
   const totalEquips = document.querySelector(".equips-escolhidos");
+  const dinheiroFooter = document.querySelector(".dinheiro-footer");
+  const moedas = document.querySelector(".moedas");
   // mostra ou esconde as raças fora do ldj
   exoticRaces.forEach((race) => {
     race.hidden = true;
@@ -84,12 +86,24 @@
       data[dado] = ev.target.value;
       const atualStep = ev.target.closest(".step");
       const index = Array.from(steps).indexOf(atualStep);
+
       if (steps[index + 1]) {
         steps[index].classList.remove("on");
-        // separa as categorias da classe
-        if (dado === "classe") {
+
+        // raça
+        if (dado === "raca") {
+          if (data.raca === "Humano Variante") {
+            steps[index + 1].classList.add("on");
+          } else if (steps[index + 2]) {
+            steps[index + 2].classList.add("on");
+          }
+        }
+
+        // classe
+        else if (dado === "classe") {
           const categoria = document.querySelector(".categoria");
           const categoriaOption = categoria.querySelectorAll("option");
+
           for (let c = 0; c < categoriaOption.length; c++) {
             if (categoriaOption[c].dataset.classe === data.classe) {
               categoriaOption[c].hidden = false;
@@ -99,19 +113,25 @@
               categoriaOption[c].disabled = true;
             }
           }
+
+          if (
+            !["Feiticeiro", "Clérigo", "Bruxo", "Guerreiro"].includes(
+              data.classe,
+            ) &&
+            steps[index + 2]
+          ) {
+            steps[index + 2].classList.add("on");
+          } else {
+            steps[index + 1].classList.add("on");
+          }
         }
-        if (
-          dado === "classe" &&
-          !["Feiticeiro", "Clérigo", "Bruxo", "Guerreiro"].includes(
-            data.classe,
-          ) &&
-          steps[index + 2]
-        ) {
-          steps[index + 2].classList.add("on");
-        } else {
+
+        // restante
+        else {
           steps[index + 1].classList.add("on");
         }
       }
+
       console.log(data);
       mostraReferencia(data.raca);
       aumentaBonus(data.raca);
@@ -317,9 +337,7 @@
               bonusCar = 0;
             }
           }
-
           console.log(data);
-
           if (
             !bonusRacas.hasOwnProperty(data.raca) ||
             data.raca == "Humano Variante" ||
@@ -360,15 +378,19 @@
           steps[index + 1].classList.add("on");
         }
         // coloca dinheiro do personagem na tela
-        const dinheiroFooter = document.querySelector(".dinheiro-footer");
         dinheiroFooter.classList.add("active");
+        moedas.innerText = data.pos;
       }
       // step dos equipamentos
-      else if (index === 7) {
+      else if (index === 7 || index === 8) {
         data.equipamentos = totalEquips.value
-          .replaceAll(" ", "")
-          .split(",")
+          .replaceAll(",", " ")
+          .split("  ")
           .slice(0, -1);
+        if (steps[index + 1]) {
+          steps[index].classList.remove("on");
+          steps[index + 1].classList.add("on");
+        }
       }
     });
   }
@@ -376,10 +398,21 @@
   const addItem = document.querySelectorAll(".add-item");
   for (let i = 0; i < addItem.length; i++) {
     addItem[i].addEventListener("click", (ev) => {
+      // equipamento
       const pai = ev.target.closest("tr");
       const nomeEquip = pai.querySelector(".equip").innerText;
+      // dinheiro
       const valorEquip = pai.querySelector(".preco").innerText;
-      totalEquips.value += nomeEquip + ", ";
+      if (Number(valorEquip) <= data.pos) {
+        data.pos = Number((data.pos - Number(valorEquip)).toFixed(2));
+        dinheiroFooter.innerText = data.pos;
+        totalEquips.value += nomeEquip + ", ";
+      } else {
+        dinheiroFooter.classList.add("no-money");
+        setTimeout(() => {
+          dinheiroFooter.classList.remove("no-money");
+        }, 1000);
+      }
     });
   }
 }
