@@ -638,8 +638,12 @@
               </div>
             </div>
             <!-- equipamentos -->
-            <div class="step">
-              <p>Suas POs (Peças de Ouro): <span class="moedas">0</span></p>
+            <p class="dinheiro-footer">0</p>
+            <div class="step pericia-area">
+              <p>
+                Suas POs (Peças de Ouro):
+                <span class="moedas" title="seu dinheiro">0</span>
+              </p>
               <br /><br />
               <h3>Armas</h3>
               <!-- tabela de equipamentos -->
@@ -971,7 +975,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><input type="checkbox" /></td>
+                    <td><span class="add-item">+</span></td>
                     <td class="equip">Ábaco</td>
                     <td class="preco">2</td>
                   </tr>
@@ -988,6 +992,62 @@
                     </td>
                     <td class="equip">Água benta (frasco)</td>
                     <td class="preco">25</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="add-item">+</span>
+                    </td>
+                    <td class="equip">Barco a remo</td>
+                    <td class="preco">50</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="add-item">+</span>
+                    </td>
+                    <td class="equip">Carroça</td>
+                    <td class="preco">15</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="add-item">+</span>
+                    </td>
+                    <td class="equip">Carruagem</td>
+                    <td class="preco">100</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="add-item">+</span>
+                    </td>
+                    <td class="equip">Trenó</td>
+                    <td class="preco">20</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="add-item">+</span>
+                    </td>
+                    <td class="equip">Cavalo de montaria</td>
+                    <td class="preco">75</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="add-item">+</span>
+                    </td>
+                    <td class="equip">Pônei</td>
+                    <td class="preco">30</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="add-item">+</span>
+                    </td>
+                    <td class="equip">Cavalo pesado</td>
+                    <td class="preco">50</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="add-item">+</span>
+                    </td>
+                    <td class="equip">Burro ou mula</td>
+                    <td class="preco">8</td>
                   </tr>
                   <tr>
                     <td>
@@ -1572,6 +1632,11 @@
                 value="equips"
                 readonly
               ></textarea>
+              <br />
+              <div class="area-label">
+                <button type="button" class="voltar">Voltar</button>
+                <button type="button" class="avanca-step">Avançar</button>
+              </div>
               <br /><br />
               <h2>Detalhes</h2>
               <h3>Kit de Escalada</h3>

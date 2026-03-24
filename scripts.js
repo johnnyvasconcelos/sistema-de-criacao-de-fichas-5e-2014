@@ -85,7 +85,7 @@
       const index = Array.from(steps).indexOf(atualStep);
       if (steps[index + 1]) {
         steps[index].classList.remove("on");
-        // separa as categorias específicas da classe
+        // separa as categorias da classe
         if (dado === "classe") {
           const categoria = document.querySelector(".categoria");
           const categoriaOption = categoria.querySelectorAll("option");
@@ -213,9 +213,10 @@
     }
   };
   // perícias
+  let bonusAdd = 0;
   const mostrarPericias = async () => {
     try {
-      const bonusAdd =
+      bonusAdd =
         data.raca === "Humano Variante"
           ? bonusPericias(data.classe) + 1
           : bonusPericias(data.classe);
@@ -233,7 +234,7 @@
       });
       const periciasClasse = classeEscolhida.pericias;
       const periciasCampo = document.querySelector(".pericias");
-
+      periciasCampo.innerHTML = "";
       for (let i = 0; i < pericias.length; i++) {
         const periciaElfica =
           (data.raca === "Alto Elfo" ||
@@ -353,6 +354,9 @@
           steps[index].classList.remove("on");
           steps[index + 1].classList.add("on");
         }
+        // coloca dinheiro do personagem na tela
+        const dinheiroFooter = document.querySelector(".dinheiro-footer");
+        dinheiroFooter.classList.add("active");
       }
     });
   }

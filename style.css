@@ -148,3 +148,79 @@ form .alt-final {
 .sistema img {
   width: 100%;
 }
+.pericia-area {
+  position: relative;
+}
+.dinheiro-footer {
+  z-index: -1;
+  position: fixed;
+  opacity: 0;
+  bottom: 15px;
+  right: 15px;
+  width: auto;
+  height: 60px;
+  right: 15px;
+  border: 1px solid #1c202b;
+  background-color: #f9efdc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 700;
+  border-radius: 20px;
+}
+.dinheiro-footer.active {
+  opacity: 1;
+  z-index: 200;
+}
+form table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 400px;
+  overflow-x: scroll;
+  margin-top: 15px;
+}
+form .add-item {
+  border: 1px solid #363d4b;
+  background-color: #363d4b;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  cursor: pointer;
+  height: 20px;
+  font-size: 17px;
+  font-weight: 700px;
+  margin: 0 auto;
+  transition: 0.4s all ease-in-out;
+}
+form .add-item:hover {
+  transform: scale(112%);
+}
+form table tr:nth-child(even) {
+  background-color: #d6d6dc;
+}
+form table td {
+  border: 1px solid #b6b7be;
+  text-align: center;
+  padding: 3px;
+}
+form table th {
+  padding-bottom: 10px;
+}
+form table td:nth-of-type(1) {
+  width: 15px;
+}
+form textarea {
+  width: 100%;
+  border: none;
+  height: 140px;
+  background: #d6d6dc;
+}
+form textarea:focus {
+  outline: none;
+}
