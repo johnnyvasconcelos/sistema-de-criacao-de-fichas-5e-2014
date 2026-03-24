@@ -480,11 +480,15 @@
           "Bárbaro",
           "Monge",
         ];
+        const racasMagicas = ["Alto Elfo"];
         data.equipamentos = totalEquips.value
           .replaceAll(",", " ")
           .split("  ")
           .slice(0, -1);
-        if (steps[index + 1] && !classesNaoMagicas.includes(data.classe)) {
+        if (
+          (steps[index + 1] && !classesNaoMagicas.includes(data.classe)) ||
+          (steps[index + 1] && racasMagicas.includes(data.raca))
+        ) {
           steps[index].classList.remove("on");
           steps[index + 1].classList.add("on");
         } else if (steps[index + 1]) {
