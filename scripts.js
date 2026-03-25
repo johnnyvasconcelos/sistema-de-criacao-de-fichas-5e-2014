@@ -289,6 +289,50 @@
         truquesAtivos.push("Globos de Luz");
         truquesCampo.innerHTML =
           "<label class='label-area' for='Globos de Luz'><input type='checkbox' class='truque' id='Globos de Luz' value='Globos de Luz' disabled checked/><span>Globos de Luz</span></label>";
+      } else if (data.raca === "Gnomo da Floresta") {
+        truquesAtivos.push("Ilusão Menor");
+        truquesCampo.innerHTML =
+          "<label class='label-area' for='Ilusão Menor'><input type='checkbox' class='truque' id='Ilusão Menor' value='Ilusão Menor' disabled checked/><span>Ilusão Menor</span></label>";
+      } else if (data.raca === "Yuan-Ti") {
+        truquesAtivos.push("Rajada de Veneno");
+        truquesCampo.innerHTML =
+          "<label class='label-area' for='Rajada de Veneno'><input type='checkbox' class='truque' id='Rajada de Veneno' value='Rajada de Veneno' disabled checked/><span>Rajada de Veneno</span></label>";
+      } else if (data.raca === "Tiefling") {
+        truquesAtivos.push("Taumaturgia");
+        truquesCampo.innerHTML =
+          "<label class='label-area' for='Taumaturgia'><input type='checkbox' class='truque' id='Taumaturgia' value='Taumaturgia' disabled checked/><span>Taumaturgia</span></label>";
+      } else if (data.raca === "Aasimar") {
+        truquesAtivos.push("Luz");
+        truquesCampo.innerHTML =
+          "<label class='label-area' for='Luz'><input type='checkbox' class='truque' id='Luz' value='Luz' disabled checked/><span>Luz</span></label>";
+      } else if (data.raca === "Fada") {
+        truquesAtivos.push("Druidismo");
+        truquesCampo.innerHTML =
+          "<label class='label-area' for='Druidismo'><input type='checkbox' class='truque' id='Druidismo' value='Druidismo' disabled checked/><span>Druidismo</span></label>";
+      } else if (data.raca === "Genasi do Ar") {
+        truquesAtivos.push("Toque Chocante");
+        truquesCampo.innerHTML =
+          "<label class='label-area' for='Toque Chocante'><input type='checkbox' class='truque' id='Toque Chocante' value='Toque Chocante' disabled checked/><span>Toque Chocante</span></label>";
+      } else if (data.raca === "Genasi da Terra") {
+        truquesAtivos.push("Proteção contra Lâminas");
+        truquesCampo.innerHTML =
+          "<label class='label-area' for='Proteção contra Lâminas'><input type='checkbox' class='truque' id='Proteção contra Lâminas' value='Proteção contra Lâminas' disabled checked/><span>Proteção contra Lâminas</span></label>";
+      } else if (data.raca === "Genasi do Fogo") {
+        truquesAtivos.push("Criar Chamas");
+        truquesCampo.innerHTML =
+          "<label class='label-area' for='Criar Chamas'><input type='checkbox' class='truque' id='Criar Chamas' value='Criar Chamas' disabled checked/><span>Criar Chamas</span></label>";
+      } else if (data.raca === "Genasi da Água") {
+        truquesAtivos.push("Espirro  Ácido");
+        truquesCampo.innerHTML =
+          "<label class='label-area' for='Espirro Ácido'><input type='checkbox' class='truque' id='Espirro Ácido' value='Espirro Ácido' disabled checked/><span>Espirro Ácido</span></label>";
+      } else if (data.raca === "Githyanki") {
+        truquesAtivos.push("Mãos Mágicas");
+        truquesCampo.innerHTML =
+          "<label class='label-area' for='Mãos Mágicas'><input type='checkbox' class='truque' id='Mãos Mágicas' value='Mãos Mágicas' disabled checked/><span>Mãos Mágicas</span></label>";
+      } else if (data.raca === "Githzerai") {
+        truquesAtivos.push("Mãos Mágicas");
+        truquesCampo.innerHTML =
+          "<label class='label-area' for='Mãos Mágicas'><input type='checkbox' class='truque' id='Mãos Mágicas' value='Mãos Mágicas' disabled checked/><span>Mãos Mágicas</span></label>";
       } else if (data.raca === "Alto Elfo") {
         truquesAtivos.push(
           "Amizade",
@@ -482,7 +526,21 @@
           "Bárbaro",
           "Monge",
         ];
-        const racasMagicas = ["Alto Elfo", "Elfo Negro"];
+        const racasMagicas = [
+          "Alto Elfo",
+          "Elfo Negro",
+          "Gnomo da Floresta",
+          "Yuan-Ti",
+          "Tiefling",
+          "Aasimar",
+          "Fada",
+          "Genasi do Ar",
+          "Genasi da Terra",
+          "Genasi do Fogo",
+          "Genasi da Água",
+          "Githyanki",
+          "Githzerai",
+        ];
         data.equipamentos = totalEquips.value
           .replaceAll(",", " ")
           .split("  ")
