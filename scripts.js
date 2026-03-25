@@ -290,9 +290,19 @@
       const idiomas = document.querySelectorAll(".idioma");
       for (let id = 0; id < idiomas.length; id++) {
         if (racaEscolhida.idiomas.includes(idiomas[id].id)) {
-          idiomas[id].checked = "true";
+          idiomas[id].checked = true;
+          idiomas[id].disabled = true;
         }
+        idiomas[id].addEventListener("change", () => {
+          const idiomaQuantity = document.querySelectorAll(
+            ".idioma:not(:disabled):checked",
+          );
+          if (idiomaQuantity.length > 1) {
+            idiomas[id].checked = false;
+          }
+        });
       }
+
       // invoca as perícias
       for (let i = 0; i < pericias.length; i++) {
         const periciaElfica =
@@ -596,7 +606,16 @@
         const magiasMarcadas = document.querySelectorAll(".magia:checked");
         data.magias = Array.from(magiasMarcadas).map((item) => item.value);
         data.truques = Array.from(truquesMarcados).map((item) => item.value);
-
+        console.log(data);
+        if (steps[index + 1]) {
+          steps[index].classList.remove("on");
+          steps[index + 1].classList.add("on");
+        }
+      }
+      // step dos idiomas
+      else if (atualStep === "idiomas") {
+        const idiomasMarcados = document.querySelectorAll(".idioma:checked");
+        data.idiomas = Array.from(idiomasMarcados).map((item) => item.value);
         console.log(data);
         if (steps[index + 1]) {
           steps[index].classList.remove("on");
