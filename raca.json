@@ -1,77 +1,273 @@
 [
-  {
-    "id": 1,
-    "nome": "Humano",
-    "pericias": [""]
-  },
+  { "id": 1, "nome": "Humano", "pericias": [""], "idiomas": ["Comum"] },
   {
     "id": 2,
     "nome": "Alto Elfo",
-    "pericias": [""]
+    "pericias": [""],
+    "idiomas": ["Comum", "Élfico"]
   },
   {
     "id": 3,
     "nome": "Elfo Negro",
-    "pericias": [""]
+    "pericias": [""],
+    "idiomas": ["Comum", "Élfico"]
   },
   {
     "id": 4,
     "nome": "Elfo da Floresta",
-    "pericias": [""]
+    "pericias": [""],
+    "idiomas": ["Comum", "Élfico"]
   },
   {
     "id": 5,
     "nome": "Bugurso",
-    "pericias": ["Furtividade"]
+    "pericias": ["Furtividade"],
+    "idiomas": ["Comum", "Goblinoide"]
   },
   {
     "id": 6,
-    "nome": "Bugurso",
-    "pericias": ["Enganação", "Atuação"]
+    "nome": "Duplicante",
+    "pericias": ["Enganação", "Atuação"],
+    "idiomas": ["Comum", "Élfico"]
   },
   {
     "id": 7,
     "nome": "Eladrin",
-    "pericias": [""]
+    "pericias": [""],
+    "idiomas": ["Comum", "Élfico"]
   },
   {
     "id": 8,
     "nome": "Elfo Marinho",
-    "pericias": [""]
+    "pericias": [""],
+    "idiomas": ["Comum", "Élfico"]
   },
   {
     "id": 9,
     "nome": "Morfo",
-    "pericias": ["Intimidação"]
+    "pericias": ["Intimidação"],
+    "idiomas": ["Comum"]
   },
   {
     "id": 10,
     "nome": "Golias",
-    "pericias": ["Atletismo"]
+    "pericias": ["Atletismo"],
+    "idiomas": ["Comum", "Gigante"]
   },
   {
     "id": 11,
     "nome": "Kenku",
-    "pericias": [""]
+    "pericias": [""],
+    "idiomas": ["Comum", "Auran"]
   },
   {
     "id": 12,
     "nome": "Tabaxi",
-    "pericias": ["Furtividade", "Percepção"]
+    "pericias": ["Furtividade", "Percepção"],
+    "idiomas": ["Comum"]
   },
   {
     "id": 13,
     "nome": "Tortuga",
-    "pericias": ["Medicina"]
+    "pericias": ["Medicina"],
+    "idiomas": ["Comum", "Aquan"]
   },
   {
     "id": 14,
     "nome": "Reptante",
-    "pericias": ["Furtividade"]
+    "pericias": ["Furtividade"],
+    "idiomas": ["Comum", "Dracônico"]
   },
   {
     "id": 15,
     "nome": "Sátiro",
-    "pericias": ["Atuação", "Persuasão"]
+    "pericias": ["Atuação", "Persuasão"],
+    "idiomas": ["Comum", "Silvestre"]
+  },
+  {
+    "id": 16,
+    "nome": "Humano Variante",
+    "pericias": [""],
+    "idiomas": ["Comum"]
+  },
+  {
+    "id": 17,
+    "nome": "Elfo Astral",
+    "pericias": [""],
+    "idiomas": ["Comum", "Élfico"]
+  },
+  {
+    "id": 18,
+    "nome": "Shadar-Kai",
+    "pericias": [""],
+    "idiomas": ["Comum", "Élfico"]
+  },
+  {
+    "id": 19,
+    "nome": "Meio-Elfo",
+    "pericias": [""],
+    "idiomas": ["Comum", "Élfico"]
+  },
+  {
+    "id": 20,
+    "nome": "Meio-Orc",
+    "pericias": [""],
+    "idiomas": ["Comum", "Orc"]
+  },
+  { "id": 21, "nome": "Orc", "pericias": [""], "idiomas": ["Comum", "Orc"] },
+  {
+    "id": 22,
+    "nome": "Anão da Colina",
+    "pericias": [""],
+    "idiomas": ["Comum", "Anão"]
+  },
+  {
+    "id": 23,
+    "nome": "Anão da Montanha",
+    "pericias": [""],
+    "idiomas": ["Comum", "Anão"]
+  },
+  {
+    "id": 24,
+    "nome": "Duergar",
+    "pericias": [""],
+    "idiomas": ["Comum", "Anão"]
+  },
+  {
+    "id": 25,
+    "nome": "Meio-Anão",
+    "pericias": [""],
+    "idiomas": ["Comum", "Anão"]
+  },
+  {
+    "id": 26,
+    "nome": "Halfling Pé Leve",
+    "pericias": [""],
+    "idiomas": ["Comum", "Halfling"]
+  },
+  {
+    "id": 27,
+    "nome": "Halfling Robusto",
+    "pericias": [""],
+    "idiomas": ["Comum", "Halfling"]
+  },
+  {
+    "id": 28,
+    "nome": "Gnomo da Floresta",
+    "pericias": [""],
+    "idiomas": ["Comum", "Gnômico"]
+  },
+  {
+    "id": 29,
+    "nome": "Gnomo das Rochas",
+    "pericias": [""],
+    "idiomas": ["Comum", "Gnômico"]
+  },
+  {
+    "id": 30,
+    "nome": "Gnomo das Profundezas",
+    "pericias": [""],
+    "idiomas": ["Comum", "Gnômico"]
+  },
+  {
+    "id": 31,
+    "nome": "Autognomo",
+    "pericias": [""],
+    "idiomas": ["Comum", "Gnômico"]
+  },
+  {
+    "id": 32,
+    "nome": "Tiefling",
+    "pericias": [""],
+    "idiomas": ["Comum", "Infernal"]
+  },
+  {
+    "id": 33,
+    "nome": "Draconato",
+    "pericias": [""],
+    "idiomas": ["Comum", "Dracônico"]
+  },
+  {
+    "id": 34,
+    "nome": "Aarakocra",
+    "pericias": [""],
+    "idiomas": ["Comum", "Auran"]
+  },
+  {
+    "id": 35,
+    "nome": "Aasimar",
+    "pericias": [""],
+    "idiomas": ["Comum", "Celestial"]
+  },
+  {
+    "id": 36,
+    "nome": "Centauro",
+    "pericias": [""],
+    "idiomas": ["Comum", "Silvestre"]
+  },
+  {
+    "id": 37,
+    "nome": "Fada",
+    "pericias": [""],
+    "idiomas": ["Comum", "Silvestre"]
+  },
+  {
+    "id": 38,
+    "nome": "Firbolg",
+    "pericias": [""],
+    "idiomas": ["Comum", "Élfico", "gigante"]
+  },
+  {
+    "id": 39,
+    "nome": "Genasi",
+    "pericias": [""],
+    "idiomas": ["Comum", "Primordial"]
+  },
+  { "id": 40, "nome": "Giff", "pericias": [""], "idiomas": ["Comum"] },
+  {
+    "id": 41,
+    "nome": "Githyanki",
+    "pericias": [""],
+    "idiomas": ["Comum", "Gith"]
+  },
+  {
+    "id": 42,
+    "nome": "Githzerai",
+    "pericias": [""],
+    "idiomas": ["Comum", "Dracônico"]
+  },
+  {
+    "id": 43,
+    "nome": "Goblin",
+    "pericias": [""],
+    "idiomas": ["Comum", "Goblinoide"]
+  },
+  { "id": 44, "nome": "Hadooze", "pericias": [""], "idiomas": ["Comum"] },
+  {
+    "id": 45,
+    "nome": "Hobgoblin",
+    "pericias": [""],
+    "idiomas": ["Comum", "Goblinoide"]
+  },
+  {
+    "id": 46,
+    "nome": "Laparlonj",
+    "pericias": [""],
+    "idiomas": ["Comum", "Silvestre"]
+  },
+  { "id": 47, "nome": "Minotauro", "pericias": [""], "idiomas": ["Comum"] },
+  { "id": 48, "nome": "Plasmoid", "pericias": [""], "idiomas": ["Comum"] },
+  { "id": 49, "nome": "Thri-Kreen", "pericias": [""], "idiomas": ["Comum"] },
+  {
+    "id": 50,
+    "nome": "Tritão",
+    "pericias": [""],
+    "idiomas": ["Comum", "Aquan"]
+  },
+  {
+    "id": 51,
+    "nome": "Yuan-Ti",
+    "pericias": [""],
+    "idiomas": ["Comum", "Dracônico", "Abissal"]
   }
 ]

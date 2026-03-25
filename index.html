@@ -95,36 +95,7 @@
                     Autognomo
                   </option>
                   <option value="Tiefling" data-tipo="comum">Tiefling</option>
-                  <option value="Draconato Vermelho" data-tipo="comum">
-                    Draconato Vermelho
-                  </option>
-                  <option value="Draconato Verde" data-tipo="comum">
-                    Draconato Verde
-                  </option>
-                  <option value="Draconato Azul" data-tipo="comum">
-                    Draconato Azul
-                  </option>
-                  <option value="Draconato Negro" data-tipo="comum">
-                    Draconato Negro
-                  </option>
-                  <option value="Draconato Branco" data-tipo="comum">
-                    Draconato Branco
-                  </option>
-                  <option value="Draconato Dourado" data-tipo="comum">
-                    Draconato Dourado
-                  </option>
-                  <option value="Draconato Prateado" data-tipo="comum">
-                    Draconato Prateado
-                  </option>
-                  <option value="Draconato Cobre" data-tipo="comum">
-                    Draconato Cobre
-                  </option>
-                  <option value="Draconato Latão" data-tipo="comum">
-                    Draconato Latão
-                  </option>
-                  <option value="Draconato Bronze" data-tipo="comum">
-                    Draconato Bronze
-                  </option>
+                  <option value="Draconato" data-tipo="comum">Draconato</option>
                   <option value="Kobold" data-tipo="exotica">Kobold</option>
                   <option value="Aarakocra" data-tipo="exotica">
                     Aarakocra
@@ -137,18 +108,7 @@
                   </option>
                   <option value="Fada" data-tipo="exotica">Fada</option>
                   <option value="Firbolg" data-tipo="exotica">Firbolg</option>
-                  <option value="Genasi da Água" data-tipo="exotica">
-                    Genasi da Água
-                  </option>
-                  <option value="Genasi da Terra" data-tipo="exotica">
-                    Genasi da Terra
-                  </option>
-                  <option value="Genasi do Ar" data-tipo="exotica">
-                    Genasi do Ar
-                  </option>
-                  <option value="Genasi do Fogo" data-tipo="exotica">
-                    Genasi do Fogo
-                  </option>
+                  <option value="Genasi" data-tipo="exotica">Genasi</option>
                   <option value="Giff" data-tipo="exotica">Giff</option>
                   <option value="Githyanki" data-tipo="exotica">
                     Githyanki
@@ -254,6 +214,50 @@
                   <option value="Sentinela">Sentinela</option>
                   <option value="Sorrateiro">Sorrateiro</option>
                   <option value="Sortudo">Sortudo</option>
+                </select>
+              </div>
+              <div class="label-area">
+                <button type="button" class="back-step">Voltar</button>
+              </div>
+            </div>
+            <!-- linhagem do draconato -->
+            <div class="step" data-step="linhagema">
+              <p class="select-title">Escolha sua linhagem:</p>
+              <div class="label-area">
+                <label for="linhagem" class="label-select">Linhagem:</label>
+                <select name="linhagem" id="linhagem" class="etapa">
+                  <option name="" id="" disabled value="" selected>
+                    Selecione uma linhagem
+                  </option>
+                  <option value="Vermelho">Vermelho (Fogo)</option>
+                  <option value="Azul">Azul (Elétrico)</option>
+                  <option value="Verde">Verde (Veneno)</option>
+                  <option value="Negro">Negro (Ácido)</option>
+                  <option value="Branco">Branco (Gelo)</option>
+                  <option value="Dourado">Dourado (Fogo)</option>
+                  <option value="Prateado">Prateado (Gelo)</option>
+                  <option value="Bronze">Bronze (Elétrico)</option>
+                  <option value="Latão">Latão (Fogo)</option>
+                  <option value="Cobre">Cobre (Ácido)</option>
+                </select>
+              </div>
+              <div class="label-area">
+                <button type="button" class="back-step">Voltar</button>
+              </div>
+            </div>
+            <!-- linhagem do genasi -->
+            <div class="step" data-step="elemento">
+              <p class="select-title">Escolha seu elemento:</p>
+              <div class="label-area">
+                <label for="elemento" class="label-select">Elemento:</label>
+                <select name="elemento" id="elemento" class="etapa">
+                  <option name="" id="" disabled value="" selected>
+                    Selecione um elemento
+                  </option>
+                  <option value="Ar">Ar</option>
+                  <option value="Água">Água</option>
+                  <option value="Fogo">Fogo</option>
+                  <option value="Terra">Terra</option>
                 </select>
               </div>
               <div class="label-area">
@@ -1785,12 +1789,109 @@
                 <button type="button" class="avanca-step">Avançar</button>
               </div>
             </div>
-            <!-- idiomas, história e nome -->
+            <!-- idiomas -->
             <div class="step" data-step="idiomas">
+              <p class="select-title">Escolha um idioma extra:</p>
+              <br />
               <div class="label-area">
-                <p>Escolha mais 0 idiomas:</p>
-                <div class="idiomas"></div>
+                <input type="checkbox" id="Comum" class="idioma" />
+                <label for="Comum"><span>Comum</span></label>
               </div>
+              <div class="label-area">
+                <input type="checkbox" id="Anão" class="idioma" />
+                <label for="Anão"><span>Anão</span></label>
+              </div>
+
+              <div class="label-area">
+                <input type="checkbox" id="Élfico" class="idioma" />
+                <label for="Élfico"><span>Élfico</span></label>
+              </div>
+
+              <div class="label-area">
+                <input type="checkbox" id="Gigante" class="idioma" />
+                <label for="Gigante"><span>Gigante</span></label>
+              </div>
+
+              <div class="label-area">
+                <input type="checkbox" id="Gnômico" class="idioma" />
+                <label for="Gnômico"><span>Gnômico</span></label>
+              </div>
+
+              <div class="label-area">
+                <input type="checkbox" id="Goblinoide" class="idioma" />
+                <label for="Goblinoide"><span>Goblinoide</span></label>
+              </div>
+
+              <div class="label-area">
+                <input type="checkbox" id="Halfling" class="idioma" />
+                <label for="Halfling"><span>Halfling</span></label>
+              </div>
+
+              <div class="label-area">
+                <input type="checkbox" id="Orc" class="idioma" />
+                <label for="Orc"><span>Orc</span></label>
+              </div>
+
+              <div class="label-area">
+                <input type="checkbox" id="Abissal" class="idioma" />
+                <label for="Abissal"><span>Abissal</span></label>
+              </div>
+
+              <div class="label-area">
+                <input type="checkbox" id="Celestial" class="idioma" />
+                <label for="Celestial"><span>Celestial</span></label>
+              </div>
+
+              <div class="label-area">
+                <input type="checkbox" id="Dracônico" class="idioma" />
+                <label for="Dracônico"><span>Dracônico</span></label>
+              </div>
+
+              <div class="label-area">
+                <input type="checkbox" id="Infernal" class="idioma" />
+                <label for="Infernal"><span>Infernal</span></label>
+              </div>
+
+              <div class="label-area">
+                <input type="checkbox" id="Silvestre" class="idioma" />
+                <label for="Silvestre"><span>Silvestre</span></label>
+              </div>
+
+              <div class="label-area">
+                <input type="checkbox" id="Subterrâneo" class="idioma" />
+                <label for="Subterrâneo"><span>Subterrâneo</span></label>
+              </div>
+
+              <div class="label-area">
+                <input type="checkbox" id="Aquan" class="idioma" />
+                <label for="Aquan"><span>Aquan</span></label>
+              </div>
+
+              <div class="label-area">
+                <input type="checkbox" id="Auran" class="idioma" />
+                <label for="Auran"><span>Auran</span></label>
+              </div>
+
+              <div class="label-area">
+                <input type="checkbox" id="Ignan" class="idioma" />
+                <label for="Ignan"><span>Ignan</span></label>
+              </div>
+
+              <div class="label-area">
+                <input type="checkbox" id="Terran" class="idioma" />
+                <label for="Terran"><span>Terran</span></label>
+              </div>
+
+              <div class="label-area">
+                <input type="checkbox" id="Gith" class="idioma" />
+                <label for="Gith"><span>Gith</span></label>
+              </div>
+            </div>
+            <div class="area-label">
+              <button type="button" class="voltar">Voltar</button>
+            </div>
+            <!-- história e nome -->
+            <div class="step" data-step="historia">
               <div class="label-area">
                 <label for="nome">Nome:</label
                 ><input type="text" id="nome" name="nome" class="nome" />

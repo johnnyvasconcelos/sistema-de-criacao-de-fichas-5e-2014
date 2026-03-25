@@ -4,7 +4,6 @@
   const inputs = document.querySelectorAll(".etapa");
   const exoticRaces = document.querySelectorAll('option[data-tipo="exotica"]');
   const activeRaces = document.querySelector("#ativa-racas");
-  let base = 8;
   const totalEquips = document.querySelector(".equips-escolhidos");
   const dinheiroFooter = document.querySelector(".dinheiro-footer");
   const moedas = document.querySelector(".moedas");
@@ -94,9 +93,23 @@
         if (dado === "raca") {
           if (data.raca === "Humano Variante") {
             steps[index + 1].classList.add("on");
-          } else if (steps[index + 2]) {
+          } else if (data.raca === "Draconato") {
             steps[index + 2].classList.add("on");
+          } else if (data.raca === "Genasi") {
+            steps[index + 3].classList.add("on");
+          } else if (steps[index + 2]) {
+            steps[index + 4].classList.add("on");
           }
+        }
+
+        // talento
+        else if (dado === "talento") {
+          steps[index + 3].classList.add("on");
+        }
+
+        // linhagem
+        else if (dado === "linhagem") {
+          steps[index + 2].classList.add("on");
         }
 
         // classe
@@ -273,6 +286,13 @@
       periciasCampo.innerHTML = "";
       magiasCampo.innerHTML = "";
       truquesCampo.innerHTML = "";
+      // mostra idiomas
+      const idiomas = document.querySelectorAll(".idioma");
+      for (let id = 0; id < idiomas.length; id++) {
+        if (racaEscolhida.idiomas.includes(idiomas[id].id)) {
+          idiomas[id].checked = "true";
+        }
+      }
       // invoca as perícias
       for (let i = 0; i < pericias.length; i++) {
         const periciaElfica =
@@ -320,19 +340,19 @@
         truquesAtivos.push("Druidismo");
         truquesCampo.innerHTML =
           "<label class='label-area' for='Druidismo'><input type='checkbox' class='truque' id='Druidismo' value='Druidismo' disabled checked/><span>Druidismo</span></label>";
-      } else if (data.raca === "Genasi do Ar") {
+      } else if (data.raca === "Genasi" && data.elemento === "Ar") {
         truquesAtivos.push("Toque Chocante");
         truquesCampo.innerHTML =
           "<label class='label-area' for='Toque Chocante'><input type='checkbox' class='truque' id='Toque Chocante' value='Toque Chocante' disabled checked/><span>Toque Chocante</span></label>";
-      } else if (data.raca === "Genasi da Terra") {
+      } else if (data.raca === "Genasi" && data.elemento === "Terra") {
         truquesAtivos.push("Proteção contra Lâminas");
         truquesCampo.innerHTML =
           "<label class='label-area' for='Proteção contra Lâminas'><input type='checkbox' class='truque' id='Proteção contra Lâminas' value='Proteção contra Lâminas' disabled checked/><span>Proteção contra Lâminas</span></label>";
-      } else if (data.raca === "Genasi do Fogo") {
+      } else if (data.raca === "Genasi" && data.elemento === "Fogo") {
         truquesAtivos.push("Criar Chamas");
         truquesCampo.innerHTML =
           "<label class='label-area' for='Criar Chamas'><input type='checkbox' class='truque' id='Criar Chamas' value='Criar Chamas' disabled checked/><span>Criar Chamas</span></label>";
-      } else if (data.raca === "Genasi da Água") {
+      } else if (data.raca === "Genasi" && data.elemento === "Água") {
         truquesAtivos.push("Espirro  Ácido");
         truquesCampo.innerHTML =
           "<label class='label-area' for='Espirro Ácido'><input type='checkbox' class='truque' id='Espirro Ácido' value='Espirro Ácido' disabled checked/><span>Espirro Ácido</span></label>";
@@ -406,7 +426,9 @@
       }
       for (let t = 0; t < truque.length; t++) {
         truque[t].addEventListener("change", () => {
-          const marcadas = document.querySelectorAll(".truque:checked");
+          const marcadas = document.querySelectorAll(
+            ".truque:not(:disabled):checked",
+          );
           if (data.raca === "Alto Elfo") {
             if (marcadas.length > classeEscolhida.truquesQuantidade + 1) {
               truque[t].checked = false;
@@ -578,7 +600,7 @@
         console.log(data);
         if (steps[index + 1]) {
           steps[index].classList.remove("on");
-          steps[index + 2].classList.add("on");
+          steps[index + 1].classList.add("on");
         }
       }
     });
