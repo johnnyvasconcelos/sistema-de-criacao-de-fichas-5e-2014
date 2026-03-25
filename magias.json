@@ -2,57 +2,57 @@
   {
     "id": 1,
     "nome": "Heroísmo",
-    "descricao": ""
+    "descricao": "Uma criatura voluntária tocada fica imune a ser amedrontada e ganha PVs temporários igual ao seu modificador de habilidade de conjuração."
   },
   {
     "id": 2,
     "nome": "Sussurros Dissonantes",
-    "descricao": ""
+    "descricao": "Um alvo que te ouça deve passar num teste de Sab. ou sofrerá 3d6 de dano psíquico e usará a reação para fugir; se passar, sofre metade do dano e fica onde está."
   },
   {
     "id": 3,
     "nome": "Armadura de Agathys",
-    "descricao": ""
+    "descricao": "Você ganha 5 PVs temporários (1h). Se uma criatura atingir você com um ataque corpo-a-corpo enquanto estiver com esses pontos de vida, a criatura sofrerá 5 de dano de frio."
   },
   {
     "id": 4,
     "nome": "Braços de Hadar",
-    "descricao": ""
+    "descricao": "Tentáculos de energia golpeiam quem estiver a até 3m de você, exigindo um teste de For. para não sofrer 2d6 de dano necrótico e perder reações."
   },
   {
     "id": 5,
     "nome": "Bruxaria",
-    "descricao": ""
+    "descricao": "Você amaldiçoa um alvo para causar 1d6 de dano necrótico extra por ataque e dar desvantagem nos testes de um atributo escolhido. Se o alvo morrer, você move a marca com uma ação bônus."
   },
   {
     "id": 6,
     "nome": "Recuo Acelerado",
-    "descricao": ""
+    "descricao": "Você ganha a habilidade de usar Disparada como ação bônus no momento em que conjura a magia e em todos os seus turnos seguintes."
   },
   {
     "id": 7,
     "nome": "Bênção",
-    "descricao": ""
+    "descricao": "Você abençoa até três criaturas para que adicionem 1d4 a todas as jogadas de ataque e testes de resistência que fizerem por 1 min."
   },
   {
     "id": 8,
     "nome": "Comando",
-    "descricao": ""
+    "descricao": "Um alvo que fala o mesmo idioma deve passar num teste de resistência de Sab. ou seguirá seu comando no próximo turno dele: Aproxime-se, fuja, deite-se, parado."
   },
   {
     "id": 9,
     "nome": "Detectar o Bem e Mal",
-    "descricao": ""
+    "descricao": "Você sabe se existe local profanado ou consagrado, ou aberração, celestial, corruptor, elemental, fada ou morto-vivo, a até 9m."
   },
   {
     "id": 10,
     "nome": "Perdição",
-    "descricao": ""
+    "descricao": "Até três alvos visíveis devem passar num teste de Car. ou subtrairão 1d4 de todas as jogadas de ataque e testes de resistência que fizerem enquanto a magia durar."
   },
   {
     "id": 11,
     "nome": "Proteção contra o Bem e Mal",
-    "descricao": ""
+    "descricao": "Por 10 min, alvo tocado fica protegido contra aberrações, celestiais, corruptores, elementais, fadas e mortos-vivos, fazendo com que eles tenham desvantagem para atacá-lo. O alvo também fica imune a ser enfeitiçado, amedrontado ou possuído."
   },
   {
     "id": 12,
@@ -87,7 +87,7 @@
   {
     "id": 18,
     "nome": "Constrição",
-    "descricao": ""
+    "descricao": "Plantas brotam num quadrado de 6 metros, tornam o chão terreno difícil e exigem teste de For. de quem estiver na área para não ficar impedido. O alvo preso pode usar a própria ação para tentar um novo teste de For. p/ ficar livre."
   },
   {
     "id": 19,
@@ -102,7 +102,7 @@
   {
     "id": 21,
     "nome": "Detectar Veneno e Doença",
-    "descricao": ""
+    "descricao": "Você sente a presença, tipo e localização de venenos, criaturas venenosas e doenças a até 9m."
   },
   {
     "id": 22,
@@ -152,12 +152,12 @@
   {
     "id": 31,
     "nome": "Compreender Idiomas",
-    "descricao": ""
+    "descricao": "Você entende o significado de qualquer idioma falado ou escrito."
   },
   {
     "id": 32,
     "nome": "Detectar Magia",
-    "descricao": ""
+    "descricao": "Você sente a presença de magia a até 9m. Sabe qual a escola de magia, se houver."
   },
   {
     "id": 33,
@@ -232,7 +232,7 @@
   {
     "id": 47,
     "nome": "Convocar Familiar",
-    "descricao": ""
+    "descricao": "Um espírito (celestial, corruptor ou fada) em forma de animal que obedece suas ordens, age no próprio turno e não pode atacar, mas consegue usar reações para transmitir suas magias de toque a até 30m. Fora de combate, você pode se comunicar telepaticamente a 30m, usar os sentidos dele, e guardá-lo ou tirá-lo de uma bolsa dimensional."
   },
   {
     "id": 48,
