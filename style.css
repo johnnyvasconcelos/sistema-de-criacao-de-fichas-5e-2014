@@ -234,7 +234,18 @@ form textarea {
 form textarea:focus {
   outline: none;
 }
-
+#nome_personagem {
+  padding: 10px;
+  margin-bottom: 12px;
+}
+#nome_personagem,
+#historia_personagem {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+}
 /* responsive settings */
 @media (max-width: 767px) {
   .dinheiro-footer {

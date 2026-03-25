@@ -622,6 +622,13 @@
           steps[index + 1].classList.add("on");
         }
       }
+      // step de nome e história
+      else if (atualStep === "historia") {
+        const nome = document.querySelector("#nome_personagem");
+        const historia = document.querySelector("#historia_personagem");
+        data.nome = nome.value;
+        data.historia = historia.value;
+      }
     });
   }
   // equipamentos
