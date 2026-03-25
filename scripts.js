@@ -239,19 +239,25 @@
     try {
       bonusAdd =
         data.raca === "Humano Variante"
-          ? bonusPericias(data.classe) + 1
-          : bonusPericias(data.classe);
+          ? bonusPericias() + 1
+          : data.raca === "Meio-Elfo" || data.raca === "Kenku"
+            ? bonusPericias() + 2
+            : bonusPericias();
 
-      const [pericias, antecedentes, classes] = await Promise.all([
+      const [pericias, antecedentes, classes, racas] = await Promise.all([
         carregarJSON("./pericias.json"),
         carregarJSON("./antecedentes.json"),
         carregarJSON("./classes.json"),
+        carregarJSON("./raca.json"),
       ]);
       const antecedenteEscolhido = antecedentes.find(
         (ant) => ant.nome === data.antecedente,
       );
       const classeEscolhida = classes.find((c) => {
         return c.nome === data.classe;
+      });
+      const racaEscolhida = racas.find((r) => {
+        return r.nome === data.raca;
       });
       const periciasClasse = classeEscolhida.pericias;
       const periciasCampo = document.querySelector(".pericias");
@@ -272,16 +278,21 @@
         const periciaElfica =
           (data.raca === "Alto Elfo" ||
             data.raca === "Elfo Negro" ||
+            data.raca === "Elfo Marinho" ||
+            data.raca === "Eladrin" ||
+            data.raca === "Laparlonj" ||
+            data.raca === "Shadar-Kai" ||
             data.raca === "Elfo da Floresta") &&
           pericias[i].nome === "Percepção";
 
         const check =
           antecedenteEscolhido.pericias.includes(pericias[i].nome) ||
+          racaEscolhida.pericias.includes(pericias[i].nome) ||
           periciaElfica
             ? "checked disabled"
             : "";
 
-        periciasCampo.innerHTML += `<label class="label-area" for="${pericias[i].nome}"><input type="checkbox" class="pericia-checkbox" id="${pericias[i].nome}" value="${pericias[i].nome}" ${check} ${periciasClasse.includes(pericias[i].nome) && !antecedenteEscolhido.pericias.includes(pericias[i].nome) && !periciaElfica ? "" : "disabled"}/>${pericias[i].nome}</label>`;
+        periciasCampo.innerHTML += `<label class="label-area" for="${pericias[i].nome}"><input type="checkbox" class="pericia-checkbox" id="${pericias[i].nome}" value="${pericias[i].nome}" ${check} ${periciasClasse.includes(pericias[i].nome) && !racaEscolhida.pericias.includes(pericias[i].nome) && !antecedenteEscolhido.pericias.includes(pericias[i].nome) && !periciaElfica ? "" : "disabled"}/>${pericias[i].nome}</label>`;
       }
       // invoca os truques
       let truquesAtivos = [];
@@ -430,9 +441,9 @@
       console.error("Erro em mostrarPericiasEMagias:", error);
     }
   };
-  const bonusPericias = (classe) => {
-    if (classe === "Bardo" || classe === "Patrulheiro") return 3;
-    if (classe === "Ladino") return 4;
+  const bonusPericias = () => {
+    if (data.classe === "Bardo" || data.classe === "Patrulheiro") return 3;
+    if (data.classe === "Ladino") return 4;
     return 2;
   };
   const carregarJSON = async (url) => {

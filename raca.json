@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "nome": "Humano",
+    "pericias": [""]
+  },
+  {
+    "id": 2,
+    "nome": "Alto Elfo",
+    "pericias": [""]
+  },
+  {
+    "id": 3,
+    "nome": "Elfo Negro",
+    "pericias": [""]
+  },
+  {
+    "id": 4,
+    "nome": "Elfo da Floresta",
+    "pericias": [""]
+  },
+  {
+    "id": 5,
+    "nome": "Bugurso",
+    "pericias": ["Furtividade"]
+  },
+  {
+    "id": 6,
+    "nome": "Bugurso",
+    "pericias": ["Enganação", "Atuação"]
+  },
+  {
+    "id": 7,
+    "nome": "Eladrin",
+    "pericias": [""]
+  },
+  {
+    "id": 8,
+    "nome": "Elfo Marinho",
+    "pericias": [""]
+  },
+  {
+    "id": 9,
+    "nome": "Morfo",
+    "pericias": ["Intimidação"]
+  },
+  {
+    "id": 10,
+    "nome": "Golias",
+    "pericias": ["Atletismo"]
+  },
+  {
+    "id": 11,
+    "nome": "Kenku",
+    "pericias": [""]
+  },
+  {
+    "id": 12,
+    "nome": "Tabaxi",
+    "pericias": ["Furtividade", "Percepção"]
+  },
+  {
+    "id": 13,
+    "nome": "Tortuga",
+    "pericias": ["Medicina"]
+  },
+  {
+    "id": 14,
+    "nome": "Reptante",
+    "pericias": ["Furtividade"]
+  },
+  {
+    "id": 15,
+    "nome": "Sátiro",
+    "pericias": ["Atuação", "Persuasão"]
+  }
+]
