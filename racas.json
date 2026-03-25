@@ -1,273 +1,482 @@
 [
-  { "id": 1, "nome": "Humano", "pericias": [""], "idiomas": ["Comum"] },
+  {
+    "id": 1,
+    "nome": "Humano",
+    "pericias": [""],
+    "idiomas": ["Comum"],
+    "habilidades": [""]
+  },
   {
     "id": 2,
     "nome": "Alto Elfo",
     "pericias": [""],
-    "idiomas": ["Comum", "Élfico"]
+    "idiomas": ["Comum", "Élfico"],
+    "habilidades": [
+      "Você tem vantagem nos testes de resistência para resistir a ser enfeitiçado e magias não podem colocá-lo para dormir.",
+      "Você não precisa dormir. Transe inconsciente por 4 horas equivale a um descanso longo.",
+      "Visão no Escuro 18m"
+    ]
   },
   {
     "id": 3,
     "nome": "Elfo Negro",
     "pericias": [""],
-    "idiomas": ["Comum", "Élfico"]
+    "idiomas": ["Comum", "Élfico"],
+    "habilidades": [
+      "Você tem vantagem nos testes de resistência para resistir a ser enfeitiçado e magias não podem colocá-lo para dormir.",
+      "Você não precisa dormir. Transe inconsciente por 4 horas equivale a um descanso longo.",
+      "Você possui desvantagem nas jogadas de ataque e testes de Percepção relacionados a visão quando você, o alvo do seu ataque, ou qualquer coisa que você está tentando perceber, esteja sob luz solar direta.",
+      "Visão no Escuro (Superior) 36m"
+    ]
   },
   {
     "id": 4,
     "nome": "Elfo da Floresta",
     "pericias": [""],
-    "idiomas": ["Comum", "Élfico"]
+    "idiomas": ["Comum", "Élfico"],
+    "habilidades": [
+      "Você tem vantagem nos testes de resistência para resistir a ser enfeitiçado e magias não podem colocá-lo para dormir.",
+      "Você não precisa dormir. Transe inconsciente por 4 horas equivale a um descanso longo.",
+      "Visão no Escuro 18m",
+      "Você pode tentar se esconder mesmo quando estiver apenas levemente obscurecido por folhagem, chuva forte, neve caindo, névoa ou outros fenômenos naturais."
+    ]
   },
   {
     "id": 5,
     "nome": "Bugurso",
     "pericias": ["Furtividade"],
-    "idiomas": ["Comum", "Goblinoide"]
+    "idiomas": ["Comum", "Goblinoide"],
+    "habilidades": [""]
   },
   {
     "id": 6,
     "nome": "Duplicante",
     "pericias": ["Enganação", "Atuação"],
-    "idiomas": ["Comum", "Élfico"]
+    "idiomas": ["Comum", "Élfico"],
+    "habilidades": [""]
   },
   {
     "id": 7,
     "nome": "Eladrin",
     "pericias": [""],
-    "idiomas": ["Comum", "Élfico"]
+    "idiomas": ["Comum", "Élfico"],
+    "habilidades": [""]
   },
   {
     "id": 8,
     "nome": "Elfo Marinho",
     "pericias": [""],
-    "idiomas": ["Comum", "Élfico"]
+    "idiomas": ["Comum", "Élfico"],
+    "habilidades": [""]
   },
   {
     "id": 9,
     "nome": "Morfo",
     "pericias": ["Intimidação"],
-    "idiomas": ["Comum"]
+    "idiomas": ["Comum"],
+    "habilidades": [""]
   },
   {
     "id": 10,
     "nome": "Golias",
     "pericias": ["Atletismo"],
-    "idiomas": ["Comum", "Gigante"]
+    "idiomas": ["Comum", "Gigante"],
+    "habilidades": [""]
   },
   {
     "id": 11,
     "nome": "Kenku",
     "pericias": [""],
-    "idiomas": ["Comum", "Auran"]
+    "idiomas": ["Comum", "Auran"],
+    "habilidades": [""]
   },
   {
     "id": 12,
     "nome": "Tabaxi",
     "pericias": ["Furtividade", "Percepção"],
-    "idiomas": ["Comum"]
+    "idiomas": ["Comum"],
+    "habilidades": [""]
   },
   {
     "id": 13,
     "nome": "Tortuga",
     "pericias": ["Medicina"],
-    "idiomas": ["Comum", "Aquan"]
+    "idiomas": ["Comum", "Aquan"],
+    "habilidades": [""]
   },
   {
     "id": 14,
     "nome": "Reptante",
     "pericias": ["Furtividade"],
-    "idiomas": ["Comum", "Dracônico"]
+    "idiomas": ["Comum", "Dracônico"],
+    "habilidades": [""]
   },
   {
     "id": 15,
     "nome": "Sátiro",
     "pericias": ["Atuação", "Persuasão"],
-    "idiomas": ["Comum", "Silvestre"]
+    "idiomas": ["Comum", "Silvestre"],
+    "habilidades": [""]
   },
   {
     "id": 16,
     "nome": "Humano Variante",
     "pericias": [""],
-    "idiomas": ["Comum"]
+    "idiomas": ["Comum"],
+    "habilidades": [""]
   },
   {
     "id": 17,
     "nome": "Elfo Astral",
     "pericias": [""],
-    "idiomas": ["Comum", "Élfico"]
+    "idiomas": ["Comum", "Élfico"],
+    "habilidades": [""]
   },
   {
     "id": 18,
     "nome": "Shadar-Kai",
     "pericias": [""],
-    "idiomas": ["Comum", "Élfico"]
+    "idiomas": ["Comum", "Élfico"],
+    "habilidades": [""]
   },
   {
     "id": 19,
     "nome": "Meio-Elfo",
     "pericias": [""],
-    "idiomas": ["Comum", "Élfico"]
+    "idiomas": ["Comum", "Élfico"],
+    "habilidades": [
+      "Você possui vantagem em testes de resistência contra encantamento e magia não pode colocar você pra dormir",
+      "Visão no escuro (18m)"
+    ]
   },
   {
     "id": 20,
     "nome": "Meio-Orc",
     "pericias": [""],
-    "idiomas": ["Comum", "Orc"]
+    "idiomas": ["Comum", "Orc"],
+    "habilidades": [
+      "Quando você é reduzido a 0 pontos de vida mas não é completamente morto, você pode voltar para 1 ponto de vida. Você não pode usar essa característica novamente até completar um descanso longo.",
+      "Visão no Escuro (18m)",
+      "Quando você atinge um ataque crítico com uma arma corpo-a-corpo, você pode rolar um dos dados de dano da arma mais uma vez e adicioná-lo ao dano extra causado pelo acerto crítico."
+    ]
   },
-  { "id": 21, "nome": "Orc", "pericias": [""], "idiomas": ["Comum", "Orc"] },
+  {
+    "id": 21,
+    "nome": "Orc",
+    "pericias": [""],
+    "idiomas": ["Comum", "Orc"],
+    "habilidades": [""]
+  },
   {
     "id": 22,
     "nome": "Anão da Colina",
     "pericias": [""],
-    "idiomas": ["Comum", "Anão"]
+    "idiomas": ["Comum", "Anão"],
+    "habilidades": [
+      "Você possui vantagem em testes de resistência contra venenos e resistência contra dano de veneno.",
+      "Visão no Escuro (18m)",
+      "Sempre que você fizer um teste de História sobre a origem de trabalhos em pedra, você é considerado proficiente e dobra o seu bônus de proficiência no teste.",
+      "Seu máximo de PVs aumentam em 1, e cada vez que o anão da colina sobe um nível, ele recebe 1 PVs adicional."
+    ]
   },
   {
     "id": 23,
     "nome": "Anão da Montanha",
     "pericias": [""],
-    "idiomas": ["Comum", "Anão"]
+    "idiomas": ["Comum", "Anão"],
+    "habilidades": [
+      "Você possui vantagem em testes de resistência contra venenos e resistência contra dano de veneno.",
+      "Visão no Escuro (18m)",
+      "Sempre que você fizer um teste de História sobre a origem de trabalhos em pedra, você é considerado proficiente e dobra o seu bônus de proficiência no teste."
+    ]
   },
   {
     "id": 24,
     "nome": "Duergar",
     "pericias": [""],
-    "idiomas": ["Comum", "Anão"]
+    "idiomas": ["Comum", "Anão"],
+    "habilidades": [""]
   },
   {
     "id": 25,
-    "nome": "Meio-Anão",
+    "nome": "Halfling Pé Leve",
     "pericias": [""],
-    "idiomas": ["Comum", "Anão"]
+    "idiomas": ["Comum", "Halfling"],
+    "habilidades": [
+      "Você tem vantagem em testes de resistência contra ficar amedrontado.",
+      "Você pode mover-se através do espaço de qualquer criatura que for de um tamanho maior.",
+      "Quando você obtiver um 1 natural em uma jogada de ataque, teste de habilidade ou teste de resistência, você pode jogar de novo o dado e deve utilizar o novo resultado.",
+      "Você pode tentar se esconder mesmo quando possuir apenas a cobertura de uma criatura que for no mínimo um tamanho maior."
+    ]
   },
   {
     "id": 26,
-    "nome": "Halfling Pé Leve",
+    "nome": "Halfling Robusto",
     "pericias": [""],
-    "idiomas": ["Comum", "Halfling"]
+    "idiomas": ["Comum", "Halfling"],
+    "habilidades": [
+      "Você tem vantagem em testes de resistência contra ficar amedrontado.",
+      "Você pode mover-se através do espaço de qualquer criatura que for de um tamanho maior.",
+      "Quando você obtiver um 1 natural em uma jogada de ataque, teste de habilidade ou teste de resistência, você pode jogar de novo o dado e deve utilizar o novo resultado.",
+      "Você tem vantagem em testes de resistência contra veneno e tem resistência contra dano de veneno."
+    ]
   },
   {
     "id": 27,
-    "nome": "Halfling Robusto",
+    "nome": "Gnomo da Floresta",
     "pericias": [""],
-    "idiomas": ["Comum", "Halfling"]
+    "idiomas": ["Comum", "Gnômico"],
+    "habilidades": [
+      "Você possui vantagem em todos os testes de resistência de Inteligência, Sab e Car contra magia.",
+      "Visão no escuro (18m).",
+      "Você pode comunicar ideias simples por meio de sons e gestos para bestas pequenas ou menores."
+    ]
   },
   {
     "id": 28,
-    "nome": "Gnomo da Floresta",
+    "nome": "Gnomo das Rochas",
     "pericias": [""],
-    "idiomas": ["Comum", "Gnômico"]
+    "idiomas": ["Comum", "Gnômico"],
+    "habilidades": [
+      "Você possui vantagem em todos os testes de resistência de Inteligência, Sab e Car contra magia.",
+      "Visão no escuro (18m).",
+      "Sempre que você fizer um teste de História sobre itens mágicos, objetos alquímicos ou mecanismos tecnológicos, você dobra o seu bônus de proficiência em vez de usar o bônus normal.",
+      "Usando ferramentas de artesão, você gasta 1 hora e 10 po para criar um mecanismo miúdo (CA 5, 1 pv) que dura 24h, podendo ter até três ativos e desmantelar um com uma ação para recuperar os materiais. Você escolhe entre um Brinquedo Mecânico (move-se 1,5 metro por turno no chão e emite sons), um Isqueiro Mecânico (usa uma ação para criar uma chama para acender coisas) ou uma Caixa de Música (toca uma canção em volume moderado)."
+    ]
   },
   {
     "id": 29,
-    "nome": "Gnomo das Rochas",
+    "nome": "Gnomo das Profundezas",
     "pericias": [""],
-    "idiomas": ["Comum", "Gnômico"]
+    "idiomas": ["Comum", "Gnômico"],
+    "habilidades": [""]
   },
   {
     "id": 30,
-    "nome": "Gnomo das Profundezas",
+    "nome": "Autognomo",
     "pericias": [""],
-    "idiomas": ["Comum", "Gnômico"]
+    "idiomas": ["Comum", "Gnômico"],
+    "habilidades": [""]
   },
   {
     "id": 31,
-    "nome": "Autognomo",
+    "nome": "Tiefling",
     "pericias": [""],
-    "idiomas": ["Comum", "Gnômico"]
+    "idiomas": ["Comum", "Infernal"],
+    "habilidades": [
+      "Você possui resistência a dano de fogo.",
+      "Visão no Escuro (18m)"
+    ]
   },
   {
     "id": 32,
-    "nome": "Tiefling",
+    "nome": "Draconato",
     "pericias": [""],
-    "idiomas": ["Comum", "Infernal"]
+    "idiomas": ["Comum", "Dracônico"],
+    "habilidades": [""],
+    "habilidadesCategoria": [
+      {
+        "nome": "Vermelho",
+        "habilidades": [
+          "Resistência contra fogo.",
+          "Você exala sopro de fogo (cone 4,5m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Con + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+        ]
+      },
+      {
+        "nome": "Verde",
+        "habilidades": [
+          "Resistência contra veneno.",
+          "Você exala sopro de veneno (cone 4,5m). Criaturas na área devem fazer um teste de resistência Con (CD 8 + mod Con + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+        ]
+      },
+      {
+        "nome": "Branco",
+        "habilidades": [
+          "Resistência contra frio.",
+          "Você exala sopro de gelo (cone 4,5m). Criaturas na área devem fazer um teste de resistência Con (CD 8 + mod Con + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+        ]
+      },
+      {
+        "nome": "Azul",
+        "habilidades": [
+          "Resistência contra eletricidade.",
+          "Você exala sopro de eletricidade (linha 9m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Con + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+        ]
+      },
+      {
+        "nome": "Bronze",
+        "habilidades": [
+          "Resistência contra eletricidade.",
+          "Você exala sopro de eletricidade (linha 9m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Con + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+        ]
+      },
+      {
+        "nome": "Negro",
+        "habilidades": [
+          "Resistência contra ácido.",
+          "Você cospe ácido (linha 9m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Des + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+        ]
+      },
+      {
+        "nome": "Dourado",
+        "habilidades": [
+          "Resistência contra fogo.",
+          "Você exala sopro de fogo (cone 4,5m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Des + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+        ]
+      },
+      {
+        "nome": "Prateado",
+        "habilidades": [
+          "Resistência contra frio.",
+          "Você exala sopro de gelo (cone 4,5m). Criaturas na área devem fazer um teste de resistência Con (CD 8 + mod Des + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+        ]
+      },
+      {
+        "nome": "Latão",
+        "habilidades": [
+          "Resistência contra fogo.",
+          "Você exala sopro de fogo (linha 9m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Des + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+        ]
+      },
+      {
+        "nome": "Cobre",
+        "habilidades": [
+          "Resistência contra ácido.",
+          "Você cospe ácido (linha 9m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Des + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+        ]
+      }
+    ]
   },
   {
     "id": 33,
-    "nome": "Draconato",
+    "nome": "Aarakocra",
     "pericias": [""],
-    "idiomas": ["Comum", "Dracônico"]
+    "idiomas": ["Comum", "Auran"],
+    "habilidades": [""]
   },
   {
     "id": 34,
-    "nome": "Aarakocra",
+    "nome": "Aasimar",
     "pericias": [""],
-    "idiomas": ["Comum", "Auran"]
+    "idiomas": ["Comum", "Celestial"],
+    "habilidades": [""]
   },
   {
     "id": 35,
-    "nome": "Aasimar",
+    "nome": "Centauro",
     "pericias": [""],
-    "idiomas": ["Comum", "Celestial"]
+    "idiomas": ["Comum", "Silvestre"],
+    "habilidades": [""]
   },
   {
     "id": 36,
-    "nome": "Centauro",
+    "nome": "Fada",
     "pericias": [""],
-    "idiomas": ["Comum", "Silvestre"]
+    "idiomas": ["Comum", "Silvestre"],
+    "habilidades": [""]
   },
   {
     "id": 37,
-    "nome": "Fada",
+    "nome": "Firbolg",
     "pericias": [""],
-    "idiomas": ["Comum", "Silvestre"]
+    "idiomas": ["Comum", "Élfico", "gigante"],
+    "habilidades": [""]
   },
   {
     "id": 38,
-    "nome": "Firbolg",
+    "nome": "Genasi",
     "pericias": [""],
-    "idiomas": ["Comum", "Élfico", "gigante"]
+    "idiomas": ["Comum", "Primordial"],
+    "habilidades": [""],
+    "habilidadesCategoria": [
+      {
+        "nome": "",
+        "habilidades": [""]
+      }
+    ]
   },
   {
     "id": 39,
-    "nome": "Genasi",
+    "nome": "Giff",
     "pericias": [""],
-    "idiomas": ["Comum", "Primordial"]
+    "idiomas": ["Comum"],
+    "habilidades": [""]
   },
-  { "id": 40, "nome": "Giff", "pericias": [""], "idiomas": ["Comum"] },
   {
-    "id": 41,
+    "id": 40,
     "nome": "Githyanki",
     "pericias": [""],
-    "idiomas": ["Comum", "Gith"]
+    "idiomas": ["Comum", "Gith"],
+    "habilidades": [""]
+  },
+  {
+    "id": 41,
+    "nome": "Githzerai",
+    "pericias": [""],
+    "idiomas": ["Comum", "Dracônico"],
+    "habilidades": [""]
   },
   {
     "id": 42,
-    "nome": "Githzerai",
+    "nome": "Goblin",
     "pericias": [""],
-    "idiomas": ["Comum", "Dracônico"]
+    "idiomas": ["Comum", "Goblinoide"],
+    "habilidades": [""]
   },
   {
     "id": 43,
-    "nome": "Goblin",
+    "nome": "Hadooze",
     "pericias": [""],
-    "idiomas": ["Comum", "Goblinoide"]
+    "idiomas": ["Comum"],
+    "habilidades": [""]
   },
-  { "id": 44, "nome": "Hadooze", "pericias": [""], "idiomas": ["Comum"] },
   {
-    "id": 45,
+    "id": 44,
     "nome": "Hobgoblin",
     "pericias": [""],
-    "idiomas": ["Comum", "Goblinoide"]
+    "idiomas": ["Comum", "Goblinoide"],
+    "habilidades": [""]
+  },
+  {
+    "id": 45,
+    "nome": "Laparlonj",
+    "pericias": [""],
+    "idiomas": ["Comum", "Silvestre"],
+    "habilidades": [""]
   },
   {
     "id": 46,
-    "nome": "Laparlonj",
+    "nome": "Minotauro",
     "pericias": [""],
-    "idiomas": ["Comum", "Silvestre"]
+    "idiomas": ["Comum"],
+    "habilidades": [""]
   },
-  { "id": 47, "nome": "Minotauro", "pericias": [""], "idiomas": ["Comum"] },
-  { "id": 48, "nome": "Plasmoid", "pericias": [""], "idiomas": ["Comum"] },
-  { "id": 49, "nome": "Thri-Kreen", "pericias": [""], "idiomas": ["Comum"] },
   {
-    "id": 50,
+    "id": 47,
+    "nome": "Plasmoid",
+    "pericias": [""],
+    "idiomas": ["Comum"],
+    "habilidades": [""]
+  },
+  {
+    "id": 48,
+    "nome": "Thri-Kreen",
+    "pericias": [""],
+    "idiomas": ["Comum"],
+    "habilidades": [""]
+  },
+  {
+    "id": 49,
     "nome": "Tritão",
     "pericias": [""],
-    "idiomas": ["Comum", "Aquan"]
+    "idiomas": ["Comum", "Aquan"],
+    "habilidades": [""]
   },
   {
-    "id": 51,
+    "id": 50,
     "nome": "Yuan-Ti",
     "pericias": [""],
-    "idiomas": ["Comum", "Dracônico", "Abissal"]
+    "idiomas": ["Comum", "Dracônico", "Abissal"],
+    "habilidades": [""]
   }
 ]
