@@ -41,21 +41,18 @@
   gap: 5px;
   border-radius: 10px;
 }
-button {
-  background-color: white;
-  border: 1px solid #d6d6dc;
-  display: inline-block;
-  cursor: pointer;
-  padding: 8px 12px;
-  font-size: 15px;
-  margin-top: 15px;
-  font-weight: 500;
-  color: #272c3a;
-  margin-right: 5px;
-}
-button:hover {
+button,
+.button {
   background-color: #1c202b;
   color: #d6d6dc;
+  border: 1px solid #d6d6dc;
+  display: block;
+  cursor: pointer;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 15px auto;
+  font-weight: 500;
 }
 form .step {
   opacity: 0;
@@ -185,8 +182,8 @@ tbody {
 }
 form table {
   border-collapse: collapse;
-  width: 100%;
-  min-width: 400px;
+  min-width: 350px;
+  width: auto;
   overflow-x: scroll;
   margin-top: 15px;
 }
@@ -208,15 +205,15 @@ form .add-item:hover {
   transform: scale(112%);
 }
 form table tr:nth-child(even) {
-  background-color: #d6d6dc;
+  background-color: #cecedf;
 }
 form table tr:hover {
-  background-color: #cecedf;
+  background-color: #c4c4e4;
 }
 form table td {
   border: 1px solid #b6b7be;
   text-align: center;
-  padding: 8px 3px;
+  padding: 6px 4px;
 }
 form table th {
   padding-bottom: 10px;

@@ -7,6 +7,29 @@
   const totalEquips = document.querySelector(".equips-escolhidos");
   const dinheiroFooter = document.querySelector(".dinheiro-footer");
   const moedas = document.querySelector(".moedas");
+  const classesNaoMagicas = [
+    "Guerreiro",
+    "Ladino",
+    "Patrulheiro",
+    "Paladino",
+    "Bárbaro",
+    "Monge",
+  ];
+  const racasMagicas = [
+    "Alto Elfo",
+    "Elfo Negro",
+    "Gnomo da Floresta",
+    "Yuan-Ti",
+    "Tiefling",
+    "Aasimar",
+    "Fada",
+    "Genasi do Ar",
+    "Genasi da Terra",
+    "Genasi do Fogo",
+    "Genasi da Água",
+    "Githyanki",
+    "Githzerai",
+  ];
   // mostra ou esconde as raças fora do ldj
   exoticRaces.forEach((race) => {
     race.hidden = true;
@@ -246,8 +269,36 @@
       atributoParaEditar.value = 8 + bonusRacas[raca][atributo];
     }
   };
-  // perícias
+  // perícias e magias
   let bonusAdd = 0;
+  const mostrarDetalhesMagias = async () => {
+    // enviar descrição das magias ao data
+    try {
+      const [truques, magias] = await Promise.all([
+        carregarJSON("./truques.json"),
+        carregarJSON("./magias.json"),
+      ]);
+      const truquesDescricao = [];
+      const magiasDescricao = [];
+      for (let i = 0; i < data.truques.length; i++) {
+        const truque = truques.find((t) => t.nome === data.truques[i]);
+        truquesDescricao.push({
+          nome: data.truques[i],
+          descricao: truque.descricao,
+        });
+      }
+      for (let i = 0; i < data.magias.length; i++) {
+        const magia = magias.find((m) => m.nome === data.magias[i]);
+        magiasDescricao.push({
+          nome: data.magias[i],
+          descricao: magia.descricao,
+        });
+      }
+      data.truquesDescricoes = truquesDescricao;
+    } catch (error) {
+      console.error("Erro em mostrarDetalhesMagias:", error);
+    }
+  };
   const mostrarPericiasEMagias = async () => {
     try {
       bonusAdd =
@@ -261,7 +312,7 @@
         carregarJSON("./pericias.json"),
         carregarJSON("./antecedentes.json"),
         carregarJSON("./classes.json"),
-        carregarJSON("./raca.json"),
+        carregarJSON("./racas.json"),
       ]);
       const antecedenteEscolhido = antecedentes.find(
         (ant) => ant.nome === data.antecedente,
@@ -561,29 +612,6 @@
       // step dos equipamentos
       else if (atualStep === "equipamentos") {
         // classes não-mágicas
-        const classesNaoMagicas = [
-          "Guerreiro",
-          "Ladino",
-          "Patrulheiro",
-          "Paladino",
-          "Bárbaro",
-          "Monge",
-        ];
-        const racasMagicas = [
-          "Alto Elfo",
-          "Elfo Negro",
-          "Gnomo da Floresta",
-          "Yuan-Ti",
-          "Tiefling",
-          "Aasimar",
-          "Fada",
-          "Genasi do Ar",
-          "Genasi da Terra",
-          "Genasi do Fogo",
-          "Genasi da Água",
-          "Githyanki",
-          "Githzerai",
-        ];
         data.equipamentos = totalEquips.value
           .replaceAll(",", " ")
           .split("  ")
@@ -621,6 +649,13 @@
           steps[index].classList.remove("on");
           steps[index + 1].classList.add("on");
         }
+        if (
+          !classesNaoMagicas.includes(data.classe) ||
+          racasMagicas.includes(data.raca)
+        ) {
+          mostrarDetalhesMagias();
+        }
+        console.log(data);
       }
       // step de nome e história
       else if (atualStep === "historia") {

@@ -1,0 +1,287 @@
+[
+  {
+    "id": 1,
+    "nome": "Heroísmo",
+    "descricao": ""
+  },
+  {
+    "id": 2,
+    "nome": "Sussurros Dissonantes",
+    "descricao": ""
+  },
+  {
+    "id": 3,
+    "nome": "Armadura de Agathys",
+    "descricao": ""
+  },
+  {
+    "id": 4,
+    "nome": "Braços de Hadar",
+    "descricao": ""
+  },
+  {
+    "id": 5,
+    "nome": "Bruxaria",
+    "descricao": ""
+  },
+  {
+    "id": 6,
+    "nome": "Recuo Acelerado",
+    "descricao": ""
+  },
+  {
+    "id": 7,
+    "nome": "Bênção",
+    "descricao": ""
+  },
+  {
+    "id": 8,
+    "nome": "Comando",
+    "descricao": ""
+  },
+  {
+    "id": 9,
+    "nome": "Detectar o Bem e Mal",
+    "descricao": ""
+  },
+  {
+    "id": 10,
+    "nome": "Perdição",
+    "descricao": ""
+  },
+  {
+    "id": 11,
+    "nome": "Proteção contra o Bem e Mal",
+    "descricao": ""
+  },
+  {
+    "id": 12,
+    "nome": "Raio Guiador",
+    "descricao": ""
+  },
+  {
+    "id": 13,
+    "nome": "Santuário",
+    "descricao": ""
+  },
+  {
+    "id": 14,
+    "nome": "Escudo da Fé",
+    "descricao": ""
+  },
+  {
+    "id": 15,
+    "nome": "Infringir Ferimentos",
+    "descricao": ""
+  },
+  {
+    "id": 16,
+    "nome": "Amizade Animal",
+    "descricao": ""
+  },
+  {
+    "id": 17,
+    "nome": "Bom Fruto",
+    "descricao": ""
+  },
+  {
+    "id": 18,
+    "nome": "Constrição",
+    "descricao": ""
+  },
+  {
+    "id": 19,
+    "nome": "Criar ou Destruir Água",
+    "descricao": ""
+  },
+  {
+    "id": 20,
+    "nome": "Curar Ferimentos",
+    "descricao": ""
+  },
+  {
+    "id": 21,
+    "nome": "Detectar Veneno e Doença",
+    "descricao": ""
+  },
+  {
+    "id": 22,
+    "nome": "Falar com Animais",
+    "descricao": ""
+  },
+  {
+    "id": 23,
+    "nome": "Fogo das Fadas",
+    "descricao": ""
+  },
+  {
+    "id": 24,
+    "nome": "Névoa Obscurecente",
+    "descricao": ""
+  },
+  {
+    "id": 25,
+    "nome": "Onda Trovejante",
+    "descricao": ""
+  },
+  {
+    "id": 26,
+    "nome": "Palavra Curativa",
+    "descricao": ""
+  },
+  {
+    "id": 27,
+    "nome": "Passos Longos",
+    "descricao": ""
+  },
+  {
+    "id": 28,
+    "nome": "Purificar Alimentos",
+    "descricao": ""
+  },
+  {
+    "id": 29,
+    "nome": "Salto",
+    "descricao": ""
+  },
+  {
+    "id": 30,
+    "nome": "Armadura Arcana",
+    "descricao": ""
+  },
+  {
+    "id": 31,
+    "nome": "Compreender Idiomas",
+    "descricao": ""
+  },
+  {
+    "id": 32,
+    "nome": "Detectar Magia",
+    "descricao": ""
+  },
+  {
+    "id": 33,
+    "nome": "Disfarçar-se",
+    "descricao": ""
+  },
+  {
+    "id": 34,
+    "nome": "Enfeitiçar Pessoa",
+    "descricao": ""
+  },
+  {
+    "id": 35,
+    "nome": "Escudo Arcano",
+    "descricao": ""
+  },
+  {
+    "id": 36,
+    "nome": "Imagem Silenciosa",
+    "descricao": ""
+  },
+  {
+    "id": 37,
+    "nome": "Leque Cromático",
+    "descricao": ""
+  },
+  {
+    "id": 38,
+    "nome": "Mãos Flamejantes",
+    "descricao": ""
+  },
+  {
+    "id": 39,
+    "nome": "Mísseis Mágicos",
+    "descricao": ""
+  },
+  {
+    "id": 40,
+    "nome": "Orbe Cromática",
+    "descricao": ""
+  },
+  {
+    "id": 41,
+    "nome": "Queda Suave",
+    "descricao": ""
+  },
+  {
+    "id": 42,
+    "nome": "Raio Adoecente",
+    "descricao": ""
+  },
+  {
+    "id": 43,
+    "nome": "Sono",
+    "descricao": ""
+  },
+  {
+    "id": 44,
+    "nome": "Vitalidade Falsa",
+    "descricao": ""
+  },
+  {
+    "id": 45,
+    "nome": "Alarme",
+    "descricao": ""
+  },
+  {
+    "id": 46,
+    "nome": "Área Escorregadia",
+    "descricao": ""
+  },
+  {
+    "id": 47,
+    "nome": "Convocar Familiar",
+    "descricao": ""
+  },
+  {
+    "id": 48,
+    "nome": "Disco Flutuante de Tenser",
+    "descricao": ""
+  },
+  {
+    "id": 49,
+    "nome": "Escrita Ilusória",
+    "descricao": ""
+  },
+  {
+    "id": 50,
+    "nome": "Identificação",
+    "descricao": ""
+  },
+  {
+    "id": 51,
+    "nome": "Raio de Bruxa",
+    "descricao": ""
+  },
+  {
+    "id": 52,
+    "nome": "Riso Histérico de Tasha",
+    "descricao": ""
+  },
+  {
+    "id": 53,
+    "nome": "Servo Invisível",
+    "descricao": ""
+  },
+  {
+    "id": 54,
+    "nome": "Absorver Elementos",
+    "descricao": ""
+  },
+  {
+    "id": 55,
+    "nome": "Catapulta",
+    "descricao": ""
+  },
+  {
+    "id": 56,
+    "nome": "Laço",
+    "descricao": ""
+  },
+  {
+    "id": 57,
+    "nome": "Beberagem Cáustica de Tasha",
+    "descricao": ""
+  }
+]

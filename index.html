@@ -27,7 +27,7 @@
           <p class="parag">
             <b>COMECE ESCOLHENDO UMA RAÇA ABAIXO!</b>
           </p>
-          <form>
+          <form id="inicio">
             <!-- raça -->
             <div class="step on" data-step="raca">
               <input
@@ -216,9 +216,6 @@
                   <option value="Sortudo">Sortudo</option>
                 </select>
               </div>
-              <div class="label-area">
-                <button type="button" class="back-step">Voltar</button>
-              </div>
             </div>
             <!-- linhagem do draconato -->
             <div class="step" data-step="linhagema">
@@ -241,9 +238,6 @@
                   <option value="Cobre">Cobre (Ácido)</option>
                 </select>
               </div>
-              <div class="label-area">
-                <button type="button" class="back-step">Voltar</button>
-              </div>
             </div>
             <!-- linhagem do genasi -->
             <div class="step" data-step="elemento">
@@ -259,9 +253,6 @@
                   <option value="Fogo">Fogo</option>
                   <option value="Terra">Terra</option>
                 </select>
-              </div>
-              <div class="label-area">
-                <button type="button" class="back-step">Voltar</button>
               </div>
             </div>
             <!-- classe -->
@@ -287,9 +278,6 @@
                   <option value="Paladino">Paladino</option>
                   <option value="Patrulheiro">Patrulheiro</option>
                 </select>
-              </div>
-              <div class="label-area">
-                <button type="button" class="back-step">Voltar</button>
               </div>
             </div>
             <!-- categoria -->
@@ -371,9 +359,6 @@
                   </option>
                 </select>
               </div>
-              <div class="label-area">
-                <button type="button" class="voltar">Voltar</button>
-              </div>
             </div>
             <!-- antecedente -->
             <div class="step" data-step="antecedente">
@@ -407,9 +392,6 @@
                   <option value="Sábio">Sábio</option>
                   <option value="Soldado">Soldado</option>
                 </select>
-              </div>
-              <div class="label-area">
-                <button type="button" class="back-step">Voltar</button>
               </div>
             </div>
             <!-- atributos -->
@@ -607,10 +589,9 @@
                 <span class="min alt"><b>-</b></span>
                 <span class="max alt"><b>+</b></span>
               </div>
-              <button type="button" class="back-step">Voltar</button>
               <!-- invoca perícias -->
               <button type="button" class="avanca-step gera-pericia">
-                Avançar
+                Avançar ⇒
               </button>
             </div>
             <!-- atributos bônus -->
@@ -703,8 +684,7 @@
                 <span class="max alt-final">+</span>
               </div>
               <div class="area-label">
-                <button type="button" class="voltar">Voltar</button>
-                <button type="button" class="avanca-step">Avançar</button>
+                <button type="button" class="avanca-step">Avançar ⇒</button>
               </div>
             </div>
             <!-- perícias -->
@@ -714,8 +694,7 @@
               <div class="pericias"></div>
               <br />
               <div class="area-label">
-                <button type="button" class="voltar">Voltar</button>
-                <button type="button" class="avanca-step">Avançar</button>
+                <button type="button" class="avanca-step">Avançar ⇒</button>
               </div>
             </div>
             <!-- equipamentos -->
@@ -1715,8 +1694,9 @@
               ></textarea>
               <br />
               <div class="area-label">
-                <button type="button" class="voltar">Voltar</button>
-                <button type="button" class="avanca-step">Avançar</button>
+                <a href="#inicio" type="button" class="button avanca-step"
+                  >Avançar ⇒</a
+                >
               </div>
               <br /><br />
               <h2>Detalhes</h2>
@@ -1785,8 +1765,9 @@
               <br />
               <div class="magias"></div>
               <div class="area-label">
-                <button type="button" class="voltar">Voltar</button>
-                <button type="button" class="avanca-step">Avançar</button>
+                <a href="#inicio" type="button" class="button avanca-step"
+                  >Avançar ⇒</a
+                >
               </div>
             </div>
             <!-- idiomas -->
@@ -1962,8 +1943,9 @@
                 <label for="Gith"><span>Gith</span></label>
               </div>
               <div class="area-label">
-                <button type="button" class="voltar">Voltar</button>
-                <button type="button" class="avanca-step">Avançar</button>
+                <a href="#inicio" type="button" class="button avanca-step"
+                  >Avançar ⇒</a
+                >
               </div>
             </div>
 
@@ -1983,8 +1965,7 @@
                 class="historia"
               ></textarea>
               <div class="area-label">
-                <button type="button" class="voltar">Voltar</button>
-                <button type="button" class="avanca-step">Gerar Ficha</button>
+                <button type="button" class="avanca-step">Gerar Ficha ⎙</button>
               </div>
             </div>
             <div class="step" data-step="download">
