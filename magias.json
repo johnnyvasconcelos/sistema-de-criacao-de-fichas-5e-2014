@@ -57,32 +57,32 @@
   {
     "id": 12,
     "nome": "Raio Guiador",
-    "descricao": ""
+    "descricao": "Você faz um ataque à distância com magia contra um alvo (36m) para causar 4d6 de dano radiante. O golpe faz a criatura cintilar, garantindo vantagem na próxima jogada de ataque feita contra ela até o final do próximo turno."
   },
   {
     "id": 13,
     "nome": "Santuário",
-    "descricao": ""
+    "descricao": "Um alvo protegido força qualquer inimigo que tente atacá-lo ou causar-lhe dano a passar num teste de Sab. ou perder a ação; o efeito ignora dano de área e acaba se o protegido atacar ou afetar inimigos."
   },
   {
     "id": 14,
     "nome": "Escudo da Fé",
-    "descricao": ""
+    "descricao": "Um campo cintilante aparece ao redor de uma criatura, à escolha (18m), concedendo +2 na CA pela duração."
   },
   {
     "id": 15,
-    "nome": "Infringir Ferimentos",
-    "descricao": ""
+    "nome": "Infligir Ferimentos",
+    "descricao": "Você faz um ataque corpo-a-corpo com magia no alcance para causar 3d10 de dano necrótico se acertar."
   },
   {
     "id": 16,
     "nome": "Amizade Animal",
-    "descricao": ""
+    "descricao": "Você tenta enfeitiçar uma fera visível que possa te ver e que tenha Int. menor que 4. O bicho deve passar em teste de Sab. para não ser enfeitiçado, e o efeito acaba se você ou seus aliados a machucarem."
   },
   {
     "id": 17,
     "nome": "Bom Fruto",
-    "descricao": ""
+    "descricao": "Até 10 frutos surgem na sua mão; comer um restaura 1 PV e alimenta uma criatura por um dia. Os frutos perdem a magia após 24h."
   },
   {
     "id": 18,
@@ -92,12 +92,12 @@
   {
     "id": 19,
     "nome": "Criar ou Destruir Água",
-    "descricao": ""
+    "descricao": "Você cria até 38 lt de água limpa em um recipiente (ou faz chover em um cubo de 9m) OU destrói a mesma quantidade de água em recipiente (ou dissipa névoa em um cubo de 9m)."
   },
   {
     "id": 20,
     "nome": "Curar Ferimentos",
-    "descricao": ""
+    "descricao": "Você toca uma criatura e cura uma quantidade de PV igual a 1d8 + seu mod de atr. de conjuração."
   },
   {
     "id": 21,
@@ -107,47 +107,47 @@
   {
     "id": 22,
     "nome": "Falar com Animais",
-    "descricao": ""
+    "descricao": "Pela duração (10 min), você ganha a habilidade de compreender e se comunicar verbalmente com feras."
   },
   {
     "id": 23,
     "nome": "Fogo das Fadas",
-    "descricao": ""
+    "descricao": "Criaturas e objetos em um cubo de 6m que falharem no teste de Des. emitem luz. Ataques contra eles têm vantagem."
   },
   {
     "id": 24,
     "nome": "Névoa Obscurecente",
-    "descricao": ""
+    "descricao": "Você cria uma esfera de neblina com 6m de raio centrada em um ponto. A área fica totalmente obscurecida até o fim da magia ou um vento forte a dissipar."
   },
   {
     "id": 25,
     "nome": "Onda Trovejante",
-    "descricao": ""
+    "descricao": "Uma onda de força emite um cone de 4,5m a partir de você. Criaturas na área devem passar num teste de Con. ou sofrem 2d8 de dano trovejante e são empurradas 3m."
   },
   {
     "id": 26,
     "nome": "Palavra Curativa",
-    "descricao": ""
+    "descricao": "Uma criatura visível a até 18m cura uma quantidade de PV igual a 1d4 + seu mod de atr. de conjuração (ação bônus)."
   },
   {
     "id": 27,
     "nome": "Passos Longos",
-    "descricao": ""
+    "descricao": "Você toca uma criatura e o deslocamento dela aumenta em 3 metros por 1 hora."
   },
   {
     "id": 28,
     "nome": "Purificar Alimentos",
-    "descricao": ""
+    "descricao": "Comida e bebida em um raio de 1,5 metro é purificada e fica livre de venenos e doenças."
   },
   {
     "id": 29,
     "nome": "Salto",
-    "descricao": ""
+    "descricao": "Você toca uma criatura e a distância de salto dela é triplicada por 1 minuto."
   },
   {
     "id": 30,
     "nome": "Armadura Arcana",
-    "descricao": ""
+    "descricao": "Alvo voluntário sem armadura recebe CA base 13 + modificador de Des. por 8h."
   },
   {
     "id": 31,
@@ -162,72 +162,72 @@
   {
     "id": 33,
     "nome": "Disfarçar-se",
-    "descricao": ""
+    "descricao": "Você altera sua aparência física, roupas e equipamentos por 1h. Toque físico revela a ilusão."
   },
   {
     "id": 34,
     "nome": "Enfeitiçar Pessoa",
-    "descricao": ""
+    "descricao": "Um humanoide que falhe num teste de Sab. fica enfeitiçado por 1 hora e te trata como conhecido amigável. Ele descobre o feitiço quando o efeito acaba."
   },
   {
     "id": 35,
     "nome": "Escudo Arcano",
-    "descricao": ""
+    "descricao": "Como reação ao ser atacado ou alvo de Mísseis Mágicos, você ganha +5 na CA e fica imune a Mísseis Mágicos até o começo do seu próximo turno."
   },
   {
     "id": 36,
     "nome": "Imagem Silenciosa",
-    "descricao": ""
+    "descricao": "Você cria a imagem visual de um objeto ou criatura que caiba num cubo de 4,5m. Interação física ou teste de Investigação a ilusão."
   },
   {
     "id": 37,
     "nome": "Leque Cromático",
-    "descricao": ""
+    "descricao": "Luzes coloridas cobrem um cone de 4,5m afetando criaturas por ordem de PV atual (total de 6d10 PVs). Criaturas afetadas ficam cegas por 1 rodada."
   },
   {
     "id": 38,
     "nome": "Mãos Flamejantes",
-    "descricao": ""
+    "descricao": "Um cone de chamas de 4,5m pede um teste de Des. Alvos que falham sofrem 3d6 de dano de fogo (metade se passarem) e acende objetos inflamáveis soltos."
   },
   {
     "id": 39,
     "nome": "Mísseis Mágicos",
-    "descricao": ""
+    "descricao": "Você cria 3 dardos que acertam alvos visíveis à escolha. Cada dardo causa 1d4+1 de dano de força."
   },
   {
     "id": 40,
     "nome": "Orbe Cromática",
-    "descricao": ""
+    "descricao": "Você arremessa uma esfera elemental. Se acertar o ataque mágico, causa 3d8 de dano do tipo escolhido (ácido, frio, fogo, elétrico, veneno ou trovão)."
   },
   {
     "id": 41,
     "nome": "Queda Suave",
-    "descricao": ""
+    "descricao": "Como reação, até 5 criaturas em queda a até 18m caem devagar (18m por rodada) por 1 min e não sofrem dano ao pousar."
   },
   {
     "id": 42,
     "nome": "Raio Adoecente",
-    "descricao": ""
+    "descricao": "Ataque mágico à distância causa 2d8 de dano de veneno no acerto. O alvo deve passar num teste de Con. ou fica envenenado por 1 rodada."
   },
   {
     "id": 43,
     "nome": "Sono",
-    "descricao": ""
+    "descricao": "Jogue 5d8. Criaturas em uma esfera de 6m dormem por 1 min por ordem de PV atual (da menor para a maior) até esgotar o valor rolado. Elas acordam se sofrerem dano."
   },
   {
     "id": 44,
     "nome": "Vitalidade Falsa",
-    "descricao": ""
+    "descricao": "Você ganha 1d4 + 4 pontos de vida temporários por 1 hora."
   },
   {
     "id": 45,
     "nome": "Alarme",
-    "descricao": ""
+    "descricao": "Protege uma área (cubo de 6m) por 8h. Se uma criatura Miúda ou maior entrar, emite um som de sino no local ou um aviso mental em você."
   },
   {
     "id": 46,
     "nome": "Área Escorregadia",
-    "descricao": ""
+    "descricao": "Um quadrado de 3m no chão fica oleoso por 1 min. Quem entrar ou terminar o turno na área deve passar num teste de Des. ou cai prostrado."
   },
   {
     "id": 47,
@@ -237,51 +237,51 @@
   {
     "id": 48,
     "nome": "Disco Flutuante de Tenser",
-    "descricao": ""
+    "descricao": "Disco circular de força de 1m que flutua a até 9m de você e te segue, aguentando até 250kg."
   },
   {
     "id": 49,
     "nome": "Escrita Ilusória",
-    "descricao": ""
+    "descricao": "Você escreve num pergaminho e o texto parece normal, mas apenas criaturas designadas conseguem ler o conteúdo verdadeiro (outros leem uma mensagem falsa)."
   },
   {
     "id": 50,
     "nome": "Identificação",
-    "descricao": ""
+    "descricao": "Ao tocar um item mágico por 1 min, você descobre suas propriedades, como usá-lo e se requer sintonização."
   },
   {
     "id": 51,
     "nome": "Raio de Bruxa",
-    "descricao": ""
+    "descricao": "Ataque à distância que causa 1d12 de dano elétrico. Você pode usar sua ação no seu turno para dar 1d12 de dano elétrico automático (concentração)."
   },
   {
     "id": 52,
     "nome": "Riso Histérico de Tasha",
-    "descricao": ""
+    "descricao": "Alvo deve passar em teste de Sab. ou cai no chão de tanto rir (incapacitado). Ele repete o teste ao fim de cada turno e toda vez que sofrer dano."
   },
   {
     "id": 53,
     "nome": "Servo Invisível",
-    "descricao": ""
+    "descricao": "Servo translúcido e sem forma obedece comandos simples (limpar, amarrar, carregar) a até 18m."
   },
   {
     "id": 54,
     "nome": "Absorver Elementos",
-    "descricao": ""
+    "descricao": "Reação ao sofrer dano elemental, você ganha resistência a esse dano até o início do seu próximo turno e seu próximo golpe corpo-a-corpo causa +1d6 desse elemento."
   },
   {
     "id": 55,
     "nome": "Catapulta",
-    "descricao": ""
+    "descricao": "Arremessa um objeto solto (0,45 a 2,2 kg) em linha reta por 27 metros. Se atingir uma criatura, ela faz teste de Des; se falhar, ela e o objeto sofrem 3d8 de dano."
   },
   {
     "id": 56,
     "nome": "Laço",
-    "descricao": ""
+    "descricao": "Você usa uma corda para criar uma armadilha circular de 1,5m no chão. Criaturas que pisarem nela ficam suspensas de cabeça para baixo a 1m do chão (teste de Des. anula)."
   },
   {
     "id": 57,
     "nome": "Beberagem Cáustica de Tasha",
-    "descricao": ""
+    "descricao": "Uma linha de ácido de 9m por 1,5m sai de você. Criaturas que falham no teste de Des. tomam 2d4 de dano de ácido no início de cada turno até gastarem uma ação para se limparem."
   }
 ]
