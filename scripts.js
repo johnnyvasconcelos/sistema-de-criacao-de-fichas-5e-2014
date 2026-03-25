@@ -295,6 +295,7 @@
         });
       }
       data.truquesDescricoes = truquesDescricao;
+      data.magiasDescricoes = magiasDescricao;
     } catch (error) {
       console.error("Erro em mostrarDetalhesMagias:", error);
     }
