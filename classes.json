@@ -428,7 +428,10 @@
     "magias": [""],
     "magiasQuantidade": 0,
     "pos": 100,
-    "habilidades": [""]
+    "habilidades": [
+      "Especialização: Escolha duas proficiências em perícias (ou uma perícia e ferramentas de ladrão) para dobrar o seu bônus de proficiência nos testes realizados com elas.",
+      "Ataque Furtivo: Uma vez por turno, adicione 1d6 de dano contra um alvo que acertar com arma de acuidade ou à distância, desde que tenha vantagem na jogada de ataque."
+    ]
   },
   {
     "id": 9,
@@ -494,7 +497,9 @@
     ],
     "magiasQuantidade": 6,
     "pos": 100,
-    "habilidades": [""]
+    "habilidades": [
+      "Recuperação Arcana: Uma vez por dia, após um descanso curto, você pode recuperar espaços de magia gastos (até a metade do seu nível de mago, arredondado para cima)."
+    ]
   },
   {
     "id": 10,
@@ -512,7 +517,10 @@
     "magias": [""],
     "magiasQuantidade": 0,
     "pos": 15,
-    "habilidades": [""]
+    "habilidades": [
+      "Defesa sem Armadura: Se não estiver vestindo armadura nem empunhando escudo, sua CA será 10 + mod de Des + mod de Sab.",
+      "Artes Marciais: Se não usar armadura ou escudo desarmado ou com arma de monge (simples sem duas mãos/pesada, ou espada curta), você usa Destreza no ataque/dano, rola 1d4 de dano base e dá um golpe desarmado com ação bônus ao atacar."
+    ]
   },
   {
     "id": 11,
@@ -530,7 +538,10 @@
     "magias": [""],
     "magiasQuantidade": 0,
     "pos": 125,
-    "habilidades": [""]
+    "habilidades": [
+      "Sentido Divino (Ação): Até o final do seu próximo turno, você detecta a localização e o tipo (mas não a identidade) de qualquer celestial, corruptor ou morto-vivo a até 18m que não esteja em cobertura total, além de áreas e objetos consagrados ou profanados. Usos iguais a 1 + modificador de Car por descanso longo.",
+      "Cura pelas Mãos (Ação): Você possui uma reserva de cura igual ao seu nível de paladino x 5 (recarga por descanso longo). Você pode tocar uma criatura para restaurar pontos de vida dessa reserva ou gastar 5 pontos para curar uma doença ou neutralizar veneno."
+    ]
   },
   {
     "id": 12,
@@ -550,7 +561,10 @@
     "magias": [""],
     "magiasQuantidade": 0,
     "pos": 125,
-    "habilidades": [""]
+    "habilidades": [
+      "Inimigo Favorito: Escolha um tipo de inimigo entre bestas, fadas, humanoides, monstruosidades ou mortos-vivos. Você ganha +2 no dano com armas contra eles, vantagem em testes de Sobrevivência para rastreá-los e vantagem em testes de Inteligência para lembrar informações sobre eles.",
+      "Explorador Natural: Você tem vantagem em iniciativa e em ataques contra quem não agiu no primeiro turno. Terreno difícil não afeta você nem seu grupo em viagens de uma hora. Em viagens, o grupo não se perde, você rastreia obtendo número, tamanho e tempo das criaturas, acha o dobro de comida e viaja furtivo sozinho em ritmo normal."
+    ]
   },
   {
     "id": 13,
@@ -606,6 +620,8 @@
     ],
     "magiasQuantidade": 18,
     "pos": 125,
-    "habilidades": [""]
+    "habilidades": [
+      "Engenharia Mágica: Com ferramentas de artesão ou ladrão, você usa uma ação para tocar um objeto minúsculo não mágico e dar a ele uma destas propriedades: emitir luz (1,5 m plena e 1,5 m meia-luz), tocar uma mensagem gravada de até 6 segundos ao ser tocado (audível a 3 m), ou emitir um som ou odor contínuo (perceptível a 3 m). O efeito é por tempo indeterminado e você desativa com uma ação."
+    ]
   }
 ]
