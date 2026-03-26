@@ -125,27 +125,7 @@
     ],
     "magiasQuantidade": 2,
     "pos": 100,
-    "habilidades": [""],
-    "habilidadesCategoria": [
-      {
-        "nome": "Arquifada",
-        "habilidades": [
-          "Presença Feérica: cada criatura num cubo de 3 metros centrado em você faz uma salvaguarda de Sab. Se falharem, ficam enfeitiçadas ou amedrontadas por você (à sua escolha) até o início do seu próximo turno."
-        ]
-      },
-      {
-        "nome": "Corruptor",
-        "habilidades": [
-          "Bênção do Obscuro: quando você reduzir uma criatura hostil a 0 pontos de vida, você ganha uma quantidade de PVs temporários igual ao seu mod de Car + seu nível de bruxo."
-        ]
-      },
-      {
-        "nome": "Grande Antigo",
-        "habilidades": [
-          "Despertar a Mente : Você pode se comunicar telepaticamente com qualquer criatura visível a até 9m. Ela não precisa falar seu idioma para entender as expressões, mas deve entender pelo menos uma língua."
-        ]
-      }
-    ]
+    "habilidades": [""]
   },
   {
     "id": 4,
@@ -187,46 +167,7 @@
     ],
     "magiasQuantidade": 15,
     "pos": 125,
-    "habilidades": [""],
-    "habilidadesCategoria": [
-      {
-        "nome": "Enganação",
-        "habilidades": [
-          "Bênção do Trapaceiro: use sua ação para tocar uma criatura voluntária além de você para conceder vantagem em testes de Furtividade."
-        ]
-      },
-      {
-        "nome": "Guerra",
-        "habilidades": [
-          "Proficiência em armas marciais e armaduras pesadas.",
-          "Sacerdote da Guerra: Ao usar a ação de Ataque, você pode realizar um ataque com arma adicional usando uma ação bônus. Você pode usar essa característica um número de vezes igual ao seu mod de Sab (mínimo uma vez) por descanso longo."
-        ]
-      },
-      {
-        "nome": "Luz",
-        "habilidades": [
-          "Labareda Protetora: Quando for atacado por uma criatura visível a até 9m, você pode usar sua reação para impor desvantagem na jogada de ataque antes que ela te atinja. Alvos imunes à condição cego são imunes ao efeito."
-        ]
-      },
-      {
-        "nome": "Natureza",
-        "habilidades": ["Proficiência com armaduras pesadas."]
-      },
-      {
-        "nome": "Tempestade",
-        "habilidades": [
-          "Proficiência em armas marciais e armaduras pesadas.",
-          "Ira da Tormenta: Quando sofrer um ataque de uma criatura visível a até 1,5m, você pode usar sua reação para forçar um teste de Des no alvo, causando 2d8 de dano elétrico ou trovão (metade se passar)."
-        ]
-      },
-      {
-        "nome": "Vida",
-        "habilidades": [
-          "Proficiência com armaduras pesadas.",
-          "Discípulo da Vida: Sempre que você conjurar uma magia de cura para recuperar PVs, o alvo recupera também 2 + nível da magia conjurada."
-        ]
-      }
-    ]
+    "habilidades": [""]
   },
   {
     "id": 5,
@@ -330,22 +271,7 @@
     ],
     "magiasQuantidade": 2,
     "pos": 75,
-    "habilidades": [""],
-    "habilidadesCategoria": [
-      {
-        "nome": "Linhagem Dracônica",
-        "habilidades": [
-          "Sempre que você fizer um teste de Carisma quando estiver interagindo com dragões, seu bônus de proficiência será dobrado se ele se aplicar a esse teste."
-        ]
-      },
-      {
-        "nome": "Magia Selvagem",
-        "habilidades": [
-          "Surto de Magia Selvagem: Após conjurar uma magia de 1º nível ou superior, o Mestre pode pedir um d20 e, se der 1, você rola na tabela de surtos; se o efeito for uma magia, ela dura o tempo total sem concentração.",
-          "Marés de Caos: Você ganha vantagem em um ataque, teste ou salvaguarda (recarga em descanso longo), mas o Mestre pode forçar uma rolagem na tabela de surtos após você conjurar uma magia de 1º nível ou superior para que você recupere o uso da habilidade instantaneamente."
-        ]
-      }
-    ]
+    "habilidades": [""]
   },
   {
     "id": 7,
@@ -367,44 +293,6 @@
     "pos": 125,
     "habilidades": [
       "Retomar o Fôlego (Ação Bônus): Uma vez por descanso curto ou longo, você pode usar uma ação bônus para recuperar 1d10 + seu nível de guerreiro em pontos de vida."
-    ],
-    "habilidadesCategoria": [
-      {
-        "nome": "Luta com Armas Grandes",
-        "habilidades": [
-          "Quando rolar um 1 ou um 2 num dado de dano de ataque com arma corpo-a-corpo que você esteja empunhando com duas mãos, você pode rolar o dado novamente e usar a nova rolagem, mesmo que resulte em 1 ou 2. A arma deve ter a propriedade duas mãos ou versátil para ganhar esse benefício."
-        ]
-      },
-      {
-        "nome": "Arquearia",
-        "habilidades": [
-          "Você ganha +2 de bônus nas jogadas de ataque realizadas com uma arma de ataque à distância."
-        ]
-      },
-      {
-        "nome": "Defesa",
-        "habilidades": [
-          "Enquanto estiver usando armadura, você ganha +1 de bônus em sua CA."
-        ]
-      },
-      {
-        "nome": "Combate com Duas Armas",
-        "habilidades": [
-          "Quando você estiver engajado em uma luta com duas armas, você pode adicionar o seu modificador de habilidade de dano na jogada de dano de seu segundo ataque."
-        ]
-      },
-      {
-        "nome": "Duelismo",
-        "habilidades": [
-          "Quando você empunhar uma arma de ataque corpo-acorpo em uma mão e nenhuma outra arma, você ganha +2 de bônus nas jogadas de dano com essa arma."
-        ]
-      },
-      {
-        "nome": "Proteção",
-        "habilidades": [
-          "Quando uma criatura que você possa ver atacar um alvo que esteja a até 1,5m de você, você pode usar sua reação para impor desvantagem na jogada de ataque da criatura. Você deve estar empunhando um escudo."
-        ]
-      }
     ]
   },
   {

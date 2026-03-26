@@ -71,7 +71,7 @@
     "habilidades": [
       "Você tem vantagem para evitar ou encerrar a condição enfeitiçado",
       "Com ação bônus, você se teleporta até 9m para um espaço vazio visível. Você pode usar este recurso um número de vezes igual ao seu bônus de prof e recupera todos os usos após descanso longo.",
-      "Verão: Imediatamente após usar seu Passo Feérico, cada criatura à sua escolha que você possa ver a até 1,5 metro de você sofre dano Fogo igual ao seu bônus de prof.",
+      "Verão: Imediatamente após usar seu Passo Feérico, cada criatura à sua escolha que você possa ver a até 1,5m de você sofre dano Fogo igual ao seu bônus de prof.",
       "Visão no Escuro (18m)",
       "Você não precisa dormir. Transe inconsciente por 4 horas equivale a descanso longo.  Cada vez que faz isso pode mudar sua estação."
     ]
@@ -84,7 +84,7 @@
     "habilidades": [
       "Visão no Escuro (18m)",
       "Você tem vantagem para evitar ou encerrar a condição enfeitiçado",
-      "Você pode respirar ar e água e tem resistência a dano gélido.",
+      "Você pode respirar ar e água e tem resistência a dano frio.",
       "Sempre que termina este transe, você ganha misticamente duas proficiências com armas ou ferramentas à sua escolha que você não possua. Você as retém até terminar seu próximo transe.",
       "Você não precisa dormir. Transe inconsciente por 4 horas equivale a descanso longo."
     ]
@@ -94,49 +94,75 @@
     "nome": "Morfo",
     "pericias": ["Intimidação"],
     "idiomas": ["Comum"],
-    "habilidades": [""]
+    "habilidades": [
+      "Visão no Escuro (18m)",
+      "Como ação bônus, você assume uma forma bestial por 1 min (ou até morrer ou cancelar com ação bônus), ganhando PV temporários iguais a 2x sua proficiência. Use este recurso um número de vezes igual à sua proficiência por descanso longo. Ao escolher a raça, defina um dos seguintes benefícios extras para a transformação: Caça Selvagem concede vantagem em testes de Sab. e impede que inimigos a até 9m te ataquem com vantagem (exceto se estiver incapacitado). Passo Ágil aumenta o deslocamento em 3m e permite usar sua reação para se mover 3m sem gerar ataques de oportunidade se um inimigo terminar o turno a até 1,5m de você. Pele de Fera concede +1d6 PV temporários adicionais e +1 na CA. Presa Longa permite usar ação bônus para desferir um golpe desarmado com as presas (1d6 + mod de For. perfurante)."
+    ]
   },
   {
     "id": 10,
     "nome": "Golias",
     "pericias": ["Atletismo"],
     "idiomas": ["Comum", "Gigante"],
-    "habilidades": [""]
+    "habilidades": [
+      "Quando sofre dano (quantidade igual ao número de prof.), você pode usar sua reação para rolar 1d12 e somar seu mod de Con., reduzindo esse total do dano sofrido.",
+      "Você tem resistência a dano frio e se aclimata naturalmente a grandes altitudes."
+    ]
   },
   {
     "id": 11,
     "nome": "Kenku",
     "pericias": [""],
     "idiomas": ["Comum", "Auran"],
-    "habilidades": [""]
+    "habilidades": [
+      "Quando você copia escritos ou trabalhos manuais produzidos por você ou outra pessoa, você tem vantagem em quaisquer testes de atributo que fizer para produzir uma duplicata exata.",
+      "Você pode imitar sons e vozes com precisão. Uma criatura percebe a imitação com um teste de Sab. (Intuição) contra CD 8 + seu bônus de proficiência + seu mod de Car."
+    ]
   },
   {
     "id": 12,
     "nome": "Tabaxi",
     "pericias": ["Furtividade", "Percepção"],
     "idiomas": ["Comum"],
-    "habilidades": [""]
+    "habilidades": [
+      "Como ação bônus ou livre no seu turno, você dobra seu deslocamento até o fim do turno. Uma vez usado, não pode usar novamente até passar um turno sem se mover (0m).",
+      "Seus dentes servem para golpes desarmados, causando dano cortante igual a 1d6 + mod de For. em vez do dano contundente normal.",
+      "Visão no Escuro (18m)"
+    ]
   },
   {
     "id": 13,
     "nome": "Tortuga",
     "pericias": ["Medicina"],
     "idiomas": ["Comum", "Aquan"],
-    "habilidades": [""]
+    "habilidades": [
+      "Como ação, você se recolhe no casco e ganha +4 na CA e vantagem em salvaguardas de For. e Con. Enquanto estiver dentro, fica caído, com deslocamento 0 (sem poder aumentar), desvantagem em salvaguardas de Des. e não pode usar reações. A única ação possível é usar ação bônus para sair do casco.",
+      "Você pode prender a respiração por até 1 hora.",
+      "Suas garras servem para golpes desarmados, causando dano cortante igual a 1d6 + mod de For. em vez do dano contundente normal."
+    ]
   },
   {
     "id": 14,
     "nome": "Reptante",
     "pericias": ["Furtividade"],
     "idiomas": ["Comum", "Dracônico"],
-    "habilidades": [""]
+    "habilidades": [
+      "Sua pele dura e escamosa concede CA 13 + mod de Des. quando você estiver sem armadura. Você pode usar escudos e aplicar seus benefícios normalmente.",
+      "Como ação bônus, você realiza um ataque especial de mordida. Se acertar, causa o dano normal e você ganha PV temporários iguais à sua proficiência. Use este recurso um número de vezes igual à sua proficiência por descanso longo.",
+      "Você pode prender a respiração por até 15 minutos.",
+      "Seus dentes servem para golpes desarmados, causando dano cortante igual a 1d6 + modi de For. em vez do dano contundente normal."
+    ]
   },
   {
     "id": 15,
     "nome": "Sátiro",
     "pericias": ["Atuação", "Persuasão"],
     "idiomas": ["Comum", "Silvestre"],
-    "habilidades": [""]
+    "habilidades": [
+      "Seus chifres servem para golpes desarmados, causando dano contundente igual a 1d6 + mod de For. em vez do dano normal.",
+      "Você tem vantagem em salvaguardas contra magias.",
+      "Sempre que efetuar um salto em distância ou em altura, você pode rolar 1d8 e somar o resultado x 0,3m à distância saltada (mesmo parado). Esse deslocamento extra consome seu movimento normal."
+    ]
   },
   {
     "id": 16,
@@ -150,14 +176,27 @@
     "nome": "Elfo Astral",
     "pericias": [""],
     "idiomas": ["Comum", "Élfico"],
-    "habilidades": [""]
+    "habilidades": [
+      "Visão no Escuro (18m)",
+      "Você tem vantagem para evitar ou encerrar a condição enfeitiçado",
+      "Como ação bônus, você se teleporta magicamente até 9m para um espaço desocupado visível.",
+      "Você não precisa dormir. Transe inconsciente por 4 horas equivale a descanso longo.",
+      "Sempre que termina este transe, você ganha misticamente duas proficiências com armas ou ferramentas à sua escolha que você não possua. Você as retém até terminar seu próximo transe."
+    ]
   },
   {
     "id": 18,
     "nome": "Shadar-Kai",
     "pericias": [""],
     "idiomas": ["Comum", "Élfico"],
-    "habilidades": [""]
+    "habilidades": [
+      "Você tem vantagem para evitar ou encerrar a condição enfeitiçado",
+      "Visão no Escuro (18m)",
+      "Você não precisa dormir. Transe inconsciente por 4 horas equivale a descanso longo.  Cada vez que faz isso pode mudar sua estação.",
+      "Sempre que termina este transe, você ganha misticamente duas proficiências com armas ou ferramentas à sua escolha que você não possua. Você as retém até terminar seu próximo transe.",
+      " Você tem resistência a dano necrótico.",
+      "Como ação bônus, você se teleporta magicamente até 9m para um espaço desocupado visível. Use este recurso um número de vezes igual à sua prof. por descanso longo."
+    ]
   },
   {
     "id": 19,
@@ -185,7 +224,12 @@
     "nome": "Orc",
     "pericias": [""],
     "idiomas": ["Comum", "Orc"],
-    "habilidades": [""]
+    "habilidades": [
+      "Visão no Escuro (18m)",
+      "Quando você é reduzido a 0 pontos de vida mas não é completamente morto, você pode voltar para 1 ponto de vida. Você não pode usar essa característica novamente até completar um descanso longo.",
+      "Como ação bônus, você pode usar a ação Correr um número de vezes igual à sua proficiência por descanso longo. Sempre que usar este traço, você ganha PV temporários iguais à sua proficiência.",
+      "Você usa uma categoria de tamanho acima ao determinar capacidade de carga e o peso que pode empurrar, arrastar, levantar."
+    ]
   },
   {
     "id": 22,
@@ -265,7 +309,7 @@
       "Você possui vantagem em todos os testes de resistência de Inteligência, Sab e Car contra magia.",
       "Visão no escuro (18m).",
       "Sempre que você fizer um teste de História sobre itens mágicos, objetos alquímicos ou mecanismos tecnológicos, você dobra o seu bônus de proficiência em vez de usar o bônus normal.",
-      "Usando ferramentas de artesão, você gasta 1 hora e 10 po para criar um mecanismo miúdo (CA 5, 1 pv) que dura 24h, podendo ter até três ativos e desmantelar um com uma ação para recuperar os materiais. Você escolhe entre um Brinquedo Mecânico (move-se 1,5 metro por turno no chão e emite sons), um Isqueiro Mecânico (usa uma ação para criar uma chama para acender coisas) ou uma Caixa de Música (toca uma canção em volume moderado)."
+      "Usando ferramentas de artesão, você gasta 1 hora e 10 po para criar um mecanismo miúdo (CA 5, 1 pv) que dura 24h, podendo ter até três ativos e desmantelar um com uma ação para recuperar os materiais. Você escolhe entre um Brinquedo Mecânico (move-se 1,5m por turno no chão e emite sons), um Isqueiro Mecânico (usa uma ação para criar uma chama para acender coisas) ou uma Caixa de Música (toca uma canção em volume moderado)."
     ]
   },
   {
@@ -284,7 +328,13 @@
     "nome": "Autognomo",
     "pericias": [""],
     "idiomas": ["Comum", "Gnômico"],
-    "habilidades": [""]
+    "habilidades": [
+      "Você pode adicionar 1d4 a uma jogada de ataque, teste de atributo ou salvaguarda que fizer. Você pode decidir usá-lo após ver o resultado do d20, mas antes de saber o efeito final. Use um número de vezes igual à sua proficiência por descanso longo.",
+      "Se o truque consertar for conjurado em você, você pode gastar e rolar um Dado de Vida para recuperar PV (resultado do dado + modificador de Con.). Além disso, magias de cura tradicionais que normalmente não afetam Construtos funcionam em você (curar ferimentos, palavra curativa, etc.).",
+      "Quando você não estiver usando armadura, sua Classe de Armadura (CA) base é 13 + seu modificador de Destreza.",
+      "Você tem resistência a dano de veneno, imunidade a doenças e vantagem em salvaguardas contra ser paralisado ou envenenado. Você não precisa comer, beber ou respirar.",
+      "Em um descanso longo, você passa pelo menos 6 horas em um estado inativo e imóvel (em vez de dormir). Você parece inerte, mas permanece consciente."
+    ]
   },
   {
     "id": 31,
@@ -309,7 +359,7 @@
     "pericias": [""],
     "idiomas": ["Comum", "Auran"],
     "habilidades": [
-      "Garras. Você tem garras que pode usar para desferir golpes desarmados. Quando você acerta com elas, o golpe causa dano cortante igual a ldó + seu modificador de Força, ao invés do dano contundente normal para um golpe desarmado",
+      "Garras. Você tem garras que pode usar para desferir golpes desarmados. Quando você acerta com elas, o golpe causa dano cortante igual a ldó + seu mod de Força, ao invés do dano contundente normal para um golpe desarmado",
       "Devido às suas asas, você tem deslocamento de voo equivalente ao seu deslocamento de caminhada. Você não pode usar esse deslocamento de voo se estiver usando uma armadura média ou pesada"
     ]
   },
@@ -330,8 +380,8 @@
     "pericias": [""],
     "idiomas": ["Comum", "Silvestre"],
     "habilidades": [
-      "Se você se mover pelo menos nove metros em linha reta em direção a um alvo e acertá-lo com uma arma corpo a corpo, pode usar uma ação bônus para atacá-lo com seus cascos no mesmo turno.",
-      "Seus cascos funcionam como armas para ataques desarmados, causando um d6 de dano contundente somado ao seu modificador de For em vez do dano padrão de um soco.",
+      "Se você se mover pelo menos 9m em linha reta em direção a um alvo e acertá-lo com uma arma corpo a corpo, pode usar ação bônus para atacá-lo com seus cascos no mesmo turno.",
+      "Seus cascos funcionam como armas para ataques desarmados, causando um d6 de dano contundente somado ao seu mod de For em vez do dano padrão de um soco.",
       "Você usa uma categoria de tamanho acima ao determinar capacidade de carga e o peso que pode empurrar, arrastar, levantar."
     ]
   },
@@ -352,7 +402,7 @@
     "habilidades": [
       "Você pode se comunicar de forma limitada com feras e plantas, que entendem suas palavras mesmo que você não as entenda de volta, ganhando vantagem em todos os testes de Car. para influenciá-las.",
       "Você usa uma categoria de tamanho acima ao determinar capacidade de carga e o peso que pode empurrar, arrastar, levantar.",
-      "Como uma ação bônus, você fica invisível até o começo do próximo turno ou atacar, causar dano ou forçar resistência. Você pode usar este recurso um número de vezes igual ao seu bônus de prof. e recupera os usos após um descanso longo."
+      "Como ação bônus, você fica invisível até o começo do próximo turno ou atacar, causar dano ou forçar resistência. Você pode usar este recurso um número de vezes igual ao seu bônus de prof. e recupera os usos após um descanso longo."
     ]
   },
   {
@@ -367,7 +417,12 @@
     "nome": "Giff",
     "pericias": [""],
     "idiomas": ["Comum"],
-    "habilidades": [""]
+    "proficiencias": ["Armas de Fogo"],
+    "habilidades": [
+      "Quando acertar um alvo com uma arma simples ou marcial, você pode causar dano de energia extra igual ao seu bônus de proficiência (limite de uma vez por turno). Use este recurso um número de vezes igual ao seu bônus de proficiência por descanso longo.",
+      "Você tem proficiência com todas as armas de fogo, ignora a propriedade de recarga (loading) delas e não sofre desvantagem ao atacar no alcance longo com elas.",
+      "Você tem vantagem em testes de atributo e salvaguardas baseadas em Força. Além disso, você conta como um tamanho maior para determinar sua capacidade de carga e o peso que pode empurrar, arrastar ou erguer."
+    ]
   },
   {
     "id": 40,
@@ -397,7 +452,7 @@
     "idiomas": ["Comum", "Goblinoide"],
     "habilidades": [
       "Você tem vantagem para evitar ou encerrar a condição enfeitiçado",
-      "Você pode usar a ação Desengajar ou Esconder-se como uma ação bônus em cada um dos seus turnos.",
+      "Você pode usar a ação Desengajar ou Esconder-se como ação bônus em cada um dos seus turnos.",
       "Visão no Escuro (18m)",
       "Quando causa dano a uma criatura maior, você pode causar dano extra igual ao seu bônus de prof. Você pode usar este recurso uma vez por turno e um número total de vezes igual ao bônus de prof. por descanso longo."
     ]
@@ -407,55 +462,106 @@
     "nome": "Hadooze",
     "pericias": [""],
     "idiomas": ["Comum"],
-    "habilidades": [""]
+    "habilidades": [
+      "Com ação bônus, você pode usar seus pés para manipular um objeto, abrir/fechar portas e recipientes, ou pegar/largar um objeto Miúdo.",
+      "Quando sofrer dano, use sua reação para rolar 1d6 + seu bônus de proficiência e reduzir o dano sofrido por esse total (mínimo 0). Use um número de vezes igual à sua proficiência por descanso longo.",
+      "Se não estiver incapacitado ou usando armadura pesada, você pode abrir suas membranas e planar: Você se move até 1,5m horizontalmente para cada 30cm que descer no ar, sem custo de movimento. Quando for sofrer dano de queda, pode usar sua reação para reduzir o dano a 0."
+    ]
   },
   {
     "id": 44,
     "nome": "Hobgoblin",
     "pericias": [""],
     "idiomas": ["Comum", "Goblinoide"],
-    "habilidades": [""]
+    "habilidades": [
+      "Você pode usar a ação Ajudar como ação bônus um número de vezes igual ao seu bônus de proficiência, recuperando todos os usos após um descanso longo.",
+      "Visão no Escuro (18m)",
+      "Você tem vantagem para evitar ou encerrar a condição enfeitiçado",
+      "Até o começo do seu próximo turno, a primeira vez que a criatura que você ajudou acertar um ataque, o alvo terá desvantagem na próxima jogada de ataque que fizer dentro de 1 min.",
+      "Você e a criatura ajudada ganham pontos de vida temporários iguais a 1d6 + seu bônus de proficiência.",
+      "Você e a criatura ajudada aumentam o deslocamento de caminhada em 3m até o começo do seu próximo turno.",
+      "Se errar um ataque, teste de atributo ou salvaguarda, você ganha um bônus igual ao número de aliados visíveis a até 9m (máximo de +3). Pode usar este recurso um número de vezes igual ao bônus de proficiência por descanso longo."
+    ]
   },
   {
     "id": 45,
     "nome": "Laparlonj",
     "pericias": [""],
     "idiomas": ["Comum", "Silvestre"],
-    "habilidades": [""]
+    "habilidades": [
+      "Você pode adicionar seu bônus de prof. à sua iniciativa.",
+      "Como ação bônus, você salta um número de metros igual a 1,5 vez seu bônus de prof. sem provocar ataques de oportunidade. Você deve ter deslocamento superior a 0 para usar este recurso. Use um número de vezes igual ao bônus de prof. por descanso longo.",
+      "Ao falhar em uma salvaguarda de Destreza, você pode usar sua reação para rolar 1d4 e adicionar o resultado ao total, desde que não esteja caído e seu deslocamento seja maior que 0."
+    ]
   },
   {
     "id": 46,
     "nome": "Minotauro",
     "pericias": [""],
     "idiomas": ["Comum"],
-    "habilidades": [""]
+    "habilidades": [
+      "Imediatamente após correr e se mover pelo menos 6m no seu turno, você pode fazer um ataque corpo a corpo com os chifres como ação bônus.",
+      "Seus chifres servem para golpes desarmados, causando dano perfurante igual a 1d6 + mod de For. em vez do dano contundente normal.",
+      "Após acertar um ataque corpo a corpo no seu turno, você pode usar ação bônus para empurrar com os chifres um alvo a até 1,5m e no máximo uma categoria de tamanho maior que a sua. O alvo deve passar em uma salvaguarda de For. (CD 8 + prof + mod de For.) ou será empurrado até 3m.",
+      "Você sempre sabe onde fica o norte e tem vantagem em testes de Sab. (Sobrevivência) para se localizar ou rastrear."
+    ]
   },
   {
     "id": 47,
     "nome": "Plasmoid",
     "pericias": [""],
     "idiomas": ["Comum"],
-    "habilidades": [""]
+    "habilidades": [
+      "Visão no Escuro (Superior) 36m",
+      "Você pode prender a respiração por até 1 hora.",
+      "Você consegue se espremer por espaços estreitos de até 2,5 cm de largura se não estiver vestindo ou carregando nada. Você também tem vantagem em testes para iniciar ou escapar de um agarrão.",
+      "Você tem resistência a dano de ácido e veneno, e vantagem em salvaguardas contra ser envenenado.",
+      "Como ação, você altera seu corpo para assumir forma humanoide ou voltar a ser uma gosma sem membros. Com forma humanoide, você veste roupas e armaduras de tamanho normal para o seu tamanho. Como ação bônus, você estende um pseudópode de até 3 metros de comprimento para manipular objetos, abrir ou fechar portas e recipientes, ou pegar e largar um objeto Miúdo. O pseudópode não tem órgãos sensoriais, não ataca, não ativa itens mágicos e não levanta mais de 4,5kg."
+    ]
   },
   {
     "id": 48,
     "nome": "Thri-Kreen",
     "pericias": [""],
     "idiomas": ["Comum"],
-    "habilidades": [""]
+    "habilidades": [
+      "Visão no Escuro (Superior) 36m",
+      "Você tem dois braços menores abaixo dos principais. Eles podem manipular objetos, abrir ou fechar portas e recipientes, pegar ou largar objetos Miúdos e empunhar armas com a propriedade leve.",
+      "Você não precisa dormir e permanece consciente durante um descanso longo, mas deve evitar atividades pesadas para receber os benefícios do descanso.",
+      "Você não fala idiomas normais sem magia. Em vez disso, envia pensamentos telepaticamente para criaturas voluntárias visíveis a até 36m. O alvo não precisa compartilhar um idioma com você, mas precisa entender pelo menos uma língua. A ligação quebra se ficarem a mais de 36m, se alguém ficar incapacitado ou se a conexão for cortada mentalmente."
+    ]
   },
   {
     "id": 49,
     "nome": "Tritão",
     "pericias": [""],
     "idiomas": ["Comum", "Aquan"],
-    "habilidades": [""]
+    "habilidades": [
+      "Você pode respirar ar e água.",
+      "Visão no Escuro (18m)",
+      "Você tem resistência a dano frio.",
+      "Você pode comunicar ideias simples a feras, elementais ou monstruosidades que tenham deslocamento de natação. Elas te entendem, mas você não as entende de volta."
+    ]
   },
   {
     "id": 50,
     "nome": "Yuan-Ti",
     "pericias": [""],
     "idiomas": ["Comum", "Dracônico", "Abissal"],
-    "habilidades": [""]
+    "habilidades": [
+      "Visão no Escuro (18m)",
+      "Você tem vantagem em salvaguardas contra magias.",
+      "Você tem vantagem em salvaguardas para evitar ou encerrar a condição envenenado. Além disso, tem resistência a dano venenoso."
+    ]
+  },
+  {
+    "id": 51,
+    "nome": "Kobold",
+    "pericias": [""],
+    "idiomas": ["Comum", "Dracônico"],
+    "habilidades": [
+      "Visão no Escuro (18m)",
+      "Como ação bônus, você solta um grito em inimigos a até 3m. Até o início do seu próximo turno, você e seus aliados têm vantagem nos ataques contra os inimigos que puderam ouvi-lo. Use este recurso um número de vezes igual ao seu bônus de proficiência por descanso longo."
+    ]
   }
 ]
