@@ -12,8 +12,8 @@
     "pericias": [""],
     "idiomas": ["Comum", "Élfico"],
     "habilidades": [
-      "Você tem vantagem nos testes de resistência para resistir a ser enfeitiçado e magias não podem colocá-lo para dormir.",
-      "Você não precisa dormir. Transe inconsciente por 4 horas equivale a um descanso longo.",
+      "Você tem vantagem nos testes para resistir a ser enfeitiçado e magias não o colocam para dormir.",
+      "Você não precisa dormir. Transe inconsciente por 4 horas equivale a descanso longo.",
       "Visão no Escuro 18m"
     ]
   },
@@ -23,8 +23,8 @@
     "pericias": [""],
     "idiomas": ["Comum", "Élfico"],
     "habilidades": [
-      "Você tem vantagem nos testes de resistência para resistir a ser enfeitiçado e magias não podem colocá-lo para dormir.",
-      "Você não precisa dormir. Transe inconsciente por 4 horas equivale a um descanso longo.",
+      "Você tem vantagem nos testes para resistir a ser enfeitiçado e magias não o colocam para dormir.",
+      "Você não precisa dormir. Transe inconsciente por 4 horas equivale a descanso longo.",
       "Você possui desvantagem nas jogadas de ataque e testes de Percepção relacionados a visão quando você, o alvo do seu ataque, ou qualquer coisa que você está tentando perceber, esteja sob luz solar direta.",
       "Visão no Escuro (Superior) 36m"
     ]
@@ -35,8 +35,8 @@
     "pericias": [""],
     "idiomas": ["Comum", "Élfico"],
     "habilidades": [
-      "Você tem vantagem nos testes de resistência para resistir a ser enfeitiçado e magias não podem colocá-lo para dormir.",
-      "Você não precisa dormir. Transe inconsciente por 4 horas equivale a um descanso longo.",
+      "Você tem vantagem nos testes para resistir a ser enfeitiçado e magias não o colocam para dormir.",
+      "Você não precisa dormir. Transe inconsciente por 4 horas equivale a descanso longo.",
       "Visão no Escuro 18m",
       "Você pode tentar se esconder mesmo quando estiver apenas levemente obscurecido por folhagem, chuva forte, neve caindo, névoa ou outros fenômenos naturais."
     ]
@@ -46,28 +46,48 @@
     "nome": "Bugurso",
     "pericias": ["Furtividade"],
     "idiomas": ["Comum", "Goblinoide"],
-    "habilidades": [""]
+    "habilidades": [
+      "Você tem vantagem para evitar ou encerrar a condição enfeitiçado",
+      "Se você acertar uma criatura com uma jogada de ataque, a criatura sofre 2d6 pontos de dano extra se ainda não tiver agido em um turno no combate atual.",
+      "Ao efetuar um ataque corpo a corpo em seu turno, seu alcance é 1,5m maior que o normal.",
+      "Você usa uma categoria de tamanho acima ao determinar capacidade de carga e o peso que pode empurrar, arrastar, levantar.",
+      "Visão no escuro 18m."
+    ]
   },
   {
     "id": 6,
     "nome": "Duplicante",
     "pericias": ["Enganação", "Atuação"],
     "idiomas": ["Comum", "Élfico"],
-    "habilidades": [""]
+    "habilidades": [
+      "Você pode alterar sua voz e aparência física, incluindo sexo, altura, peso, cor, cabelo e tamanho entre Médio e Pequeno para se passar por outra pessoa/raça que tenha visto sem mudar suas estatísticas de jogo. Você deve manter a mesma quantidade de membros, não altera suas roupas ou equipamentos."
+    ]
   },
   {
     "id": 7,
     "nome": "Eladrin",
     "pericias": [""],
     "idiomas": ["Comum", "Élfico"],
-    "habilidades": [""]
+    "habilidades": [
+      "Você tem vantagem para evitar ou encerrar a condição enfeitiçado",
+      "Com ação bônus, você se teleporta até 9m para um espaço vazio visível. Você pode usar este recurso um número de vezes igual ao seu bônus de prof e recupera todos os usos após descanso longo.",
+      "Verão: Imediatamente após usar seu Passo Feérico, cada criatura à sua escolha que você possa ver a até 1,5 metro de você sofre dano Fogo igual ao seu bônus de prof.",
+      "Visão no Escuro (18m)",
+      "Você não precisa dormir. Transe inconsciente por 4 horas equivale a descanso longo.  Cada vez que faz isso pode mudar sua estação."
+    ]
   },
   {
     "id": 8,
     "nome": "Elfo Marinho",
     "pericias": [""],
     "idiomas": ["Comum", "Élfico"],
-    "habilidades": [""]
+    "habilidades": [
+      "Visão no Escuro (18m)",
+      "Você tem vantagem para evitar ou encerrar a condição enfeitiçado",
+      "Você pode respirar ar e água e tem resistência a dano gélido.",
+      "Sempre que termina este transe, você ganha misticamente duas proficiências com armas ou ferramentas à sua escolha que você não possua. Você as retém até terminar seu próximo transe.",
+      "Você não precisa dormir. Transe inconsciente por 4 horas equivale a descanso longo."
+    ]
   },
   {
     "id": 9,
@@ -195,7 +215,11 @@
     "nome": "Duergar",
     "pericias": [""],
     "idiomas": ["Comum", "Anão"],
-    "habilidades": [""]
+    "habilidades": [
+      "Você tem vantagem para evitar ou encerrar a condição encantado ou atordoado.",
+      "Visão no Escuro (Superior) 36m",
+      "Você tem vantagem em testes para evitar ou encerrar a condição envenenado e resistência a dano veneno."
+    ]
   },
   {
     "id": 25,
@@ -203,9 +227,9 @@
     "pericias": [""],
     "idiomas": ["Comum", "Halfling"],
     "habilidades": [
-      "Você tem vantagem em testes de resistência contra ficar amedrontado.",
+      "Você tem vantagem em testes contra ficar amedrontado.",
       "Você pode mover-se através do espaço de qualquer criatura que for de um tamanho maior.",
-      "Quando você obtiver um 1 natural em uma jogada de ataque, teste de habilidade ou teste de resistência, você pode jogar de novo o dado e deve utilizar o novo resultado.",
+      "Quando você obtiver um 1 natural em uma rolagem, você pode jogar de novo o dado e deve utilizar o novo resultado.",
       "Você pode tentar se esconder mesmo quando possuir apenas a cobertura de uma criatura que for no mínimo um tamanho maior."
     ]
   },
@@ -215,9 +239,9 @@
     "pericias": [""],
     "idiomas": ["Comum", "Halfling"],
     "habilidades": [
-      "Você tem vantagem em testes de resistência contra ficar amedrontado.",
+      "Você tem vantagem em testes contra ficar amedrontado.",
       "Você pode mover-se através do espaço de qualquer criatura que for de um tamanho maior.",
-      "Quando você obtiver um 1 natural em uma jogada de ataque, teste de habilidade ou teste de resistência, você pode jogar de novo o dado e deve utilizar o novo resultado.",
+      "Quando você obtiver um 1 natural em uma rolagem, você pode jogar de novo o dado e deve utilizar o novo resultado.",
       "Você tem vantagem em testes de resistência contra veneno e tem resistência contra dano de veneno."
     ]
   },
@@ -249,7 +273,11 @@
     "nome": "Gnomo das Profundezas",
     "pericias": [""],
     "idiomas": ["Comum", "Gnômico"],
-    "habilidades": [""]
+    "habilidades": [
+      "Visão no Escuro (Superior) 36m",
+      "Sempre que faz um teste de Furtividade, você pode rolar com vantagem. Você pode usar este recurso um número igual ao seu bônus de proficiência e recupera todos os usos após descanso longo.",
+      "Você possui vantagem em todos os testes de resistência de Inteligência, Sab e Car contra magia."
+    ]
   },
   {
     "id": 30,
@@ -273,127 +301,66 @@
     "nome": "Draconato",
     "pericias": [""],
     "idiomas": ["Comum", "Dracônico"],
-    "habilidades": [""],
-    "habilidadesCategoria": [
-      {
-        "nome": "Vermelho",
-        "habilidades": [
-          "Resistência contra fogo.",
-          "Você exala sopro de fogo (cone 4,5m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Con + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
-        ]
-      },
-      {
-        "nome": "Verde",
-        "habilidades": [
-          "Resistência contra veneno.",
-          "Você exala sopro de veneno (cone 4,5m). Criaturas na área devem fazer um teste de resistência Con (CD 8 + mod Con + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
-        ]
-      },
-      {
-        "nome": "Branco",
-        "habilidades": [
-          "Resistência contra frio.",
-          "Você exala sopro de gelo (cone 4,5m). Criaturas na área devem fazer um teste de resistência Con (CD 8 + mod Con + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
-        ]
-      },
-      {
-        "nome": "Azul",
-        "habilidades": [
-          "Resistência contra eletricidade.",
-          "Você exala sopro de eletricidade (linha 9m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Con + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
-        ]
-      },
-      {
-        "nome": "Bronze",
-        "habilidades": [
-          "Resistência contra eletricidade.",
-          "Você exala sopro de eletricidade (linha 9m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Con + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
-        ]
-      },
-      {
-        "nome": "Negro",
-        "habilidades": [
-          "Resistência contra ácido.",
-          "Você cospe ácido (linha 9m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Des + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
-        ]
-      },
-      {
-        "nome": "Dourado",
-        "habilidades": [
-          "Resistência contra fogo.",
-          "Você exala sopro de fogo (cone 4,5m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Des + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
-        ]
-      },
-      {
-        "nome": "Prateado",
-        "habilidades": [
-          "Resistência contra frio.",
-          "Você exala sopro de gelo (cone 4,5m). Criaturas na área devem fazer um teste de resistência Con (CD 8 + mod Des + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
-        ]
-      },
-      {
-        "nome": "Latão",
-        "habilidades": [
-          "Resistência contra fogo.",
-          "Você exala sopro de fogo (linha 9m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Des + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
-        ]
-      },
-      {
-        "nome": "Cobre",
-        "habilidades": [
-          "Resistência contra ácido.",
-          "Você cospe ácido (linha 9m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Des + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
-        ]
-      }
-    ]
+    "habilidades": [""]
   },
   {
     "id": 33,
     "nome": "Aarakocra",
     "pericias": [""],
     "idiomas": ["Comum", "Auran"],
-    "habilidades": [""]
+    "habilidades": [
+      "Garras. Você tem garras que pode usar para desferir golpes desarmados. Quando você acerta com elas, o golpe causa dano cortante igual a ldó + seu modificador de Força, ao invés do dano contundente normal para um golpe desarmado",
+      "Devido às suas asas, você tem deslocamento de voo equivalente ao seu deslocamento de caminhada. Você não pode usar esse deslocamento de voo se estiver usando uma armadura média ou pesada"
+    ]
   },
   {
     "id": 34,
     "nome": "Aasimar",
     "pericias": [""],
     "idiomas": ["Comum", "Celestial"],
-    "habilidades": [""]
+    "habilidades": [
+      "Como uma ação a cada descanso longo, você toca uma criatura e rolar um número de d4s equivalente ao seu bônus de prof. A criatura recupera pontos de vida iguais ao total obtido.",
+      "Você tem resistência a dano necrótico e dano radiante.",
+      "Você emite luz plena em um raio de 3m e meia-luz por 3m adicionais, e ao final de cada um de seus turnos, cada criatura a até 3m de você sofre dano radiante igual ao seu bônus de prof. Uma vez por turno você causa dano radiante extra ao causar dano a um alvo utilizando um ataque ou uma magia. O dano extra é igual ao seu bônus de prof."
+    ]
   },
   {
     "id": 35,
     "nome": "Centauro",
     "pericias": [""],
     "idiomas": ["Comum", "Silvestre"],
-    "habilidades": [""]
+    "habilidades": [
+      "Se você se mover pelo menos nove metros em linha reta em direção a um alvo e acertá-lo com uma arma corpo a corpo, pode usar uma ação bônus para atacá-lo com seus cascos no mesmo turno.",
+      "Seus cascos funcionam como armas para ataques desarmados, causando um d6 de dano contundente somado ao seu modificador de For em vez do dano padrão de um soco.",
+      "Você usa uma categoria de tamanho acima ao determinar capacidade de carga e o peso que pode empurrar, arrastar, levantar."
+    ]
   },
   {
     "id": 36,
     "nome": "Fada",
     "pericias": [""],
     "idiomas": ["Comum", "Silvestre"],
-    "habilidades": [""]
+    "habilidades": [
+      "Você tem deslocamento de voo igual ao seu deslocamento de caminhada, mas não pode voar usando armadura média ou pesada."
+    ]
   },
   {
     "id": 37,
     "nome": "Firbolg",
     "pericias": [""],
     "idiomas": ["Comum", "Élfico", "gigante"],
-    "habilidades": [""]
+    "habilidades": [
+      "Você pode se comunicar de forma limitada com feras e plantas, que entendem suas palavras mesmo que você não as entenda de volta, ganhando vantagem em todos os testes de Car. para influenciá-las.",
+      "Você usa uma categoria de tamanho acima ao determinar capacidade de carga e o peso que pode empurrar, arrastar, levantar.",
+      "Como uma ação bônus, você fica invisível até o começo do próximo turno ou atacar, causar dano ou forçar resistência. Você pode usar este recurso um número de vezes igual ao seu bônus de prof. e recupera os usos após um descanso longo."
+    ]
   },
   {
     "id": 38,
     "nome": "Genasi",
     "pericias": [""],
     "idiomas": ["Comum", "Primordial"],
-    "habilidades": [""],
-    "habilidadesCategoria": [
-      {
-        "nome": "",
-        "habilidades": [""]
-      }
-    ]
+    "habilidades": [""]
   },
   {
     "id": 39,
@@ -407,21 +374,33 @@
     "nome": "Githyanki",
     "pericias": [""],
     "idiomas": ["Comum", "Gith"],
-    "habilidades": [""]
+    "habilidades": [
+      "Quando você conjura mãos mágicas, a mão é invisível.",
+      "Sempre que terminar um descanso longo, você ganha proficiência em uma perícia e com uma arma ou ferramenta do Livro do Jogador à sua escolha. Essas proficiências duram até o fim do seu próximo descanso longo.",
+      "Você tem resistência a dano psíquico."
+    ]
   },
   {
     "id": 41,
     "nome": "Githzerai",
     "pericias": [""],
-    "idiomas": ["Comum", "Dracônico"],
-    "habilidades": [""]
+    "idiomas": ["Comum", "Gith"],
+    "habilidades": [
+      "Você tem resistência a dano psíquico.",
+      "Você tem vantagem para evitar ou encerrar a condição enfeitiçado"
+    ]
   },
   {
     "id": 42,
     "nome": "Goblin",
     "pericias": [""],
     "idiomas": ["Comum", "Goblinoide"],
-    "habilidades": [""]
+    "habilidades": [
+      "Você tem vantagem para evitar ou encerrar a condição enfeitiçado",
+      "Você pode usar a ação Desengajar ou Esconder-se como uma ação bônus em cada um dos seus turnos.",
+      "Visão no Escuro (18m)",
+      "Quando causa dano a uma criatura maior, você pode causar dano extra igual ao seu bônus de prof. Você pode usar este recurso uma vez por turno e um número total de vezes igual ao bônus de prof. por descanso longo."
+    ]
   },
   {
     "id": 43,

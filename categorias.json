@@ -1,0 +1,103 @@
+[
+  {
+    "nome": "Ar",
+    "habilidades": [
+      "Você pode prender a respiração indefinidamente enquanto não estiver incapacitado.",
+      "Você tem resistência a dano elétrico.",
+      "Visão no Escuro 18m"
+    ]
+  },
+  {
+    "nome": "Água",
+    "habilidades": [
+      "Você pode respirar ar e água.",
+      "Você tem resistência a dano ácido.",
+      "Visão no Escuro 18m"
+    ]
+  },
+  {
+    "nome": "Terra",
+    "habilidades": [
+      "Visão no Escuro 18m",
+      "Você pode se mover em terrenos difíceis sem gastar movimentação extra se estiver usando seu deslocamento de caminhada no solo ou no chão.",
+      "Usa o truque proteção contra lâminas como uma ação bônus um número de vezes equivalente ao seu bônus de proficiência."
+    ]
+  },
+  {
+    "nome": "Fogo",
+    "habilidades": [
+      "Você pode respirar ar e água.",
+      "Você tem resistência a fogo."
+    ]
+  },
+  {
+    "nome": "Vermelho",
+    "habilidades": [
+      "Resistência contra fogo.",
+      "Você exala sopro de fogo (cone 4,5m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Con + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+    ]
+  },
+  {
+    "nome": "Verde",
+    "habilidades": [
+      "Resistência contra veneno.",
+      "Você exala sopro de veneno (cone 4,5m). Criaturas na área devem fazer um teste de resistência Con (CD 8 + mod Con + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+    ]
+  },
+  {
+    "nome": "Branco",
+    "habilidades": [
+      "Resistência contra frio.",
+      "Você exala sopro de gelo (cone 4,5m). Criaturas na área devem fazer um teste de resistência Con (CD 8 + mod Con + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+    ]
+  },
+  {
+    "nome": "Azul",
+    "habilidades": [
+      "Resistência contra eletricidade.",
+      "Você exala sopro de eletricidade (linha 9m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Con + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+    ]
+  },
+  {
+    "nome": "Bronze",
+    "habilidades": [
+      "Resistência contra eletricidade.",
+      "Você exala sopro de eletricidade (linha 9m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Con + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+    ]
+  },
+  {
+    "nome": "Negro",
+    "habilidades": [
+      "Resistência contra ácido.",
+      "Você cospe ácido (linha 9m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Des + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+    ]
+  },
+  {
+    "nome": "Dourado",
+    "habilidades": [
+      "Resistência contra fogo.",
+      "Você exala sopro de fogo (cone 4,5m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Des + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+    ]
+  },
+  {
+    "nome": "Prateado",
+    "habilidades": [
+      "Resistência contra frio.",
+      "Você exala sopro de gelo (cone 4,5m). Criaturas na área devem fazer um teste de resistência Con (CD 8 + mod Des + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+    ]
+  },
+  {
+    "nome": "Latão",
+    "habilidades": [
+      "Resistência contra fogo.",
+      "Você exala sopro de fogo (linha 9m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Des + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+    ]
+  },
+  {
+    "nome": "Cobre",
+    "habilidades": [
+      "Resistência contra ácido.",
+      "Você cospe ácido (linha 9m). Criaturas na área devem fazer um teste de resistência Des (CD 8 + mod Des + bônus proficiência). Elas sofrem 2d6 de dano, ou metade em caso de sucesso."
+    ]
+  }
+]
