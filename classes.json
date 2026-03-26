@@ -16,7 +16,7 @@
     "magiasQuantidade": 0,
     "pos": 50,
     "habilidades": [
-      "Fúria (Ação Bônus): Se não estiver de armadura pesada, você ganha vantagem em testes de For. Resistência a dano de concussão, cortante e perfurante, e adiciona +2 em ataques corpo-a-corpo usando For.",
+      "Ação Bônus: Se não estiver de armadura pesada, você ganha vantagem em testes de For. Resistência a dano de concussão, cortante e perfurante, e adiciona +2 em ataques corpo-a-corpo usando For.",
       "Quando você não estiver vestindo qualquer armadura, sua CA será 10 + seu mod de Des + seu mod de Con. Você pode usar um escudo e continuar com o benefício."
     ]
   },
@@ -83,7 +83,7 @@
     "magiasQuantidade": 4,
     "pos": 125,
     "habilidades": [
-      "Inspiração de Bardo (Ação Bônus): Escolha ucriatura até 18m que possa te ouvir para dar a ela um d6 (usos iguais ao seu modi de Car, recarrega em descanso longo). Uma vez em 10 min, o alvo rola esse dado e somar o resultado a um teste de ataque ou atr., podendo decidir usar o d6 após ver o d20, mas antes do Mestre declarar sucesso/falha."
+      "Ação Bônus: Escolha ucriatura até 18m que possa te ouvir para dar a ela um d6 (usos iguais ao seu modi de Car, recarrega em descanso longo). Uma vez em 10 min, o alvo rola esse dado e somar o resultado a um teste de ataque ou atr., podendo decidir usar o d6 após ver o d20, mas antes do Mestre declarar sucesso/falha."
     ]
   },
   {
@@ -214,7 +214,7 @@
     "magiasQuantidade": 16,
     "pos": 50,
     "habilidades": [
-      "Druídico: Você pode falar o idioma e usá-lo para deixar mensagens escondidas que você e outros druidas veem automaticamente. Outros percebem que há uma mensagem se passarem num teste de Percepção CD 15, mas só conseguem decifrá-la magicamente."
+      "Você pode falar o idioma e usá-lo para deixar mensagens escondidas que você e outros druidas veem automaticamente. Outros percebem que há uma mensagem se passarem num teste de Percepção CD 15, mas só conseguem decifrá-la magicamente."
     ]
   },
   {
@@ -292,7 +292,7 @@
     "magiasQuantidade": 0,
     "pos": 125,
     "habilidades": [
-      "Retomar o Fôlego (Ação Bônus): Uma vez por descanso curto ou longo, você pode usar uma ação bônus para recuperar 1d10 + seu nível de guerreiro em pontos de vida."
+      "Ação Bônus: Uma vez por descanso curto ou longo, você pode usar uma ação bônus para recuperar 1d10 + seu nível de guerreiro em pontos de vida."
     ]
   },
   {
@@ -317,7 +317,7 @@
     "magiasQuantidade": 0,
     "pos": 100,
     "habilidades": [
-      "Especialização: Escolha duas proficiências em perícias (ou uma perícia e ferramentas de ladrão) para dobrar o seu bônus de proficiência nos testes realizados com elas.",
+      "Escolha duas proficiências em perícias (ou uma perícia e ferramentas de ladrão) para dobrar o seu bônus de proficiência nos testes realizados com elas.",
       "Ataque Furtivo: Uma vez por turno, adicione 1d6 de dano contra um alvo que acertar com arma de acuidade ou à distância, desde que tenha vantagem na jogada de ataque."
     ]
   },
@@ -386,7 +386,7 @@
     "magiasQuantidade": 6,
     "pos": 100,
     "habilidades": [
-      "Recuperação Arcana: Uma vez por dia, após um descanso curto, você pode recuperar espaços de magia gastos (até a metade do seu nível de mago, arredondado para cima)."
+      "Uma vez por dia, após um descanso curto, você pode recuperar espaços de magia gastos (até a metade do seu nível de mago, arredondado para cima)."
     ]
   },
   {
@@ -406,7 +406,7 @@
     "magiasQuantidade": 0,
     "pos": 15,
     "habilidades": [
-      "Defesa sem Armadura: Se não estiver vestindo armadura nem empunhando escudo, sua CA será 10 + mod de Des + mod de Sab.",
+      "Se não estiver vestindo armadura nem empunhando escudo, sua CA será 10 + mod de Des + mod de Sab.",
       "Artes Marciais: Se não usar armadura ou escudo desarmado ou com arma de monge (simples sem duas mãos/pesada, ou espada curta), você usa Destreza no ataque/dano, rola 1d4 de dano base e dá um golpe desarmado com ação bônus ao atacar."
     ]
   },
@@ -427,8 +427,8 @@
     "magiasQuantidade": 0,
     "pos": 125,
     "habilidades": [
-      "Sentido Divino (Ação): Até o final do seu próximo turno, você detecta a localização e o tipo (mas não a identidade) de qualquer celestial, corruptor ou morto-vivo a até 18m que não esteja em cobertura total, além de áreas e objetos consagrados ou profanados. Usos iguais a 1 + modificador de Car por descanso longo.",
-      "Cura pelas Mãos (Ação): Você possui uma reserva de cura igual ao seu nível de paladino x 5 (recarga por descanso longo). Você pode tocar uma criatura para restaurar pontos de vida dessa reserva ou gastar 5 pontos para curar uma doença ou neutralizar veneno."
+      "Até o final do seu próximo turno, você detecta a localização e o tipo (mas não a identidade) de qualquer celestial, corruptor ou morto-vivo a até 18m que não esteja em cobertura total, além de áreas e objetos consagrados ou profanados. Usos iguais a 1 + modificador de Car por descanso longo.",
+      "Você possui uma reserva de cura igual ao seu nível de paladino x 5 (recarga por descanso longo). Você pode tocar uma criatura para restaurar pontos de vida dessa reserva ou gastar 5 pontos para curar uma doença ou neutralizar veneno."
     ]
   },
   {
@@ -450,8 +450,8 @@
     "magiasQuantidade": 0,
     "pos": 125,
     "habilidades": [
-      "Inimigo Favorito: Escolha um tipo de inimigo entre bestas, fadas, humanoides, monstruosidades ou mortos-vivos. Você ganha +2 no dano com armas contra eles, vantagem em testes de Sobrevivência para rastreá-los e vantagem em testes de Inteligência para lembrar informações sobre eles.",
-      "Explorador Natural: Você tem vantagem em iniciativa e em ataques contra quem não agiu no primeiro turno. Terreno difícil não afeta você nem seu grupo em viagens de uma hora. Em viagens, o grupo não se perde, você rastreia obtendo número, tamanho e tempo das criaturas, acha o dobro de comida e viaja furtivo sozinho em ritmo normal."
+      "Escolha um tipo de inimigo entre bestas, fadas, humanoides, monstruosidades ou mortos-vivos. Você ganha +2 no dano com armas contra eles, vantagem em testes de Sobrevivência para rastreá-los e vantagem em testes de Inteligência para lembrar informações sobre eles.",
+      "Você tem vantagem em iniciativa e em ataques contra quem não agiu no primeiro turno. Terreno difícil não afeta você nem seu grupo em viagens de uma hora. Em viagens, o grupo não se perde, você rastreia obtendo número, tamanho e tempo das criaturas, acha o dobro de comida e viaja furtivo sozinho em ritmo normal."
     ]
   },
   {
@@ -509,7 +509,7 @@
     "magiasQuantidade": 18,
     "pos": 125,
     "habilidades": [
-      "Engenharia Mágica: Com ferramentas de artesão ou ladrão, você usa uma ação para tocar um objeto minúsculo não mágico e dar a ele uma destas propriedades: emitir luz (1,5 m plena e 1,5 m meia-luz), tocar uma mensagem gravada de até 6 segundos ao ser tocado (audível a 3 m), ou emitir um som ou odor contínuo (perceptível a 3 m). O efeito é por tempo indeterminado e você desativa com uma ação."
+      "Com ferramentas de artesão ou ladrão, você usa uma ação para tocar um objeto minúsculo não mágico e dar a ele uma destas propriedades: emitir luz (1,5 m plena e 1,5 m meia-luz), tocar uma mensagem gravada de até 6 segundos ao ser tocado (audível a 3 m), ou emitir um som ou odor contínuo (perceptível a 3 m). O efeito é por tempo indeterminado e você desativa com uma ação."
     ]
   }
 ]

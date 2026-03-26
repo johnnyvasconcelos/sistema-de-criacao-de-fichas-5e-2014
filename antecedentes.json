@@ -11,7 +11,8 @@
     "pos": 15,
     "pericias": ["Intuição", "Religião"],
     "proficiencias": [""],
-    "idioma_extra": 2
+    "idioma_extra": 2,
+    "habilidades": [""]
   },
   {
     "id": 2,
@@ -24,7 +25,8 @@
     "pos": 15,
     "pericias": ["Intuição", "Persuasão"],
     "proficiencias": ["ferramentas de cervejeiro"],
-    "idioma_extra": 1
+    "idioma_extra": 1,
+    "habilidades": [""]
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
     "pos": 15,
     "pericias": ["Intuição", "Persuasão"],
     "proficiencias": ["ferramentas de navegação"],
-    "idioma_extra": 1
+    "idioma_extra": 1,
+    "habilidades": [""]
   },
   {
     "id": 4,
@@ -42,7 +45,8 @@
     "pos": 15,
     "pericias": ["Acrobacia", "Atuação"],
     "proficiencias": ["kit de disfarce", "alaúde"],
-    "idioma_extra": 0
+    "idioma_extra": 0,
+    "habilidades": [""]
   },
   {
     "id": 5,
@@ -51,7 +55,8 @@
     "pos": 15,
     "pericias": ["Acrobacia", "Atuação"],
     "proficiencias": ["kit de disfarce", "alaúde"],
-    "idioma_extra": 0
+    "idioma_extra": 0,
+    "habilidades": [""]
   },
   {
     "id": 6,
@@ -60,7 +65,8 @@
     "pos": 15,
     "pericias": ["Enganação", "Prestidigitação"],
     "proficiencias": ["kit de disfarce", "kit de falsificação"],
-    "idioma_extra": 0
+    "idioma_extra": 0,
+    "habilidades": [""]
   },
   {
     "id": 7,
@@ -69,7 +75,8 @@
     "pos": 15,
     "pericias": ["Enganação", "Furtividade"],
     "proficiencias": ["baralhos", "ferramentas de ladrão"],
-    "idioma_extra": 0
+    "idioma_extra": 0,
+    "habilidades": [""]
   },
   {
     "id": 8,
@@ -78,7 +85,8 @@
     "pos": 15,
     "pericias": ["Enganação", "Furtividade"],
     "proficiencias": ["baralhos", "ferramentas de ladrão"],
-    "idioma_extra": 0
+    "idioma_extra": 0,
+    "habilidades": [""]
   },
   {
     "id": 9,
@@ -92,7 +100,8 @@
     "pos": 5,
     "pericias": ["Medicina", "Religião"],
     "proficiencias": ["kit de herbalismo"],
-    "idioma_extra": 1
+    "idioma_extra": 1,
+    "habilidades": [""]
   },
   {
     "id": 10,
@@ -106,7 +115,8 @@
     "pos": 10,
     "pericias": ["Adestrar Animais", "Sobrevivencia"],
     "proficiencias": ["ferramentas de ferreiro", "veículos terrestres"],
-    "idioma_extra": 0
+    "idioma_extra": 0,
+    "habilidades": [""]
   },
   {
     "id": 11,
@@ -115,7 +125,8 @@
     "pos": 10,
     "pericias": ["Atletismo", "Percepção"],
     "proficiencias": ["ferramentas de navegação", "veículos aquáticos"],
-    "idioma_extra": 0
+    "idioma_extra": 0,
+    "habilidades": [""]
   },
   {
     "id": 12,
@@ -124,7 +135,8 @@
     "pos": 10,
     "pericias": ["Atletismo", "Percepção"],
     "proficiencias": ["ferramentas de navegação", "veículos aquáticos"],
-    "idioma_extra": 0
+    "idioma_extra": 0,
+    "habilidades": [""]
   },
   {
     "id": 13,
@@ -133,7 +145,8 @@
     "pos": 25,
     "pericias": ["História", "Persuasão"],
     "proficiencias": ["baralho"],
-    "idioma_extra": 1
+    "idioma_extra": 1,
+    "habilidades": [""]
   },
   {
     "id": 14,
@@ -142,7 +155,8 @@
     "pos": 25,
     "pericias": ["História", "Persuasão"],
     "proficiencias": ["baralho"],
-    "idioma_extra": 1
+    "idioma_extra": 1,
+    "habilidades": [""]
   },
   {
     "id": 15,
@@ -157,7 +171,8 @@
     "pos": 10,
     "pericias": ["Furtividade", "Prestidigitação"],
     "proficiencias": ["kit de disfarce", "ferramentas de ladrão"],
-    "idioma_extra": 0
+    "idioma_extra": 0,
+    "habilidades": [""]
   },
   {
     "id": 16,
@@ -172,7 +187,8 @@
     "pos": 10,
     "pericias": ["Arcanismo", "História"],
     "proficiencias": [""],
-    "idioma_extra": 2
+    "idioma_extra": 2,
+    "habilidades": [""]
   },
   {
     "id": 17,
@@ -186,7 +202,8 @@
     "pos": 10,
     "pericias": ["Atletismo", "Intimidação"],
     "proficiencias": ["baralho", "veículos terrestres"],
-    "idioma_extra": 0
+    "idioma_extra": 0,
+    "habilidades": [""]
   },
   {
     "id": 18,
@@ -200,6 +217,7 @@
     "pos": 10,
     "pericias": ["Atletismo", "Sobrevivência"],
     "proficiencias": ["flauta"],
-    "idioma_extra": 1
+    "idioma_extra": 1,
+    "habilidades": [""]
   }
 ]
