@@ -12,7 +12,9 @@
     "pericias": ["Intuição", "Religião"],
     "proficiencias": [],
     "idioma_extra": 2,
-    "habilidades": []
+    "habilidades": [
+      "Você é respeitado pela sua fé, pode fazer rituais e recebe ajuda básica de templos como cura, abrigo e sustento. Também pode contar com sacerdotes ligados ao seu templo."
+    ]
   },
   {
     "id": 2,
@@ -26,7 +28,9 @@
     "pericias": ["Intuição", "Persuasão"],
     "proficiencias": ["Ferramentas de Cervejeiro"],
     "idioma_extra": 1,
-    "habilidades": []
+    "habilidades": [
+      "A guilda te dá apoio como abrigo, comida e até funeral, além de contatos e oportunidades. Também pode te proteger legalmente e abrir portas políticas, mas você precisa pagar uma taxa."
+    ]
   },
   {
     "id": 3,
@@ -40,7 +44,9 @@
     "pericias": ["Intuição", "Persuasão"],
     "proficiencias": ["Ferramentas de Navegação"],
     "idioma_extra": 1,
-    "habilidades": []
+    "habilidades": [
+      "A guilda te dá apoio como abrigo, comida e até funeral, além de contatos e oportunidades. Também pode te proteger legalmente e abrir portas políticas, mas você precisa pagar uma taxa."
+    ]
   },
   {
     "id": 4,
@@ -50,7 +56,9 @@
     "pericias": ["Acrobacia", "Atuação"],
     "proficiencias": ["Kit de Disfarce", "Alaúde"],
     "idioma_extra": 0,
-    "habilidades": []
+    "habilidades": [
+      "Você sempre consegue lugar para se apresentar, ganhando comida e abrigo em troca. Suas performances te tornam conhecido e geralmente bem recebido por quem já te viu."
+    ]
   },
   {
     "id": 5,
@@ -60,7 +68,9 @@
     "pericias": ["Acrobacia", "Atuação"],
     "proficiencias": ["Kit de Disfarce", "Alaúde"],
     "idioma_extra": 0,
-    "habilidades": []
+    "habilidades": [
+      "Pode se apresentar em arenas ou lugares secretos e trocar instrumento por uma arma exótica simples."
+    ]
   },
   {
     "id": 6,
@@ -70,7 +80,9 @@
     "pericias": ["Enganação", "Prestidigitação"],
     "proficiencias": ["Kit de Disfarce", "Kit de Falsificação"],
     "idioma_extra": 0,
-    "habilidades": []
+    "habilidades": [
+      "Você tem uma identidade falsa completamente diferente e consegue forjar documentos se tiver um modelo para copiar."
+    ]
   },
   {
     "id": 7,
@@ -80,7 +92,9 @@
     "pericias": ["Enganação", "Furtividade"],
     "proficiencias": ["Baralhos", "Ferramentas de Ladrão"],
     "idioma_extra": 0,
-    "habilidades": []
+    "habilidades": [
+      "Você tem uma rede de informantes confiáveis e sabe se comunicar com eles à distância usando contatos como mensageiros e figuras suspeitas."
+    ]
   },
   {
     "id": 8,
@@ -90,7 +104,9 @@
     "pericias": ["Enganação", "Furtividade"],
     "proficiencias": ["Baralhos", "Ferramentas de Ladrão"],
     "idioma_extra": 0,
-    "habilidades": []
+    "habilidades": [
+      "Você tem uma rede de informantes confiáveis e sabe se comunicar com eles à distância usando contatos como mensageiros e figuras suspeitas."
+    ]
   },
   {
     "id": 9,
@@ -105,7 +121,9 @@
     "pericias": ["Medicina", "Religião"],
     "proficiencias": ["Kit de Herbalismo"],
     "idioma_extra": 1,
-    "habilidades": []
+    "habilidades": [
+      "Seu isolamento te revelou um segredo poderoso, como uma verdade oculta, um lugar desconhecido ou uma relíquia perdida, que pode até mudar a história"
+    ]
   },
   {
     "id": 10,
@@ -120,7 +138,9 @@
     "pericias": ["Adestrar Animais", "Sobrevivencia"],
     "proficiencias": ["Ferramentas de Ferreiro", "Veículos Terrestres"],
     "idioma_extra": 0,
-    "habilidades": []
+    "habilidades": [
+      "Você consegue se misturar entre camponeses, que podem te esconder, ajudar a descansar e evitar a lei, desde que não se coloquem em risco."
+    ]
   },
   {
     "id": 11,
@@ -135,7 +155,9 @@
     "pericias": ["Atletismo", "Percepção"],
     "proficiencias": ["Ferramentas de Navegação", "Veículos Aquáticos"],
     "idioma_extra": 0,
-    "habilidades": []
+    "habilidades": [
+      "Você pode conseguir passagem grátis em navios com os quais já trabalhou, ajudando a tripulação em troca."
+    ]
   },
   {
     "id": 12,
@@ -150,7 +172,9 @@
     "pericias": ["Atletismo", "Percepção"],
     "proficiencias": ["Ferramentas de Navegação", "Veículos Aquáticos"],
     "idioma_extra": 0,
-    "habilidades": []
+    "habilidades": [
+      "Você pode conseguir passagem grátis em navios com os quais já trabalhou, ajudando a tripulação em troca."
+    ]
   },
   {
     "id": 13,
@@ -164,7 +188,9 @@
     "pericias": ["História", "Persuasão"],
     "proficiencias": ["Baralho"],
     "idioma_extra": 1,
-    "habilidades": []
+    "habilidades": [
+      "Por ser de origem nobre, você é bem recebido na alta sociedade, recebe tratamento privilegiado e pode facilmente conseguir audiência com outros nobres."
+    ]
   },
   {
     "id": 14,
@@ -178,7 +204,9 @@
     "pericias": ["História", "Persuasão"],
     "proficiencias": ["Baralho"],
     "idioma_extra": 1,
-    "habilidades": []
+    "habilidades": [
+      "Você tem um escudeiro nobre entre seus servos que te auxilia em troca de treinamento."
+    ]
   },
   {
     "id": 15,
@@ -194,7 +222,9 @@
     "pericias": ["Furtividade", "Prestidigitação"],
     "proficiencias": ["Kit de Disfarce", "Ferramentas de Ladrão"],
     "idioma_extra": 0,
-    "habilidades": []
+    "habilidades": [
+      "Você conhece bem a cidade, consegue encontrar rotas escondidas e se deslocar mais rápido que o normal, levando aliados junto."
+    ]
   },
   {
     "id": 16,
@@ -210,7 +240,9 @@
     "pericias": ["Arcanismo", "História"],
     "proficiencias": [],
     "idioma_extra": 2,
-    "habilidades": []
+    "habilidades": [
+      "Você sabe onde encontrar qualquer informação que procura, geralmente em bibliotecas ou com sábios, embora alguns segredos possam ser difíceis ou impossíveis de obter."
+    ]
   },
   {
     "id": 17,
@@ -225,7 +257,9 @@
     "pericias": ["Atletismo", "Intimidação"],
     "proficiencias": ["Baralho", "Veículos Terrestres"],
     "idioma_extra": 0,
-    "habilidades": []
+    "habilidades": [
+      "Você tem patente militar, sendo reconhecido por soldados, podendo requisitar ajuda, equipamentos simples e acesso a acampamentos e fortalezas aliadas."
+    ]
   },
   {
     "id": 18,
@@ -240,6 +274,8 @@
     "pericias": ["Atletismo", "Sobrevivência"],
     "proficiencias": ["Flauta"],
     "idioma_extra": 1,
-    "habilidades": []
+    "habilidades": [
+      "Você tem ótima memória geográfica e sempre se orienta bem, além de conseguir encontrar comida e água para você e mais cinco pessoas diariamente em ambientes que permitam."
+    ]
   }
 ]

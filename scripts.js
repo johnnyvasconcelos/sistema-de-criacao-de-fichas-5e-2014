@@ -387,7 +387,17 @@
         )
         .filter((item) => item)
         .filter((item, index, arr) => arr.indexOf(item) === index);
+      let todasHab = []
+        .concat(
+          categoriaEscolhida?.habilidades || [],
+          racaEscolhida.habilidades || [],
+          classeEscolhida.habilidades || [],
+          antecedenteEscolhido.habilidades || [],
+        )
+        .filter((item) => item)
+        .filter((item, index, arr) => arr.indexOf(item) === index);
       data.proficiencias = todasProf;
+      data.habilidades = todasHab;
       const periciasClasse = classeEscolhida.pericias;
       const periciasCampo = document.querySelector(".pericias");
       const magiasCampo = document.querySelector(".magias");
@@ -756,6 +766,7 @@
         data.pps = Math.round(parteDecimal * 10);
         data.pos = poInteiro;
         mostrarArmasEArmaduras();
+        data.nivel = 1;
         data.defeito = "Impulsivo prefere atacar antes de pensar.";
         data.ideal = "Poder é conquistado pela força e mantido sem piedade.";
         data.personalidade = "Desconfiado demora a confiar nos outros.";
@@ -848,19 +859,28 @@
     const ca = form.getTextField("classe_armadura");
     const proficiencias = form.getTextField("proficiencias");
     const vida = form.getTextField("total_vida");
+    const gps = form.getTextField("gps");
+    const sp = form.getTextField("sp");
+    const sobre = form.getTextField("sobre");
     const modFor = form.getTextField("mod_forca");
     const modDes = form.getTextField("mod_des");
     const modCon = form.getTextField("mod_constituicao");
     const modInt = form.getTextField("mod_inteligencia");
     const modSab = form.getTextField("mod_sabedoria");
     const modCar = form.getTextField("mod_carisma");
+    const nivel = form.getTextField("nivel");
+    const iniciativa = form.getTextField("iniciativa");
     const forMod = Math.floor((data.for - 10) / 2).toString();
     const desMod = Math.floor((data.des - 10) / 2).toString();
     const conMod = Math.floor((data.con - 10) / 2).toString();
     const intMod = Math.floor((data.int - 10) / 2).toString();
     const sabMod = Math.floor((data.sab - 10) / 2).toString();
     const carMod = Math.floor((data.car - 10) / 2).toString();
-
+    // habilidades (mais_personagem)
+    gps.setText(data.pos.toString());
+    sp.setText(data.pps.toString());
+    sobre.setText(data.historia);
+    nivel.setText(data.nivel.toString());
     modFor.setText(forMod);
     modDes.setText(desMod);
     modCon.setText(conMod);
@@ -868,6 +888,7 @@
     modSab.setText(sabMod);
     modCar.setText(carMod);
     nome.setText(data.nome);
+    iniciativa.setText(desMod);
     tendencia.setText(data.tendencia);
     raca.setText(data.raca);
     classe.setText(data.classe);
