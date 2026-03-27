@@ -303,11 +303,11 @@
   const mostrarArmasEArmaduras = async () => {
     // envia as armas ao data com base nos equipamentos
     try {
-      const [armas, armaduras] = await Promise.all([
+      const [ataques, armaduras] = await Promise.all([
         carregarJSON("./armas.json"),
         carregarJSON("./armaduras.json"),
       ]);
-      // calcula a CA e separa as armas
+      // calcula a CA
       let armaduraAtual;
       for (let i = 0; i < data.equipamentos.length; i++) {
         armaduraAtual = armaduras.find(
@@ -315,14 +315,33 @@
         );
         if (armaduraAtual) break;
       }
-      if (!armaduraAtual) {
-        console.warn("Nenhuma armadura encontrada nos equipamentos");
-        return;
-      }
       const modDes = Math.floor((data.des - 10) / 2);
-      data.ca = armaduraAtual.base
-        ? armaduraAtual.ca + modDes
-        : armaduraAtual.ca;
+      const temEscudo = data.equipamentos.includes("Escudo");
+
+      let caBase;
+      if (armaduraAtual) {
+        caBase = armaduraAtual.base
+          ? armaduraAtual.ca + modDes
+          : armaduraAtual.ca;
+      } else {
+        caBase = 10 + modDes;
+      }
+
+      data.ca = caBase + (temEscudo ? 2 : 0);
+
+      // separa as armas
+      const armas = [];
+
+      for (let i = 0; i < data.equipamentos.length; i++) {
+        const armaEncontrada = ataques.find(
+          (item) => item.nome === data.equipamentos[i],
+        );
+
+        if (armaEncontrada) {
+          armas.push(armaEncontrada);
+        }
+      }
+      data.armas = armas;
     } catch (error) {
       console.error("Erro em mostrarArmasEArmaduras:", error);
     }
@@ -717,6 +736,10 @@
         data.pps = Math.round(parteDecimal * 10);
         data.pos = poInteiro;
         mostrarArmasEArmaduras();
+        data.defeito = "Impulsivo prefere atacar antes de pensar.";
+        data.ideal = "Poder é conquistado pela força e mantido sem piedade.";
+        data.personalidade = "Desconfiado demora a confiar nos outros.";
+        data.vinculo = "Defendo minha terra natal custe o que custar.";
         console.log(data);
       }
     });

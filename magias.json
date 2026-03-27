@@ -283,5 +283,10 @@
     "id": 57,
     "nome": "Beberagem Cáustica de Tasha",
     "descricao": "Uma linha de ácido de 9m por 1,5m sai de você. Criaturas que falham no teste de Des. tomam 2d4 de dano de ácido no início de cada turno até gastarem uma ação para se limparem."
+  },
+  {
+    "id": 58,
+    "nome": "Repreensão Infernal",
+    "descricao": "Reação ao sofrer dano de uma criatura visível; ela faz teste de Des. ou sofre 2d10 de dano de fogo (metade se passar)."
   }
 ]
