@@ -1,0 +1,132 @@
+[
+  {
+    "nome": "Espada Curta",
+    "dano": "1d6",
+    "acuidade": true
+  },
+  {
+    "nome": "Adaga",
+    "dano": "1d4",
+    "acuidade": true
+  },
+  {
+    "nome": "Azagaia",
+    "dano": "1d6",
+    "acuidade": false
+  },
+  {
+    "nome": "Bordão",
+    "dano": "1d6",
+    "acuidade": false
+  },
+  {
+    "nome": "Arco Curto",
+    "dano": "1d6",
+    "acuidade": false
+  },
+  {
+    "nome": "Arco Longo",
+    "dano": "1d8",
+    "acuidade": false
+  },
+  {
+    "nome": "Besta Leve",
+    "dano": "1d8",
+    "acuidade": false
+  },
+  {
+    "nome": "Machado de Batalha",
+    "dano": "1d8",
+    "acuidade": false
+  },
+  {
+    "nome": "Martelo Leve",
+    "dano": "1d4",
+    "acuidade": false
+  },
+  {
+    "nome": "Lança",
+    "dano": "1d6",
+    "acuidade": false
+  },
+  {
+    "nome": "Rapieira",
+    "dano": "1d8",
+    "acuidade": true
+  },
+  {
+    "nome": "Tridente",
+    "dano": "1d6",
+    "acuidade": false
+  },
+  {
+    "nome": "Mangual",
+    "dano": "1d8",
+    "acuidade": false
+  },
+  {
+    "nome": "Malho",
+    "dano": "2d6",
+    "acuidade": false
+  },
+  {
+    "nome": "Picareta de Guerra",
+    "dano": "1d8",
+    "acuidade": false
+  },
+  {
+    "nome": "Chicote",
+    "dano": "1d4",
+    "acuidade": true
+  },
+  {
+    "nome": "Cimitarra",
+    "dano": "1d6",
+    "acuidade": true
+  },
+  {
+    "nome": "Espada Grande",
+    "dano": "2d6",
+    "acuidade": false
+  },
+  {
+    "nome": "Espada Longa",
+    "dano": "1d8",
+    "acuidade": false
+  },
+  {
+    "nome": "Glaive",
+    "dano": "1d10",
+    "acuidade": false
+  },
+  {
+    "nome": "Lança Longa",
+    "dano": "1d12",
+    "acuidade": false
+  },
+  {
+    "nome": "Alabarda",
+    "dano": "1d10",
+    "acuidade": false
+  },
+  {
+    "nome": "Maça Estrela",
+    "dano": "1d8",
+    "acuidade": false
+  },
+  {
+    "nome": "Porrete",
+    "dano": "1d4",
+    "acuidade": false
+  },
+  {
+    "nome": "Foice Curta",
+    "dano": "1d4",
+    "acuidade": false
+  },
+  {
+    "nome": "Clava Grande",
+    "dano": "1d8",
+    "acuidade": false
+  }
+]

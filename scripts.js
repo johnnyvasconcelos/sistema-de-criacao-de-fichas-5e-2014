@@ -300,6 +300,33 @@
       console.error("Erro em mostrarDetalhesMagias:", error);
     }
   };
+  const mostrarArmasEArmaduras = async () => {
+    // envia as armas ao data com base nos equipamentos
+    try {
+      const [armas, armaduras] = await Promise.all([
+        carregarJSON("./armas.json"),
+        carregarJSON("./armaduras.json"),
+      ]);
+      // calcula a CA e separa as armas
+      let armaduraAtual;
+      for (let i = 0; i < data.equipamentos.length; i++) {
+        armaduraAtual = armaduras.find(
+          (item) => item.nome === data.equipamentos[i],
+        );
+        if (armaduraAtual) break;
+      }
+      if (!armaduraAtual) {
+        console.warn("Nenhuma armadura encontrada nos equipamentos");
+        return;
+      }
+      const modDes = Math.floor((data.des - 10) / 2);
+      data.ca = armaduraAtual.base
+        ? armaduraAtual.ca + modDes
+        : armaduraAtual.ca;
+    } catch (error) {
+      console.error("Erro em mostrarArmasEArmaduras:", error);
+    }
+  };
   const mostrarPericiasEMagias = async () => {
     try {
       bonusAdd =
@@ -689,7 +716,7 @@
         let parteDecimal = data.pos - poInteiro;
         data.pps = Math.round(parteDecimal * 10);
         data.pos = poInteiro;
-
+        mostrarArmasEArmaduras();
         console.log(data);
       }
     });

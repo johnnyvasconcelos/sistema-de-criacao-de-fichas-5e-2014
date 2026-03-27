@@ -1,0 +1,42 @@
+[
+  {
+    "nome": "Armadura Alcochoada",
+    "ca": 11,
+    "base": true
+  },
+  {
+    "nome": "Armadura de Couro",
+    "ca": 11,
+    "base": true
+  },
+  {
+    "nome": "Armadura de Couro Batido",
+    "ca": 12,
+    "base": true
+  },
+  {
+    "nome": "Gibão de Peles",
+    "ca": 12,
+    "base": true
+  },
+  {
+    "nome": "camisão de Malha",
+    "ca": 13,
+    "base": true
+  },
+  {
+    "nome": "Brunea",
+    "ca": 14,
+    "base": true
+  },
+  {
+    "nome": "Cota de Anéis",
+    "ca": 14,
+    "base": false
+  },
+  {
+    "nome": "Cota de Malha",
+    "ca": 16,
+    "base": false
+  }
+]
