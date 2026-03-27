@@ -186,7 +186,7 @@
       "Você tem vantagem em salvaguardas contra magias.",
       "Sempre que efetuar um salto em distância ou em altura, você pode rolar 1d8 e somar o resultado x 0,3m à distância saltada (mesmo parado). Esse deslocamento extra consome seu movimento normal."
     ],
-    "proficiencias": []
+    "proficiencias": ["Flauta"]
   },
   {
     "id": 16,

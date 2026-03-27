@@ -354,12 +354,14 @@
           : data.raca === "Meio-Elfo" || data.raca === "Kenku"
             ? bonusPericias() + 2
             : bonusPericias();
-      const [pericias, antecedentes, classes, racas] = await Promise.all([
-        carregarJSON("./pericias.json"),
-        carregarJSON("./antecedentes.json"),
-        carregarJSON("./classes.json"),
-        carregarJSON("./racas.json"),
-      ]);
+      const [pericias, antecedentes, classes, racas, categorias] =
+        await Promise.all([
+          carregarJSON("./pericias.json"),
+          carregarJSON("./antecedentes.json"),
+          carregarJSON("./classes.json"),
+          carregarJSON("./racas.json"),
+          carregarJSON("./categorias.json"),
+        ]);
       const antecedenteEscolhido = antecedentes.find(
         (ant) => ant.nome === data.antecedente,
       );
@@ -369,6 +371,23 @@
       const racaEscolhida = racas.find((r) => {
         return r.nome === data.raca;
       });
+      const categoriaEscolhida =
+        categorias.find(
+          (ct) =>
+            ct.nome === data.categoria ||
+            ct.nome === data.linhagem ||
+            ct.nome === data.elemento,
+        ) || [];
+      let todasProf = []
+        .concat(
+          categoriaEscolhida?.proficiencias || [],
+          racaEscolhida.proficiencias || [],
+          classeEscolhida.proficiencias || [],
+          antecedenteEscolhido.proficiencias || [],
+        )
+        .filter((item) => item)
+        .filter((item, index, arr) => arr.indexOf(item) === index);
+      data.proficiencias = todasProf;
       const periciasClasse = classeEscolhida.pericias;
       const periciasCampo = document.querySelector(".pericias");
       const magiasCampo = document.querySelector(".magias");
@@ -730,6 +749,7 @@
         const historia = document.querySelector("#historia_personagem");
         data.nome = nome.value;
         data.historia = historia.value;
+        data.proficiencias = [...data.proficiencias, ...data.idiomas];
         // calcula o dinheiro
         let poInteiro = Math.floor(data.pos);
         let parteDecimal = data.pos - poInteiro;
@@ -741,6 +761,37 @@
         data.personalidade = "Desconfiado demora a confiar nos outros.";
         data.vinculo = "Defendo minha terra natal custe o que custar.";
         data.tendencia = "Neutro";
+        const conMod = Math.floor((data.con - 10) / 2);
+
+        switch (data.classe) {
+          case "Bárbaro":
+            data.pvs = 12 + conMod;
+            break;
+
+          case "Guerreiro":
+          case "Paladino":
+          case "Patrulheiro":
+            data.pvs = 10 + conMod;
+            break;
+
+          case "Bardo":
+          case "Clérigo":
+          case "Druida":
+          case "Monge":
+          case "Ladino":
+          case "Artífice":
+            data.pvs = 8 + conMod;
+            break;
+
+          case "Feiticeiro":
+          case "Bruxo":
+          case "Mago":
+            data.pvs = 6 + conMod;
+            break;
+
+          default:
+            data.pvs = 0;
+        }
         console.log(data);
         // edita pdf
         editaPdf();
@@ -778,11 +829,12 @@
     const pdfDoc = await PDFDocument.load(existingPdfBytes);
     const form = pdfDoc.getForm();
     const fields = form.getFields();
-    /* 
+
+    /*
     fields.forEach((field) => {
       console.log(field.getName());
     });
-    */
+*/
     const nome = form.getTextField("nome");
     const tendencia = form.getTextField("tendencia");
     const raca = form.getTextField("raca");
@@ -794,7 +846,27 @@
     const vinculos = form.getTextField("vinculos");
     const defeitos = form.getTextField("defeitos");
     const ca = form.getTextField("classe_armadura");
+    const proficiencias = form.getTextField("proficiencias");
+    const vida = form.getTextField("total_vida");
+    const modFor = form.getTextField("mod_forca");
+    const modDes = form.getTextField("mod_des");
+    const modCon = form.getTextField("mod_constituicao");
+    const modInt = form.getTextField("mod_inteligencia");
+    const modSab = form.getTextField("mod_sabedoria");
+    const modCar = form.getTextField("mod_carisma");
+    const forMod = Math.floor((data.for - 10) / 2).toString();
+    const desMod = Math.floor((data.des - 10) / 2).toString();
+    const conMod = Math.floor((data.con - 10) / 2).toString();
+    const intMod = Math.floor((data.int - 10) / 2).toString();
+    const sabMod = Math.floor((data.sab - 10) / 2).toString();
+    const carMod = Math.floor((data.car - 10) / 2).toString();
 
+    modFor.setText(forMod);
+    modDes.setText(desMod);
+    modCon.setText(conMod);
+    modInt.setText(intMod);
+    modSab.setText(sabMod);
+    modCar.setText(carMod);
     nome.setText(data.nome);
     tendencia.setText(data.tendencia);
     raca.setText(data.raca);
@@ -804,9 +876,10 @@
     personalidade.setText(data.personalidade);
     vinculos.setText(data.vinculo);
     defeitos.setText(data.defeito);
-    ca.setText(data.ca);
+    ca.setText(data.ca.toString());
+    proficiencias.setText(data.proficiencias.join(", "));
     equipamentos.setText(data.equipamentos.join(", "));
-
+    vida.setText(data.pvs.toString());
     form.updateFieldAppearances();
     const pdfBytes = await pdfDoc.save();
     const blob = new Blob([pdfBytes], { type: "application/pdf" });

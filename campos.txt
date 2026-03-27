@@ -1,5 +1,3 @@
-scripts.js:783 proficiencias
-scripts.js:783 total_vida
 scripts.js:783 arma_1
 scripts.js:783 ataque_1
 scripts.js:783 dano_1
