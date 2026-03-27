@@ -10,9 +10,9 @@
       "Percepção",
       "Sobrevivência"
     ],
-    "truques": [""],
+    "truques": [],
     "truquesQuantidade": 0,
-    "magias": [""],
+    "magias": [],
     "magiasQuantidade": 0,
     "pos": 50,
     "habilidades": [
@@ -125,7 +125,7 @@
     ],
     "magiasQuantidade": 2,
     "pos": 100,
-    "habilidades": [""]
+    "habilidades": []
   },
   {
     "id": 4,
@@ -167,7 +167,7 @@
     ],
     "magiasQuantidade": 15,
     "pos": 125,
-    "habilidades": [""]
+    "habilidades": []
   },
   {
     "id": 5,
@@ -271,7 +271,7 @@
     ],
     "magiasQuantidade": 2,
     "pos": 75,
-    "habilidades": [""]
+    "habilidades": []
   },
   {
     "id": 7,
@@ -286,9 +286,9 @@
       "Percepção",
       "Sobrevivência"
     ],
-    "truques": [""],
+    "truques": [],
     "truquesQuantidade": 0,
-    "magias": [""],
+    "magias": [],
     "magiasQuantidade": 0,
     "pos": 125,
     "habilidades": [
@@ -311,9 +311,9 @@
       "Persuasão",
       "Prestidigitação"
     ],
-    "truques": [""],
+    "truques": [],
     "truquesQuantidade": 0,
-    "magias": [""],
+    "magias": [],
     "magiasQuantidade": 0,
     "pos": 100,
     "habilidades": [
@@ -400,9 +400,9 @@
       "Intuição",
       "Religião"
     ],
-    "truques": [""],
+    "truques": [],
     "truquesQuantidade": 0,
-    "magias": [""],
+    "magias": [],
     "magiasQuantidade": 0,
     "pos": 15,
     "habilidades": [
@@ -421,9 +421,9 @@
       "Persuasão",
       "Religião"
     ],
-    "truques": [""],
+    "truques": [],
     "truquesQuantidade": 0,
-    "magias": [""],
+    "magias": [],
     "magiasQuantidade": 0,
     "pos": 125,
     "habilidades": [
@@ -444,9 +444,9 @@
       "Percepção",
       "Sobrevivência"
     ],
-    "truques": [""],
+    "truques": [],
     "truquesQuantidade": 0,
-    "magias": [""],
+    "magias": [],
     "magiasQuantidade": 0,
     "pos": 125,
     "habilidades": [

@@ -2,14 +2,14 @@
   {
     "id": 1,
     "nome": "Humano",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum"],
-    "habilidades": [""]
+    "habilidades": []
   },
   {
     "id": 2,
     "nome": "Alto Elfo",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Élfico"],
     "habilidades": [
       "Você tem vantagem nos testes para resistir a ser enfeitiçado e magias não o colocam para dormir.",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "nome": "Elfo Negro",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Élfico"],
     "habilidades": [
       "Você tem vantagem nos testes para resistir a ser enfeitiçado e magias não o colocam para dormir.",
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "nome": "Elfo da Floresta",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Élfico"],
     "habilidades": [
       "Você tem vantagem nos testes para resistir a ser enfeitiçado e magias não o colocam para dormir.",
@@ -66,7 +66,7 @@
   {
     "id": 7,
     "nome": "Eladrin",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Élfico"],
     "habilidades": [
       "Você tem vantagem para evitar ou encerrar a condição enfeitiçado",
@@ -79,7 +79,7 @@
   {
     "id": 8,
     "nome": "Elfo Marinho",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Élfico"],
     "habilidades": [
       "Visão no Escuro (18m)",
@@ -112,7 +112,7 @@
   {
     "id": 11,
     "nome": "Kenku",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Auran"],
     "habilidades": [
       "Quando você copia escritos ou trabalhos manuais produzidos por você ou outra pessoa, você tem vantagem em quaisquer testes de atributo que fizer para produzir uma duplicata exata.",
@@ -167,14 +167,14 @@
   {
     "id": 16,
     "nome": "Humano Variante",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum"],
-    "habilidades": [""]
+    "habilidades": []
   },
   {
     "id": 17,
     "nome": "Elfo Astral",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Élfico"],
     "habilidades": [
       "Visão no Escuro (18m)",
@@ -187,7 +187,7 @@
   {
     "id": 18,
     "nome": "Shadar-Kai",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Élfico"],
     "habilidades": [
       "Você tem vantagem para evitar ou encerrar a condição enfeitiçado",
@@ -201,7 +201,7 @@
   {
     "id": 19,
     "nome": "Meio-Elfo",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Élfico"],
     "habilidades": [
       "Você possui vantagem em testes de resistência contra encantamento e magia não pode colocar você pra dormir",
@@ -211,7 +211,7 @@
   {
     "id": 20,
     "nome": "Meio-Orc",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Orc"],
     "habilidades": [
       "Quando você é reduzido a 0 pontos de vida mas não é completamente morto, você pode voltar para 1 ponto de vida. Você não pode usar essa característica novamente até completar um descanso longo.",
@@ -222,7 +222,7 @@
   {
     "id": 21,
     "nome": "Orc",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Orc"],
     "habilidades": [
       "Visão no Escuro (18m)",
@@ -234,7 +234,7 @@
   {
     "id": 22,
     "nome": "Anão da Colina",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Anão"],
     "habilidades": [
       "Você possui vantagem em testes de resistência contra venenos e resistência contra dano de veneno.",
@@ -246,7 +246,7 @@
   {
     "id": 23,
     "nome": "Anão da Montanha",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Anão"],
     "habilidades": [
       "Você possui vantagem em testes de resistência contra venenos e resistência contra dano de veneno.",
@@ -257,7 +257,7 @@
   {
     "id": 24,
     "nome": "Duergar",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Anão"],
     "habilidades": [
       "Você tem vantagem para evitar ou encerrar a condição encantado ou atordoado.",
@@ -268,7 +268,7 @@
   {
     "id": 25,
     "nome": "Halfling Pé Leve",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Halfling"],
     "habilidades": [
       "Você tem vantagem em testes contra ficar amedrontado.",
@@ -280,7 +280,7 @@
   {
     "id": 26,
     "nome": "Halfling Robusto",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Halfling"],
     "habilidades": [
       "Você tem vantagem em testes contra ficar amedrontado.",
@@ -292,7 +292,7 @@
   {
     "id": 27,
     "nome": "Gnomo da Floresta",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Gnômico"],
     "habilidades": [
       "Você possui vantagem em todos os testes de resistência de Inteligência, Sab e Car contra magia.",
@@ -303,7 +303,7 @@
   {
     "id": 28,
     "nome": "Gnomo das Rochas",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Gnômico"],
     "habilidades": [
       "Você possui vantagem em todos os testes de resistência de Inteligência, Sab e Car contra magia.",
@@ -315,7 +315,7 @@
   {
     "id": 29,
     "nome": "Gnomo das Profundezas",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Gnômico"],
     "habilidades": [
       "Visão no Escuro (Superior) 36m",
@@ -326,7 +326,7 @@
   {
     "id": 30,
     "nome": "Autognomo",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Gnômico"],
     "habilidades": [
       "Você pode adicionar 1d4 a uma jogada de ataque, teste de atributo ou salvaguarda que fizer. Você pode decidir usá-lo após ver o resultado do d20, mas antes de saber o efeito final. Use um número de vezes igual à sua proficiência por descanso longo.",
@@ -339,7 +339,7 @@
   {
     "id": 31,
     "nome": "Tiefling",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Infernal"],
     "habilidades": [
       "Você possui resistência a dano de fogo.",
@@ -349,14 +349,14 @@
   {
     "id": 32,
     "nome": "Draconato",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Dracônico"],
-    "habilidades": [""]
+    "habilidades": []
   },
   {
     "id": 33,
     "nome": "Aarakocra",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Auran"],
     "habilidades": [
       "Garras. Você tem garras que pode usar para desferir golpes desarmados. Quando você acerta com elas, o golpe causa dano cortante igual a ldó + seu mod de Força, ao invés do dano contundente normal para um golpe desarmado",
@@ -366,7 +366,7 @@
   {
     "id": 34,
     "nome": "Aasimar",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Celestial"],
     "habilidades": [
       "Como uma ação a cada descanso longo, você toca uma criatura e rolar um número de d4s equivalente ao seu bônus de prof. A criatura recupera pontos de vida iguais ao total obtido.",
@@ -377,7 +377,7 @@
   {
     "id": 35,
     "nome": "Centauro",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Silvestre"],
     "habilidades": [
       "Se você se mover pelo menos 9m em linha reta em direção a um alvo e acertá-lo com uma arma corpo a corpo, pode usar ação bônus para atacá-lo com seus cascos no mesmo turno.",
@@ -388,7 +388,7 @@
   {
     "id": 36,
     "nome": "Fada",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Silvestre"],
     "habilidades": [
       "Você tem deslocamento de voo igual ao seu deslocamento de caminhada, mas não pode voar usando armadura média ou pesada."
@@ -397,7 +397,7 @@
   {
     "id": 37,
     "nome": "Firbolg",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Élfico", "gigante"],
     "habilidades": [
       "Você pode se comunicar de forma limitada com feras e plantas, que entendem suas palavras mesmo que você não as entenda de volta, ganhando vantagem em todos os testes de Car. para influenciá-las.",
@@ -408,14 +408,14 @@
   {
     "id": 38,
     "nome": "Genasi",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Primordial"],
-    "habilidades": [""]
+    "habilidades": []
   },
   {
     "id": 39,
     "nome": "Giff",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum"],
     "proficiencias": ["Armas de Fogo"],
     "habilidades": [
@@ -427,7 +427,7 @@
   {
     "id": 40,
     "nome": "Githyanki",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Gith"],
     "habilidades": [
       "Quando você conjura mãos mágicas, a mão é invisível.",
@@ -438,7 +438,7 @@
   {
     "id": 41,
     "nome": "Githzerai",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Gith"],
     "habilidades": [
       "Você tem resistência a dano psíquico.",
@@ -448,7 +448,7 @@
   {
     "id": 42,
     "nome": "Goblin",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Goblinoide"],
     "habilidades": [
       "Você tem vantagem para evitar ou encerrar a condição enfeitiçado",
@@ -460,7 +460,7 @@
   {
     "id": 43,
     "nome": "Hadooze",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum"],
     "habilidades": [
       "Com ação bônus, você pode usar seus pés para manipular um objeto, abrir/fechar portas e recipientes, ou pegar/largar um objeto Miúdo.",
@@ -471,7 +471,7 @@
   {
     "id": 44,
     "nome": "Hobgoblin",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Goblinoide"],
     "habilidades": [
       "Você pode usar a ação Ajudar como ação bônus um número de vezes igual ao seu bônus de proficiência, recuperando todos os usos após um descanso longo.",
@@ -486,7 +486,7 @@
   {
     "id": 45,
     "nome": "Laparlonj",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Silvestre"],
     "habilidades": [
       "Você pode adicionar seu bônus de prof. à sua iniciativa.",
@@ -497,7 +497,7 @@
   {
     "id": 46,
     "nome": "Minotauro",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum"],
     "habilidades": [
       "Imediatamente após correr e se mover pelo menos 6m no seu turno, você pode fazer um ataque corpo a corpo com os chifres como ação bônus.",
@@ -509,7 +509,7 @@
   {
     "id": 47,
     "nome": "Plasmoid",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum"],
     "habilidades": [
       "Visão no Escuro (Superior) 36m",
@@ -522,7 +522,7 @@
   {
     "id": 48,
     "nome": "Thri-Kreen",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum"],
     "habilidades": [
       "Visão no Escuro (Superior) 36m",
@@ -534,7 +534,7 @@
   {
     "id": 49,
     "nome": "Tritão",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Aquan"],
     "habilidades": [
       "Você pode respirar ar e água.",
@@ -546,7 +546,7 @@
   {
     "id": 50,
     "nome": "Yuan-Ti",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Dracônico", "Abissal"],
     "habilidades": [
       "Visão no Escuro (18m)",
@@ -557,7 +557,7 @@
   {
     "id": 51,
     "nome": "Kobold",
-    "pericias": [""],
+    "pericias": [],
     "idiomas": ["Comum", "Dracônico"],
     "habilidades": [
       "Visão no Escuro (18m)",

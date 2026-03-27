@@ -308,7 +308,6 @@
           : data.raca === "Meio-Elfo" || data.raca === "Kenku"
             ? bonusPericias() + 2
             : bonusPericias();
-
       const [pericias, antecedentes, classes, racas] = await Promise.all([
         carregarJSON("./pericias.json"),
         carregarJSON("./antecedentes.json"),
@@ -349,7 +348,20 @@
           const idiomaQuantity = document.querySelectorAll(
             ".idioma:not(:disabled):checked",
           );
-          if (idiomaQuantity.length > 1) {
+          let limiteMaximo = 1;
+
+          if (
+            data.talento === "Poliglota" &&
+            data.categoria === "Conhecimento"
+          ) {
+            limiteMaximo = 7;
+          } else if (data.talento === "Poliglota") {
+            limiteMaximo = 4;
+          } else if (data.categoria === "Conhecimento") {
+            limiteMaximo = 3;
+          }
+
+          if (idiomaQuantity.length > limiteMaximo) {
             idiomas[id].checked = false;
           }
         });
@@ -378,53 +390,58 @@
       }
       // invoca os truques
       let truquesAtivos = [];
+      if (data.categoria === "Luz") {
+        truquesAtivos.push("Luz");
+        truquesCampo.innerHTML +=
+          "<label class='label-area' for='Luz'><input type='checkbox' class='truque' id='Luz' value='Luz' disabled checked/><span>Luz</span></label>";
+      }
       if (data.raca === "Elfo Negro") {
         truquesAtivos.push("Globos de Luz");
-        truquesCampo.innerHTML =
+        truquesCampo.innerHTML +=
           "<label class='label-area' for='Globos de Luz'><input type='checkbox' class='truque' id='Globos de Luz' value='Globos de Luz' disabled checked/><span>Globos de Luz</span></label>";
       } else if (data.raca === "Gnomo da Floresta") {
         truquesAtivos.push("Ilusão Menor");
-        truquesCampo.innerHTML =
+        truquesCampo.innerHTML +=
           "<label class='label-area' for='Ilusão Menor'><input type='checkbox' class='truque' id='Ilusão Menor' value='Ilusão Menor' disabled checked/><span>Ilusão Menor</span></label>";
       } else if (data.raca === "Yuan-Ti") {
         truquesAtivos.push("Rajada de Veneno");
-        truquesCampo.innerHTML =
+        truquesCampo.innerHTML +=
           "<label class='label-area' for='Rajada de Veneno'><input type='checkbox' class='truque' id='Rajada de Veneno' value='Rajada de Veneno' disabled checked/><span>Rajada de Veneno</span></label>";
       } else if (data.raca === "Tiefling") {
         truquesAtivos.push("Taumaturgia");
-        truquesCampo.innerHTML =
+        truquesCampo.innerHTML +=
           "<label class='label-area' for='Taumaturgia'><input type='checkbox' class='truque' id='Taumaturgia' value='Taumaturgia' disabled checked/><span>Taumaturgia</span></label>";
       } else if (data.raca === "Aasimar") {
         truquesAtivos.push("Luz");
-        truquesCampo.innerHTML =
+        truquesCampo.innerHTML +=
           "<label class='label-area' for='Luz'><input type='checkbox' class='truque' id='Luz' value='Luz' disabled checked/><span>Luz</span></label>";
       } else if (data.raca === "Fada") {
         truquesAtivos.push("Druidismo");
-        truquesCampo.innerHTML =
+        truquesCampo.innerHTML +=
           "<label class='label-area' for='Druidismo'><input type='checkbox' class='truque' id='Druidismo' value='Druidismo' disabled checked/><span>Druidismo</span></label>";
       } else if (data.raca === "Genasi" && data.elemento === "Ar") {
         truquesAtivos.push("Toque Chocante");
-        truquesCampo.innerHTML =
+        truquesCampo.innerHTML +=
           "<label class='label-area' for='Toque Chocante'><input type='checkbox' class='truque' id='Toque Chocante' value='Toque Chocante' disabled checked/><span>Toque Chocante</span></label>";
       } else if (data.raca === "Genasi" && data.elemento === "Terra") {
         truquesAtivos.push("Proteção contra Lâminas");
-        truquesCampo.innerHTML =
+        truquesCampo.innerHTML +=
           "<label class='label-area' for='Proteção contra Lâminas'><input type='checkbox' class='truque' id='Proteção contra Lâminas' value='Proteção contra Lâminas' disabled checked/><span>Proteção contra Lâminas</span></label>";
       } else if (data.raca === "Genasi" && data.elemento === "Fogo") {
         truquesAtivos.push("Criar Chamas");
-        truquesCampo.innerHTML =
+        truquesCampo.innerHTML +=
           "<label class='label-area' for='Criar Chamas'><input type='checkbox' class='truque' id='Criar Chamas' value='Criar Chamas' disabled checked/><span>Criar Chamas</span></label>";
       } else if (data.raca === "Genasi" && data.elemento === "Água") {
         truquesAtivos.push("Espirro  Ácido");
-        truquesCampo.innerHTML =
+        truquesCampo.innerHTML +=
           "<label class='label-area' for='Espirro Ácido'><input type='checkbox' class='truque' id='Espirro Ácido' value='Espirro Ácido' disabled checked/><span>Espirro Ácido</span></label>";
       } else if (data.raca === "Githyanki") {
         truquesAtivos.push("Mãos Mágicas");
-        truquesCampo.innerHTML =
+        truquesCampo.innerHTML +=
           "<label class='label-area' for='Mãos Mágicas'><input type='checkbox' class='truque' id='Mãos Mágicas' value='Mãos Mágicas' disabled checked/><span>Mãos Mágicas</span></label>";
       } else if (data.raca === "Githzerai") {
         truquesAtivos.push("Mãos Mágicas");
-        truquesCampo.innerHTML =
+        truquesCampo.innerHTML +=
           "<label class='label-area' for='Mãos Mágicas'><input type='checkbox' class='truque' id='Mãos Mágicas' value='Mãos Mágicas' disabled checked/><span>Mãos Mágicas</span></label>";
       } else if (data.raca === "Alto Elfo") {
         truquesAtivos.push(
@@ -445,7 +462,7 @@
           "Proteção contra Lâminas",
           "Raio de Fogo",
         );
-        truquesCampo.innerHTML =
+        truquesCampo.innerHTML +=
           "<label class='label-area' for='Amizade'><input type='checkbox' class='truque' id='Amizade' value='Amizade'/><span>Amizade</span></label><label class='label-area' for='Ataque Certeiro'><input type='checkbox' class='truque' id='Ataque Certeiro' value='Ataque Certeiro'/><span>Ataque Certeiro</span></label><label class='label-area' for='Consertar'><input type='checkbox' class='truque' id='Consertar' value='Consertar'/><span>Consertar</span></label><label class='label-area' for='Espirro Ácido'><input type='checkbox' class='truque' id='Espirro Ácido' value='Espirro Ácido'/><span>Espirro Ácido</span></label><label class='label-area' for='Globos de Luz'><input type='checkbox' class='truque' id='Globos de Luz' value='Globos de Luz'/><span>Globos de Luz</span></label><label class='label-area' for='Ilusão Menor'><input type='checkbox' class='truque' id='Ilusão Menor' value='Ilusão Menor'/><span>Ilusão Menor</span></label><label class='label-area' for='Raio de Gelo'><input type='checkbox' class='truque' id='Raio de Gelo' value='Raio de Gelo'/><span>Raio de Gelo</span></label><label class='label-area' for='Rajada de Veneno'><input type='checkbox' class='truque' id='Rajada de Veneno' value='Rajada de Veneno'/><span>Rajada de Veneno</span></label><label class='label-area' for='Toque Arrepiante'><input type='checkbox' class='truque' id='Toque Arrepiante' value='Toque Arrepiante'/><span>Toque Arrepiante</span></label><label class='label-area' for='Toque Chocante'><input type='checkbox' class='truque' id='Toque Chocante' value='Toque Chocante'/><span>Toque Chocante</span></label><label class='label-area' for='Luz'><input type='checkbox' class='truque' id='Luz' value='Luz'/><span>Luz</span></label><label class='label-area' for='Mãos Mágicas'><input type='checkbox' class='truque' id='Mãos Mágicas' value='Mãos Mágicas'/><span>Mãos Mágicas</span></label><label class='label-area' for='Mensagem'><input type='checkbox' class='truque' id='Mensagem' value='Mensagem'/><span>Mensagem</span></label><label class='label-area' for='Prestidigitação'><input type='checkbox' class='truque' id='Prestidigitação' value='Prestidigitação'/><span>Prestidigitação</span></label><label class='label-area' for='Proteção contra Lâminas'><input type='checkbox' class='truque' id='Proteção contra Lâminas' value='Proteção contra Lâminas'/><span>Proteção contra Lâminas</span></label><label class='label-area' for='Raio de Fogo'><input type='checkbox' class='truque' id='Raio de Fogo' value='Raio de Fogo'/><span>Raio de Fogo</span></label>";
       }
       for (let i = 0; i < classeEscolhida.truques.length; i++) {
@@ -527,6 +544,8 @@
   };
   const bonusPericias = () => {
     if (data.classe === "Bardo" || data.classe === "Patrulheiro") return 3;
+    if (data.classe === "Clérigo" && data.categoria === "Conhecimento")
+      return 4;
     if (data.classe === "Ladino") return 4;
     return 2;
   };
