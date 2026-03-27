@@ -538,6 +538,8 @@
       const dinheiroFooter = document.querySelector(".dinheiro-footer");
       data.pos = antecedenteEscolhido.pos + classeEscolhida.pos;
       dinheiroFooter.innerText = data.pos;
+      // envia os equipamentos do antecedente
+      data.equipamentos = antecedenteEscolhido.equipamentos;
     } catch (error) {
       console.error("Erro em mostrarPericiasEMagias:", error);
     }
@@ -632,10 +634,9 @@
       // step dos equipamentos
       else if (atualStep === "equipamentos") {
         // classes não-mágicas
-        data.equipamentos = totalEquips.value
-          .replaceAll(",", " ")
-          .split("  ")
-          .slice(0, -1);
+        data.equipamentos.push(
+          ...totalEquips.value.replaceAll(",", " ").split("  ").slice(0, -1),
+        );
         if (
           (steps[index + 1] && !classesNaoMagicas.includes(data.classe)) ||
           (steps[index + 1] && racasMagicas.includes(data.raca))
@@ -683,6 +684,13 @@
         const historia = document.querySelector("#historia_personagem");
         data.nome = nome.value;
         data.historia = historia.value;
+        // calcula o dinheiro
+        let poInteiro = Math.floor(data.pos);
+        let parteDecimal = data.pos - poInteiro;
+        data.pps = Math.round(parteDecimal * 10);
+        data.pos = poInteiro;
+
+        console.log(data);
       }
     });
   }

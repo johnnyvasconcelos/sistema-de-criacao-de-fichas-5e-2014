@@ -2,10 +2,10 @@
   {
     "id": 1,
     "nome": "Acólito",
-    "items": [
-      "símbolo sagrado",
-      "livro de preces",
-      "5 varetas de incenso",
+    "equipamentos": [
+      "Símbolo Sagrado",
+      "Livro de Preces",
+      "Varetas de Incenso",
       "roupas comuns"
     ],
     "pos": 15,
@@ -17,172 +17,194 @@
   {
     "id": 2,
     "nome": "Artesão de Guilda",
-    "items": [
-      "ferramentas de cervejeiro",
-      "carta de apresentação da guilda",
-      "roupas de viajante"
+    "equipamentos": [
+      "Ferramentas de Cervejeiro",
+      "Carta de Apresentação da Guilda",
+      "Roupas de Viajante"
     ],
     "pos": 15,
     "pericias": ["Intuição", "Persuasão"],
-    "proficiencias": ["ferramentas de cervejeiro"],
+    "proficiencias": ["Ferramentas de Cervejeiro"],
     "idioma_extra": 1,
     "habilidades": []
   },
   {
     "id": 3,
     "nome": "Mercador de Guilda",
-    "items": ["mula", "carta de apresentação da guilda", "roupas de viajante"],
+    "equipamentos": [
+      "Mula (Montaria)",
+      "Carta de apresentação da Guilda",
+      "Roupas de Viajante"
+    ],
     "pos": 15,
     "pericias": ["Intuição", "Persuasão"],
-    "proficiencias": ["ferramentas de navegação"],
+    "proficiencias": ["Ferramentas de Navegação"],
     "idioma_extra": 1,
     "habilidades": []
   },
   {
     "id": 4,
     "nome": "Artista",
-    "items": ["alaúde", "carta de amor", "traje"],
+    "equipamentos": ["Alaúde", "Carta de Amor", "Traje"],
     "pos": 15,
     "pericias": ["Acrobacia", "Atuação"],
-    "proficiencias": ["kit de disfarce", "alaúde"],
+    "proficiencias": ["Kit de Disfarce", "Alaúde"],
     "idioma_extra": 0,
     "habilidades": []
   },
   {
     "id": 5,
     "nome": "Gladiador",
-    "items": ["tridente", "carta de amor", "traje"],
+    "equipamentos": ["Tridente", "Carta de Amor", "Traje"],
     "pos": 15,
     "pericias": ["Acrobacia", "Atuação"],
-    "proficiencias": ["kit de disfarce", "alaúde"],
+    "proficiencias": ["Kit de Disfarce", "Alaúde"],
     "idioma_extra": 0,
     "habilidades": []
   },
   {
     "id": 6,
     "nome": "Charlatão",
-    "items": ["roupas finas", "kit de disfarce", "dados viciados"],
+    "equipamentos": ["Roupas Finas", "Kit de Disfarce", "Dados Viciados"],
     "pos": 15,
     "pericias": ["Enganação", "Prestidigitação"],
-    "proficiencias": ["kit de disfarce", "kit de falsificação"],
+    "proficiencias": ["Kit de Disfarce", "Kit de Falsificação"],
     "idioma_extra": 0,
     "habilidades": []
   },
   {
     "id": 7,
     "nome": "Criminoso",
-    "items": ["roupas escuras comuns", "pé de cabra"],
+    "equipamentos": ["Roupas Escuras Comuns", "Pé de Cabra"],
     "pos": 15,
     "pericias": ["Enganação", "Furtividade"],
-    "proficiencias": ["baralhos", "ferramentas de ladrão"],
+    "proficiencias": ["Baralhos", "Ferramentas de Ladrão"],
     "idioma_extra": 0,
     "habilidades": []
   },
   {
     "id": 8,
     "nome": "Espião",
-    "items": ["roupas escuras comuns", "pé de cabra"],
+    "equipamentos": ["Roupas Escuras Comuns", "Pé de Cabra"],
     "pos": 15,
     "pericias": ["Enganação", "Furtividade"],
-    "proficiencias": ["baralhos", "ferramentas de ladrão"],
+    "proficiencias": ["Baralhos", "Ferramentas de Ladrão"],
     "idioma_extra": 0,
     "habilidades": []
   },
   {
     "id": 9,
     "nome": "Eremita",
-    "items": [
-      "estojo de pergaminhos de notas e orações",
-      "cobertor de inverno",
-      "roupas comuns",
-      "kit de herbalismo (alicates, almofariz e pilão, e bolsas e frascos utilizados pelos herbalistas para criar remédios e poções)"
+    "equipamentos": [
+      "Estojo de Pergaminhos com Notas e Orações",
+      "Cobertor de Inverno",
+      "Roupas Comuns",
+      "Kit de Herbalismo"
     ],
     "pos": 5,
     "pericias": ["Medicina", "Religião"],
-    "proficiencias": ["kit de herbalismo"],
+    "proficiencias": ["Kit de Herbalismo"],
     "idioma_extra": 1,
     "habilidades": []
   },
   {
     "id": 10,
     "nome": "Herói do Povo",
-    "items": [
-      "ferramentas de ferreiro",
-      "pá",
-      "roupas comuns",
-      "pote de ferro"
+    "equipamentos": [
+      "Ferramentas de Ferreiro",
+      "Pá",
+      "Roupas Comuns",
+      "Pote de Ferro"
     ],
     "pos": 10,
     "pericias": ["Adestrar Animais", "Sobrevivencia"],
-    "proficiencias": ["ferramentas de ferreiro", "veículos terrestres"],
+    "proficiencias": ["Ferramentas de Ferreiro", "Veículos Terrestres"],
     "idioma_extra": 0,
     "habilidades": []
   },
   {
     "id": 11,
     "nome": "Marinheiro",
-    "items": ["clava", "15m corda (seda)", "roupas comuns", "pé de coelho"],
+    "equipamentos": [
+      "clava",
+      "15m corda (seda)",
+      "roupas comuns",
+      "pé de coelho"
+    ],
     "pos": 10,
     "pericias": ["Atletismo", "Percepção"],
-    "proficiencias": ["ferramentas de navegação", "veículos aquáticos"],
+    "proficiencias": ["Ferramentas de Navegação", "Veículos Aquáticos"],
     "idioma_extra": 0,
     "habilidades": []
   },
   {
     "id": 12,
     "nome": "Pirata",
-    "items": ["clava", "15m corda (seda)", "roupas comuns", "pé de coelho"],
+    "equipamentos": [
+      "clava",
+      "15m corda (seda)",
+      "roupas comuns",
+      "pé de coelho"
+    ],
     "pos": 10,
     "pericias": ["Atletismo", "Percepção"],
-    "proficiencias": ["ferramentas de navegação", "veículos aquáticos"],
+    "proficiencias": ["Ferramentas de Navegação", "Veículos Aquáticos"],
     "idioma_extra": 0,
     "habilidades": []
   },
   {
     "id": 13,
     "nome": "Nobre",
-    "items": ["trajos finos", "anel de sinete", "pergaminho de linhagem"],
+    "equipamentos": [
+      "Roupas Finos",
+      "Anel de Sinete",
+      "Pergaminho de Linhagem"
+    ],
     "pos": 25,
     "pericias": ["História", "Persuasão"],
-    "proficiencias": ["baralho"],
+    "proficiencias": ["Baralho"],
     "idioma_extra": 1,
     "habilidades": []
   },
   {
     "id": 14,
     "nome": "Cavaleiro",
-    "items": ["trajos finos", "anel de sinete", "pergaminho de linhagem"],
+    "equipamentos": [
+      "Roupas Finos",
+      "Anel de Sinete",
+      "Pergaminho de Linhagem"
+    ],
     "pos": 25,
     "pericias": ["História", "Persuasão"],
-    "proficiencias": ["baralho"],
+    "proficiencias": ["Baralho"],
     "idioma_extra": 1,
     "habilidades": []
   },
   {
     "id": 15,
     "nome": "Órfão",
-    "items": [
-      "faca pequena",
-      "mapa da cidade em que cresceu",
-      "rato de estimação",
-      "objeto que lembra os pais",
-      "roupas comuns"
+    "equipamentos": [
+      "Faca Pequena",
+      "Mapa da Cidade em que Cresceu",
+      "Rato de Estimação",
+      "Objeto que Lembra os Pais",
+      "Roupas Comuns"
     ],
     "pos": 10,
     "pericias": ["Furtividade", "Prestidigitação"],
-    "proficiencias": ["kit de disfarce", "ferramentas de ladrão"],
+    "proficiencias": ["Kit de Disfarce", "Ferramentas de Ladrão"],
     "idioma_extra": 0,
     "habilidades": []
   },
   {
     "id": 16,
     "nome": "Sábio",
-    "items": [
-      "vidro de tinta escura",
-      "pena",
-      "faca pequena",
-      "carta de um falecido colega",
-      "roupas comuns"
+    "equipamentos": [
+      "Vidro de Tinta Escura",
+      "Pena",
+      "Faca Pequena",
+      "Carta de um Falecido Colega",
+      "Roupas Comuns"
     ],
     "pos": 10,
     "pericias": ["Arcanismo", "História"],
@@ -193,30 +215,30 @@
   {
     "id": 17,
     "nome": "Soldado",
-    "items": [
-      "insígna de patente",
-      "adaga tirada de um inimigo",
-      "baralho",
-      "roupas comuns"
+    "equipamentos": [
+      "Insígna de Patente",
+      "Adaga Tirada de um Inimigo",
+      "Baralho",
+      "Roupas Comuns"
     ],
     "pos": 10,
     "pericias": ["Atletismo", "Intimidação"],
-    "proficiencias": ["baralho", "veículos terrestres"],
+    "proficiencias": ["Baralho", "Veículos Terrestres"],
     "idioma_extra": 0,
     "habilidades": []
   },
   {
     "id": 18,
     "nome": "Forasteiro",
-    "items": [
-      "bordão",
-      "armadilha de caça",
-      "presa de mamute",
-      "roupas de viajante"
+    "equipamentos": [
+      "Bordão",
+      "Armadilha de Caça",
+      "Presa de Mamute",
+      "Roupas de Viajante"
     ],
     "pos": 10,
     "pericias": ["Atletismo", "Sobrevivência"],
-    "proficiencias": ["flauta"],
+    "proficiencias": ["Flauta"],
     "idioma_extra": 1,
     "habilidades": []
   }
