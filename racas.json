@@ -16,7 +16,12 @@
       "Você não precisa dormir. Transe inconsciente por 4 horas equivale a descanso longo.",
       "Visão no Escuro 18m"
     ],
-    "proficiencias": []
+    "proficiencias": [
+      "Espadas Longas",
+      "Espadas Curtas",
+      "Arcos Longos",
+      "Arcos Curtos"
+    ]
   },
   {
     "id": 3,
@@ -29,7 +34,7 @@
       "Você possui desvantagem nas jogadas de ataque e testes de Percepção relacionados a visão quando você, o alvo do seu ataque, ou qualquer coisa que você está tentando perceber, esteja sob luz solar direta.",
       "Visão no Escuro (Superior) 36m"
     ],
-    "proficiencias": []
+    "proficiencias": ["Rapieiras", "Espadas Curtas", "Bestas de Mão"]
   },
   {
     "id": 4,
@@ -42,7 +47,12 @@
       "Visão no Escuro 18m",
       "Você pode tentar se esconder mesmo quando estiver apenas levemente obscurecido por folhagem, chuva forte, neve caindo, névoa ou outros fenômenos naturais."
     ],
-    "proficiencias": []
+    "proficiencias": [
+      "Espadas Longas",
+      "Espadas Curtas",
+      "Arcos Longos",
+      "Arcos Curtos"
+    ]
   },
   {
     "id": 5,
@@ -261,7 +271,7 @@
       "Sempre que você fizer um teste de História sobre a origem de trabalhos em pedra, você é considerado proficiente e dobra o seu bônus de proficiência no teste.",
       "Seu máximo de PVs aumentam em 1, e cada vez que o anão da colina sobe um nível, ele recebe 1 PVs adicional."
     ],
-    "proficiencias": []
+    "proficiencias": ["Ferramentas de Cervejeiro"]
   },
   {
     "id": 23,
@@ -273,7 +283,11 @@
       "Visão no Escuro (18m)",
       "Sempre que você fizer um teste de História sobre a origem de trabalhos em pedra, você é considerado proficiente e dobra o seu bônus de proficiência no teste."
     ],
-    "proficiencias": []
+    "proficiencias": [
+      "Ferramentas de Ferreiro",
+      "Armaduras Leves",
+      "Armaduras Médias"
+    ]
   },
   {
     "id": 24,
@@ -336,7 +350,7 @@
       "Sempre que você fizer um teste de História sobre itens mágicos, objetos alquímicos ou mecanismos tecnológicos, você dobra o seu bônus de proficiência em vez de usar o bônus normal.",
       "Usando ferramentas de artesão, você gasta 1 hora e 10 po para criar um mecanismo miúdo (CA 5, 1 pv) que dura 24h, podendo ter até três ativos e desmantelar um com uma ação para recuperar os materiais. Você escolhe entre um Brinquedo Mecânico (move-se 1,5m por turno no chão e emite sons), um Isqueiro Mecânico (usa uma ação para criar uma chama para acender coisas) ou uma Caixa de Música (toca uma canção em volume moderado)."
     ],
-    "proficiencias": []
+    "proficiencias": ["Ferramentas de Engenhoqueiro"]
   },
   {
     "id": 29,
