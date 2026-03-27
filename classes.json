@@ -10,6 +10,13 @@
       "Percepção",
       "Sobrevivência"
     ],
+    "proficiencias": [
+      "Armaduras Leves",
+      "Armaduras Médias",
+      "Escudos",
+      "Armas Simples",
+      "Armas Marciais"
+    ],
     "truques": [],
     "truquesQuantidade": 0,
     "magias": [],
@@ -42,6 +49,17 @@
       "Religião",
       "Sobrevivência",
       "Adestrar Animais"
+    ],
+    "proficiencias": [
+      "Banjo",
+      "Alaúde",
+      "Flauta",
+      "Armaduras Leves",
+      "Armas Simples",
+      "Bestas de Mão",
+      "Espadas Longas",
+      "Rapieiras",
+      "Espadas Curtas"
     ],
     "truques": [
       "Amizade",
@@ -98,6 +116,7 @@
       "Natureza",
       "Religião"
     ],
+    "proficiencias": ["Armas Simples", "Armaduras Leves"],
     "truques": [
       "Amizade",
       "Ataque Certeiro",
@@ -137,6 +156,12 @@
       "Intimidação",
       "Persuasão",
       "Religião"
+    ],
+    "proficiencias": [
+      "Armas Simples",
+      "Armaduras Leves",
+      "Armaduras Médias",
+      "Escudos"
     ],
     "truques": [
       "Chama Sagrada",
@@ -181,6 +206,22 @@
       "Percepção",
       "Religião",
       "Sobrevivência"
+    ],
+    "proficiencias": [
+      "Armaduras Leves",
+      "Armaduras Médias",
+      "Escudos",
+      "Kit de Herbalismo",
+      "Clavas",
+      "Adagas",
+      "Dardos",
+      "Azagaias",
+      "Maças",
+      "Bordões",
+      "Cimitarras",
+      "Foices",
+      "Fundas",
+      "Lanças"
     ],
     "truques": [
       "Bordão Místico",
@@ -228,6 +269,7 @@
       "Persuasão",
       "Religião"
     ],
+    "proficiencias": ["Adagas", "Dardos", "Fundas", "Bordões", "Bestas Leves"],
     "truques": [
       "Amizade",
       "Ataque Certeiro",
@@ -286,6 +328,14 @@
       "Percepção",
       "Sobrevivência"
     ],
+    "proficiencias": [
+      "Armaduras Leves",
+      "Armaduras Médias",
+      "Armaduras Pesadas",
+      "Escudos",
+      "Armas Simples",
+      "Armas Marciais"
+    ],
     "truques": [],
     "truquesQuantidade": 0,
     "magias": [],
@@ -311,6 +361,15 @@
       "Persuasão",
       "Prestidigitação"
     ],
+    "proficiencias": [
+      "Armaduras Leves",
+      "Armas Simples",
+      "Bestas de Mão",
+      "Espadas Longas",
+      "Rapieiras",
+      "Espadas Curtas",
+      "Ferramentas de Ladrão"
+    ],
     "truques": [],
     "truquesQuantidade": 0,
     "magias": [],
@@ -332,6 +391,7 @@
       "Medicina",
       "Religião"
     ],
+    "proficiencias": ["Adagas", "Dardos", "Fundas", "Bordões", "Bestas Leves"],
     "truques": [
       "Amizade",
       "Ataque Certeiro",
@@ -400,6 +460,7 @@
       "Intuição",
       "Religião"
     ],
+    "proficiencias": ["Banjo", "Armas Simples", "Espadas Curtas"],
     "truques": [],
     "truquesQuantidade": 0,
     "magias": [],
@@ -420,6 +481,14 @@
       "Medicina",
       "Persuasão",
       "Religião"
+    ],
+    "proficiencias": [
+      "Armas Simples",
+      "Armas Marciais",
+      "Armaduras Leves",
+      "Armaduras Médias",
+      "Armaduras Pesadas",
+      "Escudos"
     ],
     "truques": [],
     "truquesQuantidade": 0,
@@ -444,6 +513,13 @@
       "Percepção",
       "Sobrevivência"
     ],
+    "proficiencias": [
+      "Armaduras Leves",
+      "Armaduras Médias",
+      "Escudos",
+      "Armas Simples",
+      "Armas Marciais"
+    ],
     "truques": [],
     "truquesQuantidade": 0,
     "magias": [],
@@ -465,6 +541,14 @@
       "Percepção",
       "Prestidigitação",
       "Natureza"
+    ],
+    "proficiencias": [
+      "Armas Simples",
+      "Ferramentas de Ferreiro",
+      "Armaduras Leves",
+      "Armaduras Médias",
+      "Escudos",
+      "Ferramentas de Funileiro"
     ],
     "truques": [
       "Espirro Ácido",

@@ -15,7 +15,8 @@
       "Você tem vantagem nos testes para resistir a ser enfeitiçado e magias não o colocam para dormir.",
       "Você não precisa dormir. Transe inconsciente por 4 horas equivale a descanso longo.",
       "Visão no Escuro 18m"
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 3,
@@ -27,7 +28,8 @@
       "Você não precisa dormir. Transe inconsciente por 4 horas equivale a descanso longo.",
       "Você possui desvantagem nas jogadas de ataque e testes de Percepção relacionados a visão quando você, o alvo do seu ataque, ou qualquer coisa que você está tentando perceber, esteja sob luz solar direta.",
       "Visão no Escuro (Superior) 36m"
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 4,
@@ -39,7 +41,8 @@
       "Você não precisa dormir. Transe inconsciente por 4 horas equivale a descanso longo.",
       "Visão no Escuro 18m",
       "Você pode tentar se esconder mesmo quando estiver apenas levemente obscurecido por folhagem, chuva forte, neve caindo, névoa ou outros fenômenos naturais."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 5,
@@ -52,7 +55,8 @@
       "Ao efetuar um ataque corpo a corpo em seu turno, seu alcance é 1,5m maior que o normal.",
       "Você usa uma categoria de tamanho acima ao determinar capacidade de carga e o peso que pode empurrar, arrastar, levantar.",
       "Visão no escuro 18m."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 6,
@@ -61,7 +65,8 @@
     "idiomas": ["Comum", "Élfico"],
     "habilidades": [
       "Você pode alterar sua voz e aparência física, incluindo sexo, altura, peso, cor, cabelo e tamanho entre Médio e Pequeno para se passar por outra pessoa/raça que tenha visto sem mudar suas estatísticas de jogo. Você deve manter a mesma quantidade de membros, não altera suas roupas ou equipamentos."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 7,
@@ -74,7 +79,8 @@
       "Verão: Imediatamente após usar seu Passo Feérico, cada criatura à sua escolha que você possa ver a até 1,5m de você sofre dano Fogo igual ao seu bônus de prof.",
       "Visão no Escuro (18m)",
       "Você não precisa dormir. Transe inconsciente por 4 horas equivale a descanso longo.  Cada vez que faz isso pode mudar sua estação."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 8,
@@ -87,7 +93,8 @@
       "Você pode respirar ar e água e tem resistência a dano frio.",
       "Sempre que termina este transe, você ganha misticamente duas proficiências com armas ou ferramentas à sua escolha que você não possua. Você as retém até terminar seu próximo transe.",
       "Você não precisa dormir. Transe inconsciente por 4 horas equivale a descanso longo."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 9,
@@ -97,7 +104,8 @@
     "habilidades": [
       "Visão no Escuro (18m)",
       "Como ação bônus, você assume uma forma bestial por 1 min (ou até morrer ou cancelar com ação bônus), ganhando PV temporários iguais a 2x sua proficiência. Use este recurso um número de vezes igual à sua proficiência por descanso longo. Ao escolher a raça, defina um dos seguintes benefícios extras para a transformação: Caça Selvagem concede vantagem em testes de Sab. e impede que inimigos a até 9m te ataquem com vantagem (exceto se estiver incapacitado). Passo Ágil aumenta o deslocamento em 3m e permite usar sua reação para se mover 3m sem gerar ataques de oportunidade se um inimigo terminar o turno a até 1,5m de você. Pele de Fera concede +1d6 PV temporários adicionais e +1 na CA. Presa Longa permite usar ação bônus para desferir um golpe desarmado com as presas (1d6 + mod de For. perfurante)."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 10,
@@ -107,7 +115,8 @@
     "habilidades": [
       "Quando sofre dano (quantidade igual ao número de prof.), você pode usar sua reação para rolar 1d12 e somar seu mod de Con., reduzindo esse total do dano sofrido.",
       "Você tem resistência a dano frio e se aclimata naturalmente a grandes altitudes."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 11,
@@ -117,7 +126,8 @@
     "habilidades": [
       "Quando você copia escritos ou trabalhos manuais produzidos por você ou outra pessoa, você tem vantagem em quaisquer testes de atributo que fizer para produzir uma duplicata exata.",
       "Você pode imitar sons e vozes com precisão. Uma criatura percebe a imitação com um teste de Sab. (Intuição) contra CD 8 + seu bônus de proficiência + seu mod de Car."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 12,
@@ -128,7 +138,8 @@
       "Como ação bônus ou livre no seu turno, você dobra seu deslocamento até o fim do turno. Uma vez usado, não pode usar novamente até passar um turno sem se mover (0m).",
       "Seus dentes servem para golpes desarmados, causando dano cortante igual a 1d6 + mod de For. em vez do dano contundente normal.",
       "Visão no Escuro (18m)"
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 13,
@@ -139,7 +150,8 @@
       "Como ação, você se recolhe no casco e ganha +4 na CA e vantagem em salvaguardas de For. e Con. Enquanto estiver dentro, fica caído, com deslocamento 0 (sem poder aumentar), desvantagem em salvaguardas de Des. e não pode usar reações. A única ação possível é usar ação bônus para sair do casco.",
       "Você pode prender a respiração por até 1 hora.",
       "Suas garras servem para golpes desarmados, causando dano cortante igual a 1d6 + mod de For. em vez do dano contundente normal."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 14,
@@ -151,7 +163,8 @@
       "Como ação bônus, você realiza um ataque especial de mordida. Se acertar, causa o dano normal e você ganha PV temporários iguais à sua proficiência. Use este recurso um número de vezes igual à sua proficiência por descanso longo.",
       "Você pode prender a respiração por até 15 minutos.",
       "Seus dentes servem para golpes desarmados, causando dano cortante igual a 1d6 + modi de For. em vez do dano contundente normal."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 15,
@@ -162,7 +175,8 @@
       "Seus chifres servem para golpes desarmados, causando dano contundente igual a 1d6 + mod de For. em vez do dano normal.",
       "Você tem vantagem em salvaguardas contra magias.",
       "Sempre que efetuar um salto em distância ou em altura, você pode rolar 1d8 e somar o resultado x 0,3m à distância saltada (mesmo parado). Esse deslocamento extra consome seu movimento normal."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 16,
@@ -182,7 +196,8 @@
       "Como ação bônus, você se teleporta magicamente até 9m para um espaço desocupado visível.",
       "Você não precisa dormir. Transe inconsciente por 4 horas equivale a descanso longo.",
       "Sempre que termina este transe, você ganha misticamente duas proficiências com armas ou ferramentas à sua escolha que você não possua. Você as retém até terminar seu próximo transe."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 18,
@@ -196,7 +211,8 @@
       "Sempre que termina este transe, você ganha misticamente duas proficiências com armas ou ferramentas à sua escolha que você não possua. Você as retém até terminar seu próximo transe.",
       " Você tem resistência a dano necrótico.",
       "Como ação bônus, você se teleporta magicamente até 9m para um espaço desocupado visível. Use este recurso um número de vezes igual à sua prof. por descanso longo."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 19,
@@ -206,7 +222,8 @@
     "habilidades": [
       "Você possui vantagem em testes de resistência contra encantamento e magia não pode colocar você pra dormir",
       "Visão no escuro (18m)"
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 20,
@@ -217,7 +234,8 @@
       "Quando você é reduzido a 0 pontos de vida mas não é completamente morto, você pode voltar para 1 ponto de vida. Você não pode usar essa característica novamente até completar um descanso longo.",
       "Visão no Escuro (18m)",
       "Quando você atinge um ataque crítico com uma arma corpo-a-corpo, você pode rolar um dos dados de dano da arma mais uma vez e adicioná-lo ao dano extra causado pelo acerto crítico."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 21,
@@ -229,7 +247,8 @@
       "Quando você é reduzido a 0 pontos de vida mas não é completamente morto, você pode voltar para 1 ponto de vida. Você não pode usar essa característica novamente até completar um descanso longo.",
       "Como ação bônus, você pode usar a ação Correr um número de vezes igual à sua proficiência por descanso longo. Sempre que usar este traço, você ganha PV temporários iguais à sua proficiência.",
       "Você usa uma categoria de tamanho acima ao determinar capacidade de carga e o peso que pode empurrar, arrastar, levantar."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 22,
@@ -241,7 +260,8 @@
       "Visão no Escuro (18m)",
       "Sempre que você fizer um teste de História sobre a origem de trabalhos em pedra, você é considerado proficiente e dobra o seu bônus de proficiência no teste.",
       "Seu máximo de PVs aumentam em 1, e cada vez que o anão da colina sobe um nível, ele recebe 1 PVs adicional."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 23,
@@ -252,7 +272,8 @@
       "Você possui vantagem em testes de resistência contra venenos e resistência contra dano de veneno.",
       "Visão no Escuro (18m)",
       "Sempre que você fizer um teste de História sobre a origem de trabalhos em pedra, você é considerado proficiente e dobra o seu bônus de proficiência no teste."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 24,
@@ -263,7 +284,8 @@
       "Você tem vantagem para evitar ou encerrar a condição encantado ou atordoado.",
       "Visão no Escuro (Superior) 36m",
       "Você tem vantagem em testes para evitar ou encerrar a condição envenenado e resistência a dano veneno."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 25,
@@ -275,7 +297,8 @@
       "Você pode mover-se através do espaço de qualquer criatura que for de um tamanho maior.",
       "Quando você obtiver um 1 natural em uma rolagem, você pode jogar de novo o dado e deve utilizar o novo resultado.",
       "Você pode tentar se esconder mesmo quando possuir apenas a cobertura de uma criatura que for no mínimo um tamanho maior."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 26,
@@ -287,7 +310,8 @@
       "Você pode mover-se através do espaço de qualquer criatura que for de um tamanho maior.",
       "Quando você obtiver um 1 natural em uma rolagem, você pode jogar de novo o dado e deve utilizar o novo resultado.",
       "Você tem vantagem em testes de resistência contra veneno e tem resistência contra dano de veneno."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 27,
@@ -298,7 +322,8 @@
       "Você possui vantagem em todos os testes de resistência de Inteligência, Sab e Car contra magia.",
       "Visão no escuro (18m).",
       "Você pode comunicar ideias simples por meio de sons e gestos para bestas pequenas ou menores."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 28,
@@ -310,7 +335,8 @@
       "Visão no escuro (18m).",
       "Sempre que você fizer um teste de História sobre itens mágicos, objetos alquímicos ou mecanismos tecnológicos, você dobra o seu bônus de proficiência em vez de usar o bônus normal.",
       "Usando ferramentas de artesão, você gasta 1 hora e 10 po para criar um mecanismo miúdo (CA 5, 1 pv) que dura 24h, podendo ter até três ativos e desmantelar um com uma ação para recuperar os materiais. Você escolhe entre um Brinquedo Mecânico (move-se 1,5m por turno no chão e emite sons), um Isqueiro Mecânico (usa uma ação para criar uma chama para acender coisas) ou uma Caixa de Música (toca uma canção em volume moderado)."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 29,
@@ -321,7 +347,8 @@
       "Visão no Escuro (Superior) 36m",
       "Sempre que faz um teste de Furtividade, você pode rolar com vantagem. Você pode usar este recurso um número igual ao seu bônus de proficiência e recupera todos os usos após descanso longo.",
       "Você possui vantagem em todos os testes de resistência de Inteligência, Sab e Car contra magia."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 30,
@@ -334,7 +361,8 @@
       "Quando você não estiver usando armadura, sua Classe de Armadura (CA) base é 13 + seu modificador de Destreza.",
       "Você tem resistência a dano de veneno, imunidade a doenças e vantagem em salvaguardas contra ser paralisado ou envenenado. Você não precisa comer, beber ou respirar.",
       "Em um descanso longo, você passa pelo menos 6 horas em um estado inativo e imóvel (em vez de dormir). Você parece inerte, mas permanece consciente."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 31,
@@ -344,14 +372,16 @@
     "habilidades": [
       "Você possui resistência a dano de fogo.",
       "Visão no Escuro (18m)"
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 32,
     "nome": "Draconato",
     "pericias": [],
     "idiomas": ["Comum", "Dracônico"],
-    "habilidades": []
+    "habilidades": [],
+    "proficiencias": []
   },
   {
     "id": 33,
@@ -361,7 +391,8 @@
     "habilidades": [
       "Garras. Você tem garras que pode usar para desferir golpes desarmados. Quando você acerta com elas, o golpe causa dano cortante igual a ldó + seu mod de Força, ao invés do dano contundente normal para um golpe desarmado",
       "Devido às suas asas, você tem deslocamento de voo equivalente ao seu deslocamento de caminhada. Você não pode usar esse deslocamento de voo se estiver usando uma armadura média ou pesada"
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 34,
@@ -372,7 +403,8 @@
       "Como uma ação a cada descanso longo, você toca uma criatura e rolar um número de d4s equivalente ao seu bônus de prof. A criatura recupera pontos de vida iguais ao total obtido.",
       "Você tem resistência a dano necrótico e dano radiante.",
       "Você emite luz plena em um raio de 3m e meia-luz por 3m adicionais, e ao final de cada um de seus turnos, cada criatura a até 3m de você sofre dano radiante igual ao seu bônus de prof. Uma vez por turno você causa dano radiante extra ao causar dano a um alvo utilizando um ataque ou uma magia. O dano extra é igual ao seu bônus de prof."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 35,
@@ -383,7 +415,8 @@
       "Se você se mover pelo menos 9m em linha reta em direção a um alvo e acertá-lo com uma arma corpo a corpo, pode usar ação bônus para atacá-lo com seus cascos no mesmo turno.",
       "Seus cascos funcionam como armas para ataques desarmados, causando um d6 de dano contundente somado ao seu mod de For em vez do dano padrão de um soco.",
       "Você usa uma categoria de tamanho acima ao determinar capacidade de carga e o peso que pode empurrar, arrastar, levantar."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 36,
@@ -392,7 +425,8 @@
     "idiomas": ["Comum", "Silvestre"],
     "habilidades": [
       "Você tem deslocamento de voo igual ao seu deslocamento de caminhada, mas não pode voar usando armadura média ou pesada."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 37,
@@ -403,14 +437,16 @@
       "Você pode se comunicar de forma limitada com feras e plantas, que entendem suas palavras mesmo que você não as entenda de volta, ganhando vantagem em todos os testes de Car. para influenciá-las.",
       "Você usa uma categoria de tamanho acima ao determinar capacidade de carga e o peso que pode empurrar, arrastar, levantar.",
       "Como ação bônus, você fica invisível até o começo do próximo turno ou atacar, causar dano ou forçar resistência. Você pode usar este recurso um número de vezes igual ao seu bônus de prof. e recupera os usos após um descanso longo."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 38,
     "nome": "Genasi",
     "pericias": [],
     "idiomas": ["Comum", "Primordial"],
-    "habilidades": []
+    "habilidades": [],
+    "proficiencias": []
   },
   {
     "id": 39,
@@ -433,7 +469,8 @@
       "Quando você conjura mãos mágicas, a mão é invisível.",
       "Sempre que terminar um descanso longo, você ganha proficiência em uma perícia e com uma arma ou ferramenta do Livro do Jogador à sua escolha. Essas proficiências duram até o fim do seu próximo descanso longo.",
       "Você tem resistência a dano psíquico."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 41,
@@ -443,7 +480,8 @@
     "habilidades": [
       "Você tem resistência a dano psíquico.",
       "Você tem vantagem para evitar ou encerrar a condição enfeitiçado"
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 42,
@@ -455,7 +493,8 @@
       "Você pode usar a ação Desengajar ou Esconder-se como ação bônus em cada um dos seus turnos.",
       "Visão no Escuro (18m)",
       "Quando causa dano a uma criatura maior, você pode causar dano extra igual ao seu bônus de prof. Você pode usar este recurso uma vez por turno e um número total de vezes igual ao bônus de prof. por descanso longo."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 43,
@@ -466,7 +505,8 @@
       "Com ação bônus, você pode usar seus pés para manipular um objeto, abrir/fechar portas e recipientes, ou pegar/largar um objeto Miúdo.",
       "Quando sofrer dano, use sua reação para rolar 1d6 + seu bônus de proficiência e reduzir o dano sofrido por esse total (mínimo 0). Use um número de vezes igual à sua proficiência por descanso longo.",
       "Se não estiver incapacitado ou usando armadura pesada, você pode abrir suas membranas e planar: Você se move até 1,5m horizontalmente para cada 30cm que descer no ar, sem custo de movimento. Quando for sofrer dano de queda, pode usar sua reação para reduzir o dano a 0."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 44,
@@ -481,7 +521,8 @@
       "Você e a criatura ajudada ganham pontos de vida temporários iguais a 1d6 + seu bônus de proficiência.",
       "Você e a criatura ajudada aumentam o deslocamento de caminhada em 3m até o começo do seu próximo turno.",
       "Se errar um ataque, teste de atributo ou salvaguarda, você ganha um bônus igual ao número de aliados visíveis a até 9m (máximo de +3). Pode usar este recurso um número de vezes igual ao bônus de proficiência por descanso longo."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 45,
@@ -492,7 +533,8 @@
       "Você pode adicionar seu bônus de prof. à sua iniciativa.",
       "Como ação bônus, você salta um número de metros igual a 1,5 vez seu bônus de prof. sem provocar ataques de oportunidade. Você deve ter deslocamento superior a 0 para usar este recurso. Use um número de vezes igual ao bônus de prof. por descanso longo.",
       "Ao falhar em uma salvaguarda de Destreza, você pode usar sua reação para rolar 1d4 e adicionar o resultado ao total, desde que não esteja caído e seu deslocamento seja maior que 0."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 46,
@@ -504,7 +546,8 @@
       "Seus chifres servem para golpes desarmados, causando dano perfurante igual a 1d6 + mod de For. em vez do dano contundente normal.",
       "Após acertar um ataque corpo a corpo no seu turno, você pode usar ação bônus para empurrar com os chifres um alvo a até 1,5m e no máximo uma categoria de tamanho maior que a sua. O alvo deve passar em uma salvaguarda de For. (CD 8 + prof + mod de For.) ou será empurrado até 3m.",
       "Você sempre sabe onde fica o norte e tem vantagem em testes de Sab. (Sobrevivência) para se localizar ou rastrear."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 47,
@@ -517,7 +560,8 @@
       "Você consegue se espremer por espaços estreitos de até 2,5 cm de largura se não estiver vestindo ou carregando nada. Você também tem vantagem em testes para iniciar ou escapar de um agarrão.",
       "Você tem resistência a dano de ácido e veneno, e vantagem em salvaguardas contra ser envenenado.",
       "Como ação, você altera seu corpo para assumir forma humanoide ou voltar a ser uma gosma sem membros. Com forma humanoide, você veste roupas e armaduras de tamanho normal para o seu tamanho. Como ação bônus, você estende um pseudópode de até 3 metros de comprimento para manipular objetos, abrir ou fechar portas e recipientes, ou pegar e largar um objeto Miúdo. O pseudópode não tem órgãos sensoriais, não ataca, não ativa itens mágicos e não levanta mais de 4,5kg."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 48,
@@ -529,7 +573,8 @@
       "Você tem dois braços menores abaixo dos principais. Eles podem manipular objetos, abrir ou fechar portas e recipientes, pegar ou largar objetos Miúdos e empunhar armas com a propriedade leve.",
       "Você não precisa dormir e permanece consciente durante um descanso longo, mas deve evitar atividades pesadas para receber os benefícios do descanso.",
       "Você não fala idiomas normais sem magia. Em vez disso, envia pensamentos telepaticamente para criaturas voluntárias visíveis a até 36m. O alvo não precisa compartilhar um idioma com você, mas precisa entender pelo menos uma língua. A ligação quebra se ficarem a mais de 36m, se alguém ficar incapacitado ou se a conexão for cortada mentalmente."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 49,
@@ -541,7 +586,8 @@
       "Visão no Escuro (18m)",
       "Você tem resistência a dano frio.",
       "Você pode comunicar ideias simples a feras, elementais ou monstruosidades que tenham deslocamento de natação. Elas te entendem, mas você não as entende de volta."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 50,
@@ -552,7 +598,8 @@
       "Visão no Escuro (18m)",
       "Você tem vantagem em salvaguardas contra magias.",
       "Você tem vantagem em salvaguardas para evitar ou encerrar a condição envenenado. Além disso, tem resistência a dano venenoso."
-    ]
+    ],
+    "proficiencias": []
   },
   {
     "id": 51,
@@ -562,6 +609,7 @@
     "habilidades": [
       "Visão no Escuro (18m)",
       "Como ação bônus, você solta um grito em inimigos a até 3m. Até o início do seu próximo turno, você e seus aliados têm vantagem nos ataques contra os inimigos que puderam ouvi-lo. Use este recurso um número de vezes igual ao seu bônus de proficiência por descanso longo."
-    ]
+    ],
+    "proficiencias": []
   }
 ]

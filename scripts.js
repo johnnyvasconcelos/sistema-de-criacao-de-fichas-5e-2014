@@ -740,7 +740,10 @@
         data.ideal = "Poder é conquistado pela força e mantido sem piedade.";
         data.personalidade = "Desconfiado demora a confiar nos outros.";
         data.vinculo = "Defendo minha terra natal custe o que custar.";
+        data.tendencia = "Neutro";
         console.log(data);
+        // edita pdf
+        editaPdf();
       }
     });
   }
@@ -765,4 +768,49 @@
       }
     });
   }
+  // função para editar a ficha pdf com todas as informações
+  const editaPdf = async () => {
+    const { PDFDocument } = PDFLib;
+    // carrega pdf
+    const existingPdfBytes = await fetch("ficha.pdf").then((res) =>
+      res.arrayBuffer(),
+    );
+    const pdfDoc = await PDFDocument.load(existingPdfBytes);
+    const form = pdfDoc.getForm();
+    const fields = form.getFields();
+    /* 
+    fields.forEach((field) => {
+      console.log(field.getName());
+    });
+    */
+    const nome = form.getTextField("nome");
+    const tendencia = form.getTextField("tendencia");
+    const raca = form.getTextField("raca");
+    const classe = form.getTextField("class");
+    const antecedente = form.getTextField("antecedente");
+    const equipamentos = form.getTextField("equipamentos");
+    const personalidade = form.getTextField("personalidade");
+    const ideais = form.getTextField("ideais");
+    const vinculos = form.getTextField("vinculos");
+    const defeitos = form.getTextField("defeitos");
+    const ca = form.getTextField("classe_armadura");
+
+    nome.setText(data.nome);
+    tendencia.setText(data.tendencia);
+    raca.setText(data.raca);
+    classe.setText(data.classe);
+    antecedente.setText(data.antecedente);
+    ideais.setText(data.ideal);
+    personalidade.setText(data.personalidade);
+    vinculos.setText(data.vinculo);
+    defeitos.setText(data.defeito);
+    ca.setText(data.ca);
+    equipamentos.setText(data.equipamentos.join(", "));
+
+    form.updateFieldAppearances();
+    const pdfBytes = await pdfDoc.save();
+    const blob = new Blob([pdfBytes], { type: "application/pdf" });
+    const url = URL.createObjectURL(blob);
+    window.open(url);
+  };
 }
