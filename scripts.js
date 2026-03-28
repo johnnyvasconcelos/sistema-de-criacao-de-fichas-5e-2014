@@ -15,6 +15,15 @@
     "Bárbaro",
     "Monge",
   ];
+  const classesMagicas = [
+    "Clérigo",
+    "Druida",
+    "Mago",
+    "Bardo",
+    "Feiticeiro",
+    "Bruxo",
+    "Artífice",
+  ];
   const racasMagicas = [
     "Alto Elfo",
     "Elfo Negro",
@@ -382,6 +391,7 @@
             ct.nome === data.linhagem ||
             ct.nome === data.elemento,
         ) || [];
+      data.slots = classeEscolhida.slots;
       let todasProf = []
         .concat(
           categoriaEscolhida?.proficiencias || [],
@@ -825,15 +835,7 @@
           data.raca === "Humano Variante" &&
           data.talento === "Conjurador de Ritual"
         ) {
-          if (
-            data.classe === "Clérigo" ||
-            data.classe === "Druida" ||
-            data.classe === "Mago" ||
-            data.classe === "Bardo" ||
-            data.classe === "Feiticeiro" ||
-            data.classe === "Bruxo" ||
-            data.classe === "Artífice"
-          ) {
+          if (classesMagicas.includes(data.classe)) {
             data.magiasDescricoes.push({
               nome: "Cerimônia",
               descricao:
@@ -933,6 +935,34 @@
         if (data.raca === "Humano Variante" && data.talento === "Robusto") {
           data.pvs = data.pvs + 2;
         }
+        switch (data.raca) {
+          case "Centauro":
+            data.deslocamento = 12;
+            break;
+
+          case "Elfo da Floresta":
+            data.deslocamento = 10.5;
+            break;
+
+          case "Anão da Colina":
+          case "Anão da Montanha":
+          case "Duergar":
+          case "Halfling Pé Leve":
+          case "Halfling Robusto":
+          case "Gnomo da Floresta":
+          case "Gnomo das Rochas":
+          case "Gnomo das Profundezas":
+            data.deslocamento = 7.5;
+            break;
+
+          default:
+            data.deslocamento = 9;
+        }
+        if (data.raca === "Humano Variante" && data.talento === "Mobilidade") {
+          data.deslocamento = data.deslocamento + 3;
+        }
+        data.deslocamento = data.deslocamento + "m";
+        data.prof = "2";
         console.log(data);
         // edita pdf
         editaPdf();
@@ -970,34 +1000,31 @@
     const pdfDoc = await PDFDocument.load(existingPdfBytes);
     const form = pdfDoc.getForm();
     const fields = form.getFields();
-
     /*
     fields.forEach((field) => {
       console.log(field.getName());
     });
-    */
+*/
+    // spell save, magic_slot_1, resistências, armas, magias, magias 0, magias 1
     const nome = form.getTextField("nome");
     const tendencia = form.getTextField("tendencia");
     const raca = form.getTextField("raca");
-    const classe = form.getTextField("class");
+    const classe = form.getTextField("classe");
     const antecedente = form.getTextField("antecedente");
     const equipamentos = form.getTextField("equipamentos");
-    const personalidade = form.getTextField("personalidade");
-    const ideais = form.getTextField("ideais");
-    const vinculos = form.getTextField("vinculos");
-    const defeitos = form.getTextField("defeitos");
     const ca = form.getTextField("classe_armadura");
     const proficiencias = form.getTextField("proficiencias");
     const vida = form.getTextField("total_vida");
     const gps = form.getTextField("gps");
     const sp = form.getTextField("sp");
+    const prof = form.getTextField("prof");
     const sobre = form.getTextField("sobre");
-    const modFor = form.getTextField("mod_forca");
+    const modFor = form.getTextField("mod_for");
     const modDes = form.getTextField("mod_des");
-    const modCon = form.getTextField("mod_constituicao");
-    const modInt = form.getTextField("mod_inteligencia");
-    const modSab = form.getTextField("mod_sabedoria");
-    const modCar = form.getTextField("mod_carisma");
+    const modCon = form.getTextField("mod_con");
+    const modInt = form.getTextField("mod_int");
+    const modSab = form.getTextField("mod_sab");
+    const modCar = form.getTextField("mod_car");
     const nivel = form.getTextField("nivel");
     const iniciativa = form.getTextField("iniciativa");
     const forMod = Math.floor((data.for - 10) / 2).toString();
@@ -1011,6 +1038,7 @@
     const destreza = form.getTextField("destreza");
     const constituicao = form.getTextField("constituicao");
     const inteligencia = form.getTextField("inteligencia");
+    const deslocamento = form.getTextField("deslocamento");
     const sabedoria = form.getTextField("sabedoria");
     const carisma = form.getTextField("carisma");
     gps.setText(data.pos.toString());
@@ -1022,6 +1050,7 @@
     constituicao.setText(data.con.toString());
     inteligencia.setText(data.int.toString());
     sabedoria.setText(data.sab.toString());
+    prof.setText(data.prof);
     carisma.setText(data.car.toString());
     modFor.setText(forMod);
     modDes.setText(desMod);
@@ -1035,14 +1064,11 @@
     raca.setText(data.raca);
     classe.setText(data.classe);
     antecedente.setText(data.antecedente);
-    ideais.setText(data.ideal);
-    personalidade.setText(data.personalidade);
-    vinculos.setText(data.vinculo);
-    defeitos.setText(data.defeito);
     ca.setText(data.ca.toString());
     proficiencias.setText(data.proficiencias.join(", "));
     habilidades.setText(data.habilidades.join(" | "));
     equipamentos.setText(data.equipamentos.join(", "));
+    deslocamento.setText(data.deslocamento);
     vida.setText(data.pvs.toString());
     form.updateFieldAppearances();
     const pdfBytes = await pdfDoc.save();
