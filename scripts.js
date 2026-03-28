@@ -989,6 +989,81 @@
         }
 
         data.cd = 10 + Math.floor((atributoBase - 10) / 2);
+
+        data.resfor = Math.floor((data.for - 10) / 2);
+        data.resdes = Math.floor((data.des - 10) / 2);
+        data.rescon = Math.floor((data.con - 10) / 2);
+        data.resint = Math.floor((data.int - 10) / 2);
+        data.ressab = Math.floor((data.sab - 10) / 2);
+        data.rescar = Math.floor((data.car - 10) / 2);
+
+        switch (data.classe) {
+          case "Bárbaro":
+            data.resfor += 2;
+            data.rescon += 2;
+            break;
+
+          case "Bardo":
+            data.resdes += 2;
+            data.rescar += 2;
+            break;
+
+          case "Bruxo":
+            data.ressab += 2;
+            data.rescar += 2;
+            break;
+
+          case "Clérigo":
+            data.ressab += 2;
+            data.rescar += 2;
+            break;
+
+          case "Druida":
+            data.resint += 2;
+            data.ressab += 2;
+            break;
+
+          case "Feiticeiro":
+            data.rescon += 2;
+            data.rescar += 2;
+            break;
+
+          case "Guerreiro":
+            data.resfor += 2;
+            data.rescon += 2;
+            break;
+
+          case "Ladino":
+            data.resdes += 2;
+            data.resint += 2;
+            break;
+
+          case "Mago":
+            data.resint += 2;
+            data.ressab += 2;
+            break;
+
+          case "Monge":
+            data.resfor += 2;
+            data.resdes += 2;
+            break;
+
+          case "Paladino":
+            data.ressab += 2;
+            data.rescar += 2;
+            break;
+
+          case "Patrulheiro":
+            data.resfor += 2;
+            data.resdes += 2;
+            break;
+
+          case "Artífice":
+            data.rescon += 2;
+            data.resint += 2;
+            break;
+        }
+
         console.log(data);
         // edita pdf
         editaPdf();
@@ -1054,6 +1129,12 @@
     const modInt = form.getTextField("mod_int");
     const modSab = form.getTextField("mod_sab");
     const modCar = form.getTextField("mod_car");
+    const resFor = getTextField("res_for");
+    const resDes = getTextField("res_des");
+    const resCon = getTextField("res_con");
+    const resInt = getTextField("res_int");
+    const resSab = getTextField("res_sab");
+    const resCar = getTextField("res_car");
     const nivel = form.getTextField("nivel");
     const cd = form.getTextField("Texto1");
     const iniciativa = form.getTextField("iniciativa");
@@ -1097,6 +1178,12 @@
     modInt.setText(intMod);
     modSab.setText(sabMod);
     modCar.setText(carMod);
+    resFor.setText(data.resfor);
+    resDes.setText(data.resdes);
+    resCon.setText(data.rescon);
+    resInt.setText(data.resint);
+    resSab.setText(data.ressab);
+    resCar.setText(data.rescar);
     nome.setText(data.nome);
     iniciativa.setText(data.iniciativa.toString());
     tendencia.setText(data.tendencia);

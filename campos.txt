@@ -1,9 +1,4 @@
-scripts.js:977 res_for
-scripts.js:977 res_des
-scripts.js:977 res_con
-scripts.js:977 res_int
-scripts.js:977 res_sab
-scripts.js:977 res_car
+
 
 scripts.js:977 arma_1
 scripts.js:977 magic_1
@@ -80,7 +75,7 @@ scripts.js:977 per_slot_8
 scripts.js:977 per_slot_9
 scripts.js:977 magic_slot_1
 
-scripts.js:977 magia_1
+
 
 scripts.js:977 Imagem72_af_image
 scripts.js:977 Button4
