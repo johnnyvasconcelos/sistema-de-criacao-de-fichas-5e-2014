@@ -1086,6 +1086,32 @@
             break;
         }
 
+        let preparadas = 0;
+
+        switch (data.classe) {
+          case "Clérigo":
+          case "Druida":
+            preparadas = 1 + Math.floor((data.sab - 10) / 2);
+            break;
+
+          case "Mago":
+            preparadas = 1 + Math.floor((data.int - 10) / 2);
+            break;
+
+          case "Paladino":
+            preparadas = 1 + Math.floor((data.car - 10) / 2);
+            break;
+
+          case "Artífice":
+            preparadas = 1 + Math.floor((data.int - 10) / 2);
+            break;
+
+          default:
+            preparadas = 0;
+        }
+
+        data.preparadas = preparadas;
+
         console.log(data);
         // edita pdf
         editaPdf();
@@ -1123,12 +1149,8 @@
     const pdfDoc = await PDFDocument.load(existingPdfBytes);
     const form = pdfDoc.getForm();
     const fields = form.getFields();
-    /*
-    fields.forEach((field) => {
-      console.log(field.getName());
-    });
-*/
-    // perícias, imagem
+
+    // perícias, imagem, atq
     const nome = form.getTextField("nome");
     const armas = form.getTextField("arma_1");
     const tendencia = form.getTextField("tendencia");
@@ -1169,6 +1191,7 @@
     const sabMod = Math.floor((data.sab - 10) / 2).toString();
     const carMod = Math.floor((data.car - 10) / 2).toString();
     const habilidades = form.getTextField("mais_personagem");
+    const magicSlot = form.getTextField("magic_slot_1");
     const forca = form.getTextField("forca");
     const destreza = form.getTextField("destreza");
     const constituicao = form.getTextField("constituicao");
@@ -1226,8 +1249,91 @@
     habilidades.setText(data.habilidades.join(" | "));
     equipamentos.setText(data.equipamentos.join(", "));
     deslocamento.setText(data.deslocamento);
+    magicSlot.setText(data.slots.toString());
     vida.setText(data.pvs.toString());
     atualVida.setText(data.pvs.toString());
+    // pericias
+    const mapaPericias = {
+      Atletismo: "atletismo_check",
+      Prestidigitação: "prestidigitacao_check",
+      Sobrevivência: "sobrevivencia_check",
+      Acrobacia: "acrobacia_check",
+      Furtividade: "furtividade_check",
+      Percepção: "percepcao_check",
+      Intuição: "intuicao_check",
+      Arcanismo: "arcanismo_check",
+      História: "historia_check",
+      Natureza: "natureza_check",
+      Religião: "religiao_check",
+      Enganação: "blefar_check",
+      Intimidação: "intimidacao_check",
+      Persuasão: "persuasao_check",
+      Medicina: "medicina_check",
+      Sobrevivência: "sobrevivencia_check",
+      "Adestrar Animais": "lidar_animais_check",
+      Atuação: "atuacao_check",
+      Investigação: "investigacao_check",
+    };
+    const atributoPericias = {
+      Atletismo: "for",
+
+      Acrobacia: "des",
+      Prestidigitação: "des",
+      Furtividade: "des",
+
+      Arcanismo: "int",
+      História: "int",
+      Investigação: "int",
+      Natureza: "int",
+      Religião: "int",
+
+      "Adestrar Animais": "sab",
+      Intuição: "sab",
+      Medicina: "sab",
+      Percepção: "sab",
+      Sobrevivência: "sab",
+
+      Enganação: "car",
+      Intimidação: "car",
+      Atuação: "car",
+      Persuasão: "car",
+    };
+    for (let i = 0; i < data.pericias.length; i++) {
+      if (mapaPericias[data.pericias[i]]) {
+        const checkbox = form.getCheckBox(mapaPericias[data.pericias[i]]);
+        checkbox.check();
+      }
+    }
+    for (let pericia in mapaPericias) {
+      const campoCheck = mapaPericias[pericia];
+      const campoValor = campoCheck.replace("_check", "");
+
+      const atributo = atributoPericias[pericia];
+      const valorBase = Math.floor((data[atributo] - 10) / 2);
+
+      const temProficiencia = data.pericias.includes(pericia);
+
+      const total = temProficiencia ? valorBase + 2 : valorBase;
+
+      const field = form.getTextField(campoValor);
+      field.setText(total.toString());
+    }
+    // magias preparadas randomicamente
+    if (classesMagicas.includes(data.classe)) {
+      const magias = [...data.magias];
+
+      for (let i = magias.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [magias[i], magias[j]] = [magias[j], magias[i]];
+      }
+
+      const limite = Math.min(data.preparadas, magias.length);
+
+      const selecionadas = magias.slice(0, limite);
+
+      const campo = form.getTextField("magias_preparadas");
+      campo.setText(selecionadas.join(", "));
+    }
     form.updateFieldAppearances();
     const pdfBytes = await pdfDoc.save();
     const blob = new Blob([pdfBytes], { type: "application/pdf" });

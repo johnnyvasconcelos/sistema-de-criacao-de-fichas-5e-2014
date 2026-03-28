@@ -104,7 +104,7 @@
   {
     "id": 18,
     "nome": "Luz",
-    "scricao": "Toca um objeto pequeno e ele emite luz intensa (6 m) + penumbra (6 m) até a magia acabar; luz é bloqueada por cobertura opaca e objetos  inimigos podem resistir com teste Destreza.",
+    "descricao": "Toca um objeto pequeno e ele emite luz intensa (6 m) + penumbra (6 m) até a magia acabar; luz é bloqueada por cobertura opaca e objetos  inimigos podem resistir com teste Destreza.",
     "ataque": false
   },
   {
