@@ -17,6 +17,30 @@
     ]
   },
   {
+    "nome": "Alerta",
+    "habilidades": [
+      "Talento Alerta",
+      "Você recebe +5 de bônus na iniciativa.",
+      "Você não pode ser surpreendido enquanto estiver consciente.",
+      "Outras criaturas não ganham vantagem em jogadas de ataque contra você por estarem invisíveis."
+    ]
+  },
+  {
+    "nome": "Ambidestro",
+    "habilidades": [
+      "Talento Ambidestro: +1 CA enquanto estiver empunhando uma arma corpo a corpo em cada mão.",
+      "Você pode usar combate com duas armas mesmo com armas que não sejam leves.",
+      "Você pode sacar ou guardar duas armas de uma mão quando normalmente só poderia sacar ou guardar uma."
+    ]
+  },
+  {
+    "nome": "Atacante Bestial",
+    "habilidades": [
+      "Talento Atacante Bestial",
+      "Uma vez por turno, ao causar dano com uma arma corpo a corpo, você pode rolar novamente os dados de dano da arma e usar qualquer um dos resultados."
+    ]
+  },
+  {
     "nome": "Combate Montado",
     "habilidades": [
       "Talento Combatente Montado",
@@ -72,6 +96,25 @@
       "Talento Especialista em Briga: +1 For",
       "Você é proficiente com armas improvisadas e seus ataques desarmados causam 1d4 de dano.",
       "Ao atingir uma criatura com ataque desarmado ou arma improvisada no seu turno, você pode usar uma ação bônus para tentar agarrar o alvo."
+    ]
+  },
+  {
+    "nome": "Atirador de Magia",
+    "habilidades": [
+      "Talento Atirador de Magia",
+      "Quando você conjura uma magia que exige ataque, o alcance dobra.",
+      "Seus ataques mágicos à distância ignoram meia cobertura e três quartos de cobertura.",
+      "Você aprende um truque que exige jogada de ataque de magia.",
+      "Quando uma criatura provoca ataque de oportunidade, você pode usar sua reação para conjurar um truque nela."
+    ]
+  },
+  {
+    "nome": "Atirador Aguçado",
+    "habilidades": [
+      "Talento Atirador Aguçado",
+      "Atacar a longa distância não impõe desvantagem nos seus ataques à distância.",
+      "Seus ataques à distância ignoram meia cobertura e três quartos de cobertura.",
+      "Antes de realizar um ataque à distância com arma que você seja proficiente, você pode sofrer -5 na jogada de ataque para causar +10 de dano."
     ]
   },
   {

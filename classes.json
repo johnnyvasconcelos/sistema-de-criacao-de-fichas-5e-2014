@@ -23,7 +23,7 @@
     "magiasQuantidade": 0,
     "pos": 50,
     "habilidades": [
-      "Ação Bônus: Se não estiver de armadura pesada, você ganha vantagem em testes de For. Resistência a dano de concussão, cortante e perfurante, e adiciona +2 em ataques corpo-a-corpo usando For.",
+      "Ação Bônus: Fúria: Se não estiver de armadura pesada, você ganha vantagem em testes de For. Resistência a dano de concussão, cortante e perfurante, e adiciona +2 em ataques corpo-a-corpo usando For.",
       "Quando você não estiver vestindo qualquer armadura, sua CA será 10 + seu mod de Des + seu mod de Con. Você pode usar um escudo e continuar com o benefício."
     ]
   },

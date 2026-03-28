@@ -397,7 +397,7 @@
           racaEscolhida.habilidades || [],
           classeEscolhida.habilidades || [],
           antecedenteEscolhido.habilidades || [],
-          talentoEscolhido.habilidades || [],
+          talentoEscolhido?.habilidades || [],
         )
         .filter((item) => item)
         .filter((item, index, arr) => arr.indexOf(item) === index);
@@ -890,6 +890,15 @@
                 "Você desfere um ataque mágico à distância que causa 1d8 de dano necrótico. O alvo não pode recuperar pontos de vida e, se for um morto-vivo, tem desvantagem em ataques contra você até o seu próximo turno.",
             },
           );
+        } else if (
+          data.raca === "Humano Variante" &&
+          data.talento === "Atirador de Magia"
+        ) {
+          data.truquesDescricoes.push({
+            nome: "Lâmina Trovejante",
+            descricao:
+              "Você realiza um ataque corpo a corpo com arma como parte da magia. Se acertar, causa o dano normal e envolve o alvo em energia trovejante. Se ele se mover voluntariamente antes do próximo turno, sofre dano extra.",
+          });
         }
 
         switch (data.classe) {
