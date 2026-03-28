@@ -776,13 +776,40 @@
         data.for =
           (data.raca === "Humano Variante" && data.talento === "Atleta") ||
           (data.raca === "Humano Variante" &&
-            data.talento === "Especialista em Briga")
+            data.talento === "Especialista em Briga") ||
+          (data.raca === "Humano Variante" &&
+            data.talento === "Maestria em Armadura Pesada") ||
+          data.raca === "Humano Variante" ||
+          data.talento === "Proteção Pesada"
             ? data.for + 1
             : data.for;
         data.car =
           data.raca === "Humano Variante" && data.talento === "Ator"
             ? data.car + 1
             : data.car;
+        data.int =
+          (data.raca === "Humano Variante" &&
+            data.talento === "Mente Afiada") ||
+          (data.raca === "Humano Variante" && data.talento === "Poliglota")
+            ? data.int + 1
+            : data.int;
+        data.sab =
+          data.raca === "Humano Variante" && data.talento === "Observador"
+            ? data.sab + 1
+            : data.sab;
+        data.des =
+          (data.raca === "Humano Variante" &&
+            data.talento === "Mestre das Armas") ||
+          (data.raca === "Humano Variante" &&
+            data.talento === "Proteção Leve") ||
+          (data.raca === "Humano Variante" &&
+            data.talento === "Proteção Moderada")
+            ? data.des + 1
+            : data.des;
+        data.con =
+          data.raca === "Humano Variante" && data.talento === "Resiliente"
+            ? data.con + 1
+            : data.con;
         data.iniciativa =
           data.raca === "Humano Variante" && data.talento === "Alerta"
             ? Math.floor((data.des - 10) / 2) + 5
@@ -888,6 +915,9 @@
 
           default:
             data.pvs = 0;
+        }
+        if (data.raca === "Humano Variante" && data.talento === "Robusto") {
+          data.pvs = data.pvs + 2;
         }
         console.log(data);
         // edita pdf

@@ -110,7 +110,7 @@
     "habilidades": [
       "Talento Líder Inspirador",
       "Você pode passar 10 minutos inspirando até 6 criaturas aliadas (incluindo você).",
-      "Cada criatura ganha PV temporários iguais ao seu nível + seu modificador de Carisma. Uma criatura não pode ganhar esses PV novamente até terminar um descanso."
+      "Cada criatura ganha PV temporários iguais ao seu nível + seu modificador de Car. Uma criatura não pode ganhar esses PVs novamente até terminar um descanso."
     ]
   },
   {
@@ -119,6 +119,159 @@
       "Talento Maestria em Arma de Haste",
       "Ao atacar com uma glaive, alabarda ou bordão, você pode usar uma ação bônus para atacar com a outra extremidade (1d4 de dano concussivo).",
       "Enquanto empunha essas armas ou uma lança longa, criaturas provocam ataques de oportunidade de você ao entrarem no seu alcance de alcance."
+    ]
+  },
+  {
+    "nome": "Maestria em Armadura Média",
+    "habilidades": [
+      "Talento Maestria em Armadura Média",
+      "Usar armadura média não impõe desvantagem em testes de Furtividade.",
+      "Você pode adicionar 3 no máximo, em vez de 2, ao seu modificador de Des na CA usando armadura média."
+    ]
+  },
+  {
+    "nome": "Maestria em Armadura Pesada",
+    "habilidades": [
+      "Talento Maestria em Armadura Pesada: +1 For",
+      "Enquanto usar armadura pesada, o dano físico (concussão, perfuração e cortante) que você recebe de ataques não-mágicos é reduzido em 3."
+    ]
+  },
+  {
+    "nome": "Matador de Conjuradores",
+    "habilidades": [
+      "Talento Matador de Conjuradores",
+      "Ao uma criatura conjurar magia a até 1,5m de você, você pode usar sua reação para realizar um ataque corpo-a-corpo contra ela.",
+      "Você tem vantagem em testes de resistência contra magias conjuradas por criaturas a até 1,5m de você."
+    ]
+  },
+  {
+    "nome": "Mente Afiada",
+    "habilidades": [
+      "Talento Mente Afiada: +1 Int",
+      "Você sempre sabe qual direção é o norte e o número de horas para o próximo pôr ou nascer do sol.",
+      "Você pode relembrar perfeitamente qualquer coisa que tenha visto ou ouvido no último mês."
+    ]
+  },
+  {
+    "nome": "Mestre de Armas",
+    "habilidades": [
+      "Talento Mestre de Armas: +1 For ou Des",
+      "Você ganha proficiência com quatro armas à sua escolha."
+    ]
+  },
+  {
+    "nome": "Mestre de Armas Grandes",
+    "habilidades": [
+      "Talento Mestre de Armas Grandes",
+      "Ao reduzir uma criatura a 0 PV ou conseguir um acerto crítico, você pode realizar um ataque com arma como ação bônus.",
+      "Antes de atacar com uma arma pesada, você pode sofrer -5 na jogada de ataque para somar +10 ao dano."
+    ]
+  },
+  {
+    "nome": "Mestre de Escudo",
+    "habilidades": [
+      "Talento Mestre de Escudo",
+      "Se usar a ação Atacar, pode usar ação bônus para empurrar uma criatura com o escudo.",
+      "Pode somar o bônus de CA do escudo em testes de resistência de Destreza contra magias de alvo único.",
+      "Se passar em teste de Des para receber metade do dano, pode usar reação para não sofrer dano algum."
+    ]
+  },
+  {
+    "nome": "Mobilidade",
+    "habilidades": [
+      "Talento Mobilidade: +3m de deslocamento.",
+      "Ao usar a ação de Disparada, terreno difícil não custa deslocamento extra.",
+      "Ao realizar um ataque corpo-a-corpo contra uma criatura, você não provoca ataques de oportunidade dela pelo resto do turno."
+    ]
+  },
+  {
+    "nome": "Observador",
+    "habilidades": [
+      "Talento Observador: +1 Int ou Sab",
+      "Você pode ler lábios se conhecer o idioma.",
+      "Você ganha +5 de bônus em sua Percepção Passiva e Investigação Passiva."
+    ]
+  },
+  {
+    "nome": "Perito",
+    "habilidades": [
+      "Talento Perito",
+      "Você ganha proficiência em qualquer combinação de três perícias ou ferramentas à sua escolha."
+    ]
+  },
+  {
+    "nome": "Poliglota",
+    "habilidades": [
+      "Talento Poliglota: +1 Int",
+      "Você aprende três idiomas à sua escolha."
+    ]
+  },
+  {
+    "nome": "Proteção Leve",
+    "habilidades": [
+      "Talento Proteção Leve: +1 For ou Des",
+      "Você ganha proficiência com armaduras leves."
+    ]
+  },
+  {
+    "nome": "Proteção Moderada",
+    "habilidades": [
+      "Talento Proteção Moderada: +1 For ou Des",
+      "Você ganha proficiência com armaduras médias e escudos."
+    ]
+  },
+  {
+    "nome": "Proteção Pesada",
+    "habilidades": [
+      "Talento Proteção Pesada: +1 For",
+      "Você ganha proficiência com armaduras pesadas."
+    ]
+  },
+  {
+    "nome": "Resiliente",
+    "habilidades": [
+      "Talento Resiliente: +1 em um atributo (CON).",
+      "Você ganha proficiência em testes de resistência usando a habilidade escolhida (CON)."
+    ]
+  },
+  {
+    "nome": "Resistente",
+    "habilidades": [
+      "Talento Resistente",
+      "Quando você rolar um Dado de Vida para recuperar pontos de vida, o valor mínimo recuperado é igual ao dobro do seu modificador de Constituição."
+    ]
+  },
+  {
+    "nome": "Robusto",
+    "habilidades": [
+      "Talento Robusto",
+      "Seu máximo de pontos de vida aumenta em um valor igual a duas vezes seu nível atual.",
+      "Cada vez que você subir de nível, seu máximo de PV aumenta em 2 pontos adicionais."
+    ]
+  },
+  {
+    "nome": "Sentinela",
+    "habilidades": [
+      "Talento Sentinela",
+      "Ao atingir uma criatura com um ataque de oportunidade, o deslocamento dela torna-se 0.",
+      "Criaturas provocam ataques de oportunidade mesmo se usarem a ação Desengajar.",
+      "Quando uma criatura a 1,5m ataca um alvo diferente de você, você pode usar sua reação para atacá-la."
+    ]
+  },
+  {
+    "nome": "Sorrateiro",
+    "habilidades": [
+      "Talento Sorrateiro",
+      "Você pode tentar se esconder mesmo quando estiver apenas levemente obscurecido.",
+      "Se você estiver escondido e errar um ataque à distância, o ataque não revela sua posição."
+    ]
+  },
+  {
+    "nome": "Sortudo",
+    "habilidades": [
+      "Talento Sortudo: 3 pontos de sorte por descanso longo.",
+      "Você pode gastar 1 ponto para rolar um d20 adicional em jogadas de ataque, teste de habilidade ou resistência e escolher qual dado usar.",
+      "Pode gastar 1 ponto para trocar o dado de um ataque feito contra você."
     ]
   }
 ]
