@@ -273,5 +273,23 @@
       "Você pode gastar 1 ponto para rolar um d20 adicional em jogadas de ataque, teste de habilidade ou resistência e escolher qual dado usar.",
       "Pode gastar 1 ponto para trocar o dado de um ataque feito contra você."
     ]
+  },
+  {
+    "nome": "Adepto Marcial",
+    "habilidades": [
+      "Talento Adepto Marcial",
+      "Você aprende duas manobras da lista do Mestre de Batalha à sua escolha.",
+      "Você ganha um dado de superioridade (d6) para usar nessas manobras, recuperado em descanso curto ou longo.",
+      "Se já possuir dados de superioridade, você adiciona esse novo dado ao seu total."
+    ]
+  },
+  {
+    "nome": "Adepto Elemental",
+    "habilidades": [
+      "Talento Adepto Elemental",
+      "Escolha um tipo de dano: ácido, fogo, frio, relâmpago ou trovão.",
+      "Suas magias ignoram a resistência a dano do tipo escolhido.",
+      "Ao rolar o dano de uma magia desse tipo, você pode tratar qualquer 1 no dado como se fosse um 2."
+    ]
   }
 ]

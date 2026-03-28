@@ -908,12 +908,12 @@
           case "Druida":
           case "Monge":
           case "Ladino":
+          case "Bruxo":
           case "Artífice":
             data.pvs = 8 + conMod;
             break;
 
           case "Feiticeiro":
-          case "Bruxo":
           case "Mago":
             data.pvs = 6 + conMod;
             break;
