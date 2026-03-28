@@ -1149,6 +1149,10 @@
     const pdfDoc = await PDFDocument.load(existingPdfBytes);
     const form = pdfDoc.getForm();
     const fields = form.getFields();
+
+    fields.forEach((field) => {
+      console.log(field.getName());
+    });
     const nome = form.getTextField("nome");
     const armas = form.getTextField("arma_1");
     const tendencia = form.getTextField("tendencia");
@@ -1202,21 +1206,25 @@
     cd.setText(data.cd.toString());
     sobre.setText(data.historia);
     nivel.setText(data.nivel.toString());
-    magic0.setText(
-      data.truquesDescricoes
-        .map((t) => `${t.nome}: ${t.descricao}`)
-        .join(" | "),
-    );
-    magic1.setText(
-      data.magiasDescricoes.map((m) => `${m.nome}: ${m.descricao}`).join(" | "),
-    );
-    armas.setText(data.armas.map((a) => `${a.nome}: (${a.dano})`).join(" | "));
+    if (data.truquesDescricoes?.length) {
+      magic0.setText(
+        data.truquesDescricoes
+          .map((t) => `${t.nome}: ${t.descricao}`)
+          .join(" | "),
+      );
+    } else {
+      magic0.setText("");
+    }
 
-    magiasAt.setText(
-      (data.magiasAtaque || [])
-        .map((m) => `${m.nome} (${m.ataque})`)
-        .join(" | "),
-    );
+    if (data.magiasDescricoes?.length) {
+      magic1.setText(
+        data.magiasDescricoes
+          .map((m) => `${m.nome}: ${m.descricao}`)
+          .join(" | "),
+      );
+    } else {
+      magic1.setText("");
+    }
     forca.setText(data.for.toString());
     destreza.setText(data.des.toString());
     constituicao.setText(data.con.toString());
@@ -1346,23 +1354,17 @@
       }
     };
 
-    const carregarImagem = async () => {
-      const pdfDoc = await PDFLib.PDFDocument.load(existingPdfBytes);
-      const form = pdfDoc.getForm();
+    if (input1.files[0]) {
+      const img1 = await processarImagem(input1.files[0], pdfDoc);
+      form.getButton("Imagem3_af_image").setImage(img1);
+    }
 
-      if (input1.files[0]) {
-        const img1 = await processarImagem(input1.files[0], pdfDoc);
-        form.getButton("Imagem3_af_image").setImage(img1);
-      }
-
-      if (input2.files[0]) {
-        const img2 = await processarImagem(input2.files[0], pdfDoc);
-        form.getButton("Imagem72_af_image").setImage(img2);
-      }
-
-      const pdfBytes = await pdfDoc.save();
-    };
+    if (input2.files[0]) {
+      const img2 = await processarImagem(input2.files[0], pdfDoc);
+      form.getButton("Imagem72_af_image").setImage(img2);
+    }
     form.updateFieldAppearances();
+    form.flatten();
     const pdfBytes = await pdfDoc.save();
     const blob = new Blob([pdfBytes], { type: "application/pdf" });
     const url = URL.createObjectURL(blob);

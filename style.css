@@ -180,6 +180,12 @@ tbody {
   background-color: #e198a1;
   color: #d92a2a;
 }
+.aviso {
+  background-color: #edd8da;
+  color: #b71f1f;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
 form table {
   border-collapse: collapse;
   min-width: 350px;
