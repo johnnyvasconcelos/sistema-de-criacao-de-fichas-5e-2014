@@ -1377,7 +1377,8 @@
     form.updateFieldAppearances();
     const pdfBytes = await pdfDoc.save();
     const blob = new Blob([pdfBytes], { type: "application/pdf" });
+    const novaAba = window.open("", "_blank");
     const url = URL.createObjectURL(blob);
-    window.open(url);
+    novaAba.location.href = url;
   };
 }
