@@ -176,8 +176,6 @@
           steps[index + 1].classList.add("on");
         }
       }
-
-      console.log(data);
       mostraReferencia(data.raca);
       aumentaBonus(data.raca);
     });
@@ -700,7 +698,6 @@
               bonusCar = 0;
             }
           }
-          console.log(data);
           if (
             !bonusRacas.hasOwnProperty(data.raca) ||
             data.raca == "Humano Variante" ||
@@ -732,8 +729,6 @@
         );
 
         data.pericias = Array.from(periciasMarcadas).map((item) => item.value);
-
-        console.log(data);
 
         if (steps[index + 1]) {
           steps[index].classList.remove("on");
@@ -767,7 +762,6 @@
         const magiasMarcadas = document.querySelectorAll(".magia:checked");
         data.magias = Array.from(magiasMarcadas).map((item) => item.value);
         data.truques = Array.from(truquesMarcados).map((item) => item.value);
-        console.log(data);
         if (steps[index + 1]) {
           steps[index].classList.remove("on");
           steps[index + 1].classList.add("on");
@@ -777,7 +771,6 @@
       else if (atualStep === "idiomas") {
         const idiomasMarcados = document.querySelectorAll(".idioma:checked");
         data.idiomas = Array.from(idiomasMarcados).map((item) => item.value);
-        console.log(data);
         if (steps[index + 1]) {
           steps[index].classList.remove("on");
           steps[index + 1].classList.add("on");
@@ -788,7 +781,6 @@
         ) {
           mostrarDetalhesMagias();
         }
-        console.log(data);
       }
       // step de nome e história
       else if (atualStep === "historia") {
@@ -1111,8 +1103,6 @@
         }
 
         data.preparadas = preparadas;
-
-        console.log(data);
         // edita pdf
         editaPdf();
       }
@@ -1148,11 +1138,6 @@
     );
     const pdfDoc = await PDFDocument.load(existingPdfBytes);
     const form = pdfDoc.getForm();
-    const fields = form.getFields();
-
-    fields.forEach((field) => {
-      console.log(field.getName());
-    });
     const nome = form.getTextField("nome");
     const armas = form.getTextField("arma_1");
     const tendencia = form.getTextField("tendencia");
@@ -1324,6 +1309,21 @@
       const field = form.getTextField(campoValor);
       field.setText(total.toString());
     }
+    if (data.magiasAtaque?.length) {
+      magiasAt.setText(
+        data.magiasAtaque
+          .slice(0, 3)
+          .map((m) => `${m.nome}: ${m.ataque}`)
+          .join(" | "),
+      );
+    } else {
+      magiasAt.setText("");
+    }
+    if (data.armas?.length) {
+      armas.setText(data.armas.map((a) => `${a.nome}: ${a.dano}`).join(" | "));
+    } else {
+      armas.setText("");
+    }
     // magias preparadas randomicamente
     if (classesMagicas.includes(data.classe)) {
       const magias = [...data.magias];
@@ -1340,6 +1340,7 @@
       const campo = form.getTextField("magias_preparadas");
       campo.setText(selecionadas.join(", "));
     }
+
     // imagens do personagem
     const input1 = document.getElementById("imagem_1");
     const input2 = document.getElementById("imagem_2");
