@@ -1149,8 +1149,6 @@
     const pdfDoc = await PDFDocument.load(existingPdfBytes);
     const form = pdfDoc.getForm();
     const fields = form.getFields();
-
-    // perícias, imagem, atq
     const nome = form.getTextField("nome");
     const armas = form.getTextField("arma_1");
     const tendencia = form.getTextField("tendencia");
@@ -1334,6 +1332,36 @@
       const campo = form.getTextField("magias_preparadas");
       campo.setText(selecionadas.join(", "));
     }
+    // imagens do personagem
+    const input1 = document.getElementById("imagem_1");
+    const input2 = document.getElementById("imagem_2");
+
+    const processarImagem = async (file, pdfDoc) => {
+      const arrayBuffer = await file.arrayBuffer();
+
+      if (file.type === "image/png") {
+        return await pdfDoc.embedPng(arrayBuffer);
+      } else {
+        return await pdfDoc.embedJpg(arrayBuffer);
+      }
+    };
+
+    const carregarImagem = async () => {
+      const pdfDoc = await PDFLib.PDFDocument.load(existingPdfBytes);
+      const form = pdfDoc.getForm();
+
+      if (input1.files[0]) {
+        const img1 = await processarImagem(input1.files[0], pdfDoc);
+        form.getButton("Imagem3_af_image").setImage(img1);
+      }
+
+      if (input2.files[0]) {
+        const img2 = await processarImagem(input2.files[0], pdfDoc);
+        form.getButton("Imagem72_af_image").setImage(img2);
+      }
+
+      const pdfBytes = await pdfDoc.save();
+    };
     form.updateFieldAppearances();
     const pdfBytes = await pdfDoc.save();
     const blob = new Blob([pdfBytes], { type: "application/pdf" });
