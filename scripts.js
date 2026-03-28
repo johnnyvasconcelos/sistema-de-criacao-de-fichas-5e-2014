@@ -289,6 +289,27 @@
       ]);
       const truquesDescricao = [];
       const magiasDescricao = [];
+      const magiasAtaque = [];
+      for (let i = 0; i < data.magias.length; i++) {
+        const ataque = magias.find((a) => a.nome === data.magias[i]);
+        if (!ataque) continue;
+        if (ataque && ataque.ataque) {
+          magiasAtaque.push({
+            nome: data.magias[i],
+            ataque: ataque.ataque,
+          });
+        }
+      }
+      for (let i = 0; i < data.truques.length; i++) {
+        const ataque = truques.find((t) => t.nome === data.truques[i]);
+        if (!ataque) continue;
+        if (ataque && ataque.ataque) {
+          magiasAtaque.push({
+            nome: data.truques[i],
+            ataque: ataque.ataque,
+          });
+        }
+      }
       for (let i = 0; i < data.truques.length; i++) {
         const truque = truques.find((t) => t.nome === data.truques[i]);
         truquesDescricao.push({
@@ -303,6 +324,7 @@
           descricao: magia.descricao,
         });
       }
+      data.magiasAtaque = magiasAtaque;
       data.truquesDescricoes = truquesDescricao;
       data.magiasDescricoes = magiasDescricao;
     } catch (error) {
@@ -1106,8 +1128,9 @@
       console.log(field.getName());
     });
 */
-    // resistências, armas, magias, magias 0, magias 1
+    // perícias, imagem
     const nome = form.getTextField("nome");
+    const armas = form.getTextField("arma_1");
     const tendencia = form.getTextField("tendencia");
     const raca = form.getTextField("raca");
     const classe = form.getTextField("classe");
@@ -1121,6 +1144,7 @@
     const magic1 = form.getTextField("magia_2");
     const gps = form.getTextField("gps");
     const sp = form.getTextField("sp");
+    const magiasAt = form.getTextField("magic_1");
     const prof = form.getTextField("prof");
     const sobre = form.getTextField("sobre");
     const modFor = form.getTextField("mod_for");
@@ -1129,12 +1153,12 @@
     const modInt = form.getTextField("mod_int");
     const modSab = form.getTextField("mod_sab");
     const modCar = form.getTextField("mod_car");
-    const resFor = getTextField("res_for");
-    const resDes = getTextField("res_des");
-    const resCon = getTextField("res_con");
-    const resInt = getTextField("res_int");
-    const resSab = getTextField("res_sab");
-    const resCar = getTextField("res_car");
+    const resFor = form.getTextField("res_for");
+    const resDes = form.getTextField("res_des");
+    const resCon = form.getTextField("res_con");
+    const resInt = form.getTextField("res_int");
+    const resSab = form.getTextField("res_sab");
+    const resCar = form.getTextField("res_car");
     const nivel = form.getTextField("nivel");
     const cd = form.getTextField("Texto1");
     const iniciativa = form.getTextField("iniciativa");
@@ -1165,6 +1189,13 @@
     magic1.setText(
       data.magiasDescricoes.map((m) => `${m.nome}: ${m.descricao}`).join(" | "),
     );
+    armas.setText(data.armas.map((a) => `${a.nome}: (${a.dano})`).join(" | "));
+
+    magiasAt.setText(
+      (data.magiasAtaque || [])
+        .map((m) => `${m.nome} (${m.ataque})`)
+        .join(" | "),
+    );
     forca.setText(data.for.toString());
     destreza.setText(data.des.toString());
     constituicao.setText(data.con.toString());
@@ -1178,12 +1209,12 @@
     modInt.setText(intMod);
     modSab.setText(sabMod);
     modCar.setText(carMod);
-    resFor.setText(data.resfor);
-    resDes.setText(data.resdes);
-    resCon.setText(data.rescon);
-    resInt.setText(data.resint);
-    resSab.setText(data.ressab);
-    resCar.setText(data.rescar);
+    resFor.setText(data.resfor.toString());
+    resDes.setText(data.resdes.toString());
+    resCon.setText(data.rescon.toString());
+    resInt.setText(data.resint.toString());
+    resSab.setText(data.ressab.toString());
+    resCar.setText(data.rescar.toString());
     nome.setText(data.nome);
     iniciativa.setText(data.iniciativa.toString());
     tendencia.setText(data.tendencia);

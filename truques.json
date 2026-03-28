@@ -2,136 +2,163 @@
   {
     "id": 1,
     "nome": "Globos de Luz",
-    "descricao": "Até 4 luzes (36m). Cada produz penumbra (3m). Movidas com ação bônus."
+    "descricao": "Até 4 luzes (36m). Cada produz penumbra (3m). Movidas com ação bônus.",
+    "ataque": false
   },
   {
     "id": 2,
     "nome": "Zombaria Viciosa",
-    "descricao": "Insultos sutis a criatura visível (18m). Alvo Resist Sab. ou sofre 1d4 dano psic e terá desvantagem no próx. ataque."
+    "descricao": "Insultos sutis a criatura visível (18m). Alvo Resist Sab. ou sofre 1d4 dano psic e terá desvantagem no próx. ataque.",
+    "ataque": "1d4 psíquico"
   },
   {
     "id": 3,
     "nome": "Amizade",
-    "descricao": "Vantagem em testes Car envolvendo uma criatura não hostil (1m). Quando a magia acabar, a criatura ficará hostil."
+    "descricao": "Vantagem em testes Car envolvendo uma criatura não hostil (1m). Quando a magia acabar, a criatura ficará hostil.",
+    "ataque": false
   },
   {
     "id": 4,
     "nome": "Rajada Mística",
-    "descricao": "Faça ataque magia. Feixe (energia) vai em direção à criatura (36m) e causa 1d10 dano."
+    "descricao": "Faça ataque magia. Feixe (energia) vai em direção à criatura (36m) e causa 1d10 dano.",
+    "ataque": "1d10 energia"
   },
   {
     "id": 5,
     "nome": "Chama Sagrada",
-    "descricao": "Chama desce a uma criatura visível (18m). Alvo deve resistir Des. ou toma 1d8 (radiante)."
+    "descricao": "Chama desce a uma criatura visível (18m). Alvo deve resistir Des. ou toma 1d8 (radiante).",
+    "ataque": "1d8 dano radiante, requer resistir des"
   },
   {
     "id": 6,
     "nome": "Estabilizar",
-    "descricao": "Toca criatura visível com 0 PVs. A  criatura é estabilizada."
+    "descricao": "Toca criatura visível com 0 PVs. A  criatura é estabilizada.",
+    "ataque": false
   },
   {
     "id": 7,
     "nome": "Taumaturgia",
-    "descricao": "Escolha 1 (1minuto): Sua voz ressoa com o triplo do volume normal, tremores inofensivos solo, cria som em um ponto, porta ou janela (destrancada) abre / fecha, muda aparência dos olhos."
+    "descricao": "Escolha 1 (1minuto): Sua voz ressoa com o triplo do volume normal, tremores inofensivos solo, cria som em um ponto, porta ou janela (destrancada) abre / fecha, muda aparência dos olhos.",
+    "ataque": false
   },
   {
     "id": 8,
     "nome": "Bordão Místico",
-    "descricao": "Use atr conjuração, em vez For. em uma clava ou bordão madeira. Arma mágica, causa 1d8."
+    "descricao": "Use atr conjuração, em vez For. em uma clava ou bordão madeira. Arma mágica, causa 1d8.",
+    "ataque": false
   },
   {
     "id": 9,
     "nome": "Chicote de Espinhos",
-    "descricao": "Ataque mágico corpo a corpo com vinhas. 1d6 perfurante e puxa o alvo 3m (se for Grande ou menor)."
+    "descricao": "Ataque mágico corpo a corpo com vinhas. 1d6 perfurante e puxa o alvo 3m (se for Grande ou menor).",
+    "ataque": "1d6 perfurante, puxa alvo grande ou menor 3m"
   },
   {
     "id": 10,
     "nome": "Criar Chamas",
-    "descricao": "Ataque com magia 1d8 dano. Sem ataque, a chama ilumina 3m (+3m penumbra) por 10m."
+    "descricao": "Ataque com magia 1d8 dano. Sem ataque, a chama ilumina 3m (+3m penumbra) por 10m.",
+    "ataque": "1d8 fogo"
   },
   {
     "id": 11,
     "nome": "Druidismo",
-    "descricao": "Cria efeitos inofensivos: prever clima, fazer florescer/brotar folhas ou sementes, gerar sinais sensoriais (som, cheiro, vento ou folhas caindo) ou acender/apagar chamas pequenas."
+    "descricao": "Cria efeitos inofensivos: prever clima, fazer florescer/brotar folhas ou sementes, gerar sinais sensoriais (som, cheiro, vento ou folhas caindo) ou acender/apagar chamas pequenas.",
+    "ataque": false
   },
   {
     "id": 12,
     "nome": "Orientação",
-    "descricao": "Toca um aliado e dá +d4 a um teste habilidade à escolha dele."
+    "descricao": "Toca um aliado e dá +d4 a um teste habilidade à escolha dele.",
+    "ataque": false
   },
   {
     "id": 13,
     "nome": "Resistência",
-    "descricao": "Toca um aliado e dá +d4 a um teste resistência à escolha dele."
+    "descricao": "Toca um aliado e dá +d4 a um teste resistência à escolha dele.",
+    "ataque": false
   },
   {
     "id": 14,
     "nome": "Ataque Certeiro",
-    "descricao": "Seu próximo turno terá vantagem no ataque contra um inimigo."
+    "descricao": "Seu próximo turno terá vantagem no ataque contra um inimigo.",
+    "ataque": false
   },
   {
     "id": 15,
     "nome": "Consertar",
-    "descricao": "Conserta fissuras até 30cm em objetos."
+    "descricao": "Conserta fissuras até 30cm em objetos.",
+    "ataque": false
   },
   {
     "id": 16,
     "nome": "Espirro Ácido",
-    "descricao": "Escolha 1 ou 2 alvos (até 18m -  1,5m distância um do outro). Alvos fazem teste resistência Des. ou tomam 1d6 dano."
+    "descricao": "Escolha 1 ou 2 alvos (até 18m -  1,5m distância um do outro). Alvos fazem teste resistência Des. ou tomam 1d6 dano.",
+    "ataque": "1d6 ácido, alvos precisam resistir Des"
   },
   {
     "id": 17,
     "nome": "Ilusão Menor",
-    "descricao": "Cria som ou imagem objeto (9m, 1minuto)"
+    "descricao": "Cria som ou imagem objeto (9m, 1minuto)",
+    "ataque": false
   },
   {
     "id": 18,
     "nome": "Luz",
-    "scricao": "Toca um objeto pequeno e ele emite luz intensa (6 m) + penumbra (6 m) até a magia acabar; luz é bloqueada por cobertura opaca e objetos  inimigos podem resistir com teste Destreza."
+    "scricao": "Toca um objeto pequeno e ele emite luz intensa (6 m) + penumbra (6 m) até a magia acabar; luz é bloqueada por cobertura opaca e objetos  inimigos podem resistir com teste Destreza.",
+    "ataque": false
   },
   {
     "id": 19,
     "nome": "Mãos Mágicas",
-    "descricao": "Mão fantasma flutuante aparece num ponto. A mão some se estiver a mais 9m de você. Use a mão para manipular um objeto, abrir portas ou recipientes destrancados, guardar ou pegar itens (5kg). A mão não ataca ou ativa itens mágicos."
+    "descricao": "Mão fantasma flutuante aparece num ponto. A mão some se estiver a mais 9m de você. Use a mão para manipular um objeto, abrir portas ou recipientes destrancados, guardar ou pegar itens (5kg). A mão não ataca ou ativa itens mágicos.",
+    "ataque": false
   },
   {
     "id": 20,
     "nome": "Mensagem",
-    "descricao": "Envia um sussurro a um alvo que pode responder da mesma forma. A magia passa por cantos ou aberturas, mas é bloqueada por rocha, metal, chumbo ou madeira/terra espessa."
+    "descricao": "Envia um sussurro a um alvo que pode responder da mesma forma. A magia passa por cantos ou aberturas, mas é bloqueada por rocha, metal, chumbo ou madeira/terra espessa.",
+    "ataque": false
   },
   {
     "id": 21,
     "nome": "Prestidigitação",
-    "descricao": "Cria pequenos efeitos (3m): gera sensações (faíscas, vento, sons ou cheiros), acende/apaga chamas pequenas, limpa ou suja objetos pequenos, aquece/esfria/melhora o sabor comidas, marca objetos (cor símbolo) ou superfícies por 1 h, cria bugiganga ou ilusão pequena que dura até o próximo turno."
+    "descricao": "Cria pequenos efeitos (3m): gera sensações (faíscas, vento, sons ou cheiros), acende/apaga chamas pequenas, limpa ou suja objetos pequenos, aquece/esfria/melhora o sabor comidas, marca objetos (cor símbolo) ou superfícies por 1 h, cria bugiganga ou ilusão pequena que dura até o próximo turno.",
+    "ataque": false
   },
   {
     "id": 22,
     "nome": "Proteção contra Lâminas",
-    "descricao": "Até o final do próximo turno tem resistência contra corte, perfuração e contusão armas."
+    "descricao": "Até o final do próximo turno tem resistência contra corte, perfuração e contusão armas.",
+    "ataque": false
   },
   {
     "id": 23,
     "nome": "Raio de Fogo",
-    "descricao": "Faz ataque à distância com magia e causa 1d10 dano. Objetos inflamáveis podem pegar fogo se não forem usados ou carregados."
+    "descricao": "Faz ataque à distância com magia e causa 1d10 dano. Objetos inflamáveis podem pegar fogo se não forem usados ou carregados.",
+    "ataque": "1d10 fogo"
   },
   {
     "id": 24,
     "nome": "Raio de Gelo",
-    "descricao": "Faz ataque à distância com magia e causa 1d8 dano. O alvo perde 3m no desloc. até o começo do próximo turno."
+    "descricao": "Faz ataque à distância com magia e causa 1d8 dano. O alvo perde 3m no desloc. até o começo do próximo turno.",
+    "ataque": "1d8 dano frio alvo tem -3 no deslocamento"
   },
   {
     "id": 25,
     "nome": "Rajada de Veneno",
-    "descricao": "Alvo deve passar em teste Con. ou sofre 1d12 dano."
+    "descricao": "Alvo deve passar em teste Con. ou sofre 1d12 dano.",
+    "ataque": "1d12, alvo precisa resistir CON"
   },
   {
     "id": 26,
     "nome": "Toque Arrepiante",
-    "descricao": "Faz ataque à distância com magia e causa 1d8 dano necrótico. O alvo não recupera vida até o começo do próximo turno."
+    "descricao": "Faz ataque à distância com magia e causa 1d8 dano necrótico. O alvo não recupera vida até o começo do próximo turno.",
+    "ataque": "1d8 necrótico"
   },
   {
     "id": 27,
     "nome": "Toque Chocante",
-    "descricao": "Faz ataque corpo-a-corpo com magia e causa 1d8 dano. O alvo não usa reação até o começo do próximo turno. Alvo com armadura metálica dá vantagem ao ataque."
+    "descricao": "Faz ataque corpo-a-corpo com magia e causa 1d8 dano. O alvo não usa reação até o começo do próximo turno. Alvo com armadura metálica dá vantagem ao ataque.",
+    "ataque": "1d8 elétrico"
   }
 ]
