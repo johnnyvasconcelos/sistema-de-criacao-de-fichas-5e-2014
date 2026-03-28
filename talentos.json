@@ -1,0 +1,124 @@
+[
+  {
+    "nome": "Atleta",
+    "habilidades": [
+      "Talento Atleta: +1 for",
+      "Quando você estiver caído, se levantar requer apenas 1,5m do seu deslocamento.",
+      "Escalar não custa movimento adicional.",
+      "Você pode realizar um salto em distância correndo ou se movendo apenas um passo de ajuste de 1,5m, ao invés de 3m."
+    ]
+  },
+  {
+    "nome": "Ator",
+    "habilidades": [
+      "Talento Ator: +1 car",
+      "Você tem vantagem em testes de Atuação e Enganação quando você estiver tentando se passar por uma pessoa diferente.",
+      "Você imita vozes ou sons de criaturas que ouviu por pelo menos 1 minuto. Um ouvinte descobre a farsa apenas se vencer um teste de Intuição contra o seu teste de Enganação."
+    ]
+  },
+  {
+    "nome": "Combate Montado",
+    "habilidades": [
+      "Talento Combatente Montado",
+      "Você possui vantagem em ataques corpo a corpo contra alvos desmontados e menores que sua montaria.",
+      "Você pode forçar que um ataque direcionado à sua montaria seja redirecionado a você.",
+      "Sua montaria não sofre dano se passar em um teste de resistência de Des para reduzir dano à metade, e sofre apenas metade se falhar."
+    ]
+  },
+  {
+    "nome": "Conjurador de Guerra",
+    "habilidades": [
+      "Talento Conjurador de Guerra",
+      "Você possui vantagem em testes de resistência de Con para manter a concentração em uma magia ao sofrer dano.",
+      "Você pode realizar componentes somáticos de magias mesmo empunhando armas ou escudo em uma ou ambas as mãos.",
+      "Você pode usar sua reação para conjurar uma magia de 1 ação e alvo único em uma criatura que provoque um ataque de oportunidade, em vez de realizar o ataque físico."
+    ]
+  },
+  {
+    "nome": "Conjurador de Ritual",
+    "habilidades": [
+      "Talento Conjurador de Ritual: 2 Magias Extras de Ritual (Cerimônia e Identificar).",
+      "Você recebe um livro de rituais com duas magias de 1º nível à sua escolha da lista da classe selecionada.",
+      "Você pode adicionar novos rituais ao livro se encontrar pergaminhos ou grimórios, desde que o nível da magia seja metade do seu nível (arredondado para cima)."
+    ]
+  },
+  {
+    "nome": "Curandeiro",
+    "habilidades": [
+      "Talento Curandeiro",
+      "Ao usar um kit de estabilização em uma criatura com 0 PV, ela recupera 1 PV.",
+      "Com uma ação e um uso do kit, você cura 1d6 + 4 + número de dados de vida da criatura. O alvo só pode se beneficiar disso novamente após um descanso curto ou longo."
+    ]
+  },
+  {
+    "nome": "Duelista Defensivo",
+    "habilidades": [
+      "Talento Duelista Defensivo",
+      "Quando você estiver empunhando uma arma sutil na qual seja proficiente, você pode usar sua reação para adicionar seu bônus de proficiência na sua CA contra um ataque corpo a corpo."
+    ]
+  },
+  {
+    "nome": "Especialista em Besta",
+    "habilidades": [
+      "Talento Especialista em Besta",
+      "Você ignora a propriedade de recarga de bestas nas quais possui proficiência.",
+      "Estar a 1,5m de uma criatura hostil não impõe desvantagem em seus ataques à distância.",
+      "Ao atacar com uma arma de uma mão, você pode usar uma ação bônus para atacar com uma besta de mão carregada."
+    ]
+  },
+  {
+    "nome": "Especialista em Briga",
+    "habilidades": [
+      "Talento Especialista em Briga: +1 For",
+      "Você é proficiente com armas improvisadas e seus ataques desarmados causam 1d4 de dano.",
+      "Ao atingir uma criatura com ataque desarmado ou arma improvisada no seu turno, você pode usar uma ação bônus para tentar agarrar o alvo."
+    ]
+  },
+  {
+    "nome": "Explorador de Cavernas",
+    "habilidades": [
+      "Talento Explorador de Cavernas",
+      "Você tem vantagem em testes de Percepção e Investigação para encontrar portas secretas ou armadilhas.",
+      "Você tem vantagem em testes de resistência para evitar ou resistir armadilhas.",
+      "Você possui resistência a dano causado por armadilhas e viajar em ritmo rápido não impõe penalidade em sua Percepção Passiva."
+    ]
+  },
+  {
+    "nome": "Imobilizador",
+    "habilidades": [
+      "Talento Imobilizador",
+      "Você tem vantagem em jogadas de ataque contra criaturas que você esteja agarrando.",
+      "Você pode usar sua ação para tentar imobilizar uma criatura agarrada por você. Se vencer o teste, ambos ficam impedidos até o agarrão encerrar."
+    ]
+  },
+  {
+    "nome": "Iniciado em Magia",
+    "habilidades": [
+      "Talento Iniciado em Magia: 2 truques e 1 magia extra que não gasta espaço de magia (usada uma vez por descanso longo)"
+    ]
+  },
+  {
+    "nome": "Investida Poderosa",
+    "habilidades": [
+      "Talento Investida Poderosa",
+      "Ao usar a ação de Disparada, você pode usar uma ação bônus para realizar um ataque corpo a corpo ou empurrar uma criatura.",
+      "Se você se mover pelo menos 3m em linha reta antes da ação bônus, você ganha +5 no dano ou empurra o alvo por até 3m extras."
+    ]
+  },
+  {
+    "nome": "Líder Inspirador",
+    "habilidades": [
+      "Talento Líder Inspirador",
+      "Você pode passar 10 minutos inspirando até 6 criaturas aliadas (incluindo você).",
+      "Cada criatura ganha PV temporários iguais ao seu nível + seu modificador de Carisma. Uma criatura não pode ganhar esses PV novamente até terminar um descanso."
+    ]
+  },
+  {
+    "nome": "Maestria em Arma de Haste",
+    "habilidades": [
+      "Talento Maestria em Arma de Haste",
+      "Ao atacar com uma glaive, alabarda ou bordão, você pode usar uma ação bônus para atacar com a outra extremidade (1d4 de dano concussivo).",
+      "Enquanto empunha essas armas ou uma lança longa, criaturas provocam ataques de oportunidade de você ao entrarem no seu alcance de alcance."
+    ]
+  }
+]

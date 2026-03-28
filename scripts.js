@@ -765,14 +765,100 @@
         let parteDecimal = data.pos - poInteiro;
         data.pps = Math.round(parteDecimal * 10);
         data.pos = poInteiro;
+        // outros detalhes e talentos
         mostrarArmasEArmaduras();
         data.nivel = 1;
-        data.defeito = "Impulsivo prefere atacar antes de pensar.";
+        data.defeito = "Impulsivo. Prefere atacar antes de pensar.";
         data.ideal = "Poder é conquistado pela força e mantido sem piedade.";
         data.personalidade = "Desconfiado demora a confiar nos outros.";
         data.vinculo = "Defendo minha terra natal custe o que custar.";
         data.tendencia = "Neutro";
+        data.for =
+          (data.raca === "Humano Variante" && data.talento === "Atleta") ||
+          (data.raca === "Humano Variante" &&
+            data.talento === "Especialista em Briga")
+            ? data.for + 1
+            : data.for;
+        data.car =
+          data.raca === "Humano Variante" && data.talento === "Ator"
+            ? data.car + 1
+            : data.car;
+        data.iniciativa =
+          data.raca === "Humano Variante" && data.talento === "Alerta"
+            ? Math.floor((data.des - 10) / 2) + 5
+            : Math.floor((data.des - 10) / 2);
         const conMod = Math.floor((data.con - 10) / 2);
+
+        if (
+          data.raca === "Humano Variante" &&
+          data.talento === "Conjurador de Ritual"
+        ) {
+          if (
+            data.classe === "Clérigo" ||
+            data.classe === "Druida" ||
+            data.classe === "Mago" ||
+            data.classe === "Bardo" ||
+            data.classe === "Feiticeiro" ||
+            data.classe === "Bruxo" ||
+            data.classe === "Artífice"
+          ) {
+            data.magiasDescricoes.push({
+              nome: "Cerimônia",
+              descricao:
+                "Você realiza um ritual em um alvo a 3m escolhendo um dos seguintes efeitos: restaurar o alinhamento original de uma criatura com um teste de Intuição CD 20, transformar um frasco de água em água benta, conceder +1d4 em testes de habilidade para um jovem por 24h, conceder +1d4 em testes de resistência para um fiel por 24h ou dar +2 na CA por 7 dias para um casal que esteja a 9m um do outro.",
+            });
+            if (
+              data.magiasDescricoes.some(
+                (magia) => magia.nome === "Detectar Magia",
+              )
+            ) {
+              data.magiasDescricoes.push({
+                nome: "Escrita Ilusória",
+                descricao:
+                  "Ritual. Você escreve num pergaminho e o texto parece normal, mas apenas criaturas designadas conseguem ler o conteúdo verdadeiro (outros leem uma mensagem falsa).",
+              });
+            } else {
+              data.magiasDescricoes.push({
+                nome: "Detectar Magia",
+                descricao:
+                  "Ritual. Você sente a presença de magia a até 9m. Sabe qual a escola de magia, se houver.",
+              });
+            }
+          }
+        } else if (
+          data.raca === "Humano Variante" &&
+          data.talento === "Iniciado em Magia"
+        ) {
+          if (
+            data.magiasDescricoes.some(
+              (magia) => magia.nome === "Armadura de Agathys",
+            )
+          ) {
+            data.magiasDescricoes.push({
+              nome: "Braços de Hadar",
+              descricao:
+                "Tentáculos de energia golpeiam quem estiver a até 3m de você, exigindo um teste de For. para não sofrer 2d6 de dano necrótico e perder reações.",
+            });
+          } else {
+            data.magiasDescricoes.push({
+              nome: "Armadura de Agathys",
+              descricao:
+                "Você ganha 5 PVs temporários (1h). Se uma criatura atingir você com um ataque corpo-a-corpo enquanto estiver com esses pontos de vida, a criatura sofrerá 5 de dano de frio.",
+            });
+          }
+          data.truquesDescricoes.push(
+            {
+              nome: "Infestação",
+              descricao:
+                "Você faz surgir parasitas temporários em uma criatura a até 9m. O alvo deve passar em um teste de Res. de Con. ou sofre 1d6 de dano de veneno e se move 1,5m em uma direção aleatória.",
+            },
+            {
+              nome: "Toque do Túmulo",
+              descricao:
+                "Você desfere um ataque mágico à distância que causa 1d8 de dano necrótico. O alvo não pode recuperar pontos de vida e, se for um morto-vivo, tem desvantagem em ataques contra você até o seu próximo turno.",
+            },
+          );
+        }
 
         switch (data.classe) {
           case "Bárbaro":
@@ -845,7 +931,7 @@
     fields.forEach((field) => {
       console.log(field.getName());
     });
-*/
+    */
     const nome = form.getTextField("nome");
     const tendencia = form.getTextField("tendencia");
     const raca = form.getTextField("raca");
@@ -876,11 +962,23 @@
     const intMod = Math.floor((data.int - 10) / 2).toString();
     const sabMod = Math.floor((data.sab - 10) / 2).toString();
     const carMod = Math.floor((data.car - 10) / 2).toString();
-    // habilidades (mais_personagem)
+    const habilidades = form.getTextField("mais_personagem");
+    const forca = form.getTextField("forca");
+    const destreza = form.getTextField("destreza");
+    const constituicao = form.getTextField("constituicao");
+    const inteligencia = form.getTextField("inteligencia");
+    const sabedoria = form.getTextField("sabedoria");
+    const carisma = form.getTextField("carisma");
     gps.setText(data.pos.toString());
     sp.setText(data.pps.toString());
     sobre.setText(data.historia);
     nivel.setText(data.nivel.toString());
+    forca.setText(data.for.toString());
+    destreza.setText(data.des.toString());
+    constituicao.setText(data.con.toString());
+    inteligencia.setText(data.int.toString());
+    sabedoria.setText(data.sab.toString());
+    carisma.setText(data.car.toString());
     modFor.setText(forMod);
     modDes.setText(desMod);
     modCon.setText(conMod);
@@ -888,7 +986,7 @@
     modSab.setText(sabMod);
     modCar.setText(carMod);
     nome.setText(data.nome);
-    iniciativa.setText(desMod);
+    iniciativa.setText(data.iniciativa.toString());
     tendencia.setText(data.tendencia);
     raca.setText(data.raca);
     classe.setText(data.classe);
@@ -899,6 +997,7 @@
     defeitos.setText(data.defeito);
     ca.setText(data.ca.toString());
     proficiencias.setText(data.proficiencias.join(", "));
+    habilidades.setText(data.habilidades.join(" | "));
     equipamentos.setText(data.equipamentos.join(", "));
     vida.setText(data.pvs.toString());
     form.updateFieldAppearances();
