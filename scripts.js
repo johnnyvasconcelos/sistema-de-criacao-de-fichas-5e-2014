@@ -354,13 +354,14 @@
           : data.raca === "Meio-Elfo" || data.raca === "Kenku"
             ? bonusPericias() + 2
             : bonusPericias();
-      const [pericias, antecedentes, classes, racas, categorias] =
+      const [pericias, antecedentes, classes, racas, categorias, talentos] =
         await Promise.all([
           carregarJSON("./pericias.json"),
           carregarJSON("./antecedentes.json"),
           carregarJSON("./classes.json"),
           carregarJSON("./racas.json"),
           carregarJSON("./categorias.json"),
+          carregarJSON("./talentos.json"),
         ]);
       const antecedenteEscolhido = antecedentes.find(
         (ant) => ant.nome === data.antecedente,
@@ -370,6 +371,9 @@
       });
       const racaEscolhida = racas.find((r) => {
         return r.nome === data.raca;
+      });
+      const talentoEscolhido = talentos.find((t) => {
+        return t.nome === data.talento;
       });
       const categoriaEscolhida =
         categorias.find(
@@ -393,6 +397,7 @@
           racaEscolhida.habilidades || [],
           classeEscolhida.habilidades || [],
           antecedenteEscolhido.habilidades || [],
+          talentoEscolhido.habilidades || [],
         )
         .filter((item) => item)
         .filter((item, index, arr) => arr.indexOf(item) === index);
