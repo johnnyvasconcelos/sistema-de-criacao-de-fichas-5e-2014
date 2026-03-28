@@ -233,6 +233,10 @@ tbody {
   height: 0px;
   opacity: 0;
 }
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
 form table {
   border-collapse: collapse;
   min-width: 350px;
