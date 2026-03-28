@@ -80,22 +80,7 @@ scripts.js:977 per_slot_8
 scripts.js:977 per_slot_9
 scripts.js:977 magic_slot_1
 
-scripts.js:977 Texto1
-scripts.js:977 atual_vida
-scripts.js:977 vida_01
-scripts.js:977 vida_02
-
-scripts.js:977 sobre
-scripts.js:977 mais_personagem
 scripts.js:977 magia_1
-scripts.js:977 magia_2
-scripts.js:977 magia_3
-scripts.js:977 magia_4
-scripts.js:977 magia_5
-scripts.js:977 magia_6
-scripts.js:977 magia_7
-scripts.js:977 magia_8
-scripts.js:977 magia_9
-scripts.js:977 magia_10
+
 scripts.js:977 Imagem72_af_image
 scripts.js:977 Button4

@@ -2,27 +2,27 @@
   {
     "id": 1,
     "nome": "Heroísmo",
-    "descricao": "Uma criatura voluntária tocada fica imune a ser amedrontada e ganha PVs temporários igual ao seu modificador de habilidade de conjuração."
+    "descricao": "Uma criatura voluntária tocada fica imune a ser amedrontada e ganha PVs temporários igual ao seu modificador atr de conjuração."
   },
   {
     "id": 2,
     "nome": "Sussurros Dissonantes",
-    "descricao": "Um alvo que te ouça deve passar num teste de Sab. ou sofrerá 3d6 de dano psíquico e usará a reação para fugir; se passar, sofre metade do dano e fica onde está."
+    "descricao": "Um alvo que te ouça deve passar num teste Sab. ou sofrerá 3d6 de dano psíquico e usará a reação para fugir; se passar, sofre metade do dano e fica onde está."
   },
   {
     "id": 3,
     "nome": "Armadura de Agathys",
-    "descricao": "Você ganha 5 PVs temporários (1h). Se uma criatura atingir você com um ataque corpo-a-corpo enquanto estiver com esses pontos de vida, a criatura sofrerá 5 de dano de frio."
+    "descricao": "Você ganha 5 PVs temporários (1h). Se uma criatura atingir você com um ataque corpo-a-corpo enquanto estiver com esses PVs, a criatura sofrerá 5 dano frio."
   },
   {
     "id": 4,
     "nome": "Braços de Hadar",
-    "descricao": "Tentáculos de energia golpeiam quem estiver a até 3m de você, exigindo um teste de For. para não sofrer 2d6 de dano necrótico e perder reações."
+    "descricao": "Tentáculos de energia golpeiam quem estiver a até 3m de você, exigindo um teste For. para não sofrer 2d6 dano necrótico e perder reações."
   },
   {
     "id": 5,
     "nome": "Bruxaria",
-    "descricao": "Você amaldiçoa um alvo para causar 1d6 de dano necrótico extra por ataque e dar desvantagem nos testes de um atributo escolhido. Se o alvo morrer, você move a marca com uma ação bônus."
+    "descricao": "Você amaldiçoa um alvo para causar 1d6 dano necrótico extra por ataque e dar desvantagem nos testes do atributo escolhido. Se o alvo morrer, você move a marca com uma ação bônus."
   },
   {
     "id": 6,
@@ -32,12 +32,12 @@
   {
     "id": 7,
     "nome": "Bênção",
-    "descricao": "Você abençoa até três criaturas para que adicionem 1d4 a todas as jogadas de ataque e testes de resistência que fizerem por 1 min."
+    "descricao": "Você abençoa até três criaturas para que adicionem 1d4 a todas as jogadas de ataque e testes resistência que fizerem por 1 min."
   },
   {
     "id": 8,
     "nome": "Comando",
-    "descricao": "Um alvo que fala o mesmo idioma deve passar num teste de resistência de Sab. ou seguirá seu comando no próximo turno dele: Aproxime-se, fuja, deite-se, parado."
+    "descricao": "Um alvo que fala o mesmo idioma deve passar num teste resistência Sab. ou seguirá seu comando no próximo turno dele: Aproxime-se, fuja, deite-se, parado."
   },
   {
     "id": 9,
@@ -47,7 +47,7 @@
   {
     "id": 10,
     "nome": "Perdição",
-    "descricao": "Até três alvos visíveis devem passar num teste de Car. ou subtrairão 1d4 de todas as jogadas de ataque e testes de resistência que fizerem enquanto a magia durar."
+    "descricao": "Até três alvos visíveis devem passar num teste Car. ou subtrairão 1d4 de todas as jogadas de ataque e testes de resistência que fizerem enquanto a magia durar."
   },
   {
     "id": 11,
@@ -57,12 +57,12 @@
   {
     "id": 12,
     "nome": "Raio Guiador",
-    "descricao": "Você faz um ataque à distância com magia contra um alvo (36m) para causar 4d6 de dano radiante. O golpe faz a criatura cintilar, garantindo vantagem na próxima jogada de ataque feita contra ela até o final do próximo turno."
+    "descricao": "Você faz um ataque à distância com magia contra um alvo (36m) para causar 4d6 dano radiante. O golpe faz a criatura cintilar, garantindo vantagem na próxima jogada de ataque feita contra ela até o final do próximo turno."
   },
   {
     "id": 13,
     "nome": "Santuário",
-    "descricao": "Um alvo protegido força qualquer inimigo que tente atacá-lo ou causar-lhe dano a passar num teste de Sab. ou perder a ação; o efeito ignora dano de área e acaba se o protegido atacar ou afetar inimigos."
+    "descricao": "Um alvo protegido força qualquer inimigo que tente atacá-lo ou causar-lhe dano a passar num teste Sab. ou perder a ação; o efeito ignora dano de área e acaba se o protegido atacar ou afetar inimigos."
   },
   {
     "id": 14,
@@ -72,12 +72,12 @@
   {
     "id": 15,
     "nome": "Infligir Ferimentos",
-    "descricao": "Você faz um ataque corpo-a-corpo com magia no alcance para causar 3d10 de dano necrótico se acertar."
+    "descricao": "Você faz um ataque corpo-a-corpo com magia no alcance para causar 3d10 dano necrótico se acertar."
   },
   {
     "id": 16,
     "nome": "Amizade Animal",
-    "descricao": "Você tenta enfeitiçar uma fera visível que possa te ver e que tenha Int. menor que 4. O bicho deve passar em teste de Sab. para não ser enfeitiçado, e o efeito acaba se você ou seus aliados a machucarem."
+    "descricao": "Você tenta enfeitiçar uma fera visível que possa te ver e que tenha Int. menor que 4. O bicho deve passar em teste Sab. para não ser enfeitiçado, e o efeito acaba se você ou seus aliados a machucarem."
   },
   {
     "id": 17,
@@ -87,17 +87,17 @@
   {
     "id": 18,
     "nome": "Constrição",
-    "descricao": "Plantas brotam num quadrado de 6 metros, tornam o chão terreno difícil e exigem teste de For. de quem estiver na área para não ficar impedido. O alvo preso pode usar a própria ação para tentar um novo teste de For. p/ ficar livre."
+    "descricao": "Plantas brotam num quadrado 6m, tornam o chão terreno difícil e exigem teste For. de quem estiver na área para não ficar impedido. O alvo preso pode usar a própria ação para tentar um novo teste For. p/ ficar livre."
   },
   {
     "id": 19,
     "nome": "Criar ou Destruir Água",
-    "descricao": "Você cria até 38 lt de água limpa em um recipiente (ou faz chover em um cubo de 9m) OU destrói a mesma quantidade de água em recipiente (ou dissipa névoa em um cubo de 9m)."
+    "descricao": "Você cria até 38 lt de água limpa em um recipiente (ou faz chover em um cubo 9m) OU destrói a mesma quantidade de água em recipiente (ou dissipa névoa em um cubo 9m)."
   },
   {
     "id": 20,
     "nome": "Curar Ferimentos",
-    "descricao": "Você toca uma criatura e cura uma quantidade de PV igual a 1d8 + seu mod de atr. de conjuração."
+    "descricao": "Você toca uma criatura e cura uma quantidade PVs igual a 1d8 + seu mod de atr. conjuração."
   },
   {
     "id": 21,
@@ -112,7 +112,7 @@
   {
     "id": 23,
     "nome": "Fogo das Fadas",
-    "descricao": "Criaturas e objetos em um cubo de 6m que falharem no teste de Des. emitem luz. Ataques contra eles têm vantagem."
+    "descricao": "Criaturas e objetos em um cubo 6m que falharem no teste Des. emitem luz. Ataques contra eles têm vantagem."
   },
   {
     "id": 24,
@@ -122,22 +122,22 @@
   {
     "id": 25,
     "nome": "Onda Trovejante",
-    "descricao": "Uma onda de força emite um cone de 4,5m a partir de você. Criaturas na área devem passar num teste de Con. ou sofrem 2d8 de dano trovejante e são empurradas 3m."
+    "descricao": "Uma onda de força emite um cone 4,5m a partir de você. Criaturas na área devem passar num teste de Con. ou sofrem 2d8 de dano trovejante e são empurradas 3m."
   },
   {
     "id": 26,
     "nome": "Palavra Curativa",
-    "descricao": "Uma criatura visível a até 18m cura uma quantidade de PV igual a 1d4 + seu mod de atr. de conjuração (ação bônus)."
+    "descricao": "Uma criatura visível a até 18m cura uma quantidade de PV igual a 1d4 + seu mod atr. de conjuração (ação bônus)."
   },
   {
     "id": 27,
     "nome": "Passos Longos",
-    "descricao": "Você toca uma criatura e o deslocamento dela aumenta em 3 metros por 1 hora."
+    "descricao": "Você toca uma criatura e o deslocamento dela aumenta em 3m por 1 hora."
   },
   {
     "id": 28,
     "nome": "Purificar Alimentos",
-    "descricao": "Comida e bebida em um raio de 1,5 metro é purificada e fica livre de venenos e doenças."
+    "descricao": "Comida e bebida em um raio 1,5 metro é purificada e fica livre de venenos e doenças."
   },
   {
     "id": 29,
@@ -147,7 +147,7 @@
   {
     "id": 30,
     "nome": "Armadura Arcana",
-    "descricao": "Alvo voluntário sem armadura recebe CA base 13 + modificador de Des. por 8h."
+    "descricao": "Alvo voluntário sem armadura recebe CA base 13 + modificador Des. por 8h."
   },
   {
     "id": 31,
@@ -167,7 +167,7 @@
   {
     "id": 34,
     "nome": "Enfeitiçar Pessoa",
-    "descricao": "Um humanoide que falhe num teste de Sab. fica enfeitiçado por 1 hora e te trata como conhecido amigável. Ele descobre o feitiço quando o efeito acaba."
+    "descricao": "Um humanoide que falhe num teste Sab. fica enfeitiçado por 1 hora e te trata como conhecido amigável. Ele descobre o feitiço quando o efeito acaba."
   },
   {
     "id": 35,
@@ -182,7 +182,7 @@
   {
     "id": 37,
     "nome": "Leque Cromático",
-    "descricao": "Luzes coloridas cobrem um cone de 4,5m afetando criaturas por ordem de PV atual (total de 6d10 PVs). Criaturas afetadas ficam cegas por 1 rodada."
+    "descricao": "Luzes coloridas cobrem um cone 4,5m afetando criaturas por ordem de PV atual (total de 6d10 PVs). Criaturas afetadas ficam cegas por 1 rodada."
   },
   {
     "id": 38,
@@ -197,7 +197,7 @@
   {
     "id": 40,
     "nome": "Orbe Cromática",
-    "descricao": "Você arremessa uma esfera elemental. Se acertar o ataque mágico, causa 3d8 de dano do tipo escolhido (ácido, frio, fogo, elétrico, veneno ou trovão)."
+    "descricao": "Você arremessa uma esfera elemental. Se acertar o ataque mágico, causa 3d8 dano do tipo escolhido (ácido, frio, fogo, elétrico, veneno ou trovão)."
   },
   {
     "id": 41,
@@ -207,12 +207,12 @@
   {
     "id": 42,
     "nome": "Raio Adoecente",
-    "descricao": "Ataque mágico à distância causa 2d8 de dano de veneno no acerto. O alvo deve passar num teste de Con. ou fica envenenado por 1 rodada."
+    "descricao": "Ataque mágico à distância causa 2d8 dano veneno no acerto. O alvo deve passar num teste de Con. ou fica envenenado por 1 rodada."
   },
   {
     "id": 43,
     "nome": "Sono",
-    "descricao": "Jogue 5d8. Criaturas em uma esfera de 6m dormem por 1 min por ordem de PV atual (da menor para a maior) até esgotar o valor rolado. Elas acordam se sofrerem dano."
+    "descricao": "Jogue 5d8. Criaturas em uma esfera 6m dormem por 1 min por ordem de PV atual (da menor para a maior) até esgotar o valor rolado. Elas acordam se sofrerem dano."
   },
   {
     "id": 44,
@@ -222,7 +222,7 @@
   {
     "id": 45,
     "nome": "Alarme",
-    "descricao": "Protege uma área (cubo de 6m) por 8h. Se uma criatura Miúda ou maior entrar, emite um som de sino no local ou um aviso mental em você."
+    "descricao": "Protege uma área (cubo 6m) por 8h. Se uma criatura Miúda ou maior entrar, emite um som de sino no local ou um aviso mental em você."
   },
   {
     "id": 46,
@@ -257,7 +257,7 @@
   {
     "id": 52,
     "nome": "Riso Histérico de Tasha",
-    "descricao": "Alvo deve passar em teste de Sab. ou cai no chão de tanto rir (incapacitado). Ele repete o teste ao fim de cada turno e toda vez que sofrer dano."
+    "descricao": "Alvo deve passar em teste Sab. ou cai no chão de tanto rir (incapacitado). Ele repete o teste ao fim de cada turno e toda vez que sofrer dano."
   },
   {
     "id": 53,
@@ -272,7 +272,7 @@
   {
     "id": 55,
     "nome": "Catapulta",
-    "descricao": "Arremessa um objeto solto (0,45 a 2,2 kg) em linha reta por 27 metros. Se atingir uma criatura, ela faz teste de Des; se falhar, ela e o objeto sofrem 3d8 de dano."
+    "descricao": "Arremessa um objeto solto (0,45 a 2,2 kg) em linha reta por 27m. Se atingir uma criatura, ela faz teste Des; se falhar, ela e o objeto sofrem 3d8 de dano."
   },
   {
     "id": 56,
@@ -287,6 +287,6 @@
   {
     "id": 58,
     "nome": "Repreensão Infernal",
-    "descricao": "Reação ao sofrer dano de uma criatura visível; ela faz teste de Des. ou sofre 2d10 de dano de fogo (metade se passar)."
+    "descricao": "Reação ao sofrer dano de uma criatura visível; ela faz teste Des. ou sofre 2d10 de dano de fogo (metade se passar)."
   }
 ]

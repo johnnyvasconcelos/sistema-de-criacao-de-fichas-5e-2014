@@ -963,6 +963,32 @@
         }
         data.deslocamento = data.deslocamento + "m";
         data.prof = "2";
+        let atributoBase = 0;
+
+        switch (data.classe) {
+          case "Mago":
+          case "Artífice":
+            atributoBase = data.int;
+            break;
+
+          case "Clérigo":
+          case "Druida":
+          case "Ranger":
+            atributoBase = data.sab;
+            break;
+
+          case "Bardo":
+          case "Feiticeiro":
+          case "Bruxo":
+          case "Paladino":
+            atributoBase = data.car;
+            break;
+
+          default:
+            atributoBase = 0;
+        }
+
+        data.cd = 10 + Math.floor((atributoBase - 10) / 2);
         console.log(data);
         // edita pdf
         editaPdf();
@@ -1005,7 +1031,7 @@
       console.log(field.getName());
     });
 */
-    // spell save, magic_slot_1, resistências, armas, magias, magias 0, magias 1
+    // resistências, armas, magias, magias 0, magias 1
     const nome = form.getTextField("nome");
     const tendencia = form.getTextField("tendencia");
     const raca = form.getTextField("raca");
@@ -1015,6 +1041,9 @@
     const ca = form.getTextField("classe_armadura");
     const proficiencias = form.getTextField("proficiencias");
     const vida = form.getTextField("total_vida");
+    const atualVida = form.getTextField("atual_vida");
+    const magic0 = form.getTextField("magia_1");
+    const magic1 = form.getTextField("magia_2");
     const gps = form.getTextField("gps");
     const sp = form.getTextField("sp");
     const prof = form.getTextField("prof");
@@ -1026,6 +1055,7 @@
     const modSab = form.getTextField("mod_sab");
     const modCar = form.getTextField("mod_car");
     const nivel = form.getTextField("nivel");
+    const cd = form.getTextField("Texto1");
     const iniciativa = form.getTextField("iniciativa");
     const forMod = Math.floor((data.for - 10) / 2).toString();
     const desMod = Math.floor((data.des - 10) / 2).toString();
@@ -1043,8 +1073,17 @@
     const carisma = form.getTextField("carisma");
     gps.setText(data.pos.toString());
     sp.setText(data.pps.toString());
+    cd.setText(data.cd.toString());
     sobre.setText(data.historia);
     nivel.setText(data.nivel.toString());
+    magic0.setText(
+      data.truquesDescricoes
+        .map((t) => `${t.nome}: ${t.descricao}`)
+        .join(" | "),
+    );
+    magic1.setText(
+      data.magiasDescricoes.map((m) => `${m.nome}: ${m.descricao}`).join(" | "),
+    );
     forca.setText(data.for.toString());
     destreza.setText(data.des.toString());
     constituicao.setText(data.con.toString());
@@ -1070,6 +1109,7 @@
     equipamentos.setText(data.equipamentos.join(", "));
     deslocamento.setText(data.deslocamento);
     vida.setText(data.pvs.toString());
+    atualVida.setText(data.pvs.toString());
     form.updateFieldAppearances();
     const pdfBytes = await pdfDoc.save();
     const blob = new Blob([pdfBytes], { type: "application/pdf" });

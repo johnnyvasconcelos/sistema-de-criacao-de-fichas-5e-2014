@@ -17,7 +17,7 @@
   {
     "id": 4,
     "nome": "Rajada Mística",
-    "descricao": "Faça ataque de magia. Feixe (energia) vai em direção à criatura (36m) e causa 1d10 dano."
+    "descricao": "Faça ataque magia. Feixe (energia) vai em direção à criatura (36m) e causa 1d10 dano."
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
   {
     "id": 8,
     "nome": "Bordão Místico",
-    "descricao": "Use atr de conjuração, em vez de For. em uma clava ou bordão de madeira. Arma mágica, causa 1d8."
+    "descricao": "Use atr conjuração, em vez For. em uma clava ou bordão madeira. Arma mágica, causa 1d8."
   },
   {
     "id": 9,
@@ -57,12 +57,12 @@
   {
     "id": 12,
     "nome": "Orientação",
-    "descricao": "Toca um aliado e dá +d4 a um teste de habilidade à escolha dele."
+    "descricao": "Toca um aliado e dá +d4 a um teste habilidade à escolha dele."
   },
   {
     "id": 13,
     "nome": "Resistência",
-    "descricao": "Toca um aliado e dá +d4 a um teste de resistência à escolha dele."
+    "descricao": "Toca um aliado e dá +d4 a um teste resistência à escolha dele."
   },
   {
     "id": 14,
@@ -72,27 +72,27 @@
   {
     "id": 15,
     "nome": "Consertar",
-    "descricao": "Conserta fissuras de até 30cm em objetos."
+    "descricao": "Conserta fissuras até 30cm em objetos."
   },
   {
     "id": 16,
     "nome": "Espirro Ácido",
-    "descricao": "Escolha 1 ou 2 alvos (até 18m -  1,5m distância um do outro). Alvos fazem teste de resistência Des. ou tomam 1d6 dano."
+    "descricao": "Escolha 1 ou 2 alvos (até 18m -  1,5m distância um do outro). Alvos fazem teste resistência Des. ou tomam 1d6 dano."
   },
   {
     "id": 17,
     "nome": "Ilusão Menor",
-    "descricao": "Cria som ou imagem de objeto (9m, 1minuto)"
+    "descricao": "Cria som ou imagem objeto (9m, 1minuto)"
   },
   {
     "id": 18,
     "nome": "Luz",
-    "descricao": "Toca um objeto pequeno e ele emite luz intensa (6 m) + penumbra (6 m) até a magia acabar; luz é bloqueada por cobertura opaca e objetos de inimigos podem resistir com teste de Destreza."
+    "scricao": "Toca um objeto pequeno e ele emite luz intensa (6 m) + penumbra (6 m) até a magia acabar; luz é bloqueada por cobertura opaca e objetos  inimigos podem resistir com teste Destreza."
   },
   {
     "id": 19,
     "nome": "Mãos Mágicas",
-    "descricao": "Mão fantasma flutuante aparece num ponto. A mão some se estiver a mais de 9 metros de você. Use a mão para manipular um objeto, abrir portas ou recipientes destrancados, guardar ou pegar itens (5kg). A mão não ataca ou ativa itens mágicos."
+    "descricao": "Mão fantasma flutuante aparece num ponto. A mão some se estiver a mais 9m de você. Use a mão para manipular um objeto, abrir portas ou recipientes destrancados, guardar ou pegar itens (5kg). A mão não ataca ou ativa itens mágicos."
   },
   {
     "id": 20,
@@ -102,22 +102,22 @@
   {
     "id": 21,
     "nome": "Prestidigitação",
-    "descricao": "Cria pequenos efeitos (3m): gera sensações (faíscas, vento, sons ou cheiros), acende/apaga chamas pequenas, limpa ou suja objetos pequenos, aquece/esfria/melhora o sabor de comidas, marca objetos (cor símbolo) ou superfícies por 1 h, cria bugiganga ou ilusão pequena que dura até o próximo turno."
+    "descricao": "Cria pequenos efeitos (3m): gera sensações (faíscas, vento, sons ou cheiros), acende/apaga chamas pequenas, limpa ou suja objetos pequenos, aquece/esfria/melhora o sabor comidas, marca objetos (cor símbolo) ou superfícies por 1 h, cria bugiganga ou ilusão pequena que dura até o próximo turno."
   },
   {
     "id": 22,
     "nome": "Proteção contra Lâminas",
-    "descricao": "Até o final do próximo turno tem resistência contra corte, perfuração e contusão de armas."
+    "descricao": "Até o final do próximo turno tem resistência contra corte, perfuração e contusão armas."
   },
   {
     "id": 23,
     "nome": "Raio de Fogo",
-    "descricao": "Faz ataque à distância com magia e causa 1d10 de dano. Objetos inflamáveis podem pegar fogo se não forem usados ou carregados."
+    "descricao": "Faz ataque à distância com magia e causa 1d10 dano. Objetos inflamáveis podem pegar fogo se não forem usados ou carregados."
   },
   {
     "id": 24,
     "nome": "Raio de Gelo",
-    "descricao": "Faz ataque à distância com magia e causa 1d8 de dano. O alvo perde 3m no desloc. até o começo do próximo turno."
+    "descricao": "Faz ataque à distância com magia e causa 1d8 dano. O alvo perde 3m no desloc. até o começo do próximo turno."
   },
   {
     "id": 25,

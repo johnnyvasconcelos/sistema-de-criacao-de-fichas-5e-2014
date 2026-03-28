@@ -241,7 +241,7 @@
     "pericias": [],
     "idiomas": ["Comum", "Orc"],
     "habilidades": [
-      "Quando você é reduzido a 0 pontos de vida mas não é completamente morto, você pode voltar para 1 ponto de vida. Você não pode usar essa característica novamente até completar um descanso longo.",
+      "Quando reduzido a 0 PVs mas não completamente morto, você pode voltar para 1 ponto de vida. Você não pode usar essa característica novamente até completar um descanso longo.",
       "Visão no Escuro (18m)",
       "Quando você atinge um ataque crítico com uma arma corpo-a-corpo, você pode rolar um dos dados de dano da arma mais uma vez e adicioná-lo ao dano extra causado pelo acerto crítico."
     ],
@@ -254,7 +254,7 @@
     "idiomas": ["Comum", "Orc"],
     "habilidades": [
       "Visão no Escuro (18m)",
-      "Quando você é reduzido a 0 pontos de vida mas não é completamente morto, você pode voltar para 1 ponto de vida. Você não pode usar essa característica novamente até completar um descanso longo.",
+      "Quando reduzido a 0 PVs mas não completamente morto, você pode voltar para 1 ponto de vida. Você não pode usar essa característica novamente até completar um descanso longo.",
       "Como ação bônus, você pode usar a ação Correr um número de vezes igual à sua proficiência por descanso longo. Sempre que usar este traço, você ganha PV temporários iguais à sua proficiência.",
       "Você usa uma categoria de tamanho acima ao determinar capacidade de carga e o peso que pode empurrar, arrastar, levantar."
     ],
