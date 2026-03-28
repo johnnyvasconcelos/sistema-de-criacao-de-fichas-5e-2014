@@ -789,6 +789,16 @@
         data.nome = nome.value;
         data.historia = historia.value;
         data.proficiencias = [...data.proficiencias, ...data.idiomas];
+        // loading
+        const historySection = document.querySelector(".history-content");
+        historySection.classList.add("desactive");
+        const loading = document.querySelector(".loading");
+        loading.classList.add("active-loading");
+        const textoFinal = document.querySelector(".texto-final");
+        setTimeout(() => {
+          loading.style.display = "none";
+          textoFinal.innerText = `Ficha do ${data.raca} ${data.classe} criada!`;
+        }, 12000);
         // calcula o dinheiro
         let poInteiro = Math.floor(data.pos);
         let parteDecimal = data.pos - poInteiro;

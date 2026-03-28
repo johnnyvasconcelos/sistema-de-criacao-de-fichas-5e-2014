@@ -1948,36 +1948,38 @@
             </div>
 
             <!-- história e nome -->
-            <div class="step" data-step="historia">
-              <label for="nome_personagem">Nome:</label
-              ><input
-                type="text"
-                id="nome_personagem"
-                name="nome"
-                class="nome"
-              />
-              <label for="imagem_1">Imagem do personagem 1</label>
-              <input type="file" name="imagem_1" id="imagem_1" /><br /><br />
-              <label for="imagem_2">Imagem do personagem 2</label>
-              <input type="file" name="imagem_2" id="imagem_2" />
-              <p class="aviso">
-                * Use imagens quadradas (ex: 800x800). A largura e a altura
-                devem ser iguais para não distorcer na ficha.
-              </p>
-              <label for="historia_personagem">História:</label>
-              <textarea
-                name="historia"
-                id="historia_personagem"
-                class="historia"
-              ></textarea>
+            <div class="step" data-step="historia" id="history">
+              <div class="history-content">
+                <label for="nome_personagem">Nome:</label
+                ><input
+                  type="text"
+                  id="nome_personagem"
+                  name="nome"
+                  class="nome"
+                />
+                <label for="imagem_1">Imagem do personagem 1</label>
+                <input type="file" name="imagem_1" id="imagem_1" /><br /><br />
+                <label for="imagem_2">Imagem do personagem 2</label>
+                <input type="file" name="imagem_2" id="imagem_2" />
+                <p class="aviso">
+                  * Use imagens quadradas (ex: 800x800). A largura e a altura
+                  devem ser iguais para não distorcer na ficha.
+                </p>
+                <label for="historia_personagem">História:</label>
+                <textarea
+                  name="historia"
+                  id="historia_personagem"
+                  class="historia"
+                ></textarea>
+              </div>
+              <p class="texto-final">Gerando ficha</p>
+              <div class="loading">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
               <div class="area-label">
                 <button type="button" class="avanca-step">Gerar Ficha ⎙</button>
-              </div>
-            </div>
-            <div class="step" data-step="download">
-              <p>Download</p>
-              <div class="area-label">
-                <button type="submit" class="recomecar">Recomeçar</button>
               </div>
             </div>
             <!-- download & finalização -->
