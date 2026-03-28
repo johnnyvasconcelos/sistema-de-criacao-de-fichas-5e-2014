@@ -798,7 +798,7 @@
         setTimeout(() => {
           loading.style.display = "none";
           textoFinal.innerText = `Ficha do ${data.raca} ${data.classe} criada!`;
-        }, 12000);
+        }, 10000);
         // calcula o dinheiro
         let poInteiro = Math.floor(data.pos);
         let parteDecimal = data.pos - poInteiro;
@@ -1375,7 +1375,6 @@
       form.getButton("Imagem72_af_image").setImage(img2);
     }
     form.updateFieldAppearances();
-    form.flatten();
     const pdfBytes = await pdfDoc.save();
     const blob = new Blob([pdfBytes], { type: "application/pdf" });
     const url = URL.createObjectURL(blob);
