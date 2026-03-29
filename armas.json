@@ -45,6 +45,31 @@
     "acuidade": false
   },
   {
+    "nome": "Besta Pesada",
+    "dano": "1d10 + des",
+    "acuidade": false
+  },
+  {
+    "nome": "Funda",
+    "dano": "1d4 + des",
+    "acuidade": false
+  },
+  {
+    "nome": "Machado de Arremesso",
+    "dano": "1d6 + des",
+    "acuidade": false
+  },
+  {
+    "nome": "Maça",
+    "dano": "1d6 + for",
+    "acuidade": false
+  },
+  {
+    "nome": "Mangual Pesado",
+    "dano": "1d10 + for",
+    "acuidade": false
+  },
+  {
     "nome": "Lança",
     "dano": "1d6 + for",
     "acuidade": false
