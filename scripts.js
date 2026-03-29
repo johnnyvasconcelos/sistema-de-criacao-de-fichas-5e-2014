@@ -1371,7 +1371,7 @@
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `${data.raca.replaceAll(" ", "-")}-${data.classe}-${data.antecedente}.pdf`;
+    a.download = `${data.raca.replaceAll(" ", "-")}-${data.classe}-${data.antecedente.replaceAll(" ", "-")}.pdf`;
     a.style.display = "none";
     document.body.appendChild(a);
     a.click();
