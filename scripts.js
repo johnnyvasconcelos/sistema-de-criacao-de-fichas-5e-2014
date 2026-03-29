@@ -1369,12 +1369,18 @@
     const pdfBytes = await pdfDoc.save();
     const blob = new Blob([pdfBytes], { type: "application/pdf" });
     const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `ficha_${data.nome || "personagem"}.pdf`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+    const novaAba = window.open(url, "_blank");
+    if (!novaAba) {
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `${data.raca}-${data.classe}-${data.antecedente}.pdf`;
+      a.style.display = "none";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+    setTimeout(() => {
+      URL.revokeObjectURL(url);
+    }, 5000);
   };
 }
