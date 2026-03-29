@@ -68,16 +68,7 @@
     "Gnomo da Floresta": { int: 2, des: 1 },
     "Gnomo das Rochas": { int: 2, con: 1 },
     Tiefling: { int: 1, car: 2 },
-    "Draconato Vermelho": { for: 2, car: 1 },
-    "Draconato Verde": { for: 2, car: 1 },
-    "Draconato Azul": { for: 2, car: 1 },
-    "Draconato Negro": { for: 2, car: 1 },
-    "Draconato Branco": { for: 2, car: 1 },
-    "Draconato Dourado": { for: 2, car: 1 },
-    "Draconato Prateado": { for: 2, car: 1 },
-    "Draconato Cobre": { for: 2, car: 1 },
-    "Draconato Latão": { for: 2, car: 1 },
-    "Draconato Bronze": { for: 2, car: 1 },
+    Draconato: { for: 2, car: 1 },
     "Humano Variante": { dois_atributos: 1 },
     "Meio-Elfo": { car: 2, dois_atributos: 1 },
     Alternativo: { dois_atributos: 1, um_atributo: 2 },
@@ -1377,8 +1368,13 @@
     form.updateFieldAppearances();
     const pdfBytes = await pdfDoc.save();
     const blob = new Blob([pdfBytes], { type: "application/pdf" });
-    const novaAba = window.open("", "_blank");
     const url = URL.createObjectURL(blob);
-    novaAba.location.href = url;
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `ficha_${data.nome || "personagem"}.pdf`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
   };
 }
