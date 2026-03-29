@@ -1369,7 +1369,7 @@
     const pdfBytes = await pdfDoc.save();
     const blob = new Blob([pdfBytes], { type: "application/pdf" });
     const url = URL.createObjectURL(blob);
-    const novaAba = window.open(url, "_blank");
+    const novaAba = window.open.call(window, url, "_blank");
     if (!novaAba) {
       const a = document.createElement("a");
       a.href = url;
