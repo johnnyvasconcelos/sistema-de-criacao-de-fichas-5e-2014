@@ -1369,7 +1369,6 @@
     const pdfBytes = await pdfDoc.save();
     const blob = new Blob([pdfBytes], { type: "application/pdf" });
     const url = URL.createObjectURL(blob);
-    window.open(url, "_blank");
     const a = document.createElement("a");
     a.href = url;
     a.download = `${data.raca}-${data.classe}-${data.antecedente}.pdf`;
@@ -1377,6 +1376,9 @@
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
+    setTimeout(() => {
+      window.open(url, "_blank");
+    }, 100);
     setTimeout(() => {
       URL.revokeObjectURL(url);
     }, 5000);
