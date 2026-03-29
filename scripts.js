@@ -1369,16 +1369,14 @@
     const pdfBytes = await pdfDoc.save();
     const blob = new Blob([pdfBytes], { type: "application/pdf" });
     const url = URL.createObjectURL(blob);
-    const novaAba = window.open.call(window, url, "_blank");
-    if (!novaAba) {
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = `${data.raca}-${data.classe}-${data.antecedente}.pdf`;
-      a.style.display = "none";
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-    }
+    window.open(url, "_blank");
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `${data.raca}-${data.classe}-${data.antecedente}.pdf`;
+    a.style.display = "none";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
     setTimeout(() => {
       URL.revokeObjectURL(url);
     }, 5000);
