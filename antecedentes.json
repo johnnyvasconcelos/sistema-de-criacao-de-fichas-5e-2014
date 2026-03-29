@@ -6,7 +6,7 @@
       "Símbolo Sagrado",
       "Livro de Preces",
       "Varetas de Incenso",
-      "roupas comuns"
+      "Roupas Comuns"
     ],
     "pos": 15,
     "pericias": ["Intuição", "Religião"],
@@ -146,10 +146,10 @@
     "id": 11,
     "nome": "Marinheiro",
     "equipamentos": [
-      "clava",
-      "15m corda (seda)",
-      "roupas comuns",
-      "pé de coelho"
+      "Clava",
+      "15m Corda (Seda)",
+      "Roupas Comuns",
+      "Pé de Coelho"
     ],
     "pos": 10,
     "pericias": ["Atletismo", "Percepção"],
@@ -163,10 +163,10 @@
     "id": 12,
     "nome": "Pirata",
     "equipamentos": [
-      "clava",
-      "15m corda (seda)",
-      "roupas comuns",
-      "pé de coelho"
+      "Clava",
+      "15m Corda (Seda)",
+      "Roupas Comuns",
+      "Pé de Coelho"
     ],
     "pos": 10,
     "pericias": ["Atletismo", "Percepção"],

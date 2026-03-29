@@ -10,6 +10,11 @@
     "acuidade": true
   },
   {
+    "nome": "Clava",
+    "dano": "1d4 + for",
+    "acuidade": false
+  },
+  {
     "nome": "Azagaia",
     "dano": "1d6 + for",
     "acuidade": false
@@ -51,7 +56,7 @@
   },
   {
     "nome": "Funda",
-    "dano": "1d4 + des",
+    "dano": "1d4 + for",
     "acuidade": false
   },
   {
