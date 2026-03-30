@@ -956,6 +956,7 @@
             break;
 
           case "Elfo da Floresta":
+          case "Leonino":
             data.deslocamento = 10.5;
             break;
 

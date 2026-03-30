@@ -625,5 +625,17 @@
       "Como ação bônus, você solta um grito em inimigos a até 3m. Até o início do seu próximo turno, você e seus aliados têm vantagem nos ataques contra os inimigos que puderam ouvi-lo. Use este recurso um número de vezes igual ao seu bônus de proficiência por descanso longo."
     ],
     "proficiencias": []
+  },
+  {
+    "id": 51,
+    "nome": "Leonino",
+    "pericias": ["Percepção"],
+    "idiomas": ["Comum", "Leonino"],
+    "habilidades": [
+      "Visão no Escuro 18m",
+      "Garras: ataque desarmado dá 1d4 + Força (cortante) em vez de contundente.",
+      "Rugido Aterrador: ação bônus, inimigos a 10 pés fazem teste de Sabedoria (CD = 8 + prof + CON) ou ficam amedrontados até seu próximo turno. Uso: 1 vez por descanso curto ou longo."
+    ],
+    "proficiencias": []
   }
 ]
