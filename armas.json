@@ -130,8 +130,13 @@
     "acuidade": false
   },
   {
-    "nome": "Lança Longa",
+    "nome": "Machado Grande",
     "dano": "1d12 + for",
+    "acuidade": false
+  },
+  {
+    "nome": "Lança Longa",
+    "dano": "1d10 + for",
     "acuidade": false
   },
   {
