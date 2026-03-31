@@ -1,4 +1,6 @@
 {
+  const BASE =
+    "https://cdn.jsdelivr.net/gh/johnnyvasconcelos/sistema-de-criacao-de-fichas-5e-2014@main/";
   const data = {};
   const steps = document.querySelectorAll(".step");
   const inputs = document.querySelectorAll(".etapa");
@@ -273,8 +275,9 @@
     // enviar descrição das magias ao data
     try {
       const [truques, magias] = await Promise.all([
-        carregarJSON("./truques.json"),
-        carregarJSON("./magias.json"),
+        carregarJSON(BASE + "truques.json"),
+        carregarJSON(BASE + "magias.json"),
+        ,
       ]);
       const truquesDescricao = [];
       const magiasDescricao = [];
@@ -324,8 +327,8 @@
     // envia as armas ao data com base nos equipamentos
     try {
       const [ataques, armaduras] = await Promise.all([
-        carregarJSON("./armas.json"),
-        carregarJSON("./armaduras.json"),
+        carregarJSON(BASE + "armas.json"),
+        carregarJSON(BASE + "armaduras.json"),
       ]);
       // calcula a CA
       let armaduraAtual;
@@ -376,12 +379,12 @@
             : bonusPericias();
       const [pericias, antecedentes, classes, racas, categorias, talentos] =
         await Promise.all([
-          carregarJSON("./pericias.json"),
-          carregarJSON("./antecedentes.json"),
-          carregarJSON("./classes.json"),
-          carregarJSON("./racas.json"),
-          carregarJSON("./categorias.json"),
-          carregarJSON("./talentos.json"),
+          carregarJSON(BASE + "pericias.json"),
+          carregarJSON(BASE + "antecedentes.json"),
+          carregarJSON(BASE + "classes.json"),
+          carregarJSON(BASE + "racas.json"),
+          carregarJSON(BASE + "categorias.json"),
+          carregarJSON(BASE + "talentos.json"),
         ]);
       const antecedenteEscolhido = antecedentes.find(
         (ant) => ant.nome === data.antecedente,
@@ -1135,7 +1138,7 @@
   const editaPdf = async () => {
     const { PDFDocument } = PDFLib;
     // carrega pdf
-    const existingPdfBytes = await fetch("ficha.pdf").then((res) =>
+    const existingPdfBytes = await fetch(BASE + "ficha.pdf").then((res) =>
       res.arrayBuffer(),
     );
     const pdfDoc = await PDFDocument.load(existingPdfBytes);
