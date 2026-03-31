@@ -280,6 +280,7 @@ form table tr:nth-child(even) {
 }
 form table tr:hover {
   background-color: #c4c4e4;
+  color: #1c202b;
 }
 form table td {
   border: 1px solid #b6b7be;
@@ -297,6 +298,7 @@ form textarea {
   border: none;
   height: 140px;
   background: #d6d6dc;
+  color: #1c202b;
   padding: 15px;
 }
 form textarea:focus {
