@@ -110,6 +110,12 @@ form .alt-final {
   align-items: center;
   justify-content: center;
 }
+.is-dark form .alt,
+.is-dark form .alt-final {
+  color: #f9efdc;
+  background-color: #1c202b;
+  border: 2px solid #f9efdc;
+}
 .atributos-referencia {
   width: 100%;
   background-color: #f9efdc;
@@ -139,7 +145,6 @@ form .alt-final {
   display: inline-block;
 }
 .parag {
-  color: #363d4b;
   margin: 15px 0;
 }
 .sistema img {
@@ -158,6 +163,7 @@ tbody {
   height: 60px;
   right: 15px;
   border: 1px solid #1c202b;
+  color: #1c202b;
   background-color: #f9efdc;
   display: flex;
   align-items: center;
@@ -258,11 +264,19 @@ form .add-item {
   margin: 0 auto;
   transition: 0.4s all ease-in-out;
 }
+.is-dark .add-item {
+  color: #363d4b;
+  background-color: white;
+}
 form .add-item:hover {
   transform: scale(112%);
 }
 form table tr:nth-child(even) {
   background-color: #cecedf;
+}
+.is-dark form table tr:nth-child(even) {
+  background-color: #cecedf;
+  color: #1c202b;
 }
 form table tr:hover {
   background-color: #c4c4e4;
