@@ -1381,10 +1381,12 @@
     a.click();
     document.body.removeChild(a);
     setTimeout(() => {
-      window.open(url, "_blank");
+      a.href = url;
+      a.target = "_blank";
+      a.click();
     }, 100);
     setTimeout(() => {
       URL.revokeObjectURL(url);
-    }, 5000);
+    }, 30000);
   };
 }
