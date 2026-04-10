@@ -483,6 +483,13 @@
             data.raca === "Elfo da Floresta") &&
           pericias[i].nome === "Percepção";
 
+        const naturezaClerigo =
+          data.classe === "Clérigo" &&
+          data.categoria === "Natureza" &&
+          pericias[i].nome === "Natureza"
+            ? "checked disabled"
+            : "";
+
         const check =
           antecedenteEscolhido.pericias.includes(pericias[i].nome) ||
           racaEscolhida.pericias.includes(pericias[i].nome) ||
@@ -490,7 +497,7 @@
             ? "checked disabled"
             : "";
 
-        periciasCampo.innerHTML += `<label class="label-area" for="${pericias[i].nome}"><input type="checkbox" class="pericia-checkbox" id="${pericias[i].nome}" value="${pericias[i].nome}" ${check} ${periciasClasse.includes(pericias[i].nome) && !racaEscolhida.pericias.includes(pericias[i].nome) && !antecedenteEscolhido.pericias.includes(pericias[i].nome) && !periciaElfica ? "" : "disabled"}/>${pericias[i].nome}</label>`;
+        periciasCampo.innerHTML += `<label class="label-area" for="${pericias[i].nome}"><input type="checkbox" class="pericia-checkbox" id="${pericias[i].nome}" value="${pericias[i].nome}" ${check} ${periciasClasse.includes(pericias[i].nome) && !racaEscolhida.pericias.includes(pericias[i].nome) && !antecedenteEscolhido.pericias.includes(pericias[i].nome) && !periciaElfica ? "" : "disabled"} ${naturezaClerigo}/>${pericias[i].nome}</label>`;
       }
       // invoca os truques
       let truquesAtivos = [];
